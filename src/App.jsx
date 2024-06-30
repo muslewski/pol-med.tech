@@ -1,28 +1,22 @@
-import './App.css';
+import { Link, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Education from "./pages/Education";
+import EducationProduct from "./pages/EducationProduct";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.jsx</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/polmed-router/" element={<Home />} />
+        <Route path="/polmed-router/Education" element={<Education />} />
+        <Route
+          path="/polmed-router/Education/:id"
+          element={<EducationProduct />}
+        />
+      </Routes>
+    </>
   );
 }
 
