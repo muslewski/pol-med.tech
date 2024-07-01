@@ -6,6 +6,19 @@ body {
   margin: 0;
 }
 
+.appear {
+  animation: appear 1s;
+}
+
+@keyframes appear {
+  0% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+  }
+}
+
 .wrapper {
   height: 100vh;
   overflow-y: auto;

@@ -1,7 +1,7 @@
 import { Link, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
-import Education from "./pages/Education";
-import EducationProduct from "./pages/EducationProduct";
+import Education from "./pages/Education/Education";
+import EducationProduct from "./pages/Education/EducationProduct";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Oils from "./pages/Oils";
@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="wrapper">
+      <div className="wrapper bg-secondary-dark">
         <Routes>
           <Route path="/polmed-router/" element={<Home />} />
           <Route

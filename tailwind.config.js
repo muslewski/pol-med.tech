@@ -13,6 +13,11 @@ module.exports = {
           light: "#ffffff", // Light variant
           dark: "#040030", // Dark variant
         },
+        acccent: {
+          first: "#4035BD",
+          second: "#362F8C",
+          third: "#100B51",
+        },
       },
       fontFamily: {
         raleway: ['"Raleway"', "sans-serif"],
@@ -24,10 +29,7 @@ module.exports = {
           "0 4pt 4pt rgba(4, 0, 48, 0.25)",
           "0 0 2pt rgba(4, 0, 48, 0.35)",
         ],
-        "4xl": [
-          "0 35px 35px rgba(0, 0, 0, 0.25)",
-          "0 45px 65px rgba(0, 0, 0, 0.15)",
-        ],
+        whiteText: ["0 6px 4px rgba(255, 255, 255, 0.5)"],
         navigationAccent: [
           "0 0 12px rgba(54, 47, 140, 0.7)",
           "0 0 24px rgba(129, 121, 210, 0.5)",
@@ -39,5 +41,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animated")],
 };
