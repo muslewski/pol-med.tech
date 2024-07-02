@@ -1,29 +1,30 @@
-import React from "react";
 import "./Home.css";
-
-import background from "./assets/background.jpg";
-import foreground from "./assets/smoke.png";
-import foreground2 from "./assets/particles4.png";
 
 import backgroundRectangleBottom from "./assets/rectangleBottom.svg";
 import backgroundRectangleTop from "./assets/rectangleTop.svg";
 import HeroPattern from "./assets/HeroPattern.svg";
 import ArrowDown from "./assets/Arrow.svg";
+import HeroCard from "../../components/HeroCard/HeroCard";
+import videoPolMed from "./assets/polmed.mp4";
+import educationCard from "./assets/educationCard.png";
+import SectionCard from "./SectionCard";
 
 function Home() {
   return (
     <>
-      <header className="">
-        <img
-          className="background bg-secondary-dark pointer-events-none select-none"
-          src={background}
-          alt=""
-        />
-        <img
-          className="foreground pointer-events-none select-none"
-          src={foreground}
-          alt=""
-        />
+      <header>
+        <video
+          loop
+          muted
+          playsInline
+          autoPlay
+          preload="auto"
+          className="background brightness-75 "
+        >
+          <source src={videoPolMed} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
         <img
           className="foreground2 pointer-events-none select-none"
           src={backgroundRectangleBottom}
@@ -40,35 +41,51 @@ function Home() {
           alt=""
         /> */}
 
-        <div
-          className=" text-primary-dark flex flex-col gap-10 max-w-6xl text-center items-center bg-gradient-to-br from-secondary-dark/5 to-secondary-dark/40 backdrop-blur-md pl-[16%] pr-24 py-24 
-        rounded-r-[8rem] border-secondary-dark/15 border-8 border-l-0 animate-fade-right animate-duration-1000 animate-ease-in-out"
+        <HeroCard
+          boxCustom="items-center"
+          titleCustom=" drop-shadow-whiteText text-center"
+          title="Profesjonalne wsparcie dla Twojego biznesu i edukacji!"
         >
-          <h1 className="text-5xl leading-tight font-raleway font-bold drop-shadow-whiteText">
-            Profesjonalne wsparcie dla Twojego biznesu i edukacji!
-          </h1>
-          <hr className="h-3 w-3/4 rounded-[100%] bg-gradient-to-b from-primary-dark to-transparent  backdrop-blur-md shadow-navigationBlack" />
+          <hr className="h-3 w-3/4 rounded-[100%] bg-gradient-to-b from-primary-dark to-transparent  backdrop-blur-md shadow-navigation" />
           <div className="flex justify-evenly text-2xl w-full font-exo ">
             <h2 className="">Technologia</h2>
             <h2>Badania</h2>
             <h2>Przemysł</h2>
           </div>
-        </div>
+        </HeroCard>
 
         <img
           src={ArrowDown}
-          className="bottom-24 left-1/3 absolute drop-shadow-logoDark"
+          className="bottom-24 left-1/3 absolute drop-shadow-logoDark animate-pulse animate-infinite animate-duration-[2500ms] animate-delay-1000 animate-ease-in-out"
           alt=""
         />
       </header>
       <section className="bg-secondary-dark text-white px-10 pt-44 pb-44 text-2xl flex justify-center">
-        <div className=" max-w-[85%] w-full">
+        <div className=" max-w-[75%] w-full flex flex-col bg-black justify-around">
           <h2 className="border-4 text-3xl w-fit px-12 py-6 rounded-full border-primary-dark/15 drop-shadow-navigationAccent font-bold">
             Odkryj nasze możliwości
           </h2>
+          <div className="w-full h-fit flex flex-wrap gap-24">
+            <SectionCard
+              image={educationCard}
+              title="Stanowiska dydaktyczno-laboratoryjne"
+              description="Praktyczne i angażujące systemy dydaktyczne z zakresu technologii
+          samochodowych."
+            />
+            <SectionCard
+              image={educationCard}
+              title="Stanowiska dydaktyczno-laboratoryjne"
+              description="Praktyczne i angażujące systemy dydaktyczne z zakresu technologii
+        samochodowych."
+            />
+            <SectionCard
+              image={educationCard}
+              title="Stanowiska dydaktyczno-laboratoryjne"
+              description="Praktyczne i angażujące systemy dydaktyczne z zakresu technologii
+        samochodowych."
+            />
+          </div>
         </div>
-
-        <div></div>
       </section>
     </>
   );

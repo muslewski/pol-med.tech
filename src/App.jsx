@@ -4,7 +4,7 @@ import Education from "./pages/Education/Education";
 import EducationProduct from "./pages/Education/EducationProduct";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
-import Oils from "./pages/Oils";
+import Oils from "./pages/Oils/Oils";
 import Tools from "./pages/Tools";
 import About from "./pages/About";
 import Contact from "./pages/Contact";

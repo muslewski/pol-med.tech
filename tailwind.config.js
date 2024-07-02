@@ -12,6 +12,7 @@ module.exports = {
         secondary: {
           light: "#ffffff", // Light variant
           dark: "#040030", // Dark variant
+          darkEducation: "#040E30", // Dark variant
         },
         acccent: {
           first: "#4035BD",
@@ -36,7 +37,7 @@ module.exports = {
         ],
       },
       boxShadow: {
-        navigationBlack: "0 4px 4px rgba(4, 0, 48, 0.25)",
+        navigation: "0 4px 4px rgba(199, 199, 255, 0.25)",
         contactInner: "inset 0 4px 8px rgba(255, 255, 255, 0.3)",
       },
     },

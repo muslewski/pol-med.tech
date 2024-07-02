@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import polMedDark from "./assets/polMedDark.png";
 import kontaktSvg from "./assets/Kontakt.svg";
@@ -7,10 +7,51 @@ import nightSvg from "./assets/night.svg";
 import polandSvg from "./assets/Poland.svg";
 import smallArrow from "./assets/smallArrow.svg";
 
+const routesConfig = [
+  {
+    path: "/polmed-router/Edukacja_i_badania",
+    color35: "rgba(4, 14, 48, 0.35)",
+    color15: "rgba(4, 14, 48, 0.15)",
+  },
+  {
+    path: "/polmed-router/Oleje_UCO",
+    color35: "rgba(4, 14, 48, 0.35)",
+    color15: "rgba(4, 14, 48, 0.15)",
+  },
+  {
+    path: "/polmed-router/Narzedzia",
+    color35: "rgba(4, 14, 48, 0.35)",
+    color15: "rgba(4, 14, 48, 0.15)",
+  },
+  {
+    path: "/polmed-router/O_nas",
+    color35: "rgba(4, 14, 48, 0.35)",
+    color15: "rgba(4, 14, 48, 0.15)",
+  },
+  {
+    path: "/polmed-router/Kontakt",
+    color35: "rgba(4, 14, 48, 0.35)",
+    color15: "rgba(4, 14, 48, 0.15)",
+  },
+];
+
 function Navbar() {
+  const location = useLocation();
+  const currentRoute = routesConfig.find(
+    (route) => route.path === location.pathname
+  );
+
+  const bg35SecondaryClass = currentRoute
+    ? currentRoute.color35
+    : "rgb(4, 0, 48, 0.35)";
+
+  const bg15SecondaryClass = currentRoute
+    ? currentRoute.color15
+    : "rgb(4, 0, 48, 0.15)";
+
   return (
-    <nav className="font-raleway mt-8 fixed w-screen z-10">
-      <ul className="flex justify-around items-center text-lg  text-primary-dark">
+    <nav className="font-raleway mt-8 fixed w-screen z-10 flex justify-center">
+      <ul className="flex justify-between items-center text-[1.19rem]  text-primary-dark w-full  max-w-[90vw] ">
         <li>
           <Link to="/polmed-router/">
             <div className="w-48 flex flex-col items-center drop-shadow-logoDark">
@@ -22,7 +63,13 @@ function Navbar() {
           </Link>
         </li>
         <li>
-          <ul className="flex items-center gap-[40pt] font-semibold py-[10pt] px-[25pt] rounded-full bg-secondary-dark/35 border-secondary-dark/15 border-4 backdrop-blur-md shadow-navigationBlack">
+          <ul
+            className={`flex  items-center gap-[60pt] font-semibold py-[10pt] px-[25pt] rounded-full  border-secondary-dark/15 border-4 backdrop-blur-md shadow-navigation`}
+            style={{
+              backgroundColor: bg35SecondaryClass,
+              borderColor: bg15SecondaryClass,
+            }}
+          >
             <li className="drop-shadow-navigationAccent">
               <Link to="/polmed-router/Edukacja_i_badania">
                 Edukacja i badania
@@ -58,7 +105,10 @@ function Navbar() {
               src={kontaktSvg}
               alt=""
             />
-            <div className="bg-secondary-dark/15 border-[3px] border-primary-dark py-[12pt] px-[20pt] rounded-full z-20 backdrop-blur-sm shadow-contactInner">
+            <div
+              className="border-[3px] border-primary-dark py-[12pt] px-[20pt] rounded-full z-20 backdrop-blur-sm shadow-contactInner"
+              style={{ backgroundColor: bg15SecondaryClass }}
+            >
               Skontaktuj się
             </div>
           </Link>

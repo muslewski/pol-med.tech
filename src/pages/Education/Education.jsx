@@ -1,27 +1,19 @@
 import React from "react";
-import "../Home/Home.css";
 
-import background from "./assets/backgroundEducation.jpg";
-import foreground from "./assets/smoke.png";
-import foreground2 from "./assets/foreground.png";
-
+import background from "./assets/backgroundEducation.webp";
+import foreground from "./assets/foreground.webp";
 import backgroundRectangleBottom from "./assets/rectangleBottom.svg";
 import backgroundRectangleTop from "./assets/rectangleTop.svg";
-import HeroPattern from "./assets/HeroPattern.svg";
-import ArrowDown from "./assets/Arrow.svg";
+import bottomVector from "./assets/bottomVector.svg";
+import HeroCard from "../../components/HeroCard/HeroCard";
 
 function Education() {
   return (
     <>
       <header className="">
         <img
-          className="background bg-secondary-dark pointer-events-none select-none"
+          className="background bg-secondary-darkEducation pointer-events-none select-none"
           src={background}
-          alt=""
-        />
-        <img
-          className="foreground pointer-events-none select-none"
-          src={foreground}
           alt=""
         />
         <img
@@ -30,23 +22,21 @@ function Education() {
           alt=""
         />
         <img
+          className="foreground2 pointer-events-none select-none"
+          src={foreground}
+          alt=""
+        />
+        <img
           className="foreground3 pointer-events-none select-none"
           src={backgroundRectangleTop}
           alt=""
         />
         <img
-          className="background pointer-events-none select-none"
-          src={foreground2}
+          className="absolute w-full -bottom-10 pointer-events-none select-none"
+          src={bottomVector}
           alt=""
         />
-
-        <div
-          className=" text-primary-dark flex flex-col gap-10 max-w-6xl  items-center bg-gradient-to-br from-secondary-dark/5 to-secondary-dark/40 backdrop-blur-md pl-[16%] pr-24 py-24 
-    rounded-r-[8rem] border-secondary-dark/15 border-8 border-l-0 animate-fade-right animate-duration-1000 animate-ease-in-out"
-        >
-          <h1 className="text-5xl leading-tight font-raleway font-bold drop-shadow-whiteText">
-            Stanowiska dydaktyczno-laboratoryjne
-          </h1>
+        <HeroCard title="Stanowiska dydaktyczno-laboratoryjne">
           <div className="flex justify-evenly text-2xl w-full font-exo ">
             <h2 className="">
               To zintegrowane moduły dydaktyczne, które umożliwiają naukę o
@@ -54,15 +44,9 @@ function Education() {
               angażujący sposób.
             </h2>
           </div>
-        </div>
-
-        <img
-          src={ArrowDown}
-          className="bottom-24 left-1/3 absolute drop-shadow-logoDark"
-          alt=""
-        />
+        </HeroCard>
       </header>
-      <section className="bg-secondary-dark text-white px-10 pt-44 pb-44 text-2xl flex justify-center">
+      <section className="bg-secondary-darkEducation text-white px-10 pt-44 pb-44 text-2xl flex justify-center">
         <div className=" max-w-[85%] w-full">
           <h2 className="border-4 text-3xl w-fit px-12 py-6 rounded-full border-primary-dark/15 drop-shadow-navigationAccent font-bold">
             Odkryj nasze możliwości
