@@ -6,7 +6,12 @@ import HeroPattern from "./assets/HeroPattern.svg";
 import ArrowDown from "./assets/Arrow.svg";
 import HeroCard from "../../components/HeroCard/HeroCard";
 import videoPolMed from "./assets/polmed.mp4";
-import educationCard from "./assets/educationCard.png";
+import educationCardImg from "./assets/educationCard.png";
+import oilsCardImg from "./assets/oleje.webp";
+import toolsCardImg from "./assets/narzedzia.webp";
+import carServiceIcon from "./assets/car-service.webp";
+import oilTankIcon from "./assets/oil-tank.webp";
+import toolsIcon from "./assets/tools.webp";
 import SectionCard from "./SectionCard";
 
 function Home() {
@@ -61,28 +66,35 @@ function Home() {
         />
       </header>
       <section className="bg-secondary-dark text-white px-10 pt-44 pb-44 text-2xl flex justify-center">
-        <div className=" max-w-[75%] w-full flex flex-col bg-black justify-around">
+        <div className=" max-w-[75%] w-full flex flex-col gap-24">
           <h2 className="border-4 text-3xl w-fit px-12 py-6 rounded-full border-primary-dark/15 drop-shadow-navigationAccent font-bold">
             Odkryj nasze możliwości
           </h2>
-          <div className="w-full h-fit flex flex-wrap gap-24">
+          <div className="w-full h-fit flex flex-wrap gap-24 justify-evenly items-start">
             <SectionCard
-              image={educationCard}
+              image={educationCardImg}
+              buttonIcon={carServiceIcon}
               title="Stanowiska dydaktyczno-laboratoryjne"
               description="Praktyczne i angażujące systemy dydaktyczne z zakresu technologii
           samochodowych."
+              gradient="#113C63"
+              shadow="rgba(117,158,255,0.5)"
             />
             <SectionCard
-              image={educationCard}
-              title="Stanowiska dydaktyczno-laboratoryjne"
-              description="Praktyczne i angażujące systemy dydaktyczne z zakresu technologii
-        samochodowych."
+              image={oilsCardImg}
+              buttonIcon={oilTankIcon}
+              title="Oleje posmażalnicze (UCO)"
+              description="Odbiór, handel i magazynowanie olejów posmażalniczych (UCO) - kompleksowa usługa dostaw i odbiorów olejów dla przemysłu i gastronomii."
+              gradient="#2C3C66"
+              shadow="rgba(73, 91, 173, 0.5)"
             />
             <SectionCard
-              image={educationCard}
-              title="Stanowiska dydaktyczno-laboratoryjne"
-              description="Praktyczne i angażujące systemy dydaktyczne z zakresu technologii
-        samochodowych."
+              image={toolsCardImg}
+              buttonIcon={toolsIcon}
+              title="Narzędzia przemysłowe"
+              description="Kompleksowe zaopatrzenie przedsiębiorstw w różne rodzaje narzędzi przemysłowych."
+              gradient="#115A55"
+              shadow="rgba(117, 255, 227, 0.5)"
             />
           </div>
         </div>

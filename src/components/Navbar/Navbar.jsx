@@ -6,6 +6,7 @@ import kontaktSvg from "./assets/Kontakt.svg";
 import nightSvg from "./assets/night.svg";
 import polandSvg from "./assets/Poland.svg";
 import smallArrow from "./assets/smallArrow.svg";
+import NavElement from "./NavElement";
 
 const routesConfig = [
   {
@@ -70,32 +71,32 @@ function Navbar() {
               borderColor: bg15SecondaryClass,
             }}
           >
-            <li className="drop-shadow-navigationAccent">
+            <NavElement>
               <Link to="/polmed-router/Edukacja_i_badania">
                 Edukacja i badania
               </Link>
-            </li>
-            <li className="drop-shadow-navigationAccent">
+            </NavElement>
+            <NavElement>
               <Link to="/polmed-router/Oleje_UCO">Oleje UCO</Link>
-            </li>
-            <li className="drop-shadow-navigationAccent">
+            </NavElement>
+            <NavElement>
               <Link to="/polmed-router/Narzedzia">Narzędzia</Link>
-            </li>
-            <li className="drop-shadow-navigationAccent">
+            </NavElement>
+            <NavElement>
               <Link to="/polmed-router/O_nas">O nas</Link>
-            </li>
-            <li className="drop-shadow-navigationAccent">
+            </NavElement>
+            <NavElement>
               <button className="h-9 flex items-center gap-3">
                 <img className="h-3/4" src={polandSvg} alt="" />
                 <img className="h-1/4" src={smallArrow} alt="" />
               </button>
-            </li>
-            <li className="drop-shadow-navigationAccent">
+            </NavElement>
+            <NavElement>
               <button className="h-9 flex items-center gap-3">
                 <img className="h-3/4" src={nightSvg} alt="" />
                 <img className="h-1/4" src={smallArrow} alt="" />
               </button>
-            </li>
+            </NavElement>
           </ul>
         </li>
         <li className="relative font-bold z-10 mb-5 ml-5 [&_img]:hover:-left-1 [&_img]:hover:-bottom-2">

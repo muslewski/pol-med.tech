@@ -35,10 +35,15 @@ module.exports = {
           "0 0 12px rgba(54, 47, 140, 0.7)",
           "0 0 24px rgba(129, 121, 210, 0.5)",
         ],
+        homeCard: [
+          "0 0 12px rgba(54, 47, 140, 0.4)",
+          "0 0 24px rgba(129, 121, 210, 0.2)",
+        ],
       },
       boxShadow: {
         navigation: "0 4px 4px rgba(199, 199, 255, 0.25)",
         contactInner: "inset 0 4px 8px rgba(255, 255, 255, 0.3)",
+        homeCard: "inset 0 4px 8px rgba(255, 255, 255, 0.1)",
       },
     },
   },
