@@ -42,19 +42,19 @@ function App() {
       <div className="wrapper bg-secondary-dark">
         <Suspense fallback={<div>Loading...</div>}>
           <Routes>
-            <Route path="/polmed-router/" element={<Home />} />
+            <Route path="/pol-med.tech/" element={<Home />} />
             <Route
-              path="/polmed-router/Edukacja_i_badania"
+              path="/pol-med.tech/Edukacja_i_badania"
               element={<Education />}
             />
             <Route
-              path="/polmed-router/Edukacja_i_badania/:id"
+              path="/pol-med.tech/Edukacja_i_badania/:id"
               element={<EducationProduct />}
             />
-            <Route path="/polmed-router/Oleje_UCO" element={<Oils />} />
-            <Route path="/polmed-router/Narzedzia" element={<Tools />} />
-            <Route path="/polmed-router/O_nas" element={<About />} />
-            <Route path="/polmed-router/Kontakt" element={<Contact />} />
+            <Route path="/pol-med.tech/Oleje_UCO" element={<Oils />} />
+            <Route path="/pol-med.tech/Narzedzia" element={<Tools />} />
+            <Route path="/pol-med.tech/O_nas" element={<About />} />
+            <Route path="/pol-med.tech/Kontakt" element={<Contact />} />
           </Routes>
         </Suspense>
         <Footer />

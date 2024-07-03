@@ -10,27 +10,27 @@ import NavElement from "./NavElement";
 
 const routesConfig = [
   {
-    path: "/polmed-router/Edukacja_i_badania",
+    path: "/pol-med.tech/Edukacja_i_badania",
     color35: "rgba(4, 14, 48, 0.35)",
     color15: "rgba(4, 14, 48, 0.15)",
   },
   {
-    path: "/polmed-router/Oleje_UCO",
+    path: "/pol-med.tech/Oleje_UCO",
     color35: "rgba(4, 14, 48, 0.35)",
     color15: "rgba(4, 14, 48, 0.15)",
   },
   {
-    path: "/polmed-router/Narzedzia",
+    path: "/pol-med.tech/Narzedzia",
     color35: "rgba(4, 14, 48, 0.35)",
     color15: "rgba(4, 14, 48, 0.15)",
   },
   {
-    path: "/polmed-router/O_nas",
+    path: "/pol-med.tech/O_nas",
     color35: "rgba(4, 14, 48, 0.35)",
     color15: "rgba(4, 14, 48, 0.15)",
   },
   {
-    path: "/polmed-router/Kontakt",
+    path: "/pol-med.tech/Kontakt",
     color35: "rgba(4, 14, 48, 0.35)",
     color15: "rgba(4, 14, 48, 0.15)",
   },
@@ -62,7 +62,7 @@ function Navbar() {
     <nav className="font-raleway mt-8 fixed w-screen z-10 flex justify-center">
       <ul className="flex justify-between items-center text-[1.19rem]  text-primary-dark tracking-wide w-full  max-w-[90vw] ">
         <li className=" rounded-3xl hover:scale-105 transition-all ease-in-out duration-500 hover:drop-shadow-homeCard">
-          <Link to="/polmed-router/" onClick={goToTop}>
+          <Link to="/pol-med.tech/" onClick={goToTop}>
             <div className="w-48 flex flex-col items-center drop-shadow-logoDark">
               <img className="w-full" src={polMedDark} alt="" />
               <h6 className="text-sm font-bold italic font-lobsterTwo text-[#BE1C07]">
@@ -80,18 +80,18 @@ function Navbar() {
             }}
           >
             <NavElement>
-              <Link to="/polmed-router/Edukacja_i_badania">
+              <Link to="/pol-med.tech/Edukacja_i_badania">
                 Edukacja i badania
               </Link>
             </NavElement>
             <NavElement>
-              <Link to="/polmed-router/Oleje_UCO">Oleje UCO</Link>
+              <Link to="/pol-med.tech/Oleje_UCO">Oleje UCO</Link>
             </NavElement>
             <NavElement>
-              <Link to="/polmed-router/Narzedzia">Narzędzia</Link>
+              <Link to="/pol-med.tech/Narzedzia">Narzędzia</Link>
             </NavElement>
             <NavElement>
-              <Link to="/polmed-router/O_nas">O nas</Link>
+              <Link to="/pol-med.tech/O_nas">O nas</Link>
             </NavElement>
             <NavElement>
               <button className="h-9 flex items-center gap-3">
@@ -108,7 +108,7 @@ function Navbar() {
           </ul>
         </li>
         <li className="relative font-bold z-10 mb-5 ml-5 [&_img]:hover:-left-1 [&_img]:hover:-bottom-2">
-          <Link to="/polmed-router/Kontakt">
+          <Link to="/pol-med.tech/Kontakt">
             <img
               className="w-full h-full absolute -left-5 -bottom-4 -z-10 transition-all ease-in-out duration-500 pointer-events-none"
               src={kontaktSvg}

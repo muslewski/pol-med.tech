@@ -3,31 +3,31 @@ import { useLocation } from "react-router-dom";
 
 const routesConfig = [
   {
-    path: "/polmed-router/Edukacja_i_badania",
+    path: "/pol-med.tech/Edukacja_i_badania",
     color50: "rgba(4, 14, 48, 0.5)",
     color15: "rgba(4, 14, 48, 0.15)",
     color5: "rgba(4, 14, 48, 0.05)",
   },
   {
-    path: "/polmed-router/Oleje_UCO",
+    path: "/pol-med.tech/Oleje_UCO",
     color50: "rgba(4, 14, 48, 0.5)",
     color15: "rgba(4, 14, 48, 0.15)",
     color5: "rgba(4, 14, 48, 0.05)",
   },
   {
-    path: "/polmed-router/Narzedzia",
+    path: "/pol-med.tech/Narzedzia",
     color50: "rgba(4, 14, 48, 0.5)",
     color15: "rgba(4, 14, 48, 0.15)",
     color5: "rgba(4, 14, 48, 0.05)",
   },
   {
-    path: "/polmed-router/O_nas",
+    path: "/pol-med.tech/O_nas",
     color50: "rgba(4, 14, 48, 0.5)",
     color15: "rgba(4, 14, 48, 0.15)",
     color5: "rgba(4, 14, 48, 0.05)",
   },
   {
-    path: "/polmed-router/Kontakt",
+    path: "/pol-med.tech/Kontakt",
     color50: "rgba(4, 14, 48, 0.5)",
     color15: "rgba(4, 14, 48, 0.15)",
     color5: "rgba(4, 14, 48, 0.05)",
