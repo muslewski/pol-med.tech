@@ -29,20 +29,20 @@ function SectionCard({
           alt=""
         />
       </Link>
-      <div className="flex flex-wrap gap-6 w-fit ">
+      <div className="flex flex-wrap gap-6 w-fit  ">
         <h3 className="text-3xl font-exo font-bold leading-normal">{title}</h3>
-        <p className="text-xl leading-normal">{description}</p>
+        <p className="text-xl leading-normal ">{description}</p>
       </div>
       <Link
         to={linkHref}
-        className="relative z-10 [&_img]:hover:-left-1 [&_img]:hover:-bottom-3 w-fit"
+        className="relative z-10 [&_img]:hover:-left-1 [&_img]:hover:-bottom-3 w-fit hover:scale-105 duration-500 transition-transform ease-in-out"
       >
         <img
           className="w-full h-full absolute -left-5 -bottom-4 transition-all ease-in-out duration-500 pointer-events-none"
           src={buttonPattern}
           alt=""
         />
-        <div className="relative z-10 text-xl border-[3px] backdrop-blur-lg font-semibold border-primary-dark py-[12pt] px-[20pt] rounded-full w-fit flex items-center gap-6">
+        <div className="tracking-wide relative z-10 text-xl border-[3px] backdrop-blur-lg font-semibold border-primary-dark py-[12pt] px-[20pt] rounded-full w-fit flex items-center gap-6">
           Przejdź dalej
           <img className="h-11" src={buttonIcon} alt="" />
         </div>

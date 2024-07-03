@@ -52,8 +52,8 @@ function Navbar() {
 
   return (
     <nav className="font-raleway mt-8 fixed w-screen z-10 flex justify-center">
-      <ul className="flex justify-between items-center text-[1.19rem]  text-primary-dark w-full  max-w-[90vw] ">
-        <li>
+      <ul className="flex justify-between items-center text-[1.19rem]  text-primary-dark tracking-wide w-full  max-w-[90vw] ">
+        <li className=" rounded-3xl hover:scale-105 transition-all ease-in-out duration-500 hover:drop-shadow-homeCard">
           <Link to="/polmed-router/">
             <div className="w-48 flex flex-col items-center drop-shadow-logoDark">
               <img className="w-full" src={polMedDark} alt="" />
@@ -102,12 +102,12 @@ function Navbar() {
         <li className="relative font-bold z-10 mb-5 ml-5 [&_img]:hover:-left-1 [&_img]:hover:-bottom-2">
           <Link to="/polmed-router/Kontakt">
             <img
-              className="w-full h-full absolute -left-5 -bottom-4 -z-10 transition-all ease-in-out duration-300 pointer-events-none"
+              className="w-full h-full absolute -left-5 -bottom-4 -z-10 transition-all ease-in-out duration-500 pointer-events-none"
               src={kontaktSvg}
               alt=""
             />
             <div
-              className="border-[3px] border-primary-dark py-[12pt] px-[20pt] rounded-full z-20 backdrop-blur-sm shadow-contactInner"
+              className="border-[3px] border-primary-dark py-[12pt] px-[20pt] rounded-full z-20 backdrop-blur-sm shadow-contactInner hover:scale-105 duration-500 transition-transform ease-in-out"
               style={{ backgroundColor: bg15SecondaryClass }}
             >
               Skontaktuj się

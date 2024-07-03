@@ -13,8 +13,18 @@ import carServiceIcon from "./assets/car-service.webp";
 import oilTankIcon from "./assets/oil-tank.webp";
 import toolsIcon from "./assets/tools.webp";
 import SectionCard from "./SectionCard";
+import circle1 from "./assets/circle1.svg";
+import circle2 from "./assets/circle2.svg";
+import circle3 from "./assets/circle3.svg";
+
+import { useRef } from "react";
 
 function Home() {
+  const offerRef = useRef(null);
+
+  const executeScroll = () =>
+    offerRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+
   return (
     <>
       <header>
@@ -53,24 +63,43 @@ function Home() {
         >
           <hr className="h-3 w-3/4 rounded-[100%] bg-gradient-to-b from-primary-dark to-transparent  backdrop-blur-md shadow-navigation" />
           <div className="flex justify-evenly text-2xl w-full font-exo ">
-            <h2 className="">Technologia</h2>
-            <h2>Badania</h2>
-            <h2>Przemysł</h2>
+            <h2 className="animate-fade-down animate-delay-[500ms] animate-duration-1000">
+              Technologia
+            </h2>
+            <h2 className="animate-fade-down animate-delay-[1000ms] animate-duration-1000">
+              Badania
+            </h2>
+            <h2 className="animate-fade-down animate-delay-[1500ms] animate-duration-1000">
+              Przemysł
+            </h2>
           </div>
         </HeroCard>
 
         <img
           src={ArrowDown}
-          className="bottom-24 left-1/3 absolute drop-shadow-logoDark animate-pulse animate-infinite animate-duration-[2500ms] animate-delay-1000 animate-ease-in-out"
+          className="bottom-24 left-1/3 absolute cursor-pointer drop-shadow-logoDark hover:animate-jump animate-pulse animate-infinite animate-duration-[2500ms] animate-delay-1000 animate-ease-in-out"
           alt=""
+          onClick={executeScroll}
         />
       </header>
-      <section className="bg-secondary-dark text-white px-10 pt-44 pb-44 text-2xl flex justify-center">
-        <div className=" max-w-[75%] w-full flex flex-col gap-24">
+      <section
+        className="text-white px-10 pt-56 pb-96 text-2xl flex justify-center relative"
+        style={{
+          boxShadow:
+            "0 -12px 24px 5px #040030, inset 0px 24px 24px -3px #040030",
+          background: `linear-gradient(-45deg, #211d50, #040030 50%)`,
+        }}
+        ref={offerRef}
+      >
+        <img src={circle1} alt="" className="absolute left-0 top-[25%]" />
+        <img src={circle2} alt="" className="absolute right-0 top-[50%]" />
+        <img src={circle3} alt="" className="absolute left-0 top-[75%]" />
+
+        <div className=" max-w-[75%] w-full flex flex-col gap-36">
           <h2 className="border-4 text-3xl w-fit px-12 py-6 rounded-full border-primary-dark/15 drop-shadow-navigationAccent font-bold">
             Odkryj nasze możliwości
           </h2>
-          <div className="w-full h-fit flex flex-wrap gap-24 justify-evenly items-start">
+          <div className="w-full h-fit flex flex-wrap gap-28 justify-evenly items-start">
             <SectionCard
               image={educationCardImg}
               buttonIcon={carServiceIcon}
