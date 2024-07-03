@@ -58,10 +58,10 @@ function Home() {
 
         <HeroCard
           boxCustom="items-center"
-          titleCustom=" drop-shadow-whiteText text-center"
+          titleCustom=" text-center"
           title="Profesjonalne wsparcie dla Twojego biznesu i edukacji!"
         >
-          <hr className="h-3 w-3/4 rounded-[100%] bg-gradient-to-b from-primary-dark to-transparent  backdrop-blur-md shadow-navigation" />
+          <hr className="h-3 w-3/4 rounded-[100%] bg-gradient-to-b from-primary-dark to-transparent  backdrop-blur-md shadow-homeCard drop-shadow-whiteText" />
           <div className="flex justify-evenly text-2xl w-full font-exo ">
             <h2 className="animate-fade-down animate-delay-[500ms] animate-duration-1000">
               Technologia
@@ -77,7 +77,7 @@ function Home() {
 
         <img
           src={ArrowDown}
-          className="bottom-24 left-1/3 absolute cursor-pointer drop-shadow-logoDark hover:animate-jump animate-pulse animate-infinite animate-duration-[2500ms] animate-delay-1000 animate-ease-in-out"
+          className="bottom-24 left-1/3 absolute cursor-pointer drop-shadow-logoDark hover:scale-105 transition-all ease-in-out duration-500 animate-pulse animate-infinite animate-duration-[2500ms] animate-delay-1000 animate-ease-in-out"
           alt=""
           onClick={executeScroll}
         />

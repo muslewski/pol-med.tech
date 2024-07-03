@@ -37,6 +37,14 @@ const routesConfig = [
 ];
 
 function Navbar() {
+  function goToTop() {
+    document.querySelector(".wrapper").scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }
+
   const location = useLocation();
   const currentRoute = routesConfig.find(
     (route) => route.path === location.pathname
@@ -54,7 +62,7 @@ function Navbar() {
     <nav className="font-raleway mt-8 fixed w-screen z-10 flex justify-center">
       <ul className="flex justify-between items-center text-[1.19rem]  text-primary-dark tracking-wide w-full  max-w-[90vw] ">
         <li className=" rounded-3xl hover:scale-105 transition-all ease-in-out duration-500 hover:drop-shadow-homeCard">
-          <Link to="/polmed-router/">
+          <Link to="/polmed-router/" onClick={goToTop}>
             <div className="w-48 flex flex-col items-center drop-shadow-logoDark">
               <img className="w-full" src={polMedDark} alt="" />
               <h6 className="text-sm font-bold italic font-lobsterTwo text-[#BE1C07]">

@@ -54,7 +54,7 @@ function HeroCard({ boxCustom = "", titleCustom = "", title, children }) {
 
   return (
     <div
-      className={`text-primary-dark flex flex-col gap-10 max-w-[60%]  items-start bg-gradient-to-br from-[${bg5SecondaryClass}] to-[${bg50SecondaryClass}] backdrop-blur-md pl-[16%] pr-24 py-24 
+      className={`text-primary-dark flex flex-col gap-10 max-w-[60%] shadow-contactInner drop-shadow-homeCard  items-start bg-gradient-to-br from-[${bg5SecondaryClass}] to-[${bg50SecondaryClass}] backdrop-blur-md pl-[16%] pr-24 py-24 
     rounded-r-[8rem] border-secondary-dark/15 border-8 border-l-0 animate-fade-right animate-duration-1000 animate-ease-in-out ${boxCustom}`}
       style={{
         background: `linear-gradient(45deg, ${bg5SecondaryClass}, ${bg50SecondaryClass})`,
