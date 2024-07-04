@@ -45,6 +45,9 @@ module.exports = {
         contactInner: "inset 0 4px 8px rgba(255, 255, 255, 0.3)",
         homeCard: "inset 0 4px 8px rgba(255, 255, 255, 0.1)",
       },
+      screens: {
+        "3xl": "1650px",
+      },
     },
   },
   plugins: [require("tailwindcss-animated")],

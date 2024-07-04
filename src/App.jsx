@@ -3,6 +3,8 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import { Suspense, lazy, useEffect } from "react";
 
+import { goToTopRough } from "./utils/goToTop";
+
 // Lazy load the components
 const Home = lazy(() => import("./pages/Home/Home"));
 const Education = lazy(() =>
@@ -19,11 +21,17 @@ const About = lazy(() => import(/* webpackPrefetch: true */ "./pages/About"));
 const Contact = lazy(() =>
   import(/* webpackPrefetch: true */ "./pages/Contact")
 );
+const PrivacyPolicy = lazy(() =>
+  import(/* webpackPrefetch: true */ "./pages/PrivacyPolicy")
+);
+const Copyright = lazy(() =>
+  import(/* webpackPrefetch: true */ "./pages/Copyright")
+);
 
 function App() {
   const { pathname } = useLocation();
   useEffect(() => {
-    document.querySelector(".wrapper").scrollTo(0, 0);
+    goToTopRough();
   }, [pathname]);
 
   useEffect(() => {
@@ -34,6 +42,8 @@ function App() {
     import(/* webpackPrefetch: true */ "./pages/Tools");
     import(/* webpackPrefetch: true */ "./pages/About");
     import(/* webpackPrefetch: true */ "./pages/Contact");
+    import(/* webpackPrefetch: true */ "./pages/PrivacyPolicy");
+    import(/* webpackPrefetch: true */ "./pages/Copyright");
   }, []);
 
   return (
@@ -55,6 +65,14 @@ function App() {
             <Route path="/pol-med.tech/Narzedzia" element={<Tools />} />
             <Route path="/pol-med.tech/O_nas" element={<About />} />
             <Route path="/pol-med.tech/Kontakt" element={<Contact />} />
+            <Route
+              path="/pol-med.tech/Polityka_prywatnosci"
+              element={<PrivacyPolicy />}
+            />
+            <Route
+              path="/pol-med.tech/Prawa_autorskie"
+              element={<Copyright />}
+            />
           </Routes>
         </Suspense>
         <Footer />

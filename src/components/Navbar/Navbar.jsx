@@ -7,6 +7,7 @@ import nightSvg from "./assets/night.svg";
 import polandSvg from "./assets/Poland.svg";
 import smallArrow from "./assets/smallArrow.svg";
 import NavElement from "./NavElement";
+import goToTop from "../../utils/goToTop";
 
 const routesConfig = [
   {
@@ -37,14 +38,6 @@ const routesConfig = [
 ];
 
 function Navbar() {
-  function goToTop() {
-    document.querySelector(".wrapper").scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    });
-  }
-
   const location = useLocation();
   const currentRoute = routesConfig.find(
     (route) => route.path === location.pathname
@@ -60,7 +53,7 @@ function Navbar() {
 
   return (
     <nav className="font-raleway mt-8 fixed w-screen z-10 flex justify-center">
-      <ul className="flex justify-between items-center text-[1.19rem]  text-primary-dark tracking-wide w-full  max-w-[90vw] ">
+      <ul className="flex justify-between items-center text-lg 3xl:text-[1.2rem]  text-primary-dark tracking-wide w-full  max-w-[90vw] ">
         <li className=" rounded-3xl hover:scale-105 transition-all ease-in-out duration-500 hover:drop-shadow-homeCard">
           <Link to="/pol-med.tech/" onClick={goToTop}>
             <div className="w-48 flex flex-col items-center drop-shadow-logoDark">
@@ -71,9 +64,9 @@ function Navbar() {
             </div>
           </Link>
         </li>
-        <li>
+        <li className="hidden 2xl:flex">
           <ul
-            className={`flex  items-center gap-[60pt] font-semibold py-[10pt] px-[25pt] rounded-full  border-secondary-dark/15 border-4 backdrop-blur-md shadow-navigation`}
+            className={`flex magicAUnderline  items-center gap-14 3xl:gap-20 font-semibold py-[10pt] px-[25pt] rounded-full  border-secondary-dark/15 border-4 backdrop-blur-md shadow-navigation`}
             style={{
               backgroundColor: bg35SecondaryClass,
               borderColor: bg15SecondaryClass,

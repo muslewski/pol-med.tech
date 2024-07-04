@@ -85,3 +85,32 @@ header {
   color: white;
   text-shadow: 0 0 5px black;
 }
+
+.magicAUnderline a {
+  position: relative;
+}
+
+.magicAUnderline a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  bottom: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  opacity: 0;
+  border-radius: 50%;
+
+  background: linear-gradient(to left, white, transparent);
+  filter: drop-shadow(0 -12px 12px rgb(255, 255, 255));
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
+}
+
+.magicAUnderline a:hover::before {
+  content: "";
+  position: absolute;
+  opacity: 1;
+  width: 100%;
+  height: 2px;
+}
