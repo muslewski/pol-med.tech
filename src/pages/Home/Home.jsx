@@ -61,8 +61,8 @@ function Home() {
           titleCustom=" text-center"
           title="Profesjonalne wsparcie dla Twojego biznesu i edukacji!"
         >
-          <hr className="h-3 w-3/4 rounded-[100%] bg-gradient-to-b from-primary-dark to-transparent  backdrop-blur-md shadow-homeCard drop-shadow-whiteText" />
-          <div className="flex justify-evenly text-2xl w-full font-exo ">
+          <hr className="hidden sm:flex h-2 2xl:h-3 w-3/4 rounded-[100%] bg-gradient-to-b from-primary-dark to-transparent  backdrop-blur-md shadow-homeCard drop-shadow-whiteText" />
+          <div className="hidden sm:flex justify-evenly xl:text-xl 3xl:text-2xl w-full font-exo ">
             <h2 className="animate-fade-down animate-delay-[500ms] animate-duration-1000">
               Technologia
             </h2>
@@ -73,14 +73,13 @@ function Home() {
               Przemysł
             </h2>
           </div>
+          <img
+            src={ArrowDown}
+            className="hidden sm:flex top-[110%] w-12 xl:w-14 2xl:w-16 3xl:w-20 left-1/2 translate-x-1/2 absolute cursor-pointer drop-shadow-logoDark hover:scale-105 transition-all ease-in-out duration-500 animate-pulse animate-infinite animate-duration-[2500ms] animate-delay-1000 animate-ease-in-out"
+            alt=""
+            onClick={executeScroll}
+          />
         </HeroCard>
-
-        <img
-          src={ArrowDown}
-          className="bottom-20 w-16 xl:w-20 left-1/3 absolute cursor-pointer drop-shadow-logoDark hover:scale-105 transition-all ease-in-out duration-500 animate-pulse animate-infinite animate-duration-[2500ms] animate-delay-1000 animate-ease-in-out"
-          alt=""
-          onClick={executeScroll}
-        />
       </header>
       <section
         className="text-white px-10 pt-56 pb-96 text-2xl flex justify-center relative"
@@ -96,7 +95,7 @@ function Home() {
         <img src={circle3} alt="" className="absolute left-0 top-[75%]" />
 
         <div className=" max-w-[75%] w-full flex flex-col gap-36">
-          <h2 className="border-4 text-3xl w-fit px-12 py-6 rounded-full border-primary-dark/15 drop-shadow-navigationAccent font-bold">
+          <h2 className="border-4 text-xl lg:text-2xl 2xl:text-3xl w-fit px-12 py-6 rounded-full border-primary-dark/15 drop-shadow-navigationAccent font-bold">
             Odkryj nasze możliwości
           </h2>
           <div className="w-full h-fit flex flex-wrap gap-28 justify-evenly items-start">

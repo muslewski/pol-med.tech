@@ -46,6 +46,7 @@ module.exports = {
         homeCard: "inset 0 4px 8px rgba(255, 255, 255, 0.1)",
       },
       screens: {
+        "2lg": "1100px",
         "3xl": "1650px",
       },
     },

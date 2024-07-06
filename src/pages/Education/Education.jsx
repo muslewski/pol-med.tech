@@ -36,15 +36,12 @@ function Education() {
           src={bottomVector}
           alt=""
         />
-        <HeroCard title="Stanowiska dydaktyczno-laboratoryjne">
-          <div className="flex justify-evenly text-2xl w-full font-exo ">
-            <h2 className="">
-              To zintegrowane moduły dydaktyczne, które umożliwiają naukę o
-              różnych aspektach technologii samochodowych w praktyczny i
-              angażujący sposób.
-            </h2>
-          </div>
-        </HeroCard>
+        <HeroCard
+          title="Stanowiska dydaktyczno-laboratoryjne"
+          description="To zintegrowane moduły dydaktyczne, które umożliwiają naukę o
+            różnych aspektach technologii samochodowych w praktyczny i
+            angażujący sposób."
+        />
       </header>
       <section className="bg-secondary-darkEducation text-white px-10 pt-44 pb-44 text-2xl flex justify-center">
         <div className=" max-w-[85%] w-full">

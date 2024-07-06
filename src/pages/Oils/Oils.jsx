@@ -36,14 +36,11 @@ function Oils() {
           src={bottomVector}
           alt=""
         />
-        <HeroCard title="Oleje posmażalnicze (UCO)">
-          <div className="flex justify-evenly text-2xl w-full font-exo ">
-            <h2 className="">
-              Oferujemy kompleksowe rozwiązania związane z dostawą olejów
-              roślinnych oraz odbiorem i magazynowaniem olejów posmażalniczych.
-            </h2>
-          </div>
-        </HeroCard>
+        <HeroCard
+          title="Oleje posmażalnicze (UCO)"
+          description="Oferujemy kompleksowe rozwiązania związane z dostawą olejów
+              roślinnych oraz odbiorem i magazynowaniem olejów posmażalniczych."
+        />
       </header>
       <section className="bg-secondary-darkEducation text-white px-10 pt-44 pb-44 text-2xl flex justify-center">
         <div className=" max-w-[85%] w-full">
