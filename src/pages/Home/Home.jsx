@@ -61,7 +61,7 @@ function Home() {
           titleCustom=" text-center"
           title="Profesjonalne wsparcie dla Twojego biznesu i edukacji!"
         >
-          <hr className="hidden sm:flex h-2 2xl:h-3 w-3/4 rounded-[100%] bg-gradient-to-b from-primary-dark to-transparent  backdrop-blur-md shadow-homeCard drop-shadow-whiteText" />
+          <hr className="hidden sm:flex h-2 2xl:h-3 w-3/4 rounded-[100%] bg-gradient-to-b from-primary-dark to-transparent drop-shadow-whiteText" />
           <div className="hidden sm:flex justify-evenly xl:text-xl 3xl:text-2xl w-full font-exo ">
             <h2 className="animate-fade-down animate-delay-[500ms] animate-duration-1000">
               Technologia
