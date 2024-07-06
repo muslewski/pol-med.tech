@@ -43,7 +43,7 @@ function HeroCard({
 
   const bg70SecondaryClass = currentRoute
     ? currentRoute.color70
-    : "rgba(26, 21, 76, 0.8)";
+    : "rgba(23, 27, 80, 0.8)";
 
   const bg20SecondaryClass = currentRoute
     ? currentRoute.color20
