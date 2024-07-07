@@ -52,7 +52,7 @@ function Navbar() {
     : "rgb(4, 0, 48, 0.15)";
 
   return (
-    <nav className="font-raleway mt-8 absolute w-screen z-10 flex justify-center">
+    <nav className="font-raleway mt-8 fixed w-screen z-10 flex justify-center">
       <ul className="flex justify-between items-start xl:items-center text-sm 2xl:text-lg 3xl:text-[1.2rem]  text-primary-dark xl:tracking-wide w-full max-w-[90vw] 2lg:max-w-[95vw]  xl:max-w-[90vw] ">
         <li className=" rounded-3xl hover:scale-105 transition-all ease-in-out duration-500 hover:drop-shadow-homeCard">
           <Link to="/pol-med.tech/" onClick={goToTop}>

@@ -4,10 +4,19 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
 body {
   margin: 0;
+  touch-action: none;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* width */
@@ -33,6 +42,8 @@ body {
 
 .wrapper {
   height: 100vh;
+  min-height: 100vh;
+  max-height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
   perspective: 10px;
@@ -74,7 +85,7 @@ header {
 
 .foreground3 {
   transform: translateZ(-9.9px) scale(2);
-  top: -45%;
+  top: -47%;
   left: -35%;
   width: 30% !important;
   height: auto;

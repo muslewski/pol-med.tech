@@ -5,7 +5,8 @@ import backgroundRectangleTop from "./assets/rectangleTop.svg";
 import HeroPattern from "./assets/HeroPattern.svg";
 import ArrowDown from "./assets/Arrow.svg";
 import HeroCard from "../../components/HeroCard/HeroCard";
-import videoPolMed from "./assets/polmed.mp4";
+import videoPolMed from "./assets/polmed3.mp4";
+import fallbackImageBackground from "./assets/background.webp";
 import educationCardImg from "./assets/educationCard.png";
 import oilsCardImg from "./assets/oleje.webp";
 import toolsCardImg from "./assets/narzedzia.webp";
@@ -34,9 +35,15 @@ function Home() {
           playsInline
           autoPlay
           preload="auto"
-          className="background brightness-75 "
+          className="background brightness-75 blur-sm"
+          poster={fallbackImageBackground}
         >
           <source src={videoPolMed} type="video/mp4" />
+          <img
+            src={fallbackImageBackground}
+            className="background brightness-75"
+            alt="Fallback Image"
+          />
           Your browser does not support the video tag.
         </video>
 
