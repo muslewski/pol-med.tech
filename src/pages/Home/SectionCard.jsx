@@ -29,9 +29,13 @@ function SectionCard({
           alt=""
         />
       </Link>
-      <div className="flex flex-wrap gap-6 w-fit  ">
-        <h3 className="text-3xl font-exo font-bold leading-normal">{title}</h3>
-        <p className="text-xl leading-normal ">{description}</p>
+      <div className="flex flex-wrap gap-3 sm:gap-6 w-fit  ">
+        <h3 className="text-xl sm:text-2xl md:text-3xl font-exo font-bold leading-normal">
+          {title}
+        </h3>
+        <p className="text-base sm:text-lg md:text-xl leading-normal tracking-wide md:tracking-normal">
+          {description}
+        </p>
       </div>
       <Link
         to={linkHref}
@@ -42,9 +46,9 @@ function SectionCard({
           src={buttonPattern}
           alt=""
         />
-        <div className="tracking-wide relative z-10 text-xl border-[3px] backdrop-blur-lg font-semibold border-primary-dark py-[12pt] px-[20pt] rounded-full w-fit flex items-center gap-6">
+        <div className="text-center tracking-wide relative z-10 text-base md:text-xl border-[3px] backdrop-blur-lg font-semibold border-primary-dark py-[12pt] px-[20pt] rounded-full w-fit flex items-center gap-4 sm:gap-6">
           Przejdź dalej
-          <img className="h-11" src={buttonIcon} alt="" />
+          <img className="h-9 sm:h-11" src={buttonIcon} alt="" />
         </div>
       </Link>
     </div>

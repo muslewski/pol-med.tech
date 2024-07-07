@@ -88,7 +88,20 @@ header {
   top: -47%;
   left: -35%;
   width: 30% !important;
+
   height: auto;
+}
+
+@media (max-width: 1080px) {
+  .foreground3 {
+    width: 50% !important;
+  }
+}
+
+@media (max-width: 730px) {
+  .foreground3 {
+    width: 80% !important;
+  }
 }
 
 .title {
