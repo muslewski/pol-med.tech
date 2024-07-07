@@ -9,4 +9,8 @@ export default defineConfig({
     globals: true,
     environment: "jsdom",
   },
+  server: {
+    host: "0.0.0.0", // Nasłuchuj na wszystkich interfejsach
+    port: 3000, // Możesz ustawić dowolny port, np. 3000
+  },
 });
