@@ -15,13 +15,13 @@ function Footer() {
       <img
         src={toTopArrow}
         alt=""
-        className="absolute bottom-[97%] md:bottom-[110%] lg:bottom-[120%] 2xl:bottom-[130%] w-16 xl:w-20 right-[12%] drop-shadow-navigationAccent hover:scale-105 transition-all ease-in-out duration-500 cursor-pointer"
+        className="absolute bottom-[97%] md:bottom-[110%] lg:bottom-[120%] 2xl:bottom-[130%] w-12 sm:w-16 right-[12%] drop-shadow-navigationAccent hover:scale-105 transition-all ease-in-out duration-500 cursor-pointer"
         onClick={() => {
           goToTop();
         }}
       />
 
-      <div className="flex w-9/12  flex-wrap  pb-20 pt-20 h-full justify-between magicAUnderline">
+      <div className="flex w-7/12 sm:w-9/12  flex-wrap  pb-20 pt-20 h-full justify-start sm:justify-evenly gap-24 magicAUnderline">
         {" "}
         <FooterElement
           title="Pol-Med"

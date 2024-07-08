@@ -55,7 +55,7 @@ function Navbar() {
   return (
     <nav className="font-raleway mt-8 fixed w-screen z-10 flex justify-center">
       <ul className="flex justify-between items-center sm:items-start xl:items-center text-sm 2xl:text-lg 3xl:text-[1.2rem]  text-primary-dark xl:tracking-wide w-full max-w-[90vw] 2lg:max-w-[95vw]  xl:max-w-[90vw] ">
-        <li className=" rounded-full hover:scale-105 transition-all ease-in-out duration-500 hover:drop-shadow-homeCard bg-secondary-dark/5 backdrop-blur-sm px-4 py-2 sm:p-0  sm:bg-transparent ">
+        <li className=" rounded-full hover:scale-105 transition-all ease-in-out duration-500 hover:drop-shadow-homeCard px-4 py-2 sm:p-0  sm:bg-transparent ">
           <Link to="/pol-med.tech/" onClick={goToTop}>
             <div className="w-32 xl:w-36 2xl:w-48 flex flex-col items-center drop-shadow-logoDark">
               <img className="w-full" src={polMedDark} alt="" />
@@ -104,7 +104,7 @@ function Navbar() {
         <li className="">
           <ContactButton className="hidden sm:flex " />
 
-          <div className="flex justify-center sm:hidden drop-shadow-logoDark bg-secondary-dark/5 px-3 rounded-full backdrop-blur-sm">
+          <div className="flex justify-center sm:hidden drop-shadow-logoDark bg-secondary-dark/5 px-3 rounded-full">
             <img className="w-16 " src={hamburger} alt="" />
           </div>
         </li>

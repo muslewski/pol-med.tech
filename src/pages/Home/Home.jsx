@@ -39,7 +39,7 @@ function Home() {
           playsInline
           autoPlay
           preload="auto"
-          className="background brightness-75 blur-sm"
+          className="background brightness-75"
           poster={fallbackImageBackground}
         >
           <source src={videoPolMed} type="video/mp4" />
@@ -92,7 +92,7 @@ function Home() {
             </div>
             <img
               src={ArrowDown}
-              className="hidden sm:flex top-[110%] w-12 xl:w-14 2xl:w-16 3xl:w-20 left-1/2 translate-x-1/2 absolute cursor-pointer drop-shadow-logoDark hover:scale-105 transition-all ease-in-out duration-500 animate-pulse animate-infinite animate-duration-[2500ms] animate-delay-1000 animate-ease-in-out"
+              className="hidden sm:flex top-[110%] w-12 sm:w-16 left-1/2 translate-x-1/2 absolute cursor-pointer drop-shadow-logoDark hover:scale-105 transition-all ease-in-out duration-500 animate-pulse animate-infinite animate-duration-[2500ms] animate-delay-1000 animate-ease-in-out"
               alt=""
               onClick={executeScrollOffer}
             />
@@ -117,7 +117,7 @@ function Home() {
         </div>
       </header>
       <section
-        className="text-white px-10 pt-20 md:pt-40 lg:pt-56 pb-56 md:pb-72 lg:pb-96 text-2xl flex justify-center relative"
+        className="text-white px-10 pt-20 md:pt-40 3xl:pt-56 pb-56 md:pb-72 3xl:pb-96 text-2xl flex justify-center relative"
         style={{
           boxShadow:
             "0 -12px 24px 5px #040030, inset 0px 24px 24px -3px #040030",
@@ -141,11 +141,11 @@ function Home() {
           className="w-16 md:w-36 absolute left-0 top-[75%]"
         />
 
-        <div className=" max-w-full md:max-w-[75%] w-full flex flex-col gap-36">
+        <div className=" max-w-full w-full flex flex-col justify-center items-center gap-40">
           <h2 className="hidden sm:flex border-4 text-xl lg:text-2xl 2xl:text-3xl w-fit px-12 py-6 rounded-full border-primary-dark/15 drop-shadow-navigationAccent font-bold">
             Odkryj nasze możliwości
           </h2>
-          <div className="w-full h-fit flex flex-wrap gap-24 2xl:gap-28 justify-evenly items-start">
+          <div className="w-full h-fit flex flex-wrap gap-24 2xl:gap-24 justify-evenly items-start">
             <SectionCard
               image={educationCardImg}
               buttonIcon={carServiceIcon}

@@ -13,7 +13,7 @@ function SectionCard({
 }) {
   return (
     <div
-      className="flex flex-col max-w-lg  gap-12 py-12 px-8 rounded-[4rem] transition-all duration-500 ease-in-out relative hover:shadow-homeCard [&_.mainImage]:hover:bottom-4 [&_.mainImage]:hover:right-2"
+      className="flex flex-col max-w-lg 3xl:max-w-[30rem]  gap-12 py-12 px-8 rounded-[4rem] transition-all duration-500 ease-in-out relative hover:shadow-homeCard [&_.mainImage]:hover:bottom-4 [&_.mainImage]:hover:right-2"
       style={{
         background: `linear-gradient(-60deg, ${gradient}, transparent 60%)`,
       }}
@@ -29,11 +29,11 @@ function SectionCard({
           alt=""
         />
       </Link>
-      <div className="flex flex-wrap gap-3 sm:gap-6 w-fit  ">
-        <h3 className="text-xl sm:text-2xl md:text-3xl font-exo font-bold leading-normal">
+      <div className="flex flex-wrap gap-3 sm:gap-6 w-fit">
+        <h3 className="text-xl sm:text-2xl font-exo font-bold leading-normal">
           {title}
         </h3>
-        <p className="text-base sm:text-lg md:text-xl leading-normal tracking-wide md:tracking-normal">
+        <p className="text-base md:text-lg 3xl:text-xl leading-normal">
           {description}
         </p>
       </div>
@@ -46,9 +46,9 @@ function SectionCard({
           src={buttonPattern}
           alt=""
         />
-        <div className="text-center tracking-wide relative z-10 text-base md:text-xl border-[3px] backdrop-blur-lg font-semibold border-primary-dark py-[12pt] px-[20pt] rounded-full w-fit flex items-center gap-4 sm:gap-6">
+        <div className="text-center tracking-wide relative z-10 text-base sm:text-lg border-[3px] backdrop-blur-lg font-semibold border-primary-dark py-3 sm:py-4 px-6 rounded-full w-fit flex items-center gap-4 sm:gap-6">
           Przejdź dalej
-          <img className="h-9 sm:h-11" src={buttonIcon} alt="" />
+          <img className="h-9" src={buttonIcon} alt="" />
         </div>
       </Link>
     </div>
