@@ -31,6 +31,7 @@ module.exports = {
           "0 0 2pt rgba(4, 0, 48, 0.35)",
         ],
         whiteText: ["0 6px 4px rgba(255, 255, 255, 0.5)"],
+        redcert: ["0 4px 1.5px rgba(0, 0, 0, 0.4)"],
         navigationAccent: [
           "0 0 12px rgba(54, 47, 140, 0.7)",
           "0 0 24px rgba(129, 121, 210, 0.5)",
@@ -48,6 +49,7 @@ module.exports = {
       screens: {
         "2lg": "1100px",
         "3xl": "1650px",
+        "5xl": "1850px",
       },
     },
   },

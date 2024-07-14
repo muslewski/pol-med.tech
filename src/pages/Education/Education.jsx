@@ -2,56 +2,60 @@ import React from "react";
 
 import background from "./assets/backgroundEducation.webp";
 import foreground from "./assets/foreground.webp";
-import backgroundRectangleBottom from "./assets/rectangleBottom.svg";
-import backgroundRectangleTop from "./assets/rectangleTop.svg";
+import rectangleBottom from "./assets/rectangleBottom.svg";
+import rectangleBottomMobile from "./assets/rectangleBottomMobile.svg";
+import rectangleTop from "./assets/rectangleTop.svg";
 import bottomVector from "./assets/bottomVector.svg";
 import HeroCard from "../../components/HeroCard/HeroCard";
+import ContactButton from "../../components/Navbar/ContactButton";
+import GlowingTitle from "../../components/GlowingTitle";
+import Section from "../../components/Section";
+import Background from "../../components/Objects/Background";
+import BackgroundBottom from "../../components/Objects/BackgroundBottom";
+import BackgroundTop from "../../components/Objects/BackgroundTop";
+import BgBottomVector from "../../components/Objects/BgBottomVector";
+import ForegroundItem from "../../components/Objects/ForegroundItem";
+import Hero from "../../components/Hero";
 
 function Education() {
   return (
     <>
-      <header className="">
-        <img
-          className="background bg-secondary-darkEducation pointer-events-none select-none"
-          src={background}
-          alt=""
+      <header>
+        <Background
+          image={background}
+          alt="Background Image of Oil Containers"
         />
-        <img
-          className="foreground2 pointer-events-none select-none"
-          src={backgroundRectangleBottom}
-          alt=""
+        <BackgroundBottom
+          image={rectangleBottom}
+          mobileImage={rectangleBottomMobile}
         />
-        <img
-          className="foreground2 pointer-events-none select-none"
-          src={foreground}
-          alt=""
+        <BackgroundTop image={rectangleTop} />
+        <ForegroundItem
+          image={foreground}
+          alt="Foreground Image of Car Station with Mechanics"
         />
-        <img
-          className="foreground3 pointer-events-none select-none"
-          src={backgroundRectangleTop}
-          alt=""
-        />
-        <img
-          className="absolute w-full -bottom-10 pointer-events-none select-none"
-          src={bottomVector}
-          alt=""
-        />
-        <HeroCard
-          title="Stanowiska dydaktyczno-laboratoryjne"
-          description="To zintegrowane moduły dydaktyczne, które umożliwiają naukę o
+        <BgBottomVector image={bottomVector} />
+
+        <Hero customClass="gap-28">
+          <HeroCard
+            boxCustom="relative sm:bottom-0"
+            title="Stanowiska dydaktyczno-laboratoryjne"
+            description="To zintegrowane moduły dydaktyczne, które umożliwiają naukę o
             różnych aspektach technologii samochodowych w praktyczny i
             angażujący sposób."
-        />
-      </header>
-      <section className="bg-secondary-darkEducation text-white px-10 pt-44 pb-44 text-2xl flex justify-center">
-        <div className=" max-w-[85%] w-full">
-          <h2 className="border-4 text-3xl w-fit px-12 py-6 rounded-full border-primary-dark/15 drop-shadow-navigationAccent font-bold">
-            Odkryj nasze możliwości
-          </h2>
-        </div>
+          />
 
-        <div></div>
-      </section>
+          <ContactButton
+            customBackground="bg-[rgba(7,33,54,0.75)]"
+            className="flex sm:hidden self-end relative right-16"
+          />
+        </Hero>
+      </header>
+      <Section customClass="bg-gradient-to-b from-[#040E30] to-[#1d3a75]">
+        <GlowingTitle>Oferujemy</GlowingTitle>
+
+        <div className=""></div>
+      </Section>
     </>
   );
 }

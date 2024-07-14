@@ -1,8 +1,8 @@
 import "./Home.css";
 
-import backgroundRectangleBottom from "./assets/rectangleBottom.svg";
-import backgroundRectangleBottomMobile from "./assets/rectangleBottomMobile.svg";
-import backgroundRectangleTop from "./assets/rectangleTop.svg";
+import rectangleBottom from "./assets/rectangleBottom.svg";
+import rectangleBottomMobile from "./assets/rectangleBottomMobile.svg";
+import rectangleTop from "./assets/rectangleTop.svg";
 import HeroPattern from "./assets/HeroPattern.svg";
 import ArrowDown from "./assets/Arrow.svg";
 import ArrowMobile from "./assets/arrowMobile.svg";
@@ -12,9 +12,9 @@ import fallbackImageBackground from "./assets/background.webp";
 import educationCardImg from "./assets/educationCard.png";
 import oilsCardImg from "./assets/oleje.webp";
 import toolsCardImg from "./assets/narzedzia.webp";
-import carServiceIcon from "./assets/car-service.webp";
-import oilTankIcon from "./assets/oil-tank.webp";
-import toolsIcon from "./assets/tools.webp";
+import carServiceIcon from "../../Assets/car-service.webp";
+import oilTankIcon from "../../Assets/oil-tank.webp";
+import toolsIcon from "../../Assets/tools.webp";
 import SectionCard from "./SectionCard";
 import circle1 from "./assets/circle1.svg";
 import circle2 from "./assets/circle2.svg";
@@ -23,6 +23,12 @@ import circle3 from "./assets/circle3.svg";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import ContactButton from "../../components/Navbar/ContactButton";
+import GlowingTitle from "../../components/GlowingTitle";
+import Section from "../../components/Section";
+import BackgroundBottom from "../../components/Objects/BackgroundBottom";
+import BackgroundTop from "../../components/Objects/BackgroundTop";
+import BackgroundVideo from "../../components/Objects/BackgroundVideo";
+import Hero from "../../components/Hero";
 
 function Home() {
   const offerRef = useRef(null);
@@ -33,46 +39,17 @@ function Home() {
   return (
     <>
       <header>
-        <video
-          loop
-          muted
-          playsInline
-          autoPlay
-          preload="auto"
-          className="background brightness-75"
-          poster={fallbackImageBackground}
-        >
-          <source src={videoPolMed} type="video/mp4" />
-          <img
-            src={fallbackImageBackground}
-            className="background brightness-75"
-            alt="Fallback Image"
-          />
-          Your browser does not support the video tag.
-        </video>
+        <BackgroundVideo
+          fallbackImage={fallbackImageBackground}
+          video={videoPolMed}
+        />
+        <BackgroundBottom
+          image={rectangleBottom}
+          mobileImage={rectangleBottomMobile}
+        />
+        <BackgroundTop image={rectangleTop} />
 
-        <img
-          className="hidden md:block foreground2 pointer-events-none select-none"
-          src={backgroundRectangleBottom}
-          alt=""
-        />
-
-        <img
-          className="md:hidden foreground2 pointer-events-none select-none"
-          src={backgroundRectangleBottomMobile}
-          alt=""
-        />
-        <img
-          className="foreground3 pointer-events-none select-none"
-          src={backgroundRectangleTop}
-          alt=""
-        />
-        {/* <img
-          className="background pointer-events-none select-none"
-          src={foreground2}
-          alt=""
-        /> */}
-        <div className="flex flex-col gap-16 w-full sm:w-fit">
+        <Hero>
           <HeroCard
             boxCustom="items-center"
             titleCustom=" text-center"
@@ -98,6 +75,7 @@ function Home() {
             />
           </HeroCard>
 
+          {/* Mobile ⬇️ */}
           <div
             onClick={executeScrollOffer}
             className="sm:hidden min-w-[60%] relative text-secondary-dark bg-gradient-to-l from-primary-dark to-primary-dark/95 rounded-l-[8rem] w-fit self-end py-8 px-8 border-8 border-[#00000049] backdrop-blur-lg  border-r-0 animate-fade-left animate-duration-1000 animate-ease-in-out"
@@ -112,17 +90,12 @@ function Home() {
               Odkryj nasze możliwości
             </h2>
           </div>
-
           <ContactButton className="flex sm:hidden self-end relative right-16" />
-        </div>
+        </Hero>
       </header>
-      <section
-        className="text-white px-10 pt-20 md:pt-40 3xl:pt-56 pb-56 md:pb-72 3xl:pb-96 text-2xl flex justify-center relative"
-        style={{
-          boxShadow:
-            "0 -12px 24px 5px #040030, inset 0px 24px 24px -3px #040030",
-          background: `linear-gradient(-45deg, #211d50, #040030 50%)`,
-        }}
+
+      <Section
+        customClass="md:pt-40 3xl:pt-56 bg-gradient-to-b from-[#040030] to-[#141038]"
         ref={offerRef}
       >
         <img
@@ -142,9 +115,10 @@ function Home() {
         />
 
         <div className=" max-w-full w-full flex flex-col justify-center items-center gap-40">
-          <h2 className="hidden sm:flex border-4 text-xl lg:text-2xl 2xl:text-3xl w-fit px-12 py-6 rounded-full border-primary-dark/15 drop-shadow-navigationAccent font-bold">
+          <GlowingTitle customClass="hidden sm:flex">
             Odkryj nasze możliwości
-          </h2>
+          </GlowingTitle>
+
           <div className="w-full h-fit flex flex-wrap gap-24 2xl:gap-24 justify-evenly items-start">
             <SectionCard
               image={educationCardImg}
@@ -176,7 +150,7 @@ function Home() {
             />
           </div>
         </div>
-      </section>
+      </Section>
     </>
   );
 }
