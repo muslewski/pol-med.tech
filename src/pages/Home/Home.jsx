@@ -6,7 +6,7 @@ import rectangleTop from "./assets/rectangleTop.svg";
 import HeroPattern from "./assets/HeroPattern.svg";
 import ArrowDown from "./assets/Arrow.svg";
 import ArrowMobile from "./assets/arrowMobile.svg";
-import HeroCard from "../../components/HeroCard/HeroCard";
+import HeroCard from "../../components/HeroCard";
 import videoPolMed from "./assets/polmed3.mp4";
 import fallbackImageBackground from "./assets/background.webp";
 import educationCardImg from "./assets/educationCard.png";

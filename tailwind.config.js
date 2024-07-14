@@ -42,7 +42,14 @@ module.exports = {
         ],
       },
       boxShadow: {
-        navigation: "0 4px 4px rgba(199, 199, 255, 0.25)",
+        navigation: [
+          "0 4px 4px rgba(199, 199, 255, 0.25)",
+          "inset 0 4px 8px rgba(199, 199, 255, 0.3)",
+        ],
+        glowingTitle: [
+          "0 4px 4px rgba(100, 100, 155, 0.25)",
+          "inset 0 4px 8px rgba(100, 100, 155, 0.3)",
+        ],
         contactInner: "inset 0 4px 8px rgba(255, 255, 255, 0.3)",
         homeCard: "inset 0 4px 8px rgba(255, 255, 255, 0.1)",
       },

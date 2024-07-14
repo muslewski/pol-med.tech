@@ -8,7 +8,7 @@ import rectangleTop from "./assets/rectangleTop.svg";
 import bottomVector from "./assets/bottomVector.svg";
 import redcert from "./assets/redcert.png";
 
-import HeroCard from "../../components/HeroCard/HeroCard";
+import HeroCard from "../../components/HeroCard";
 import ContactButton from "../../components/Navbar/ContactButton";
 import GlowingTitle from "../../components/GlowingTitle";
 import Section from "../../components/Section";

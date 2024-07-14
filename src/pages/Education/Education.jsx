@@ -6,7 +6,7 @@ import rectangleBottom from "./assets/rectangleBottom.svg";
 import rectangleBottomMobile from "./assets/rectangleBottomMobile.svg";
 import rectangleTop from "./assets/rectangleTop.svg";
 import bottomVector from "./assets/bottomVector.svg";
-import HeroCard from "../../components/HeroCard/HeroCard";
+import HeroCard from "../../components/HeroCard";
 import ContactButton from "../../components/Navbar/ContactButton";
 import GlowingTitle from "../../components/GlowingTitle";
 import Section from "../../components/Section";
