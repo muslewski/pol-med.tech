@@ -8,18 +8,7 @@ import FooterElement from "./FooterElement";
 import { Link } from "react-router-dom";
 import goToTop from "../../utils/goToTop";
 
-const isIphone = () => {
-  // Check for iPhone using user agent string
-  return /iPhone/.test(navigator.userAgent) && !window.MSStream;
-};
-
 function Footer() {
-  const [isIphoneDevice, setIsIphoneDevice] = useState(false);
-
-  useEffect(() => {
-    setIsIphoneDevice(isIphone());
-  }, []);
-
   return (
     <footer className="flex text-primary-dark tracking-wide justify-center relative bg-secondary-dark">
       <img src={top} alt="" className="absolute bottom-full w-full " />
@@ -33,9 +22,7 @@ function Footer() {
       />
 
       <div
-        className={`flex w-7/12 sm:w-9/12  flex-wrap  pb-20 pt-20 h-full justify-start sm:justify-evenly gap-24 magicAUnderline ${
-          isIphoneDevice ? "pb-40" : ""
-        }`}
+        className={`flex w-7/12 sm:w-9/12  flex-wrap  pb-20 pt-20 h-full justify-start sm:justify-evenly gap-24 magicAUnderline `}
       >
         {" "}
         <FooterElement
