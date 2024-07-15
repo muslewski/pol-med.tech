@@ -39,6 +39,8 @@ function Oils() {
             title="Oleje posmażalnicze (UCO)"
             description="Oferujemy kompleksowe rozwiązania związane z dostawą olejów
               roślinnych oraz odbiorem i magazynowaniem olejów posmażalniczych."
+            col1="rgba(12,37,90,0.2)"
+            col2="rgba(5,31,58,0.7)"
           />
           <ContactButton className="flex sm:hidden self-end relative right-16" />
 

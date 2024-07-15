@@ -54,6 +54,8 @@ function Home() {
             boxCustom="items-center"
             titleCustom=" text-center"
             title="Profesjonalne wsparcie dla Twojego biznesu i edukacji!"
+            col1="rgba(26,21,76,0.2)"
+            col2="rgba(23,27,80,0.8)"
           >
             <hr className="hidden sm:flex h-2 2xl:h-3 w-3/4 rounded-[100%] bg-gradient-to-b from-primary-dark to-transparent drop-shadow-whiteText" />
             <div className="hidden sm:flex justify-evenly xl:text-xl 3xl:text-2xl w-full font-exo ">
@@ -95,7 +97,7 @@ function Home() {
       </header>
 
       <Section
-        customClass="md:pt-40 3xl:pt-56 bg-gradient-to-b from-[#040030] to-[#141038]"
+        customClass="md:pt-40 gap-40 bg-gradient-to-b from-[#040030] to-[#141038]"
         ref={offerRef}
       >
         <img
@@ -114,41 +116,39 @@ function Home() {
           className="w-16 md:w-36 absolute left-0 top-[75%]"
         />
 
-        <div className=" max-w-full w-full flex flex-col justify-center items-center gap-40">
-          <GlowingTitle customClass="hidden sm:flex">
-            Odkryj nasze możliwości
-          </GlowingTitle>
+        <GlowingTitle customClass="hidden sm:flex">
+          Odkryj nasze możliwości
+        </GlowingTitle>
 
-          <div className="w-full h-fit flex flex-wrap gap-24 2xl:gap-24 justify-evenly items-start">
-            <SectionCard
-              image={educationCardImg}
-              buttonIcon={carServiceIcon}
-              title="Stanowiska dydaktyczno-laboratoryjne"
-              description="Praktyczne i angażujące systemy dydaktyczne z zakresu technologii
+        <div className="w-full h-fit flex flex-wrap gap-24 2xl:gap-24 justify-evenly items-start">
+          <SectionCard
+            image={educationCardImg}
+            buttonIcon={carServiceIcon}
+            title="Stanowiska dydaktyczno-laboratoryjne"
+            description="Praktyczne i angażujące systemy dydaktyczne z zakresu technologii
           samochodowych."
-              gradient="#113C63"
-              shadow="rgba(117,158,255,0.5)"
-              linkHref="/pol-med.tech/Edukacja_i_badania"
-            />
-            <SectionCard
-              image={oilsCardImg}
-              buttonIcon={oilTankIcon}
-              title="Oleje posmażalnicze (UCO)"
-              description="Odbiór, handel i magazynowanie olejów posmażalniczych (UCO) - kompleksowa usługa dostaw i odbiorów olejów dla przemysłu i gastronomii."
-              gradient="#2C3C66"
-              shadow="rgba(73, 91, 173, 0.5)"
-              linkHref="/pol-med.tech/Oleje_UCO"
-            />
-            <SectionCard
-              image={toolsCardImg}
-              buttonIcon={toolsIcon}
-              title="Narzędzia przemysłowe"
-              description="Kompleksowe zaopatrzenie przedsiębiorstw w różne rodzaje narzędzi przemysłowych."
-              gradient="#115A55"
-              shadow="rgba(117, 255, 227, 0.5)"
-              linkHref="/pol-med.tech/Narzedzia"
-            />
-          </div>
+            gradient="#113C63"
+            shadow="rgba(117,158,255,0.5)"
+            linkHref="/pol-med.tech/Edukacja_i_badania"
+          />
+          <SectionCard
+            image={oilsCardImg}
+            buttonIcon={oilTankIcon}
+            title="Oleje posmażalnicze (UCO)"
+            description="Odbiór, handel i magazynowanie olejów posmażalniczych (UCO) - kompleksowa usługa dostaw i odbiorów olejów dla przemysłu i gastronomii."
+            gradient="#2C3C66"
+            shadow="rgba(73, 91, 173, 0.5)"
+            linkHref="/pol-med.tech/Oleje_UCO"
+          />
+          <SectionCard
+            image={toolsCardImg}
+            buttonIcon={toolsIcon}
+            title="Narzędzia przemysłowe"
+            description="Kompleksowe zaopatrzenie przedsiębiorstw w różne rodzaje narzędzi przemysłowych."
+            gradient="#115A55"
+            shadow="rgba(117, 255, 227, 0.5)"
+            linkHref="/pol-med.tech/Narzedzia"
+          />
         </div>
       </Section>
     </>
