@@ -164,5 +164,11 @@ header {
     object-fit: cover;
     object-position: 78% top;
     height: 500px;
+    transform: translateY(50px);
   }
+}
+
+iframe {
+  aspect-ratio: 16 / 9;
+  width: 100% !important;
 }

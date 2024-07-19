@@ -52,7 +52,7 @@ function Oils() {
             target="_blank"
             className="[&_.makeBigger]:hover:scale-105 self-end"
           >
-            <div className="relative sm:absolute right-0 w-fit  sm:bottom-24 z-20 animate-fade-left">
+            <div className="relative sm:absolute right-0 w-fit z-20 animate-fade-left">
               <div className="bg-white absolute right-[80%] top-0 h-full w-40 sm:w-48 flex items-center  border-4 animate-delay-150 animate-fade-left  rounded-l-full   px-6">
                 <img
                   className=" h-3/4 drop-shadow-redcert"

@@ -97,7 +97,8 @@ function Home() {
       </header>
 
       <Section
-        customClass="md:pt-40 gap-40 bg-gradient-to-b from-[#040030] to-[#141038]"
+        customClass="md:pt-40 gap-40 bg-gradient-to-b from-[#040030] to-[#0c0739]"
+        // bg to-[#141038]
         ref={offerRef}
       >
         <img

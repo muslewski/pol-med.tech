@@ -9,7 +9,7 @@ function FancyInfo({ image, alt, title, description, col1, col2 }) {
           {title}
         </h3>
         <hr
-          className={`h-1.5 rounded-full border-none`}
+          className={`h-1.5 w-full rounded-full border-none`}
           style={{
             background: `linear-gradient(to right, ${col1}, ${col2})`,
           }}

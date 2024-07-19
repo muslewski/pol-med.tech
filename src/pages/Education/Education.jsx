@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import background from "./assets/backgroundEducation.webp";
 import foreground from "./assets/foreground.webp";
@@ -7,9 +7,12 @@ import rectangleBottomMobile from "./assets/rectangleBottomMobile.svg";
 import rectangleTop from "./assets/rectangleTop.svg";
 import bottomVector from "./assets/bottomVector.svg";
 import iconRepairingCar from "./assets/iconCarRepair.webp";
-import iconDiagnostic from "./assets/iconCarDiagnostic.webp";
+import iconDiagnosticCar from "./assets/iconCarDiagnostic.webp";
 import iconEnginePart from "./assets/iconCarPart.webp";
 import iconLesson from "./assets/iconCarLesson.webp";
+import iconError from "./assets/iconError.webp";
+import iconDiagnostic from "./assets/iconDiagnostic.webp";
+import iconOscilloscope from "./assets/iconOscilloscope.webp";
 import HeroCard from "../../components/HeroCard";
 import ContactButton from "../../components/Navbar/ContactButton";
 import GlowingTitle from "../../components/GlowingTitle";
@@ -23,6 +26,15 @@ import Hero from "../../components/Hero";
 import FancyInfo from "../../components/FancyInfo";
 
 function Education() {
+  const [video, setVideo] = useState({
+    id: 0,
+    videoSrc:
+      "https://www.youtube.com/embed/oOiXQDaDouw?si=2cIdPL_K6nHYGzsT&enablejsapi=1",
+    title: "Panel Symulacji Usterek",
+    description:
+      "To zaawansowany system umożliwiający generowanie typowych usterek sterowania silnikiem spalinowym dzięki któremu uczniowie nabywają praktyczne umiejętności implementacji procedur diagnostycznych do wykrywania i lokalizacji usterek z wykorzystaniem specjalistycznych urządzeń diagnostycznych.",
+  });
+
   return (
     <>
       <header>
@@ -59,10 +71,10 @@ function Education() {
         </Hero>
       </header>
       <Section customClass="bg-gradient-to-b from-[#040E30] to-[#10295b]">
-        <GlowingTitle>Oferujemy</GlowingTitle>
-
         {/* 📜📜📜 */}
         <div className="flex flex-wrap max-w-full xl:max-w-[85%]  gap-24">
+          <GlowingTitle>Oferujemy</GlowingTitle>
+
           <FancyInfo
             image={iconRepairingCar}
             alt="Image of a man exploring car enginge"
@@ -72,7 +84,7 @@ function Education() {
             col2="rgba(87, 252, 255, 0.01)"
           />
           <FancyInfo
-            image={iconDiagnostic}
+            image={iconDiagnosticCar}
             alt="Image of a diagnostic tool for car"
             title="Stanowiska badawcze"
             description="Nowoczesne stanowiska badawcze wyposażone w najnowsze technologie, umożliwiające prowadzenie badań i testów różnych układów i podzespołów pojazdów."
@@ -98,41 +110,101 @@ function Education() {
         </div>
 
         {/* 🎬🎬🎬 */}
-        <div className="flex flex-col gap-12">
-          <div>
+        <div
+          className="flex flex-col relative items-center gap-12 max-w-5xl px-0 sm:px-10 py-10 rounded-[5rem]"
+          style={{
+            background: `linear-gradient(-60deg, #15366dd3, transparent 60%)`,
+          }}
+        >
+          <div className="border-4 border-primary-dark/50 rounded-3xl overflow-hidden">
             <iframe
+              className="h-full sm:h-56 2lg:h-80"
               loading="lazy"
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/oOiXQDaDouw?si=2cIdPL_K6nHYGzsT&enablejsapi=1"
+              src={video.videoSrc}
               title="YouTube video player"
-              frameborder="0"
+              // frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
             ></iframe>
           </div>
-          <div
-            className="flex flex-col gap-3"
-            style={{
-              background: `linear-gradient(-60deg, #1195CD, transparent 60%)`,
-            }}
-          >
-            <h3 className="font-exo font-semibold text-xl 2xl:text-[1.6rem]">
-              Panel Symulacji Usterek
+
+          <div className="flex flex-col gap-4 px-10 sm:px-0">
+            <h3 className="font-exo font-semibold text-center text-xl 2xl:text-[1.7rem]">
+              {video.title}
             </h3>
             <p className="font-raleway text-lg 2xl:text-xl">
-              To zaawansowany system umożliwiający generowanie typowych usterek
-              sterowania silnikiem spalinowym dzięki któremu uczniowie nabywają
-              praktyczne umiejętności implementacji procedur diagnostycznych do
-              wykrywania i lokalizacji usterek z wykorzystaniem
-              specjalistycznych urządzeń diagnostycznych.
+              {video.description}
             </p>
           </div>
-          <div className="flex w-3/4 justify-evenly">
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
+
+          <div className="flex flex-row flex-wrap sm:flex-row w-full items-center sm:w-3/4 justify-evenly gap-4 px-4 sm:px-8 py-4 bg-secondary-darkEducation/25 rounded-3xl sm:rounded-full shadow-navigation border-4 border-x-0 sm:border-x-4 border-secondary-dark/25">
+            <img
+              className={`p-3 transition-all cursor-pointer ${
+                video.id != 0 ? "hover:scale-110" : "hover:brightness-90"
+              }`}
+              src={iconError}
+              alt=""
+              draggable="false"
+              onClick={() =>
+                setVideo({
+                  id: 0,
+                  videoSrc:
+                    "https://www.youtube.com/embed/oOiXQDaDouw?si=2cIdPL_K6nHYGzsT&enablejsapi=1",
+                  title: "Panel Symulacji Usterek",
+                  description:
+                    "To zaawansowany system umożliwiający generowanie typowych usterek sterowania silnikiem spalinowym dzięki któremu uczniowie nabywają praktyczne umiejętności implementacji procedur diagnostycznych do wykrywania i lokalizacji usterek z wykorzystaniem specjalistycznych urządzeń diagnostycznych.",
+                })
+              }
+              style={{
+                height: video.id == 0 ? "6rem" : "5rem",
+                opacity: video.id == 0 ? "100%" : "50%",
+              }}
+            />
+            <img
+              className={`p-3 transition-all cursor-pointer ${
+                video.id != 1 ? "hover:scale-110" : "hover:brightness-90"
+              }`}
+              src={iconDiagnostic}
+              alt=""
+              draggable="false"
+              onClick={() =>
+                setVideo({
+                  id: 1,
+                  videoSrc:
+                    "https://www.youtube.com/embed/-lltFnhZlT0?si=QcgWmBxbtpyDVSbu&enablejsapi=1",
+                  title: "Procedury diagnostyki silnika",
+                  description:
+                    "Stanowisko dydaktyczne umożliwiające realizację procedur diagnostycznych oceny stanu technicznego silnika spalinowego z wykorzystaniem specjalistycznego oprzyrządowania oraz pozwalającego na szybką realizację lokalizacji i weryfikacji usterek.",
+                })
+              }
+              style={{
+                height: video.id == 1 ? "6rem" : "5rem",
+                opacity: video.id == 1 ? "100%" : "50%",
+              }}
+            />
+            <img
+              className={`p-3 transition-all cursor-pointer ${
+                video.id != 2 ? "hover:scale-110" : "hover:brightness-90"
+              }`}
+              src={iconOscilloscope}
+              alt=""
+              draggable="false"
+              onClick={() =>
+                setVideo({
+                  id: 2,
+                  videoSrc:
+                    "https://www.youtube.com/embed/edlhrt-Ep-E?si=8gJdUgfBUNcTAOiA&enablejsapi=1",
+                  title: "Badania oscyloskopowe",
+                  description:
+                    "Stanowisko umożliwia wykorzystanie możliwości uniwersalnego oscyloskopu do weryfikacji parametrów pracy silnika spalinowego. Stanowi to podstawę realizowanych działań w zakresie identyfikacji stanu technicznego silnika spalinowego.",
+                })
+              }
+              style={{
+                height: video.id == 2 ? "6rem" : "5rem",
+                opacity: video.id == 2 ? "100%" : "50%",
+              }}
+            />
           </div>
         </div>
       </Section>

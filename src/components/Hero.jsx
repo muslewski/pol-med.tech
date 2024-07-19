@@ -5,7 +5,7 @@ function Hero({ children, customClass }) {
 
   return (
     <div
-      className={`flex flex-col w-full sm:w-fit ${
+      className={`flex flex-col translate-y-11 w-full ${
         !hasGapClass ? "gap-14" : ""
       } ${customClass}`}
     >
