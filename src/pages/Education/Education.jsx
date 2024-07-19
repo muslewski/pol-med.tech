@@ -111,12 +111,12 @@ function Education() {
 
         {/* 🎬🎬🎬 */}
         <div
-          className="flex flex-col relative items-center gap-12 max-w-5xl px-0 sm:px-10 py-10 rounded-[5rem]"
+          className="flex flex-col relative items-center gap-12 max-w-5xl px-0 sm:px-10 py-12 rounded-[5rem]"
           style={{
             background: `linear-gradient(-60deg, #15366dd3, transparent 60%)`,
           }}
         >
-          <div className="border-4 border-primary-dark/50 rounded-3xl overflow-hidden">
+          <div className="border-4 border-primary-dark/50 rounded-3xl overflow-hidden shadow-navigation">
             <iframe
               className="h-full sm:h-56 2lg:h-80"
               loading="lazy"
@@ -138,7 +138,7 @@ function Education() {
             </p>
           </div>
 
-          <div className="flex flex-row flex-wrap sm:flex-row w-full items-center sm:w-3/4 justify-evenly gap-4 px-4 sm:px-8 py-4 bg-secondary-darkEducation/25 rounded-3xl sm:rounded-full shadow-navigation border-4 border-x-0 sm:border-x-4 border-secondary-dark/25">
+          <div className="flex flex-row flex-wrap sm:flex-row w-full md:h-40 items-center sm:w-3/4 justify-evenly gap-4 px-4 sm:px-8 py-4 bg-secondary-darkEducation/25 rounded-3xl sm:rounded-full shadow-navigation border-4 border-x-0 sm:border-x-4 border-secondary-dark/25">
             <img
               className={`p-3 transition-all cursor-pointer ${
                 video.id != 0 ? "hover:scale-110" : "hover:brightness-90"
