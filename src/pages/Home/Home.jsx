@@ -97,24 +97,26 @@ function Home() {
       </header>
 
       <Section
-        customClass="md:pt-40 gap-40 bg-gradient-to-b from-[#040030] to-[#0c0739]"
+        customClass="md:pt-40 bg-gradient-to-b from-[#040030] to-[#0c0739]"
         // bg to-[#141038]
+
+        customClassInner="xl:w-full"
         ref={offerRef}
       >
         <img
           src={circle1}
           alt=""
-          className="w-12 md:w-24  absolute left-0 top-[20%] md:top-[25%]"
+          className="w-12 md:w-24 opacity-50  absolute left-0 top-[20%] md:top-[25%]"
         />
         <img
           src={circle2}
           alt=""
-          className="w-24 md:w-44 absolute right-0 top-[50%]"
+          className="w-24 md:w-44 opacity-50 absolute right-0 top-[50%]"
         />
         <img
           src={circle3}
           alt=""
-          className="w-16 md:w-36 absolute left-0 top-[75%]"
+          className="w-16 md:w-36 absolute opacity-50 left-0 top-[75%]"
         />
 
         <GlowingTitle customClass="hidden sm:flex">

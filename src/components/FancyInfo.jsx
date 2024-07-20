@@ -1,9 +1,11 @@
 import React from "react";
 
-function FancyInfo({ image, alt, title, description, col1, col2 }) {
+function FancyInfo({ className, image, alt, title, description, col1, col2 }) {
   return (
-    <div className="flex flex-col sm:flex-row gap-6 5xl:max-w-[45%] items-center">
-      <img className="h-24 sm:h-28" src={image} alt={alt} />
+    <div
+      className={`flex flex-col sm:flex-row gap-6 5xl:max-w-[45%] items-center ${className}`}
+    >
+      {image && <img className="h-24 sm:h-28" src={image} alt={alt} />}
       <div className="flex flex-col gap-3 min-h-full">
         <h3 className="font-exo font-semibold text-xl 2xl:text-[1.6rem]">
           {title}

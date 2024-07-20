@@ -69,7 +69,6 @@ function Oils() {
       </header>
       <Section customClass="bg-gradient-to-b from-[#040E30] to-[#193655]">
         <GlowingTitle>Oferujemy</GlowingTitle>
-
         <div></div>
       </Section>
     </>

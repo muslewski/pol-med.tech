@@ -13,6 +13,8 @@ import iconLesson from "./assets/iconCarLesson.webp";
 import iconError from "./assets/iconError.webp";
 import iconDiagnostic from "./assets/iconDiagnostic.webp";
 import iconOscilloscope from "./assets/iconOscilloscope.webp";
+import iconPrototype from "./assets/iconPrototype.webp";
+import platformaImage from "./assets/platforma.webp";
 import HeroCard from "../../components/HeroCard";
 import ContactButton from "../../components/Navbar/ContactButton";
 import GlowingTitle from "../../components/GlowingTitle";
@@ -24,6 +26,8 @@ import BgBottomVector from "../../components/Objects/BgBottomVector";
 import ForegroundItem from "../../components/Objects/ForegroundItem";
 import Hero from "../../components/Hero";
 import FancyInfo from "../../components/FancyInfo";
+import VideoObject from "./VideoObject";
+import GoodButton from "../../components/GoodButton";
 
 function Education() {
   const [video, setVideo] = useState({
@@ -72,7 +76,7 @@ function Education() {
       </header>
       <Section customClass="bg-gradient-to-b from-[#040E30] to-[#10295b]">
         {/* 📜📜📜 */}
-        <div className="flex flex-wrap max-w-full xl:max-w-[85%]  gap-24">
+        <div className="flex flex-wrap gap-24">
           <GlowingTitle>Oferujemy</GlowingTitle>
 
           <FancyInfo
@@ -111,7 +115,7 @@ function Education() {
 
         {/* 🎬🎬🎬 */}
         <div
-          className="flex flex-col relative items-center gap-12 max-w-5xl px-0 sm:px-10 py-12 rounded-[5rem]"
+          className="flex flex-col relative items-center gap-12 max-w-5xl px-0 sm:px-10 py-12 rounded-3xl sm:rounded-[5rem]"
           style={{
             background: `linear-gradient(-60deg, #15366dd3, transparent 60%)`,
           }}
@@ -129,8 +133,8 @@ function Education() {
             ></iframe>
           </div>
 
-          <div className="flex flex-col gap-4 px-10 sm:px-0">
-            <h3 className="font-exo font-semibold text-center text-xl 2xl:text-[1.7rem]">
+          <div className="flex flex-col gap-4 px-6 sm:px-0">
+            <h3 className="font-exo font-semibold sm:text-center text-xl 2xl:text-[1.7rem]">
               {video.title}
             </h3>
             <p className="font-raleway text-lg 2xl:text-xl">
@@ -138,74 +142,76 @@ function Education() {
             </p>
           </div>
 
-          <div className="flex flex-row flex-wrap sm:flex-row w-full md:h-40 items-center sm:w-3/4 justify-evenly gap-4 px-4 sm:px-8 py-4 bg-secondary-darkEducation/25 rounded-3xl sm:rounded-full shadow-navigation border-4 border-x-0 sm:border-x-4 border-secondary-dark/25">
-            <img
-              className={`p-3 transition-all cursor-pointer ${
-                video.id != 0 ? "hover:scale-110" : "hover:brightness-90"
-              }`}
-              src={iconError}
-              alt=""
-              draggable="false"
-              onClick={() =>
-                setVideo({
-                  id: 0,
-                  videoSrc:
-                    "https://www.youtube.com/embed/oOiXQDaDouw?si=2cIdPL_K6nHYGzsT&enablejsapi=1",
-                  title: "Panel Symulacji Usterek",
-                  description:
-                    "To zaawansowany system umożliwiający generowanie typowych usterek sterowania silnikiem spalinowym dzięki któremu uczniowie nabywają praktyczne umiejętności implementacji procedur diagnostycznych do wykrywania i lokalizacji usterek z wykorzystaniem specjalistycznych urządzeń diagnostycznych.",
-                })
-              }
-              style={{
-                height: video.id == 0 ? "6rem" : "5rem",
-                opacity: video.id == 0 ? "100%" : "50%",
-              }}
+          <div className="flex flex-row flex-wrap sm:flex-row w-full md:h-32 items-center sm:w-3/4 justify-evenly gap-3 px-4 sm:px-8 sm:py-4 sm:bg-secondary-darkEducation/15 rounded-3xl sm:rounded-full sm:shadow-glowingTitle sm:border-4 border-secondary-dark/15">
+            <VideoObject
+              id={0}
+              icon={iconError}
+              videoSrc="https://www.youtube.com/embed/oOiXQDaDouw?si=2cIdPL_K6nHYGzsT&enablejsapi=1"
+              title="Panel Symulacji Usterek"
+              description="To zaawansowany system umożliwiający generowanie typowych usterek sterowania silnikiem spalinowym dzięki któremu uczniowie nabywają praktyczne umiejętności implementacji procedur diagnostycznych do wykrywania i lokalizacji usterek z wykorzystaniem specjalistycznych urządzeń diagnostycznych."
+              setVideo={setVideo}
+              currentVideoId={video.id}
             />
-            <img
-              className={`p-3 transition-all cursor-pointer ${
-                video.id != 1 ? "hover:scale-110" : "hover:brightness-90"
-              }`}
-              src={iconDiagnostic}
-              alt=""
-              draggable="false"
-              onClick={() =>
-                setVideo({
-                  id: 1,
-                  videoSrc:
-                    "https://www.youtube.com/embed/-lltFnhZlT0?si=QcgWmBxbtpyDVSbu&enablejsapi=1",
-                  title: "Procedury diagnostyki silnika",
-                  description:
-                    "Stanowisko dydaktyczne umożliwiające realizację procedur diagnostycznych oceny stanu technicznego silnika spalinowego z wykorzystaniem specjalistycznego oprzyrządowania oraz pozwalającego na szybką realizację lokalizacji i weryfikacji usterek.",
-                })
-              }
-              style={{
-                height: video.id == 1 ? "6rem" : "5rem",
-                opacity: video.id == 1 ? "100%" : "50%",
-              }}
+
+            <VideoObject
+              id={1}
+              icon={iconDiagnostic}
+              videoSrc="https://www.youtube.com/embed/-lltFnhZlT0?si=QcgWmBxbtpyDVSbu&enablejsapi=1"
+              title="Procedury diagnostyki silnika"
+              description="Stanowisko dydaktyczne umożliwiające realizację procedur diagnostycznych oceny stanu technicznego silnika spalinowego z wykorzystaniem specjalistycznego oprzyrządowania oraz pozwalającego na szybką realizację lokalizacji i weryfikacji usterek."
+              setVideo={setVideo}
+              currentVideoId={video.id}
             />
-            <img
-              className={`p-3 transition-all cursor-pointer ${
-                video.id != 2 ? "hover:scale-110" : "hover:brightness-90"
-              }`}
-              src={iconOscilloscope}
-              alt=""
-              draggable="false"
-              onClick={() =>
-                setVideo({
-                  id: 2,
-                  videoSrc:
-                    "https://www.youtube.com/embed/edlhrt-Ep-E?si=8gJdUgfBUNcTAOiA&enablejsapi=1",
-                  title: "Badania oscyloskopowe",
-                  description:
-                    "Stanowisko umożliwia wykorzystanie możliwości uniwersalnego oscyloskopu do weryfikacji parametrów pracy silnika spalinowego. Stanowi to podstawę realizowanych działań w zakresie identyfikacji stanu technicznego silnika spalinowego.",
-                })
-              }
-              style={{
-                height: video.id == 2 ? "6rem" : "5rem",
-                opacity: video.id == 2 ? "100%" : "50%",
-              }}
+
+            <VideoObject
+              id={2}
+              icon={iconOscilloscope}
+              videoSrc="https://www.youtube.com/embed/edlhrt-Ep-E?si=8gJdUgfBUNcTAOiA&enablejsapi=1"
+              title="Badania oscyloskopowe"
+              description="Stanowisko umożliwia wykorzystanie możliwości uniwersalnego oscyloskopu do weryfikacji parametrów pracy silnika spalinowego. Stanowi to podstawę realizowanych działań w zakresie identyfikacji stanu technicznego silnika spalinowego."
+              setVideo={setVideo}
+              currentVideoId={video.id}
             />
           </div>
+        </div>
+
+        {/* 🆕🆕🆕 */}
+        <div className="flex flex-col lg:flex-row items-center gap-16 sm:gap-24 max-w-6xl">
+          <div className="flex flex-col-reverse sm:flex-col max-w-sm gap-4 items-center">
+            <img
+              className="border-4 border-primary-dark/50 rounded-3xl shadow-navigation "
+              src={platformaImage}
+              alt=""
+            />
+            <span className="font-exo font-medium text-xl bg-gradient-to-r from-[#37E7FF] to-[#7A87FF]   text-transparent bg-clip-text">
+              Nowość na rynku
+            </span>
+          </div>
+
+          <div className="w-fit flex gap-12 flex-col">
+            <FancyInfo
+              className="5xl:max-w-full"
+              alt="Image of a diagnostic tool for car"
+              title="Interaktywna platforma edukacyjna"
+              description="Nasze nowoczesne stanowisko dydaktyczne do mechatroniki samochodowej pozwala uczniom na naukę programowania i tworzenia map pracy silnika. Dzięki Uniwersalnemu Komputerowi Sterującemu, mogą eksperymentować z ustawieniami silnika i analizować dane z czujników, zdobywając praktyczne umiejętności potrzebne w zawodzie elektromechanika lub mechatronika samochodowego. Nowość na rynku!"
+              col1="#37E7FF"
+              col2="#7a87ff2b"
+            />
+            <GoodButton
+              icon={iconPrototype}
+              link="/pol-med.tech/Edukacja_i_badania"
+              className="scale-90 hover:scale-95"
+            />
+          </div>
+        </div>
+
+        <div className="w-full flex flex-wrap  gap-24">
+          <GlowingTitle>
+            Stanowiska{" "}
+            <span className="hidden lg:inline">demonstracyjno-pomiarowe</span>
+          </GlowingTitle>
+
+          <div></div>
         </div>
       </Section>
     </>
