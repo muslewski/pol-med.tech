@@ -28,6 +28,9 @@ import Hero from "../../components/Hero";
 import FancyInfo from "../../components/FancyInfo";
 import VideoObject from "./VideoObject";
 import GoodButton from "../../components/GoodButton";
+import { Link } from "react-router-dom";
+import StationObject from "./StationObject";
+import stationsData from "./stations.json";
 
 function Education() {
   const [video, setVideo] = useState({
@@ -120,7 +123,7 @@ function Education() {
             background: `linear-gradient(-60deg, #15366dd3, transparent 60%)`,
           }}
         >
-          <div className="border-4 border-primary-dark/50 rounded-3xl overflow-hidden shadow-navigation">
+          <div className="border-4 border-primary-dark/50 rounded-3xl overflow-hidden shadow-navigation hover:drop-shadow-homeCard transition-all duration-500 ease-in-out">
             <iframe
               className="h-full sm:h-56 2lg:h-80"
               loading="lazy"
@@ -142,7 +145,7 @@ function Education() {
             </p>
           </div>
 
-          <div className="flex flex-row flex-wrap sm:flex-row w-full md:h-32 items-center sm:w-3/4 justify-evenly gap-3 px-4 sm:px-8 sm:py-4 sm:bg-secondary-darkEducation/15 rounded-3xl sm:rounded-full sm:shadow-glowingTitle sm:border-4 border-secondary-dark/15">
+          <div className="flex flex-row flex-wrap sm:flex-row w-full md:h-32 items-center sm:w-3/4 justify-evenly gap-8 px-4 sm:px-8 sm:py-4 sm:bg-secondary-darkEducation/15 rounded-3xl sm:rounded-full sm:shadow-glowingTitle sm:border-4 border-secondary-dark/15">
             <VideoObject
               id={0}
               icon={iconError}
@@ -178,11 +181,16 @@ function Education() {
         {/* 🆕🆕🆕 */}
         <div className="flex flex-col lg:flex-row items-center gap-16 sm:gap-24 max-w-6xl">
           <div className="flex flex-col-reverse sm:flex-col max-w-sm gap-4 items-center">
-            <img
-              className="border-4 border-primary-dark/50 rounded-3xl shadow-navigation "
-              src={platformaImage}
-              alt=""
-            />
+            <Link
+              to="/pol-med.tech/"
+              className="hover:scale-[102%] [&>img]:hover:border-[#9bf3ff]/75 [&>img]:hover:border-[4px] [&>img]:hover:drop-shadow-homeCard transition-transform ease-in-out"
+            >
+              <img
+                className="border-[6px] border-primary-dark/50 rounded-3xl shadow-navigation drop-shadow-none transition-all duration-500 ease-in-out"
+                src={platformaImage}
+                alt=""
+              />
+            </Link>
             <span className="font-exo font-medium text-xl bg-gradient-to-r from-[#37E7FF] to-[#7A87FF]   text-transparent bg-clip-text">
               Nowość na rynku
             </span>
@@ -191,27 +199,31 @@ function Education() {
           <div className="w-fit flex gap-12 flex-col">
             <FancyInfo
               className="5xl:max-w-full"
-              alt="Image of a diagnostic tool for car"
+              alt="Image of an interactive education platform"
               title="Interaktywna platforma edukacyjna"
               description="Nasze nowoczesne stanowisko dydaktyczne do mechatroniki samochodowej pozwala uczniom na naukę programowania i tworzenia map pracy silnika. Dzięki Uniwersalnemu Komputerowi Sterującemu, mogą eksperymentować z ustawieniami silnika i analizować dane z czujników, zdobywając praktyczne umiejętności potrzebne w zawodzie elektromechanika lub mechatronika samochodowego. Nowość na rynku!"
               col1="#37E7FF"
               col2="#7a87ff2b"
-            />
-            <GoodButton
-              icon={iconPrototype}
-              link="/pol-med.tech/Edukacja_i_badania"
-              className="scale-90 hover:scale-95"
+              buttonIcon={iconPrototype}
+              link="/pol-med.tech/"
             />
           </div>
         </div>
 
+        {/* 🚙🚙🚙 */}
         <div className="w-full flex flex-wrap  gap-24">
           <GlowingTitle>
             Stanowiska{" "}
             <span className="hidden lg:inline">demonstracyjno-pomiarowe</span>
           </GlowingTitle>
 
-          <div></div>
+          {stationsData.stations.map((station) => (
+            <StationObject
+              key={station.id}
+              image={station.images[0]}
+              {...station}
+            />
+          ))}
         </div>
       </Section>
     </>

@@ -11,7 +11,9 @@ const Education = lazy(() =>
   import(/* webpackPrefetch: true */ "./pages/Education/Education")
 );
 const EducationProduct = lazy(() =>
-  import(/* webpackPrefetch: true */ "./pages/Education/EducationProduct")
+  import(
+    /* webpackPrefetch: true */ "./pages/Education/Product/EducationProduct"
+  )
 );
 const Oils = lazy(() =>
   import(/* webpackPrefetch: true */ "./pages/Oils/Oils")
@@ -37,7 +39,9 @@ function App() {
   useEffect(() => {
     // Trigger prefetching when the homepage is loaded
     import(/* webpackPrefetch: true */ "./pages/Education/Education");
-    import(/* webpackPrefetch: true */ "./pages/Education/EducationProduct");
+    import(
+      /* webpackPrefetch: true */ "./pages/Education/Product/EducationProduct"
+    );
     import(/* webpackPrefetch: true */ "./pages/Oils/Oils");
     import(/* webpackPrefetch: true */ "./pages/Tools");
     import(/* webpackPrefetch: true */ "./pages/About");

@@ -2,7 +2,7 @@ import React, { forwardRef } from "react";
 
 const Section = forwardRef(
   ({ children, customClass = "", customClassInner = "", style }, ref) => {
-    const hasGapClass = customClass?.includes("gap");
+    const hasGapClass = customClassInner?.includes("gap");
 
     return (
       <section

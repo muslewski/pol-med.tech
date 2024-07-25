@@ -12,7 +12,7 @@ function ContactButton({
   return (
     <Link
       to="/pol-med.tech/Kontakt"
-      className={`animate-jump relative text-white font-bold z-10 mb-5 ml-5 [&_img]:hover:-left-1 [&_img]:hover:-bottom-2 w-fit ${className}`}
+      className={`animate-jump relative flex text-white font-bold z-10 mb-5 ml-5 [&_img]:hover:-left-1 [&_img]:hover:-bottom-2 w-fit ${className}`}
     >
       <img
         className="w-full h-full absolute -left-4 xl:-left-5 -bottom-3 xl:-bottom-4 -z-10 transition-all ease-in-out duration-500 pointer-events-none"
