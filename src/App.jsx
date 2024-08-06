@@ -1,7 +1,7 @@
 import { Link, Route, Routes, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
-import { Suspense, lazy, useEffect } from "react";
+import { Suspense, lazy, useEffect, useState } from "react";
 
 import { goToTopRough } from "./utils/goToTop";
 
@@ -50,8 +50,22 @@ function App() {
     import(/* webpackPrefetch: true */ "./pages/Copyright");
   }, []);
 
+  const [zoomIn, setZoomIn] = useState(false);
+  const [mainPhoto, setMainPhoto] = useState(null);
+
   return (
     <>
+      {zoomIn && (
+        <div
+          className="fixed bg-black/50 w-full h-full flex justify-center items-center z-100"
+          onClick={() => setZoomIn(false)}
+        >
+          <img
+            className="cursor-zoom-out max-h-[95%] max-w-[93%] rounded shadow-[0_65px_100px_-15px_rgba(0,0,0,0.9)]"
+            src={mainPhoto}
+          />
+        </div>
+      )}
       <Navbar />
       <div className="wrapper bg-secondary-dark">
         <Suspense fallback={<div>Loading...</div>}>
@@ -63,7 +77,13 @@ function App() {
             />
             <Route
               path="/pol-med.tech/Edukacja_i_badania/:id"
-              element={<EducationProduct />}
+              element={
+                <EducationProduct
+                  setZoomIn={setZoomIn}
+                  mainPhoto={mainPhoto}
+                  setMainPhoto={setMainPhoto}
+                />
+              }
             />
             <Route path="/pol-med.tech/Oleje_UCO" element={<Oils />} />
             <Route path="/pol-med.tech/Narzedzia" element={<Tools />} />

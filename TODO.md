@@ -23,8 +23,12 @@
   - Light
   - Dark
 
-- [ ] Final Public Files
+- [ ] Final Files
+
   - sitemap.xml
   - rss.feed
   - robots.txt
   - humans.txt
+
+- [ ] Animated Icons
+  - In Oils Offert Section add Animated Icons that starts to play when vissible

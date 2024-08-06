@@ -4,6 +4,9 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      zIndex: {
+        100: "100",
+      },
       colors: {
         primary: {
           light: "#000000", // Light variant
@@ -36,6 +39,14 @@ module.exports = {
           "0 0 12px rgba(54, 47, 140, 0.7)",
           "0 0 24px rgba(129, 121, 210, 0.5)",
         ],
+        glowingText: [
+          "0 0 12px rgba(255, 255, 255, 0.5)",
+          "0 0 24px rgba(255, 255, 255, 0.3)",
+        ],
+        glowingTextSubtle: [
+          "0 0 12px rgba(255, 255, 255, 0.3)",
+          "0 0 24px rgba(255, 255, 255, 0.15)",
+        ],
         homeCard: [
           "0 0 12px rgba(54, 47, 140, 0.4)",
           "0 0 24px rgba(129, 121, 210, 0.2)",
@@ -57,6 +68,7 @@ module.exports = {
         "2lg": "1100px",
         "3xl": "1650px",
         "5xl": "1850px",
+        "7xl": "2050px",
       },
     },
   },

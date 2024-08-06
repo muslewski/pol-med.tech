@@ -8,14 +8,14 @@ function StationObject({ title, description, image, id }) {
     description = description.substring(0, 200) + "...";
 
   return (
-    <div className="flex flex-col lg:flex-row items-center gap-12 sm:gap-16 max-w-full lg:max-w-3xl bg-gradient-to-br from-[rgba(209,226,255,0.08)] px-6 py-9 rounded-3xl">
+    <div className="flex flex-col lg:flex-row items-center gap-12 sm:gap-16 max-w-full 5xl:max-w-[45%] bg-gradient-to-br from-[rgba(209,226,255,0.08)] px-6 py-9 rounded-3xl">
       <div className="flex flex-col-reverse sm:flex-col max-w-xs gap-4 items-center">
         <Link
           to={`/pol-med.tech/Edukacja_i_badania/` + id}
           className="hover:scale-[102%] [&>img]:hover:drop-shadow-homeCard transition-transform ease-in-out"
         >
           <img
-            className="rounded-3xl  drop-shadow-none transition-all duration-500 ease-in-out"
+            className="rounded-3xl  max-h-64 sm:max-h-none  drop-shadow-none transition-all duration-500 ease-in-out"
             src={image}
             alt=""
           />

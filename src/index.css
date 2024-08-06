@@ -64,6 +64,15 @@ header {
   z-index: -1;
 }
 
+.pseudoHeader {
+  position: relative;
+  display: flex;
+  align-items: center;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  z-index: 1;
+}
+
 .background {
   transform: translateZ(-9.9px) scale(2);
 }
@@ -87,6 +96,21 @@ header {
   width: 100%;
   object-fit: cover;
   z-index: -2;
+}
+
+.background2 {
+  transform: translateZ(-4.9px) scale(2) translateY(70%);
+  position: absolute;
+  height: 150%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+@media (max-width: 1080px) {
+  .background2 {
+    transform: translateZ(-4.9px) scale(2) translateY(100%);
+  }
 }
 
 .foreground3 {
