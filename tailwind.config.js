@@ -4,6 +4,9 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      backgroundImage: {
+        "oils-background": "url('./src/Assets/oils3Background.jpg')",
+      },
       zIndex: {
         100: "100",
       },

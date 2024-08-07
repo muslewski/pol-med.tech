@@ -10,11 +10,11 @@ import goToTop from "../../utils/goToTop";
 
 function Footer() {
   return (
-    <footer className="flex text-primary-dark tracking-wide justify-center relative bg-secondary-dark">
+    <footer className="flex text-primary-dark tracking-wide justify-center relative z-50  bg-secondary-dark">
       <img
         src={top}
         alt=""
-        className="absolute bottom-full w-full min-h-16 object-cover object-right"
+        className="absolute bottom-[99%] w-full min-h-16 object-cover object-right"
       />
       <img
         src={toTopArrow}

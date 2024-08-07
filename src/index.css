@@ -61,7 +61,7 @@ header {
   height: 100%;
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
-  z-index: -1;
+  z-index: -2;
 }
 
 .pseudoHeader {
@@ -98,18 +98,46 @@ header {
   z-index: -2;
 }
 
-.background2 {
-  transform: translateZ(-4.9px) scale(2) translateY(70%);
+.backgroundOils {
+  transform: translateZ(-5px) scale(1.5);
   position: absolute;
-  height: 150%;
+  height: 100%;
   width: 100%;
   object-fit: cover;
   z-index: -2;
 }
 
+.backgroundOils2 {
+  transform: translateZ(-20px) scale(3) translateY(50%);
+  position: absolute;
+  bottom: 0;
+  height: 230%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -3;
+}
+
+@media (max-width: 1580px) {
+  .backgroundOils {
+    transform: translateZ(-5px) scale(1.5);
+    height: 150%;
+  }
+
+  .backgroundOils2 {
+    transform: translateZ(-50px) scale(6);
+    height: 230%;
+  }
+}
+
 @media (max-width: 1080px) {
-  .background2 {
-    transform: translateZ(-4.9px) scale(2) translateY(100%);
+  .backgroundOils {
+    transform: translateZ(-5px) scale(1.5);
+    height: 130%;
+  }
+
+  .backgroundOils2 {
+    transform: translateZ(-8.9px) scale(2) translateY(115%);
+    height: 320%;
   }
 }
 
