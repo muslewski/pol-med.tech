@@ -119,7 +119,7 @@ function Home() {
           className="w-16 md:w-36 absolute opacity-50 left-0 top-[75%]"
         />
 
-        <GlowingTitle customClass="hidden sm:flex">
+        <GlowingTitle customClass="hidden sm:flex  sm:max-w-[85%]">
           Odkryj nasze możliwości
         </GlowingTitle>
 

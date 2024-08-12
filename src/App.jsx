@@ -19,7 +19,9 @@ const Oils = lazy(() =>
   import(/* webpackPrefetch: true */ "./pages/Oils/Oils")
 );
 const Tools = lazy(() => import(/* webpackPrefetch: true */ "./pages/Tools"));
-const About = lazy(() => import(/* webpackPrefetch: true */ "./pages/About"));
+const About = lazy(() =>
+  import(/* webpackPrefetch: true */ "./pages/About/About")
+);
 const Contact = lazy(() =>
   import(/* webpackPrefetch: true */ "./pages/Contact")
 );
@@ -44,7 +46,7 @@ function App() {
     );
     import(/* webpackPrefetch: true */ "./pages/Oils/Oils");
     import(/* webpackPrefetch: true */ "./pages/Tools");
-    import(/* webpackPrefetch: true */ "./pages/About");
+    import(/* webpackPrefetch: true */ "./pages/About/About");
     import(/* webpackPrefetch: true */ "./pages/Contact");
     import(/* webpackPrefetch: true */ "./pages/PrivacyPolicy");
     import(/* webpackPrefetch: true */ "./pages/Copyright");

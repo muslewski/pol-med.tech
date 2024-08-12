@@ -13,6 +13,10 @@ import iconTrade from "./assets/iconTrade.svg";
 import iconWarehouse from "./assets/iconWarehouse.svg";
 import oilsBackground from "./assets/oilsBackground.jpg";
 // import oils2Background from "./assets/oils2Background.jpg";
+import iconExpertise from "./assets/iconExpertise.webp";
+import iconMicroscope from "./assets/iconMicroscope.webp";
+import iconResearch from "./assets/iconResearch.webp";
+import iconSuggestion from "./assets/iconSuggestion.webp";
 
 import HeroCard from "../../components/HeroCard";
 import ContactButton from "../../components/Navbar/ContactButton";
@@ -220,25 +224,25 @@ function Oils() {
 
           <AdvancedBox
             title="Badania wytrzymałościowe i eksploatacyjne"
-            icon={iconHandshake}
+            icon={iconResearch}
             description="Dokładnie sprawdzamy właściwości materiałów i elementów konstrukcyjnych maszyn i urządzeń, aby upewnić się, że są one w stanie wytrzymać obciążenia i pracować bezawaryjnie."
           />
 
           <AdvancedBox
             title="Badania i ocena parametrów użytkowych"
-            icon={iconHandshake}
+            icon={iconMicroscope}
             description="Analizujemy oleje, paliwa i smary, aby upewnić się, że spełniają one wymagania i zapewniają optymalną pracę maszyn."
           />
 
           <AdvancedBox
             title="Opinie i ekspertyzy"
-            icon={iconHandshake}
+            icon={iconSuggestion}
             description="Wydajemy rzetelne opinie i ekspertyzy na temat badanych próbek i stosowanych procesów technologicznych."
           />
 
           <AdvancedBox
             title="Przeglądy i weryfikacje"
-            icon={iconHandshake}
+            icon={iconExpertise}
             description="Dokonujemy przeglądów i weryfikacji instalacji technologicznych, aby zidentyfikować potencjalne problemy i zapewnić ich bezpieczną i wydajną pracę."
           />
         </div>
