@@ -52,7 +52,7 @@ function EducationProduct({ setZoomIn, mainPhoto, setMainPhoto }) {
         customClassInner="gap-52"
       >
         <div className="flex gap-24 flex-col 5xl:flex-row">
-          <div className=" w-96 min-w-96 px-12 sm:px-0 h-fit self-center 5xl:self-start">
+          <div className=" w-96 min-w-96 px-12 sm:px-0 h-fit self-center 5xl:self-start flex justify-center">
             <img
               className="mainPhoto rounded-lg cursor-zoom-in  max-h-[26rem]"
               src={mainPhoto}

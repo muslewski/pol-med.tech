@@ -5,52 +5,26 @@ import { Suspense, lazy, useEffect, useState } from "react";
 
 import { goToTopRough } from "./utils/goToTop";
 
-// Lazy load the components
+// Lazy load the components using React.lazy
 const Home = lazy(() => import("./pages/Home/Home"));
-const Education = lazy(() =>
-  import(/* webpackPrefetch: true */ "./pages/Education/Education")
-);
+const Education = lazy(() => import("./pages/Education/Education"));
 const EducationProduct = lazy(() =>
-  import(
-    /* webpackPrefetch: true */ "./pages/Education/Product/EducationProduct"
-  )
+  import("./pages/Education/Product/EducationProduct")
 );
-const Oils = lazy(() =>
-  import(/* webpackPrefetch: true */ "./pages/Oils/Oils")
+const SpecialProduct = lazy(() =>
+  import("./pages/Education/Product/SpecialProduct")
 );
-const Tools = lazy(() => import(/* webpackPrefetch: true */ "./pages/Tools"));
-const About = lazy(() =>
-  import(/* webpackPrefetch: true */ "./pages/About/About")
-);
-const Contact = lazy(() =>
-  import(/* webpackPrefetch: true */ "./pages/Contact")
-);
-const PrivacyPolicy = lazy(() =>
-  import(/* webpackPrefetch: true */ "./pages/PrivacyPolicy")
-);
-const Copyright = lazy(() =>
-  import(/* webpackPrefetch: true */ "./pages/Copyright")
-);
-
+const Oils = lazy(() => import("./pages/Oils/Oils"));
+const Tools = lazy(() => import("./pages/Tools/Tools"));
+const About = lazy(() => import("./pages/About/About"));
+const Contact = lazy(() => import("./pages/Contact"));
+const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
+const Copyright = lazy(() => import("./pages/Copyright"));
 function App() {
   const { pathname } = useLocation();
   useEffect(() => {
     goToTopRough();
   }, [pathname]);
-
-  useEffect(() => {
-    // Trigger prefetching when the homepage is loaded
-    import(/* webpackPrefetch: true */ "./pages/Education/Education");
-    import(
-      /* webpackPrefetch: true */ "./pages/Education/Product/EducationProduct"
-    );
-    import(/* webpackPrefetch: true */ "./pages/Oils/Oils");
-    import(/* webpackPrefetch: true */ "./pages/Tools");
-    import(/* webpackPrefetch: true */ "./pages/About/About");
-    import(/* webpackPrefetch: true */ "./pages/Contact");
-    import(/* webpackPrefetch: true */ "./pages/PrivacyPolicy");
-    import(/* webpackPrefetch: true */ "./pages/Copyright");
-  }, []);
 
   const [zoomIn, setZoomIn] = useState(false);
   const [mainPhoto, setMainPhoto] = useState(null);
@@ -69,13 +43,29 @@ function App() {
         </div>
       )}
       <Navbar />
-      <div className="wrapper bg-secondary-dark">
-        <Suspense fallback={<div>Loading...</div>}>
+      <div key={pathname} className="wrapper bg-secondary-dark">
+        <Suspense
+          fallback={
+            <div className="w-full h-full flex justify-center items-center text-white font-exo text-5xl">
+              Ładowanie...
+            </div>
+          }
+        >
           <Routes>
             <Route path="/pol-med.tech/" element={<Home />} />
             <Route
               path="/pol-med.tech/Edukacja_i_badania"
               element={<Education />}
+            />
+            <Route
+              path="/pol-med.tech/Edukacja_i_badania/interaktywna_platforma_edukacyjna"
+              element={
+                <SpecialProduct
+                  setZoomIn={setZoomIn}
+                  mainPhoto={mainPhoto}
+                  setMainPhoto={setMainPhoto}
+                />
+              }
             />
             <Route
               path="/pol-med.tech/Edukacja_i_badania/:id"
@@ -100,8 +90,8 @@ function App() {
               element={<Copyright />}
             />
           </Routes>
+          <Footer />
         </Suspense>
-        <Footer />
       </div>
     </>
   );

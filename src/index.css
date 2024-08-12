@@ -224,3 +224,7 @@ iframe {
   aspect-ratio: 16 / 9;
   width: 100% !important;
 }
+
+.list-square {
+  list-style-type: square;
+}

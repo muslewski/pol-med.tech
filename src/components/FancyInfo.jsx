@@ -11,9 +11,19 @@ function FancyInfo({
   col2,
   buttonIcon,
   link,
+  isBox = false,
 }) {
   return (
-    <div className={`flex flex-col gap-12 5xl:max-w-[45%] ${className}`}>
+    <div
+      className={`flex flex-col gap-12 5xl:max-w-[45%] rounded-3xl ${className}`}
+      style={{
+        background: isBox
+          ? `linear-gradient(45deg, ${col2}, transparent)`
+          : "none",
+        padding: isBox ? "2rem" : "0",
+        boxShadow: isBox ? `15px 15px 20px -19px ${col1}` : "none",
+      }}
+    >
       <div className={`flex flex-col sm:flex-row gap-6 items-center`}>
         {image && <img className="h-24 sm:h-28" src={image} alt={alt} />}
         <div className="flex flex-col gap-3 min-h-full">

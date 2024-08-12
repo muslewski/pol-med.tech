@@ -64,6 +64,10 @@ module.exports = {
           "0 4px 4px rgba(100, 100, 155, 0.25)",
           "inset 0 4px 8px rgba(100, 100, 155, 0.3)",
         ],
+        glowingTools: [
+          "0 4px 4px rgba(99, 156, 156, 0.25)",
+          "inset 0 4px 8px rgba(99, 156, 156, 0.3)",
+        ],
         contactInner: "inset 0 4px 8px rgba(255, 255, 255, 0.3)",
         homeCard: "inset 0 4px 8px rgba(255, 255, 255, 0.1)",
       },

@@ -182,7 +182,7 @@ function Education() {
         <div className="flex flex-col lg:flex-row items-center gap-16 sm:gap-24 max-w-6xl">
           <div className="flex flex-col-reverse sm:flex-col max-w-sm gap-4 items-center">
             <Link
-              to="/pol-med.tech/"
+              to="/pol-med.tech/Edukacja_i_badania/interaktywna_platforma_edukacyjna"
               className="hover:scale-[102%] [&>img]:hover:border-[#9bf3ff]/75 [&>img]:hover:border-[4px] [&>img]:hover:drop-shadow-homeCard transition-transform ease-in-out"
             >
               <img
@@ -205,7 +205,7 @@ function Education() {
               col1="#37E7FF"
               col2="#7a87ff2b"
               buttonIcon={iconPrototype}
-              link="/pol-med.tech/"
+              link="/pol-med.tech/Edukacja_i_badania/interaktywna_platforma_edukacyjna"
             />
           </div>
         </div>
@@ -225,6 +225,11 @@ function Education() {
             />
           ))}
         </div>
+
+        <h3>
+          Oferowane przez nas produkty dostosowujemy do indywidualnych potrzeb i
+          wymagań Zamawiających.
+        </h3>
       </Section>
     </>
   );
