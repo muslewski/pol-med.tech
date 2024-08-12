@@ -67,8 +67,8 @@ function Tools() {
         <Hero customClass="gap-28">
           <HeroCard
             boxCustom="relative sm:bottom-0"
-            title="Poznaj nas bliżej 👋"
-            description="Łączymy pasję i doświadczenie, aby dostarczać innowacyjne rozwiązania wspierające rozwój przemysłu i edukacji. Twój sukces to nasz priorytet!"
+            title="Narzędzia przemysłowe"
+            description="Odkryj naszą ofertę narzędzi, które sprawią, że Twoje przedsięwzięcia przemysłowe staną się jeszcze bardziej efektywne i wydajne!"
             col1="rgba(1, 47, 49, 0.2)"
             col2="rgba(1, 47, 49, 0.7)"
           />
