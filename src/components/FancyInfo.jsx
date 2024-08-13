@@ -24,14 +24,16 @@ function FancyInfo({
         boxShadow: isBox ? `15px 15px 20px -19px ${col1}` : "none",
       }}
     >
-      <div className={`flex flex-col sm:flex-row gap-6 items-center`}>
+      <div
+        className={`flex flex-col sm:flex-row gap-6 items-center [&_hr]:hover:shadow-contactInner`}
+      >
         {image && <img className="h-24 sm:h-28" src={image} alt={alt} />}
         <div className="flex flex-col gap-3 min-h-full">
           <h3 className="font-exo font-semibold text-xl 2xl:text-[1.6rem]">
             {title}
           </h3>
           <hr
-            className={`h-1.5 w-full rounded-full border-none`}
+            className={`h-1.5 w-full rounded-full border-none transition-shadow duration-200`}
             style={{
               background: `linear-gradient(to right, ${col1}, ${col2})`,
             }}

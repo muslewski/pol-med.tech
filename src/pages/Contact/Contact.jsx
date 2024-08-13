@@ -26,6 +26,10 @@ function Contact() {
         <BackgroundTop image={rectangleTop} />
 
         <BgBottomVector image={bottomVector} />
+
+        <div className={`flex flex-col translate-y-11 w-full gap-14`}>
+          <div className="w-64 h-36 bg-black"></div>
+        </div>
       </header>
 
       <Section customClass="bg-gradient-to-b from-[#040E30] to-[#10295b]"></Section>

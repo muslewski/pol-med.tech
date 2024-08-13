@@ -52,7 +52,7 @@ function EducationProduct({ setZoomIn, mainPhoto, setMainPhoto }) {
         <div className="flex gap-24 flex-col 5xl:flex-row">
           <div className=" w-96 min-w-96 px-12 sm:px-0 h-fit self-center 5xl:self-start flex justify-center">
             <img
-              className="mainPhoto rounded-lg cursor-zoom-in  max-h-[26rem]"
+              className="mainPhoto rounded-lg cursor-zoom-in  hover:scale-105 transition-transform max-h-[26rem]"
               src={mainPhoto}
               alt=""
               onClick={() => setZoomIn((prev) => !prev)}
@@ -62,21 +62,24 @@ function EducationProduct({ setZoomIn, mainPhoto, setMainPhoto }) {
           {sidePhotos.length > 0 && (
             <div className="flex flex-wrap justify-center h-fit w-fit min-w-40 gap-12 px-6 sm:px-0">
               {sidePhotos.map((image, index) => (
-                <img
-                  className="h-28 sm:h-40 w-28 sm:w-40 object-cover cursor-pointer rounded-lg"
-                  draggable="false"
-                  src={image}
-                  key={index}
-                  alt=""
-                  onClick={() => {
-                    setMainPhoto(image);
-                    setSidePhotos([
-                      ...sidePhotos.slice(0, index),
-                      mainPhoto,
-                      ...sidePhotos.slice(index + 1),
-                    ]);
-                  }}
-                />
+                <div className="relative z-10 [&>div]:hover:top-1 [&>div]:hover:-left-1">
+                  <img
+                    className="h-28 sm:h-40 w-28 sm:w-40 object-cover cursor-pointer rounded-lg"
+                    draggable="false"
+                    src={image}
+                    key={index}
+                    alt=""
+                    onClick={() => {
+                      setMainPhoto(image);
+                      setSidePhotos([
+                        ...sidePhotos.slice(0, index),
+                        mainPhoto,
+                        ...sidePhotos.slice(index + 1),
+                      ]);
+                    }}
+                  />
+                  <div className="imgBackground pointer-events-none transition-all"></div>
+                </div>
               ))}
             </div>
           )}
