@@ -49,7 +49,7 @@ function About() {
       </header>
 
       <Section customClass="bg-gradient-to-b from-[#040E30] to-[#0a0a46]">
-        <div className="flex flex-wrap gap-24 self-start">
+        <div className="flex flex-wrap gap-16 sm:gap-24 self-start">
           <GlowingTitle>Kim jesteśmy?</GlowingTitle>
 
           <SeriousInfo
@@ -82,7 +82,7 @@ function About() {
           />
         </div>
 
-        <div className="flex flex-wrap gap-24 self-start">
+        <div className="flex flex-wrap gap-16 sm:gap-24 self-start">
           <GlowingTitle>Nasze produkty i usługi</GlowingTitle>
           <FancyInfo
             image={carServiceIcon}
@@ -113,7 +113,7 @@ function About() {
           />
         </div>
 
-        <div className="flex flex-wrap gap-24 self-start">
+        <div className="flex flex-wrap gap-16 sm:gap-24 self-start">
           <GlowingTitle>Gdzie nas znajdziesz?</GlowingTitle>
           <div className="w-full flex flex-col gap-10">
             <h3 className="font-exo font-semibold text-xl 2xl:text-[1.6rem] flex gap-6 items-end">
@@ -123,11 +123,32 @@ function About() {
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d302.46604608683543!2d18.082092471321893!3d53.18150894161017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470311d440a0005d%3A0x3970c9b600b2014!2sP.P.H.U.%20Pol%20-%20Med%20Sp.%20z%20o.o.!5e1!3m2!1spl!2spl!4v1714225278473!5m2!1spl!2spl"
               height="450"
               className="border-none rounded-xl drop-shadow-homeCard"
-              allowfullscreen=""
+              allowFullScreen=""
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              referrerPolicy="no-referrer-when-downgrade"
             />
           </div>
+        </div>
+
+        <div className="flex flex-wrap gap-16 sm:gap-24 self-start magicAUnderline">
+          <GlowingTitle>Informacje</GlowingTitle>
+          <ul className="flex flex-col gap-6 list-square list-inside font-exo text-base lg:text-xl 2xl:text-2xl">
+            <li>
+              Adres:{" "}
+              <a
+                href="https://maps.app.goo.gl/t8s2ppjCwsCvdeTM7"
+                target="_blank"
+              >
+                ul. Leśna 38, 86-031 Osielsko
+              </a>
+            </li>
+            <li>NIP: PL9671167341</li>
+            <li>REGON: 093140846</li>
+            <li>KRS: 0000166787</li>
+            <li>BDO: 000638650</li>
+            <li>EU-REDcert-553-54240001</li>
+            <li>Kapitał zakładowy - 50.000 PLN (wpłacony w całości)</li>
+          </ul>
         </div>
       </Section>
     </>

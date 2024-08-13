@@ -7,7 +7,7 @@ function SeriousInfo({ icon, iconAlt, title, description }) {
         {title}
         <img className="h-16" src={icon} alt="" />
       </h3>
-      <p className="font-raleway text-lg 2xl:text-xl">{description}</p>
+      <div className="font-raleway text-lg 2xl:text-xl">{description}</div>
     </div>
   );
 }

@@ -4,6 +4,7 @@ import Footer from "./components/Footer/Footer";
 import { Suspense, lazy, useEffect, useState } from "react";
 
 import { goToTopRough } from "./utils/goToTop";
+import { ErrorBoundary } from "react-error-boundary";
 
 // Lazy load the components using React.lazy
 const Home = lazy(() => import("./pages/Home/Home"));
@@ -17,7 +18,7 @@ const SpecialProduct = lazy(() =>
 const Oils = lazy(() => import("./pages/Oils/Oils"));
 const Tools = lazy(() => import("./pages/Tools/Tools"));
 const About = lazy(() => import("./pages/About/About"));
-const Contact = lazy(() => import("./pages/Contact"));
+const Contact = lazy(() => import("./pages/Contact/Contact"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const Copyright = lazy(() => import("./pages/Copyright"));
 function App() {
@@ -44,54 +45,63 @@ function App() {
       )}
       <Navbar />
       <div key={pathname} className="wrapper bg-secondary-dark">
-        <Suspense
+        <ErrorBoundary
           fallback={
-            <div className="w-full h-full flex justify-center items-center text-white font-exo text-5xl">
-              Ładowanie...
+            <div className="w-full px-6 sm:px-16 h-full flex justify-center items-center text-white font-exo text-2xl sm:text-4xl">
+              Oops! Złapaliśmy błąd i teraz go naprawiamy. Tymczasem, może
+              filiżanka kawy?
             </div>
           }
         >
-          <Routes>
-            <Route path="/pol-med.tech/" element={<Home />} />
-            <Route
-              path="/pol-med.tech/Edukacja_i_badania"
-              element={<Education />}
-            />
-            <Route
-              path="/pol-med.tech/Edukacja_i_badania/interaktywna_platforma_edukacyjna"
-              element={
-                <SpecialProduct
-                  setZoomIn={setZoomIn}
-                  mainPhoto={mainPhoto}
-                  setMainPhoto={setMainPhoto}
-                />
-              }
-            />
-            <Route
-              path="/pol-med.tech/Edukacja_i_badania/:id"
-              element={
-                <EducationProduct
-                  setZoomIn={setZoomIn}
-                  mainPhoto={mainPhoto}
-                  setMainPhoto={setMainPhoto}
-                />
-              }
-            />
-            <Route path="/pol-med.tech/Oleje_UCO" element={<Oils />} />
-            <Route path="/pol-med.tech/Narzedzia" element={<Tools />} />
-            <Route path="/pol-med.tech/O_nas" element={<About />} />
-            <Route path="/pol-med.tech/Kontakt" element={<Contact />} />
-            <Route
-              path="/pol-med.tech/Polityka_prywatnosci"
-              element={<PrivacyPolicy />}
-            />
-            <Route
-              path="/pol-med.tech/Prawa_autorskie"
-              element={<Copyright />}
-            />
-          </Routes>
-          <Footer />
-        </Suspense>
+          <Suspense
+            fallback={
+              <div className="w-full h-full flex justify-center items-center text-white font-exo text-5xl">
+                Ładowanie...
+              </div>
+            }
+          >
+            <Routes>
+              <Route path="/pol-med.tech/" element={<Home />} />
+              <Route
+                path="/pol-med.tech/Edukacja_i_badania"
+                element={<Education />}
+              />
+              <Route
+                path="/pol-med.tech/Edukacja_i_badania/interaktywna_platforma_edukacyjna"
+                element={
+                  <SpecialProduct
+                    setZoomIn={setZoomIn}
+                    mainPhoto={mainPhoto}
+                    setMainPhoto={setMainPhoto}
+                  />
+                }
+              />
+              <Route
+                path="/pol-med.tech/Edukacja_i_badania/:id"
+                element={
+                  <EducationProduct
+                    setZoomIn={setZoomIn}
+                    mainPhoto={mainPhoto}
+                    setMainPhoto={setMainPhoto}
+                  />
+                }
+              />
+              <Route path="/pol-med.tech/Oleje_UCO" element={<Oils />} />
+              <Route path="/pol-med.tech/Narzedzia" element={<Tools />} />
+              <Route path="/pol-med.tech/O_nas" element={<About />} />
+              <Route path="/pol-med.tech/Kontakt" element={<Contact />} />
+              <Route
+                path="/pol-med.tech/Polityka_prywatnosci"
+                element={<PrivacyPolicy />}
+              />
+              <Route
+                path="/pol-med.tech/Prawa_autorskie"
+                element={<Copyright />}
+              />
+            </Routes>
+            <Footer />
+          </Suspense>
+        </ErrorBoundary>
       </div>
     </>
   );

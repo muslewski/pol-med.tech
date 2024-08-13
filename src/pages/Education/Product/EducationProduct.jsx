@@ -43,8 +43,6 @@ function EducationProduct({ setZoomIn, mainPhoto, setMainPhoto }) {
     }
   }, [id]);
 
-  console.log(sidePhotos);
-
   return (
     <>
       <Section
