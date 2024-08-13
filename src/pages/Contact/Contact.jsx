@@ -27,8 +27,17 @@ function Contact() {
 
         <BgBottomVector image={bottomVector} />
 
-        <div className={`flex flex-col translate-y-11 w-full gap-14`}>
-          <div className="w-64 h-36 bg-black"></div>
+        <div
+          className={`flex flex-col items-center translate-y-11 w-full gap-14`}
+        >
+          <div className="w-full max-w- bg-slate-50 h-36 flex">
+            <div className="bg-green-400 w-full max-w-4xl">
+              <textarea></textarea>
+              <button>send</button>
+            </div>
+
+            <div className=""></div>
+          </div>
         </div>
       </header>
 
