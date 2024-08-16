@@ -61,13 +61,10 @@ function App() {
             }
           >
             <Routes>
-              <Route path="/pol-med.tech/" element={<Home />} />
+              <Route path="/" element={<Home />} />
+              <Route path="/Edukacja_i_badania" element={<Education />} />
               <Route
-                path="/pol-med.tech/Edukacja_i_badania"
-                element={<Education />}
-              />
-              <Route
-                path="/pol-med.tech/Edukacja_i_badania/interaktywna_platforma_edukacyjna"
+                path="/Edukacja_i_badania/interaktywna_platforma_edukacyjna"
                 element={
                   <SpecialProduct
                     setZoomIn={setZoomIn}
@@ -77,7 +74,7 @@ function App() {
                 }
               />
               <Route
-                path="/pol-med.tech/Edukacja_i_badania/:id"
+                path="/Edukacja_i_badania/:id"
                 element={
                   <EducationProduct
                     setZoomIn={setZoomIn}
@@ -86,18 +83,12 @@ function App() {
                   />
                 }
               />
-              <Route path="/pol-med.tech/Oleje_UCO" element={<Oils />} />
-              <Route path="/pol-med.tech/Narzedzia" element={<Tools />} />
-              <Route path="/pol-med.tech/O_nas" element={<About />} />
-              <Route path="/pol-med.tech/Kontakt" element={<Contact />} />
-              <Route
-                path="/pol-med.tech/Polityka_prywatnosci"
-                element={<PrivacyPolicy />}
-              />
-              <Route
-                path="/pol-med.tech/Prawa_autorskie"
-                element={<Copyright />}
-              />
+              <Route path="/Oleje_UCO" element={<Oils />} />
+              <Route path="/Narzedzia" element={<Tools />} />
+              <Route path="/O_nas" element={<About />} />
+              <Route path="/Kontakt" element={<Contact />} />
+              <Route path="/Polityka_prywatnosci" element={<PrivacyPolicy />} />
+              <Route path="/Prawa_autorskie" element={<Copyright />} />
             </Routes>
             <Footer />
           </Suspense>
