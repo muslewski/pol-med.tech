@@ -132,7 +132,7 @@ function Home() {
           samochodowych."
             gradient="#113C63"
             shadow="rgba(117,158,255,0.5)"
-            linkHref="/pol-med.tech/Edukacja_i_badania"
+            linkHref="/Edukacja_i_badania"
           />
           <SectionCard
             image={oilsCardImg}
@@ -141,7 +141,7 @@ function Home() {
             description="Odbiór, handel i magazynowanie olejów posmażalniczych (UCO) - kompleksowa usługa dostaw i odbiorów olejów dla przemysłu i gastronomii."
             gradient="#2C3C66"
             shadow="rgba(73, 91, 173, 0.5)"
-            linkHref="/pol-med.tech/Oleje_UCO"
+            linkHref="/Oleje_UCO"
           />
           <SectionCard
             image={toolsCardImg}
@@ -150,7 +150,7 @@ function Home() {
             description="Kompleksowe zaopatrzenie przedsiębiorstw w różne rodzaje narzędzi przemysłowych."
             gradient="#115A55"
             shadow="rgba(117, 255, 227, 0.5)"
-            linkHref="/pol-med.tech/Narzedzia"
+            linkHref="/Narzedzia"
           />
         </div>
       </Section>

@@ -69,19 +69,17 @@ function Footer() {
           title="Linki"
           p1={
             <p>
-              <Link to="/pol-med.tech/Kontakt">Formularz kontaktowy</Link>
+              <Link to="/Kontakt">Formularz kontaktowy</Link>
             </p>
           }
           p2={
             <p>
-              <Link to="/pol-med.tech/Polityka_prywatnosci">
-                Polityka prywatności
-              </Link>
+              <Link to="/Polityka_prywatnosci">Polityka prywatności</Link>
             </p>
           }
           p3={
             <p>
-              <Link to="/pol-med.tech/Prawa_autorskie">Prawa autorskie</Link>
+              <Link to="/Prawa_autorskie">Prawa autorskie</Link>
             </p>
           }
           icon={link}

@@ -89,7 +89,7 @@ function SpecialProduct({ setZoomIn, mainPhoto, setMainPhoto }) {
           </div>
 
           <GoodButton
-            link="/pol-med.tech/Kontakt"
+            link="/Kontakt"
             customText="Zapytaj o produkt"
             icon={iconCart}
             className="-ml-1"

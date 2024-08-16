@@ -122,7 +122,7 @@ function Navbar() {
     <nav className="font-raleway mt-8 fixed pointer-events-none [&_li]:pointer-events-auto  h-full mb-8 w-screen z-10 flex justify-center items-start">
       <ul className="flex justify-around gap-12 2lg:gap-0 2lg:justify-between items-center sm:items-start xl:items-center text-sm 2xl:text-lg 3xl:text-[1.2rem]  text-primary-dark xl:tracking-wide w-full max-w-[90vw] 2lg:max-w-[95vw]  xl:max-w-[90vw] ">
         <li className=" rounded-full hover:scale-105 transition-all ease-in-out duration-500 hover:drop-shadow-homeCard px-4 py-2 sm:p-0  sm:bg-transparent ">
-          <Link to="/pol-med.tech/" onClick={goToTop}>
+          <Link to="/" onClick={goToTop}>
             <div className="w-32 xl:w-36 2xl:w-48 flex flex-col items-center drop-shadow-logoDark">
               <img className="w-full" src={polMedDark} alt="" />
               <h6 className="text-sm font-bold italic font-lobsterTwo text-[#BE1C07]">
@@ -141,7 +141,7 @@ function Navbar() {
           >
             <NavElement>
               <Link
-                to="/pol-med.tech/Edukacja_i_badania"
+                to="/Edukacja_i_badania"
                 className="flex items-center gap-3 py-3 2lg:py-0"
                 onClick={goToTop}
               >
@@ -151,7 +151,7 @@ function Navbar() {
             </NavElement>
             <NavElement>
               <Link
-                to="/pol-med.tech/Oleje_UCO"
+                to="/Oleje_UCO"
                 className="flex items-center gap-3 py-3 2lg:py-0"
                 onClick={goToTop}
               >
@@ -161,7 +161,7 @@ function Navbar() {
             </NavElement>
             <NavElement>
               <Link
-                to="/pol-med.tech/Narzedzia"
+                to="/Narzedzia"
                 className="flex items-center gap-3 py-3 2lg:py-0"
                 onClick={goToTop}
               >
@@ -171,7 +171,7 @@ function Navbar() {
             </NavElement>
             <NavElement>
               <Link
-                to="/pol-med.tech/O_nas"
+                to="/O_nas"
                 className="flex items-center gap-3 py-3 2lg:py-0"
                 onClick={goToTop}
               >
