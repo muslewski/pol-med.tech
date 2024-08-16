@@ -13,6 +13,7 @@ import iconTrade from "./assets/iconTrade.svg";
 import iconWarehouse from "./assets/iconWarehouse.svg";
 import oilsBackground from "./assets/oilsBackground.jpg";
 // import oils2Background from "./assets/oils2Background.jpg";
+import oilsBackground3 from "./assets/oils3Background.jpg";
 import iconExpertise from "./assets/iconExpertise.webp";
 import iconMicroscope from "./assets/iconMicroscope.webp";
 import iconResearch from "./assets/iconResearch.webp";
@@ -190,7 +191,8 @@ function Oils() {
 
       {/* ➕➕➕ */}
       <Section
-        customClass="pt-48 bg-oils-background bg-no-repeat bg-cover"
+        customClass="pt-48 bg-no-repeat bg-cover"
+        style={{ backgroundImage: `url(${oilsBackground3})` }}
         customClassInner="w-3/4 xl:w-3/4"
       >
         <div className="custom-shape-divider-top-1722954430">
