@@ -61,13 +61,10 @@ function App() {
             }
           >
             <Routes>
-              <Route path="/pol-med.tech" element={<Home />} />
+              <Route path="/" element={<Home />} />
+              <Route path="/Edukacja_i_badania" element={<Education />} />
               <Route
-                path="/pol-med.tech/Edukacja_i_badania"
-                element={<Education />}
-              />
-              <Route
-                path="/pol-med.tech/Edukacja_i_badania/interaktywna_platforma_edukacyjna"
+                path="/Edukacja_i_badania/interaktywna_platforma_edukacyjna"
                 element={
                   <SpecialProduct
                     setZoomIn={setZoomIn}
@@ -77,7 +74,7 @@ function App() {
                 }
               />
               <Route
-                path="/pol-med.tech/Edukacja_i_badania/:id"
+                path="/Edukacja_i_badania/:id"
                 element={
                   <EducationProduct
                     setZoomIn={setZoomIn}
