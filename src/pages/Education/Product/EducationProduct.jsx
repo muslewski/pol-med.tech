@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import stationsData from "../stations.json";
 import ContactButton from "../../../components/Navbar/ContactButton";
 import Section from "../../../components/Section";
-import iconCart from "../../../Assets/cart.webp";
+import iconCart from "../../../Assets/cart.png";
 import GoodButton from "../../../components/GoodButton";
 import StationObject from "../StationObject";
 import GlowingTitle from "../../../components/GlowingTitle";
