@@ -9,7 +9,7 @@ import ArrowMobile from "./assets/arrowMobile.svg";
 import HeroCard from "../../components/HeroCard";
 import videoPolMed from "./assets/polmed3.mp4";
 import fallbackImageBackground from "./assets/background.webp";
-import educationCardImg from "./assets/educationCard.png";
+import educationCardImg from "./assets/educationCard.webp";
 import oilsCardImg from "./assets/oleje.webp";
 import toolsCardImg from "./assets/narzedzia.webp";
 import carServiceIcon from "../../Assets/car-service.webp";
