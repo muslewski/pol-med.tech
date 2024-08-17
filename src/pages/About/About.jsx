@@ -18,8 +18,8 @@ import FancyInfo from "../../components/FancyInfo";
 import carServiceIcon from "../../Assets/car-service.svg";
 import oilTankIcon from "../../Assets/oil-tank.svg";
 import toolsIcon from "../../Assets/tools.svg";
-import honestyIcon from "./assets/honestyIcon.webp";
-import goalIcon from "./assets/goalIcon.webp";
+import honestyIcon from "./assets/honestyIcon.png";
+import goalIcon from "./assets/goalIcon.png";
 import SeriousInfo from "../../components/SeriousInfo";
 
 function About() {

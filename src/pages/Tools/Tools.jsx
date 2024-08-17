@@ -15,10 +15,10 @@ import Section from "../../components/Section";
 import GlowingTitle from "../../components/GlowingTitle";
 import LiTool from "./LiTool";
 
-import jobCvIcon from "./assets/job-cv.webp";
-import metalIcon from "./assets/metal.webp";
-import moneyBagIcon from "./assets/money-bag.webp";
-import precisionIcon from "./assets/precision.webp";
+import jobCvIcon from "./assets/job-cv.png";
+import metalIcon from "./assets/metal.png";
+import moneyBagIcon from "./assets/money-bag.png";
+import precisionIcon from "./assets/precision.png";
 
 import t0 from "./assets/list/t0.jpg";
 import t1 from "./assets/list/t1.jpg";

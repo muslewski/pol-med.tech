@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 
-import carServiceIcon from "../../Assets/car-service.webp";
-import oilTankIcon from "../../Assets/oil-tank.webp";
-import toolsIcon from "../../Assets/tools.webp";
-import helloIcon from "../../Assets/hello.webp";
+import carServiceIcon from "../../Assets/car-service.png";
+import oilTankIcon from "../../Assets/oil-tank.png";
+import toolsIcon from "../../Assets/tools.png";
+import helloIcon from "../../Assets/hello.png";
 import hamburger from "./assets/hamburger.svg";
 import polMedDark from "./assets/polMedDark.png";
 import nightSvg from "./assets/night.svg";

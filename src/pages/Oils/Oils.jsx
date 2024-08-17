@@ -14,10 +14,10 @@ import iconWarehouse from "./assets/iconWarehouse.svg";
 import oilsBackground from "./assets/oilsBackground.jpg";
 // import oils2Background from "./assets/oils2Background.jpg";
 import oilsBackground3 from "./assets/oils3Background.jpg";
-import iconExpertise from "./assets/iconExpertise.webp";
-import iconMicroscope from "./assets/iconMicroscope.webp";
-import iconResearch from "./assets/iconResearch.webp";
-import iconSuggestion from "./assets/iconSuggestion.webp";
+import iconExpertise from "./assets/iconExpertise.png";
+import iconMicroscope from "./assets/iconMicroscope.png";
+import iconResearch from "./assets/iconResearch.png";
+import iconSuggestion from "./assets/iconSuggestion.png";
 
 import HeroCard from "../../components/HeroCard";
 import ContactButton from "../../components/Navbar/ContactButton";
@@ -65,7 +65,7 @@ function Oils() {
           {/* Tutaj zamień link gdy będzie docelowy  */}
           {/* Tutaj zamień link gdy będzie docelowy  */}
           <a
-            href="/pol-med.tech/certyfikat.pdf"
+            href="/certyfikat.pdf"
             target="_blank"
             className="[&_.makeBigger]:hover:scale-105 self-end"
           >
