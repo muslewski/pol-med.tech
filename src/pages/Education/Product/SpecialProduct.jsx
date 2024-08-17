@@ -2,17 +2,17 @@ import React from "react";
 import stationsData from "../stations.json";
 import Section from "../../../components/Section";
 import GoodButton from "../../../components/GoodButton";
-import iconCart from "../../../Assets/cart.webp";
+import iconCart from "../../../Assets/cart.png";
 import GlowingTitle from "../../../components/GlowingTitle";
 import StationObject from "../StationObject";
 
 import photo1 from "../assets/platform1.jpg";
-import photo2 from "../assets/platforma.webp";
+import photo2 from "../assets/platforma.png";
 import SpecialProductLi from "./SpecialProductLi";
 
-import iconComputer from "../assets/iconComputer.webp";
-import iconMechanic from "../assets/iconMechanic.webp";
-import iconSettings from "../assets/iconSettings.webp";
+import iconComputer from "../assets/iconComputer.png";
+import iconMechanic from "../assets/iconMechanic.png";
+import iconSettings from "../assets/iconSettings.png";
 
 function SpecialProduct({ setZoomIn, mainPhoto, setMainPhoto }) {
   const nextStation = stationsData.stations[0];
