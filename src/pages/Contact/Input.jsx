@@ -1,25 +1,44 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
-function Input({ textarea = false, errorText, send }) {
+function Input({
+  name,
+  placeholder = "",
+  textarea = false,
+  inputType = "text",
+  errorText = "",
+  send = false,
+}) {
+  const [value, setValue] = useState("");
+
   useEffect(() => {
     setValue("");
   }, [send]);
+
+  function handleChange(event) {
+    setValue(event.target.value);
+    event.target.setCustomValidity("");
+  }
+
+  let className =
+    "p-5 rounded-3xl bg-white/95 backdrop-brightness-175 backdrop-blur-sm text-slate-950 placeholder-indigo-950 shadow-glowingInput transition-all focus:outline-offset-4 outline-white";
 
   return (
     <div>
       {textarea ? (
         <textarea
           name={name}
+          placeholder={placeholder}
           rows="6"
-          className={classStyling}
+          className={className + " w-full min-h-80"}
           value={value}
           onChange={handleChange}
         />
       ) : (
         <input
           name={name}
-          type="text"
-          className={classStyling}
+          placeholder={placeholder}
+          type={inputType}
+          className={className + " w-full"}
           value={value}
           onChange={handleChange}
         />

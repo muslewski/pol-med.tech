@@ -64,6 +64,10 @@ module.exports = {
           "0 4px 4px rgba(100, 100, 155, 0.25)",
           "inset 0 4px 8px rgba(100, 100, 155, 0.3)",
         ],
+        glowingInput: [
+          "4px 4px 25px rgba(0, 0, 15, 0.3)",
+          "inset 0 4px 4px rgba(0, 0, 0, 0.4)",
+        ],
         glowingTools: [
           "0 4px 4px rgba(99, 156, 156, 0.25)",
           "inset 0 4px 8px rgba(99, 156, 156, 0.3)",

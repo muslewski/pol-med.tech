@@ -71,7 +71,7 @@ function Home() {
             </div>
             <img
               src={ArrowDown}
-              className="hidden sm:flex top-[110%] w-12 sm:w-16 left-1/2 translate-x-1/2 absolute cursor-pointer drop-shadow-logoDark hover:scale-105 transition-all ease-in-out duration-500 animate-pulse animate-infinite animate-duration-[2500ms] animate-delay-1000 animate-ease-in-out"
+              className="hidden lg:flex top-[50%] -translate-y-1/2 left-[107%] w-12 sm:w-32 translate-x-1/2 rounded-tl-3xl rounded-tr-3xl rounded-bl-[50px] rounded-br-[50px]  bg-gradient-to-tr border-blue-900/15 shadow-navigation from-indigo-950/55 to-blue-950/5 px-8 py-6 absolute cursor-pointer hover:scale-105 transition-all ease-in-out duration-500"
               alt=""
               onClick={executeScrollOffer}
             />
