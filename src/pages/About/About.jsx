@@ -21,6 +21,7 @@ import toolsIcon from "../../Assets/tools.svg";
 import honestyIcon from "./assets/honestyIcon.png";
 import goalIcon from "./assets/goalIcon.png";
 import SeriousInfo from "../../components/SeriousInfo";
+import ContactButton from "../../components/Navbar/ContactButton";
 
 function About() {
   return (
@@ -44,6 +45,11 @@ function About() {
             description="Łączymy pasję i doświadczenie, aby dostarczać innowacyjne rozwiązania wspierające rozwój przemysłu i edukacji. Twój sukces to nasz priorytet!"
             col1="rgba(21, 51, 76, 0.2)"
             col2="rgba(28, 31, 72, 0.7)"
+          />
+
+          <ContactButton
+            customBackground="bg-[rgba(7,9,54,0.35)]"
+            className="flex sm:hidden self-end relative right-16"
           />
         </Hero>
       </header>

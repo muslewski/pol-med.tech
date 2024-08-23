@@ -20,16 +20,16 @@ function Input({
   }
 
   let className =
-    "p-5 rounded-3xl bg-white/95 backdrop-brightness-175 backdrop-blur-sm text-slate-950 placeholder-indigo-950 shadow-glowingInput transition-all focus:outline-offset-4 outline-white";
+    "p-5 rounded-3xl bg-white/95  backdrop-brightness-175 backdrop-blur-2xl text-slate-950 placeholder-indigo-950 shadow-glowingInput transition-all focus:outline-offset-4 outline-white";
 
   return (
-    <div>
+    <div className="bg-white/95 rounded-3xl flex">
       {textarea ? (
         <textarea
           name={name}
           placeholder={placeholder}
           rows="6"
-          className={className + " w-full min-h-80"}
+          className={className + " w-full min-h-80 resize-none"}
           value={value}
           onChange={handleChange}
         />
@@ -38,7 +38,7 @@ function Input({
           name={name}
           placeholder={placeholder}
           type={inputType}
-          className={className + " w-full"}
+          className={className + " w-full sm:min-w-80"}
           value={value}
           onChange={handleChange}
         />

@@ -123,7 +123,7 @@ function Education() {
             background: `linear-gradient(-60deg, #15366dd3, transparent 60%)`,
           }}
         >
-          <div className="border-4 w-2/3 border-primary-dark/50 rounded-3xl shadow-navigation hover:drop-shadow-homeCard transition-all duration-500 ease-in-out">
+          <div className="border-4 sm:w-2/3 border-primary-dark/50 rounded-3xl shadow-navigation hover:drop-shadow-homeCard transition-all duration-500 ease-in-out">
             <iframe
               className="h-full  rounded-3xl"
               loading="lazy"

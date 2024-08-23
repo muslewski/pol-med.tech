@@ -5,6 +5,7 @@ import carServiceIcon from "../../Assets/car-service.png";
 import oilTankIcon from "../../Assets/oil-tank.png";
 import toolsIcon from "../../Assets/tools.png";
 import helloIcon from "../../Assets/hello.png";
+import contactIcon from "../../Assets/contact-form.png";
 import hamburger from "./assets/hamburger.svg";
 import polMedDark from "./assets/polMedDark.png";
 import nightSvg from "./assets/night.svg";
@@ -178,6 +179,16 @@ function Navbar() {
                 <img src={helloIcon} className="h-7 2lg:hidden" alt="" />O nas
               </Link>
             </NavElement>
+            <NavElement className="sm:hidden">
+              <Link
+                to="/Kontakt"
+                className="flex items-center gap-3 py-3 2lg:py-0"
+                onClick={goToTop}
+              >
+                <img src={contactIcon} className="h-7 2lg:hidden" alt="" />
+                Formularz kontaktowy
+              </Link>
+            </NavElement>
             <NavElement className="">
               <button
                 className="h-fit flex items-center gap-3 py-3 2lg:py-0"
@@ -188,7 +199,7 @@ function Navbar() {
                 <img className="h-2" src={smallArrow} alt="" />
               </button>
             </NavElement>
-            <NavElement className="">
+            {/* <NavElement className="">
               <button
                 className="h-fit flex items-center gap-3 py-3 2lg:py-0"
                 onClick={handleNavigationClick}
@@ -197,7 +208,7 @@ function Navbar() {
                 <span className="flex 2lg:hidden 5xl:flex">Ciemny</span>
                 <img className="h-2" src={smallArrow} alt="" />
               </button>
-            </NavElement>
+            </NavElement> */}
           </ul>
         </li>
         <li className="flex items-center gap-7 justify-center">
