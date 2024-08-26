@@ -7,7 +7,7 @@ import HeroPattern from "./assets/HeroPattern.svg";
 import ArrowDown from "./assets/Arrow.svg";
 import ArrowMobile from "./assets/arrowMobile.svg";
 import HeroCard from "../../components/HeroCard";
-import videoPolMed from "./assets/polmed3.mp4";
+import videoPolMed from "./assets/polmed8.mp4";
 import fallbackImageBackground from "./assets/background.png";
 import educationCardImg from "./assets/educationCard.png";
 import oilsCardImg from "./assets/oleje.png";

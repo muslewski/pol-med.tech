@@ -126,7 +126,8 @@ function Navbar() {
           <Link to="/" onClick={goToTop}>
             <div className="w-32 xl:w-36 2xl:w-48 flex flex-col items-center drop-shadow-logoDark">
               <img className="w-full" src={polMedDark} alt="" />
-              <h6 className="text-sm font-bold italic font-lobsterTwo text-[#BE1C07]">
+              <h6 className="text-sm font-bold italic font-lobsterTwo text-white">
+                {/* #BE1C07 */}
                 Od 2003
               </h6>
             </div>

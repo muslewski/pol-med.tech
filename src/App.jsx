@@ -22,13 +22,18 @@ const Contact = lazy(() => import("./pages/Contact/Contact"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const Copyright = lazy(() => import("./pages/Copyright"));
 function App() {
+  // Scroll to top on every route change
   const { pathname } = useLocation();
   useEffect(() => {
     goToTopRough();
   }, [pathname]);
 
+  // State for zooming in the image
   const [zoomIn, setZoomIn] = useState(false);
   const [mainPhoto, setMainPhoto] = useState(null);
+
+  // Main Background Color (pssst: footer is responsible for changing it)
+  const [bgColor, setBgColor] = useState("#040030");
 
   return (
     <>
@@ -43,8 +48,12 @@ function App() {
           />
         </div>
       )}
-      <Navbar />
-      <div key={pathname} className="wrapper bg-secondary-dark">
+      <Navbar bgColor={bgColor} />
+      <div
+        key={pathname}
+        className="wrapper"
+        style={{ backgroundColor: bgColor }}
+      >
         <ErrorBoundary
           fallback={
             <div className="w-full px-6 sm:px-16 h-full flex justify-center items-center text-white font-exo text-2xl sm:text-4xl">
@@ -90,7 +99,7 @@ function App() {
               <Route path="/Polityka_prywatnosci" element={<PrivacyPolicy />} />
               <Route path="/Prawa_autorskie" element={<Copyright />} />
             </Routes>
-            <Footer />
+            <Footer bgColor={bgColor} setBgColor={setBgColor} />
           </Suspense>
         </ErrorBoundary>
       </div>

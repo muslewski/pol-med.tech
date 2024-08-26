@@ -2,15 +2,55 @@ import React, { useEffect, useState } from "react";
 import arrow from "./assets/footerArrow.svg";
 import phone from "./assets/footerPhone.svg";
 import link from "./assets/footerLink.svg";
-import top from "./assets/footerTop.svg";
+import topHome from "./assets/footerTop.svg";
+import topEducation from "./assets/footerTop1.svg";
+import topOils from "./assets/footerTop2.svg";
+import topTools from "./assets/footerTop3.svg";
 import toTopArrow from "./assets/footerTopArrow.svg";
 import FooterElement from "./FooterElement";
 import { Link } from "react-router-dom";
 import goToTop from "../../utils/goToTop";
+import iconWhatsApp from "../../Assets/whatsapp.png";
 
-function Footer() {
+function Footer({ bgColor, setBgColor }) {
+  // console log current page path
+  const [footerEmail, setFooterEmail] = useState("biuro@pol-med.tech");
+  const [path, setPath] = useState(window.location.pathname);
+  const [footerPhone, setFooterPhone] = useState(null);
+  const [top, setTop] = useState(topHome);
+
+  useEffect(() => {
+    if (path.includes("/Edukacja_i_badania")) {
+      setTop(topEducation);
+      setBgColor("#050f3a");
+      setFooterEmail("edukacja@pol-med.tech");
+    } else if (path === "/Oleje_UCO") {
+      setTop(topOils);
+      setBgColor("#020f36");
+      setFooterEmail("oleje@pol-med.tech");
+      setFooterPhone(
+        <li>
+          Oleje UCO: <a href="tel:+48 537 144 288">+48 537 144 288</a>
+          <span className="inline-flex items-center gap-2 text-base bg-green-700/55 p-1.5 mx-4 rounded-bl-md rounded-tr-md rounded-tl-2xl rounded-br-2xl">
+            (<img src={iconWhatsApp} className="w-6" alt="" /> WhatsApp )
+          </span>
+        </li>
+      );
+    } else if (path === "/Narzedzia") {
+      setTop(topTools);
+      setBgColor("#011a32");
+      setFooterEmail("narzedzia@pol-med.tech");
+    } else {
+      setFooterEmail("biuro@pol-med.tech");
+      setBgColor("#040030");
+    }
+  }, [path]);
+
   return (
-    <footer className="flex text-primary-dark tracking-wide justify-center relative z-50  bg-secondary-dark">
+    <footer
+      className="flex text-primary-dark tracking-wide justify-center relative z-50  bg-secondary-dark"
+      style={{ backgroundColor: bgColor }}
+    >
       <img
         src={top}
         alt=""
@@ -35,7 +75,7 @@ function Footer() {
             <p>
               ul.{" "}
               <a
-                href="https://maps.app.goo.gl/t8s2ppjCwsCvdeTM7"
+                href="https://maps.app.goo.gl/rKBj2jozLHX2NQ9y5"
                 target="_blank"
               >
                 Leśna 38
@@ -48,6 +88,7 @@ function Footer() {
         />
         <FooterElement
           title="Kontakt"
+          p0={footerPhone}
           p1={
             <p>
               tel. <a href="tel:+48 525 000 260">+48 525 000 260</a>
@@ -60,7 +101,7 @@ function Footer() {
           }
           p3={
             <p>
-              email: <a href="mailto:biuro@pol-med.tech">biuro@pol-med.tech</a>
+              email: <a href={`mailto:${footerEmail}`}>{footerEmail}</a>
             </p>
           }
           icon={phone}

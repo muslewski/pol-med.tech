@@ -1,4 +1,6 @@
 import React, { useRef, useState } from "react";
+import EmailValidator from "email-validator";
+import emailjs from "@emailjs/browser";
 import Lottie from "lottie-react";
 import contactAnimation from "../../lotties/contact2.json";
 import arrowAnimation from "../../lotties/arrow.json";
@@ -8,6 +10,7 @@ import BackgroundTop from "../../components/Objects/BackgroundTop";
 import BgBottomVector from "../../components/Objects/BgBottomVector";
 import ArrowDown from "./assets/Arrow.svg";
 import ArrowMobile from "./assets/arrowMobile.svg";
+import iconWhatsApp from "../../Assets/whatsapp.png";
 
 import background from "./assets/backgroundContact.jpg";
 import rectangleBottom from "./assets/rectangleBottom.svg";
@@ -27,9 +30,107 @@ function Contact() {
   // State for sending status
   const [isSend, setIsSend] = useState(false);
 
+  // State for disabling the button before we find out if the message was sent
+  const [buttonClicked, setButtonClicked] = useState(false);
+
+  // States that are used for displaying error messages
+  const [nameError, setNameError] = useState("");
+  const [emailError, setEmailError] = useState("");
+  const [phoneError, setPhoneError] = useState("");
+  const [messageError, setMessageError] = useState("");
+
+  // New state to track if phone error was displayed
+  const [phoneErrorDisplayed, setPhoneErrorDisplayed] = useState(false);
+
+  // Scroll to contact form
   const contactRef = useRef(null);
   const executeScrollContact = () =>
     contactRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+
+  // Ref that is responsible for sending form
+  const form = useRef(null);
+
+  // Refs for validating the input value
+  const nameRef = useRef(null);
+  const emailRef = useRef(null);
+  const phoneRef = useRef(null);
+  const messageRef = useRef(null);
+
+  // Handle sending email
+  const handleSendEmail = async (e) => {
+    e.preventDefault();
+
+    // Reset the error messages
+    setNameError("");
+    setEmailError("");
+    setPhoneError("");
+    setMessageError("");
+
+    const name = nameRef.current.value;
+    const email = emailRef.current.value;
+    const phone = phoneRef.current.value;
+    const message = messageRef.current.value;
+
+    // Check if input values are correct
+    if (message.length < 1) {
+      // If there is no message
+      messageRef.current.focus();
+      setMessageError(
+        "Napisz wiadomość, abyśmy mogli rozpocząć owocną współpracę."
+      );
+    } else if (name.length < 1) {
+      // If there is no name
+      setNameError("Proszę podać, jak możemy się do Pani/Pana zwracać.");
+      nameRef.current.focus();
+    } else if (email.length < 1) {
+      // If there is no email
+      setEmailError(
+        "Proszę podać swój adres e-mail, abyśmy mogli się skontaktować."
+      );
+      emailRef.current.focus();
+    } else if (!email.includes("@")) {
+      // If email don't have @
+      emailRef.current.focus();
+      setEmailError(
+        "Hmmm, ten adres email wygląda dziwnie. Może spróbuj jeszcze raz z '@'?"
+      );
+    } else if (!EmailValidator.validate(email)) {
+      // If email is valid
+      emailRef.current.focus();
+      setEmailError("Proszę sprawdzić poprawność adresu e-mail.");
+    } else if (phone.length < 1 && !phoneErrorDisplayed) {
+      // If there is no phone
+      phoneRef.current.focus();
+      setPhoneError(
+        "Możesz podać swój numer telefonu, ale nie jest to wymagane."
+      );
+      setTimeout(() => {
+        setPhoneErrorDisplayed(true); // Set phoneErrorDisplayed to true after displaying the error
+      }, 1000);
+    } else {
+      setButtonClicked(true);
+
+      // Heart of the message sending
+      emailjs
+        .sendForm(
+          "service_1aqik82",
+          "template_erj6s3w",
+          form.current,
+          "XeDaxKDYwvWpoAeQo"
+        )
+        .then((result) => {
+          console.log(result.text);
+          setIsSend(true);
+          setTimeout(() => {
+            setIsSend(false);
+            setButtonClicked(false);
+          }, 2500);
+        })
+        .catch((error) => {
+          console.log(error.text);
+        });
+    }
+  };
 
   return (
     <>
@@ -62,7 +163,13 @@ function Contact() {
               animationData={arrowAnimation}
               loop={false}
               className="hidden lg:flex top-[50%] -translate-y-1/2 left-[105%] w-12 sm:w-44 translate-x-1/2 rounded-tl-3xl rounded-tr-3xl rounded-bl-[50px] rounded-br-[50px]  bg-gradient-to-tr border-blue-900/15 shadow-navigation from-indigo-950/85 to-blue-950/5 px-8 py-6 absolute cursor-pointer hover:scale-105 transition-all ease-in-out duration-500"
-              onClick={executeScrollContact}
+              onClick={() => {
+                executeScrollContact();
+                // Wait for the animation to finish
+                setTimeout(() => {
+                  messageRef.current.focus();
+                }, 550);
+              }}
             />
           </HeroCard>
 
@@ -95,48 +202,85 @@ function Contact() {
             Formularz kontaktowy
           </GlowingTitle>
           <div className="flex flex-col h-fit items-center justify-start sm:justify-center w-full z-30 text-lg 2xl:text-xl font-medium font-raleway">
-            <div className="w-full  max-w-full h-fit  flex flex-col xl:flex-row justify-start items-stretch gap-12 xl:gap-28">
+            <form
+              ref={form}
+              className="w-full  max-w-full h-fit  flex flex-col xl:flex-row justify-start items-stretch gap-12 xl:gap-28"
+              onSubmit={handleSendEmail}
+            >
               <div className=" xl:w-3/5 flex flex-col items-stretch gap-24">
                 <div className="flex flex-col gap-12">
                   <Input
+                    ref={messageRef}
                     name="message"
                     placeholder="Wiadomość"
+                    errorText={messageError}
                     send={isSend}
                     textarea
                   />
                 </div>
-                <SendButton first />
+                <SendButton first clicked={buttonClicked} sendStatus={isSend} />
               </div>
               <div className="xl:max-w-4xl xl:w-3/12 flex flex-col md:flex-row items-center  gap-20 justify-start">
                 <div className="flex flex-col gap-12 xl:gap-16 w-full">
-                  <Input name="message" placeholder="Imię" send={isSend} />
-                  <Input name="message" placeholder="Email" send={isSend} />
                   <Input
-                    name="message"
+                    ref={nameRef}
+                    name="user_name"
+                    placeholder="Imię"
+                    errorText={nameError}
+                    send={isSend}
+                  />
+                  <Input
+                    ref={emailRef}
+                    name="user_email"
+                    placeholder="Email"
+                    errorText={emailError}
+                    send={isSend}
+                  />
+                  <Input
+                    ref={phoneRef}
+                    name="user_phone"
                     placeholder="Numer Telefonu"
+                    errorText={phoneError}
                     inputType="tel"
                     send={isSend}
                   />
                 </div>
-                <SendButton />
+                <SendButton clicked={buttonClicked} sendStatus={isSend} />
               </div>
-            </div>
+            </form>
           </div>
         </div>
 
-        <div className="flex flex-wrap gap-24 gap-y-24 gap-x-32 self-start">
+        <div className="flex flex-wrap gap-24 gap-y-24 gap-x-32 self-start magicAUnderline">
           <GlowingTitle>Dane kontaktowe</GlowingTitle>
           <ListInfo title="Adresy email:">
-            <li>biuro@pol-med.tech</li>
-            <li>edukacja@pol-med.tech</li>
-            <li>oleje@pol-med.tech</li>
-            <li>narzedzia@pol-med.tech</li>
+            <li>
+              <a href="mailto:biuro@pol-med.tech">biuro@pol-med.tech</a>
+            </li>
+            <li>
+              <a href="mailto:edukacja@pol-med.tech">edukacja@pol-med.tech</a>
+            </li>
+            <li>
+              <a href="mailto:oleje@pol-med.tech">oleje@pol-med.tech</a>
+            </li>
+            <li>
+              <a href="mailto:narzedzia@pol-med.tech">narzedzia@pol-med.tech</a>
+            </li>
           </ListInfo>
 
           <ListInfo title="Numery Telefonu:">
-            <li>Główny: +48 52 5000 260</li>
-            <li>Główny 2: +48 601 78 75 77</li>
-            <li>Oleje UCO: 123 456 789</li>
+            <li>
+              Główny: <a href="tel:+48 52 5000 260">+48 52 5000 260</a>
+            </li>
+            <li>
+              Główny 2: <a href="tel:+48 601 78 75 77">+48 601 78 75 77</a>
+            </li>
+            <li>
+              Oleje UCO: <a href="tel:+48 537 144 288">+48 537 144 288</a>
+              <span className="inline-flex items-center gap-2 text-base bg-green-700/55 p-1.5 mx-4 rounded-bl-md rounded-tr-md rounded-tl-2xl rounded-br-2xl">
+                (<img src={iconWhatsApp} className="w-6" alt="" /> WhatsApp )
+              </span>
+            </li>
           </ListInfo>
         </div>
       </Section>

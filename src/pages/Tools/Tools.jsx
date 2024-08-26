@@ -80,7 +80,7 @@ function Tools() {
         </Hero>
       </header>
 
-      <Section customClass="bg-gradient-to-b from-[#012031] to-[#012F31]">
+      <Section customClass="bg-gradient-to-b from-[#012031] to-[#03343d]">
         <div className="self-start flex flex-wrap gap-16">
           <GlowingTitle>Oferujemy</GlowingTitle>
           <div className="max-w-7xl font-exo font-medium text-xl 2xl:text-[1.5rem] sm:leading-snug">

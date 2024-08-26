@@ -142,7 +142,7 @@ function About() {
             <li>
               Adres:{" "}
               <a
-                href="https://maps.app.goo.gl/t8s2ppjCwsCvdeTM7"
+                href="https://maps.app.goo.gl/rKBj2jozLHX2NQ9y5"
                 target="_blank"
               >
                 ul. Leśna 38, 86-031 Osielsko

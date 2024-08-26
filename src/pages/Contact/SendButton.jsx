@@ -1,18 +1,23 @@
 import React, { useEffect, useState } from "react";
 
-function SendButton({ first = false }) {
+function SendButton({ first = false, sendStatus, clicked }) {
   const className = first
     ? `w-full justify-end gap-16 items-center hidden xl:flex`
     : `w-full justify-start gap-16 items-center flex xl:hidden h-fit flex-col-reverse xl:flex-row`;
 
   return (
     <div className={className}>
-      <h3 className="text-red-500  self-start xl:self-center xl:mr-auto font-semibold text-shadow border-l-4 border-red-500 bg-gradient-to-br from-red-950/35 px-4 py-2 rounded-md">
-        Wiadomość z błędem
-      </h3>
+      {sendStatus && (
+        <h3 className="text-green-400 animate-fade-right  self-start xl:self-center xl:mr-auto font-semibold text-shadow border-l-4 border-green-400 bg-gradient-to-br from-green-950/35 px-4 py-2 rounded-md">
+          Wiadomość wysłana
+        </h3>
+      )}
       <button
-        onClick={() => setIsSend((prev) => !prev)}
-        className="border-white border-[3px] w-fit self-start xl:self-center px-16 py-4 rounded-3xl text-white font-bold bg-black/5 backdrop-blur-lg hover:scale-105 transition-transform"
+        className={
+          clicked
+            ? "pointer-events-none border-white/75 border-[3px] w-fit self-start xl:self-center px-16 py-4 rounded-3xl text-white/75 font-bold bg-black/5 backdrop-blur-lg hover:scale-105 hover:shadow-contactInner transition-all"
+            : "border-white border-[3px] w-fit self-start xl:self-center px-16 py-4 rounded-3xl text-white font-bold bg-black/5 backdrop-blur-lg hover:scale-105 hover:shadow-contactInner transition-all"
+        }
       >
         Wyślij
       </button>
