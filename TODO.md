@@ -2,6 +2,9 @@
 
 - [ ] Loading Screen Untill whole page load correctly
 
+- [ ] Add favicon
+- [ ] Don't forget about animation!
+
 - [ ] Add sitemap.txt so that indexing will work corecctly and update robots.txt
 
   - It will make it more fancy for some people
