@@ -1,0 +1,1 @@
+import{j as r}from"./index-eb9dc88a.js";function a({image:n,bgColor:e=" bg-secondary-dark",alt:o="Background Image"}){return r.jsx("img",{className:"background pointer-events-none select-none",src:n,alt:o})}export{a as B};
