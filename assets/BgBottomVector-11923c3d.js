@@ -1,1 +1,0 @@
-import{j as t}from"./index-eb9dc88a.js";function n({image:o}){return t.jsx("img",{className:"absolute w-screen -bottom-10 min-h-24 object-cover pointer-events-none select-none",src:o,alt:"Background Bottom Vector"})}export{n as B};
