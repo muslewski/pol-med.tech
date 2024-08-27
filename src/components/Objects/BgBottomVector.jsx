@@ -5,7 +5,7 @@ function BgBottomVector({ image }) {
     <img
       className="absolute w-screen -bottom-10 min-h-24 object-cover pointer-events-none select-none"
       src={image}
-      alt="Background Bottom Vector"
+      alt=""
     />
   );
 }

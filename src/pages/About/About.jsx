@@ -27,10 +27,7 @@ function About() {
   return (
     <>
       <header>
-        <Background
-          image={background}
-          alt="Background Image of Oil Containers"
-        />
+        <Background image={background} alt="Background Image of office" />
         <BackgroundBottom
           image={rectangleBottom}
           mobileImage={rectangleBottomMobile}
@@ -136,11 +133,11 @@ function About() {
           </div>
         </div>
 
-        <div className="flex flex-wrap gap-16 sm:gap-24 self-start magicAUnderline">
+        <div className="flex flex-wrap gap-16 sm:gap-16 self-start magicAUnderline">
           <GlowingTitle>Informacje</GlowingTitle>
-          <ul className="flex flex-col gap-6 list-square list-inside font-exo text-base lg:text-xl 2xl:text-2xl">
+          <ul className="flex flex-col gap-4 list-square list-inside font-exo [&_b]:font-semibold text-base lg:text-xl 2xl:text-2xl">
             <li>
-              Adres:{" "}
+              <b>Adres:</b>{" "}
               <a
                 href="https://maps.app.goo.gl/rKBj2jozLHX2NQ9y5"
                 target="_blank"
@@ -148,10 +145,18 @@ function About() {
                 ul. Leśna 38, 86-031 Osielsko
               </a>
             </li>
-            <li>NIP: PL9671167341</li>
-            <li>REGON: 093140846</li>
-            <li>KRS: 0000166787</li>
-            <li>BDO: 000638650</li>
+            <li>
+              <b>NIP:</b> PL9671167341
+            </li>
+            <li>
+              <b>REGON:</b> 093140846
+            </li>
+            <li>
+              <b>KRS:</b> 0000166787
+            </li>
+            <li>
+              <b>BDO:</b> 000638650
+            </li>
             <li>EU-REDcert-553-54240001</li>
             <li>Kapitał zakładowy - 50.000 PLN (wpłacony w całości)</li>
           </ul>

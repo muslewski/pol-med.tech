@@ -113,7 +113,7 @@ function Contact() {
       // Heart of the message sending
       emailjs
         .sendForm(
-          "service_1aqik82",
+          "service_u3f8fy9",
           "template_erj6s3w",
           form.current,
           "XeDaxKDYwvWpoAeQo"

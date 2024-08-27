@@ -5,7 +5,7 @@ function BackgroundTop({ image }) {
     <img
       className="foreground3 pointer-events-none select-none"
       src={image}
-      alt="Background Top Rectangle"
+      alt=""
     />
   );
 }

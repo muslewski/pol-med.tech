@@ -29,12 +29,12 @@ function Footer({ bgColor, setBgColor }) {
       setBgColor("#020f36");
       setFooterEmail("oleje@pol-med.tech");
       setFooterPhone(
-        <li>
+        <div>
           Oleje UCO: <a href="tel:+48 537 144 288">+48 537 144 288</a>
           <span className="inline-flex items-center gap-2 text-base bg-green-700/55 p-1.5 mx-4 rounded-bl-md rounded-tr-md rounded-tl-2xl rounded-br-2xl">
             (<img src={iconWhatsApp} className="w-6" alt="" /> WhatsApp )
           </span>
-        </li>
+        </div>
       );
     } else if (path === "/Narzedzia") {
       setTop(topTools);

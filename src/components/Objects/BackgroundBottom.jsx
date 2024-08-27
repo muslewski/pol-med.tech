@@ -6,12 +6,12 @@ function BackgroundBottom({ image, mobileImage, alt }) {
       <img
         className="hidden md:block foreground2 pointer-events-none select-none"
         src={image}
-        alt="Background Bottom Rectangle"
+        alt=""
       />
       <img
         className="md:hidden foreground2 pointer-events-none select-none"
         src={mobileImage}
-        alt="Background Bottom Rectangle"
+        alt=""
       />
     </>
   );

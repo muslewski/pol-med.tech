@@ -1,6 +1,6 @@
 ## Add this features
 
-- [ ] Loading Screen Untill whole page load correctly
+- [x] Loading Screen Untill whole page load correctly
 
 - [ ] Add favicon
 - [ ] Don't forget about animation!

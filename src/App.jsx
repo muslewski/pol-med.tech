@@ -19,8 +19,9 @@ const Oils = lazy(() => import("./pages/Oils/Oils"));
 const Tools = lazy(() => import("./pages/Tools/Tools"));
 const About = lazy(() => import("./pages/About/About"));
 const Contact = lazy(() => import("./pages/Contact/Contact"));
-const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
-const Copyright = lazy(() => import("./pages/Copyright"));
+const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy/PrivacyPolicy"));
+const Copyright = lazy(() => import("./pages/Copyright/Copyright"));
+
 function App() {
   // Scroll to top on every route change
   const { pathname } = useLocation();
