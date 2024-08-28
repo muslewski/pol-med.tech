@@ -1,1 +1,0 @@
-import{j as t}from"./index-c53c0462.js";function n({image:e}){return t.jsx("img",{className:"absolute w-screen -bottom-10 min-h-24 object-cover pointer-events-none select-none",src:e,alt:""})}export{n as B};
