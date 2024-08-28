@@ -11,8 +11,11 @@ import FooterElement from "./FooterElement";
 import { Link } from "react-router-dom";
 import goToTop from "../../utils/goToTop";
 import iconWhatsApp from "../../Assets/whatsapp.png";
+import { useTranslation } from "react-i18next";
 
 function Footer({ bgColor, setBgColor }) {
+  const { t } = useTranslation("Footer");
+
   // console log current page path
   const [footerEmail, setFooterEmail] = useState("biuro@pol-med.tech");
   const [path, setPath] = useState(window.location.pathname);
@@ -30,7 +33,7 @@ function Footer({ bgColor, setBgColor }) {
       setFooterEmail("oleje@pol-med.tech");
       setFooterPhone(
         <div>
-          Oleje UCO: <a href="tel:+48 537 144 288">+48 537 144 288</a>
+          {t("uco_oils")}: <a href="tel:+48 537 144 288">+48 537 144 288</a>
           <span className="inline-flex items-center gap-2 text-base bg-green-700/55 p-1.5 mx-4 rounded-bl-md rounded-tr-md rounded-tl-2xl rounded-br-2xl">
             (<img src={iconWhatsApp} className="w-6" alt="" /> WhatsApp )
           </span>
@@ -83,11 +86,11 @@ function Footer({ bgColor, setBgColor }) {
             </p>
           }
           p2={<p>86-031 Osielsko</p>}
-          p3={<p>Polska 🇵🇱</p>}
+          p3={<p>{t("poland")} 🇵🇱</p>}
           icon={arrow}
         />
         <FooterElement
-          title="Kontakt"
+          title={t("contact")}
           p0={footerPhone}
           p1={
             <p>
@@ -107,20 +110,20 @@ function Footer({ bgColor, setBgColor }) {
           icon={phone}
         />
         <FooterElement
-          title="Linki"
+          title={t("quick_links")}
           p1={
             <p>
-              <Link to="/Kontakt">Formularz kontaktowy</Link>
+              <Link to="/Kontakt">{t("contact_form")}</Link>
             </p>
           }
           p2={
             <p>
-              <Link to="/Polityka_prywatnosci">Polityka prywatności</Link>
+              <Link to="/Polityka_prywatnosci">{t("privacy_policy")}</Link>
             </p>
           }
           p3={
             <p>
-              <Link to="/Prawa_autorskie">Prawa autorskie</Link>
+              <Link to="/Prawa_autorskie">{t("copyright")}</Link>
             </p>
           }
           icon={link}

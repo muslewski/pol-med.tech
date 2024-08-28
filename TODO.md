@@ -36,4 +36,7 @@
   - humans.txt
 
 - [ ] Animated Icons
+
   - In Oils Offert Section add Animated Icons that starts to play when vissible
+
+- [ ] Localization of Links based on choosen language

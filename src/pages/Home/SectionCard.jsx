@@ -26,7 +26,7 @@ function SectionCard({
           className="mainImage object-cover rounded-3xl transition-all duration-500 ease-in-out relative bottom-0 right-0"
           style={{ filter: `drop-shadow(0 6px 6px ${shadow})` }}
           src={image}
-          alt=""
+          alt={title}
         />
       </Link>
       <div className="flex flex-wrap gap-3 sm:gap-6 w-fit">

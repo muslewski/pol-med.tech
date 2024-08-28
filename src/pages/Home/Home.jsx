@@ -29,8 +29,10 @@ import BackgroundBottom from "../../components/Objects/BackgroundBottom";
 import BackgroundTop from "../../components/Objects/BackgroundTop";
 import BackgroundVideo from "../../components/Objects/BackgroundVideo";
 import Hero from "../../components/Hero";
+import { useTranslation } from "react-i18next";
 
 function Home() {
+  const { t } = useTranslation("Home");
   const offerRef = useRef(null);
 
   const executeScrollOffer = () =>
@@ -53,26 +55,26 @@ function Home() {
           <HeroCard
             boxCustom="items-center"
             titleCustom=" text-center"
-            title="Profesjonalne wsparcie dla Twojego biznesu i edukacji!"
+            title={t("hero_title")}
             col1="rgba(26,21,76,0.2)"
             col2="rgba(23,27,80,0.8)"
           >
             <hr className="hidden sm:flex h-2 2xl:h-3 w-3/4 rounded-[100%] bg-gradient-to-b from-primary-dark to-transparent drop-shadow-whiteText" />
             <div className="hidden sm:flex justify-evenly xl:text-xl 3xl:text-2xl w-full font-exo ">
               <h2 className="animate-fade-down animate-delay-[500ms] animate-duration-1000">
-                Technologia
+                {t("hero_characeristic_1")}
               </h2>
               <h2 className="animate-fade-down animate-delay-[1000ms] animate-duration-1000">
-                Badania
+                {t("hero_characeristic_2")}
               </h2>
               <h2 className="animate-fade-down animate-delay-[1500ms] animate-duration-1000">
-                Przemysł
+                {t("hero_characeristic_3")}
               </h2>
             </div>
             <img
               src={ArrowDown}
               className="hidden lg:flex top-[50%] -translate-y-1/2 left-[107%] w-12 sm:w-32 translate-x-1/2 rounded-tl-3xl rounded-tr-3xl rounded-bl-[50px] rounded-br-[50px]  bg-gradient-to-tr border-blue-900/15 shadow-navigation from-indigo-950/55 to-blue-950/5 px-8 py-6 absolute cursor-pointer hover:scale-105 transition-all ease-in-out duration-500"
-              alt=""
+              alt={t("alt_scroll_down")}
               onClick={executeScrollOffer}
             />
           </HeroCard>
@@ -85,11 +87,11 @@ function Home() {
             <img
               className="sm:hidden absolute right-full top-12 animate-fade-down animate-delay-500"
               src={ArrowMobile}
-              alt=""
+              alt={t("alt_scroll_down")}
             />
 
             <h2 className="text-lg font-exo font-bold text-center">
-              Odkryj nasze możliwości
+              {t("section_title_1")}
             </h2>
           </div>
           <ContactButton className="flex sm:hidden self-end relative right-16" />
@@ -120,16 +122,15 @@ function Home() {
         />
 
         <GlowingTitle customClass="hidden sm:flex  sm:max-w-[85%]">
-          Odkryj nasze możliwości
+          {t("section_title_1")}
         </GlowingTitle>
 
         <div className="w-full h-fit flex flex-wrap gap-24 2xl:gap-24 justify-evenly items-start">
           <SectionCard
             image={educationCardImg}
             buttonIcon={carServiceIcon}
-            title="Stanowiska dydaktyczno-laboratoryjne"
-            description="Praktyczne i angażujące systemy dydaktyczne z zakresu technologii
-          samochodowych."
+            title={t("card_1_title")}
+            description={t("card_1_description")}
             gradient="#113C63"
             shadow="rgba(117,158,255,0.5)"
             linkHref="/Edukacja_i_badania"
@@ -137,8 +138,8 @@ function Home() {
           <SectionCard
             image={oilsCardImg}
             buttonIcon={oilTankIcon}
-            title="Oleje posmażalnicze (UCO)"
-            description="Odbiór, handel i magazynowanie olejów posmażalniczych (UCO) - kompleksowa usługa dostaw i odbiorów olejów dla przemysłu i gastronomii."
+            title={t("card_2_title")}
+            description={t("card_2_description")}
             gradient="#2C3C66"
             shadow="rgba(73, 91, 173, 0.5)"
             linkHref="/Oleje_UCO"
@@ -146,8 +147,8 @@ function Home() {
           <SectionCard
             image={toolsCardImg}
             buttonIcon={toolsIcon}
-            title="Narzędzia przemysłowe"
-            description="Kompleksowe zaopatrzenie przedsiębiorstw w różne rodzaje narzędzi przemysłowych."
+            title={t("card_3_title")}
+            description={t("card_3_description")}
             gradient="#115A55"
             shadow="rgba(117, 255, 227, 0.5)"
             linkHref="/Narzedzia"

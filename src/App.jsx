@@ -24,6 +24,7 @@ const Copyright = lazy(() => import("./pages/Copyright/Copyright"));
 
 function App() {
   // Scroll to top on every route change
+
   const { pathname } = useLocation();
   useEffect(() => {
     goToTopRough();
