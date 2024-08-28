@@ -59,7 +59,7 @@ i18n
     ],
     defaultNS: "Home", // Default namespace
     backend: {
-      loadPath: "./src/Assets/Languages/{{lng}}/{{ns}}.json",
+      loadPath: "./Languages/{{lng}}/{{ns}}.json",
     },
     interpolation: {
       escapeValue: false,

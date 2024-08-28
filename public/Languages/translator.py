@@ -3,7 +3,7 @@ import json
 from googletrans import Translator
 
 # Ścieżka do katalogu z tłumaczeniami
-translation_dir = './src/Languages/'
+translation_dir = './public/Languages/'
 # Lista języków do tłumaczenia (kody języków)
 languages = ["cs", "de", "en", "es", "fr", "it", "lt", "nl", "pt", "sk", "uk"]  # Możesz dodać lub usunąć kody języków
 
