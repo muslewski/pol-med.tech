@@ -172,11 +172,13 @@ header {
   text-shadow: 3px 5px 15px rgba(0, 0, 0, 0.647);
 }
 
-.magicAUnderline a {
+.magicAUnderline a,
+.magicButtonUnderline {
   position: relative;
 }
 
-.magicAUnderline a::before {
+.magicAUnderline a::before,
+.magicButtonUnderline::before {
   content: "";
   position: absolute;
   width: 0;
@@ -193,7 +195,8 @@ header {
     opacity 0.3s ease-in-out;
 }
 
-.magicAUnderline a:hover::before {
+.magicAUnderline a:hover::before,
+.magicButtonUnderline:hover::before {
   content: "";
   position: absolute;
   opacity: 1;

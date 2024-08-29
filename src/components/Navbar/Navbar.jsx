@@ -36,12 +36,20 @@ function Navbar() {
   const navigationRef = useRef();
   const [navigation, setNavigation] = useState(null);
 
-  // Latest status of navigation.
-  navigationRef.current = navigation;
+  // State for language menu visibility
+  const languageMenuRef = useRef();
+  const [languageMenuVisible, setLanguageMenuVisible] = useState(null);
 
   // By default animation is hidden
   const [navigationAnimationClass, setNavigationAnimationClass] =
     useState("hidden 2lg:flex");
+
+  const [languageMenuAnimationClass, setLanguageMenuAnimationClass] =
+    useState("hidden");
+
+  // Latest status of navigation.
+  navigationRef.current = navigation;
+  languageMenuRef.current = languageMenuVisible;
 
   // Logic for animation of navigation (Jump in / out)
   useEffect(() => {
@@ -58,7 +66,7 @@ function Navbar() {
       // Make sure that we will not see jump out animation after it is already disabled
       timeout = setTimeout(() => {
         setNavigationAnimationClass("hidden xl:flex");
-      }, 1000);
+      }, 500);
     }
 
     // Clear timeout
@@ -68,6 +76,30 @@ function Navbar() {
       }
     };
   }, [navigation]);
+
+  // Effect to control the language menu animation
+  useEffect(() => {
+    let timeout;
+
+    if (languageMenuVisible === true) {
+      setLanguageMenuAnimationClass(
+        " animate-flip-down animate-duration-[400ms]"
+      );
+    } else if (languageMenuVisible === false) {
+      setLanguageMenuAnimationClass(
+        " animate-jump-out  animate-duration-[400ms]"
+      );
+      timeout = setTimeout(() => {
+        setLanguageMenuAnimationClass("hidden");
+      }, 500);
+    }
+
+    return () => {
+      if (timeout) {
+        clearTimeout(timeout);
+      }
+    };
+  }, [languageMenuVisible]);
 
   // Logic of hiding settings in multiple ways
   const useOutsideClick = (callback) => {
@@ -126,6 +158,10 @@ function Navbar() {
     if (navigationRef.current === true) {
       setNavigation(false);
     }
+
+    if (languageMenuRef.current === true) {
+      setLanguageMenuVisible(false);
+    }
   };
 
   // Do nothing when clicked on children elements
@@ -152,6 +188,8 @@ function Navbar() {
         .filter(([code, name]) => name !== lng.name) // Filtrowanie języka na podstawie jego kodu
         .map(([code, name]) => ({ code, name })) // Mapowanie wyników do obiektu z kodem i nazwą
     );
+
+    setLanguageMenuVisible(false); // Hide language menu after selection
   }
 
   return (
@@ -170,7 +208,7 @@ function Navbar() {
         </li>
         <li
           className={`
-            ${navigationAnimationClass} absolute top-[15%] 2lg:static 2lg:flex`}
+            ${navigationAnimationClass} flex absolute flex-col top-[15%] 2lg:static 2lg:flex`}
         >
           <ul
             className={`flex flex-col 2lg:flex-row  magicAUnderline items-start  2lg:items-center gap-5 2lg:gap-14 3xl:gap-20 font-semibold py-10 2lg:py-3 xl:py-4 px-16 2lg:px-5 xl:px-8 rounded-[4rem] 2lg:rounded-full  border-secondary-dark/15 border-4 backdrop-blur-md shadow-navigation
@@ -226,10 +264,11 @@ function Navbar() {
                 {t("contact_form")}
               </Link>
             </NavElement>
-            <NavElement className="">
+            <NavElement>
               <button
                 className="h-fit flex items-center gap-3 py-3 2lg:py-0"
                 onClick={(event) => {
+                  setLanguageMenuVisible((prev) => !prev);
                   handleNavigationClick(event);
                 }}
               >
@@ -239,20 +278,14 @@ function Navbar() {
                   alt=""
                 />
                 <span className="2lg:hidden 5xl:flex">{language.name}</span>
-                <img className="h-2" src={smallArrow} alt="" />
+                <img
+                  className={`h-2 transition-transform duration-200 ${
+                    languageMenuVisible ? "rotate-180" : ""
+                  }`}
+                  src={smallArrow}
+                  alt=""
+                />
               </button>
-              <div className="absolute bg-black mt-4">
-                {freeLanguages.map((lng) => (
-                  <button
-                    key={lng.code}
-                    onClick={() => changeLanguage(lng)}
-                    className="w-48 text-left px-6 py-2 hover:bg-secondary-dark/25 flex items-center gap-3"
-                  >
-                    <img className="h-6" src={languageIcons[lng.code]} alt="" />
-                    {lng.name}
-                  </button>
-                ))}
-              </div>
             </NavElement>
             {/* <NavElement className="">
               <button
@@ -265,6 +298,24 @@ function Navbar() {
               </button>
             </NavElement> */}
           </ul>
+          <div className="w-full relative">
+            <div
+              onClick={handleNavigationClick}
+              className={`absolute -top-[32rem] sm:-top-[27rem] 2lg:-top-0 max-h-[24rem] overflow-y-auto rounded-[3rem] flex flex-col 2lg:flex-row 2lg:flex-wrap gap-x-10 gap-y-2 2lg:gap-y-7  w-full font-medium   px-10 py-6 mt-2 border-secondary-dark/15 border-4 backdrop-blur-md shadow-navigation
+              bg-gradient-to-br from-[rgba(0,10,48,0.75)] 2lg:from-[rgba(4,0,48,0.35)] to-[rgba(21,24,53,0.7)] 2lg:to-[rgba(9,42,95,0.5)] ${languageMenuAnimationClass}`}
+            >
+              {freeLanguages.map((lng) => (
+                <button
+                  key={lng.code}
+                  onClick={() => changeLanguage(lng)}
+                  className="min-w-fit max-w-fit text-left hover:scale-105  hover:font-bold transition-all py-2 2lg:py-0 ease-in-out duration-500 hover:drop-shadow-homeCard flex items-center gap-3 magicButtonUnderline"
+                >
+                  <img className="h-6" src={languageIcons[lng.code]} alt="" />
+                  <p className="">{lng.name}</p>
+                </button>
+              ))}
+            </div>
+          </div>
         </li>
         <li className="flex items-center gap-7 justify-center">
           <div

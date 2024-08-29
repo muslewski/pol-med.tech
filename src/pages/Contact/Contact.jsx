@@ -25,8 +25,11 @@ import ListInfo from "./ListInfo";
 import Hero from "../../components/Hero";
 import HeroCard from "../../components/HeroCard";
 import ContactButton from "../../components/Navbar/ContactButton";
+import { useTranslation } from "react-i18next";
 
 function Contact() {
+  const { t } = useTranslation("Contact");
+
   // State for sending status
   const [isSend, setIsSend] = useState(false);
 
@@ -75,35 +78,27 @@ function Contact() {
     if (message.length < 1) {
       // If there is no message
       messageRef.current.focus();
-      setMessageError(
-        "Napisz wiadomość, abyśmy mogli rozpocząć owocną współpracę."
-      );
+      setMessageError(t("input_error_1"));
     } else if (name.length < 1) {
       // If there is no name
-      setNameError("Proszę podać, jak możemy się do Pani/Pana zwracać.");
+      setNameError(t("input_error_2"));
       nameRef.current.focus();
     } else if (email.length < 1) {
       // If there is no email
-      setEmailError(
-        "Proszę podać swój adres e-mail, abyśmy mogli się skontaktować."
-      );
+      setEmailError(t("input_error_3"));
       emailRef.current.focus();
     } else if (!email.includes("@")) {
       // If email don't have @
       emailRef.current.focus();
-      setEmailError(
-        "Hmmm, ten adres email wygląda dziwnie. Może spróbuj jeszcze raz z '@'?"
-      );
+      setEmailError(t("input_error_4"));
     } else if (!EmailValidator.validate(email)) {
       // If email is valid
       emailRef.current.focus();
-      setEmailError("Proszę sprawdzić poprawność adresu e-mail.");
+      setEmailError(t("input_error_5"));
     } else if (phone.length < 1 && !phoneErrorDisplayed) {
       // If there is no phone
       phoneRef.current.focus();
-      setPhoneError(
-        "Możesz podać swój numer telefonu, ale nie jest to wymagane."
-      );
+      setPhoneError(t("input_error_6"));
       setTimeout(() => {
         setPhoneErrorDisplayed(true); // Set phoneErrorDisplayed to true after displaying the error
       }, 1000);
@@ -134,7 +129,7 @@ function Contact() {
 
   return (
     <>
-      <Background image={background} alt="Background Image of Oil Containers" />
+      <Background image={background} alt={t("hero_background_alt")} />
       <header className="z-10 h-fit min-h-full max-h-full">
         <BackgroundBottom
           image={rectangleBottom}
@@ -148,14 +143,14 @@ function Contact() {
           <HeroCard
             boxCustom="items-center"
             titleCustom=" text-center"
-            title="Zapraszamy do współpracy"
+            title={t("hero_title")}
             col1="rgba(26,21,76,0.2)"
             col2="rgba(23,27,80,0.8)"
           >
             <hr className="hidden sm:flex h-2 2xl:h-3 w-3/4 rounded-[100%] bg-gradient-to-b from-primary-dark to-transparent drop-shadow-whiteText" />
             <div className="flex justify-evenly xl:text-xl 3xl:text-2xl w-full font-exo ">
               <h2 className="animate-fade-down  animate-duration-1000">
-                Chętnie Ci pomożemy.
+                {t("hero_description")}
               </h2>
             </div>
 
@@ -186,7 +181,7 @@ function Contact() {
             />
 
             <h2 className="text-lg font-exo font-bold text-center">
-              Formularz kontaktowy
+              {t("section_title_1")}
             </h2>
           </div>
         </Hero>
@@ -199,7 +194,7 @@ function Contact() {
       >
         <div className="flex flex-wrap w-full  gap-24 self-start">
           <GlowingTitle customClass="hidden sm:flex">
-            Formularz kontaktowy
+            {t("section_title_1")}
           </GlowingTitle>
           <div className="flex flex-col h-fit items-center justify-start sm:justify-center w-full z-30 text-lg 2xl:text-xl font-medium font-raleway">
             <form
@@ -212,7 +207,7 @@ function Contact() {
                   <Input
                     ref={messageRef}
                     name="message"
-                    placeholder="Wiadomość"
+                    placeholder={t("input_placeholder_1")}
                     errorText={messageError}
                     send={isSend}
                     textarea
@@ -225,21 +220,21 @@ function Contact() {
                   <Input
                     ref={nameRef}
                     name="user_name"
-                    placeholder="Imię"
+                    placeholder={t("input_placeholder_2")}
                     errorText={nameError}
                     send={isSend}
                   />
                   <Input
                     ref={emailRef}
                     name="user_email"
-                    placeholder="Email"
+                    placeholder={t("input_placeholder_3")}
                     errorText={emailError}
                     send={isSend}
                   />
                   <Input
                     ref={phoneRef}
                     name="user_phone"
-                    placeholder="Numer Telefonu"
+                    placeholder={t("input_placeholder_4")}
                     errorText={phoneError}
                     inputType="tel"
                     send={isSend}
@@ -252,8 +247,8 @@ function Contact() {
         </div>
 
         <div className="flex flex-wrap gap-24 gap-y-24 gap-x-32 self-start magicAUnderline">
-          <GlowingTitle>Dane kontaktowe</GlowingTitle>
-          <ListInfo title="Adresy email:">
+          <GlowingTitle>{t("section_title_2")}</GlowingTitle>
+          <ListInfo title={t("list_info_title_1")}>
             <li>
               <a href="mailto:biuro@pol-med.tech">biuro@pol-med.tech</a>
             </li>
@@ -268,17 +263,26 @@ function Contact() {
             </li>
           </ListInfo>
 
-          <ListInfo title="Numery Telefonu:">
+          <ListInfo title={t("list_info_title_2")}>
             <li>
-              Główny: <a href="tel:+48 52 5000 260">+48 52 5000 260</a>
+              {t("list_info_2_li_1")}{" "}
+              <a href="tel:+48 52 5000 260">+48 52 5000 260</a>
             </li>
             <li>
-              Główny 2: <a href="tel:+48 601 78 75 77">+48 601 78 75 77</a>
+              {t("list_info_2_li_2")}{" "}
+              <a href="tel:+48 601 78 75 77">+48 601 78 75 77</a>
             </li>
             <li>
-              Oleje UCO: <a href="tel:+48 537 144 288">+48 537 144 288</a>
+              {t("list_info_2_li_3")}{" "}
+              <a href="tel:+48 537 144 288">+48 537 144 288</a>
               <span className="inline-flex items-center gap-2 text-base bg-green-700/55 p-1.5 mx-4 rounded-bl-md rounded-tr-md rounded-tl-2xl rounded-br-2xl">
-                (<img src={iconWhatsApp} className="w-6" alt="" /> WhatsApp )
+                (
+                <img
+                  src={iconWhatsApp}
+                  className="w-6"
+                  alt={t("list_info_2_li_3_alt")}
+                />{" "}
+                WhatsApp )
               </span>
             </li>
           </ListInfo>

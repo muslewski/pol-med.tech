@@ -3,6 +3,7 @@ import React from "react";
 function VideoObject({
   id,
   icon,
+  iconAlt,
   videoSrc,
   title,
   description,
@@ -15,7 +16,7 @@ function VideoObject({
         currentVideoId != id ? "hover:scale-110" : "hover:brightness-90"
       }`}
       src={icon}
-      alt=""
+      alt={iconAlt}
       draggable="false"
       onClick={() =>
         setVideo({

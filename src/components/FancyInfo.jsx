@@ -4,12 +4,13 @@ import GoodButton from "./GoodButton";
 function FancyInfo({
   className,
   image,
-  alt,
+  alt = "",
   title,
   description,
   col1,
   col2,
   buttonIcon,
+  buttonIconAlt = "",
   link,
   isBox = false,
 }) {
@@ -45,6 +46,7 @@ function FancyInfo({
       {buttonIcon && (
         <GoodButton
           icon={buttonIcon}
+          iconAlt={buttonIconAlt}
           link={link}
           className="scale-90 hover:scale-95"
         />

@@ -31,15 +31,14 @@ import Hero from "../../components/Hero";
 import TextBox from "./TextBox";
 import TextBoxLi from "./TextBoxLi";
 import AdvancedBox from "./AdvancedBox";
+import { useTranslation } from "react-i18next";
 
 function Oils() {
+  const { t } = useTranslation("Oils");
   return (
     <>
       <header>
-        <Background
-          image={background}
-          alt="Background Image of Oil Containers"
-        />
+        <Background image={background} alt={t("hero_background_alt")} />
         <BackgroundBottom
           image={rectangleBottom}
           mobileImage={rectangleBottomMobile}
@@ -53,9 +52,8 @@ function Oils() {
         <Hero>
           <HeroCard
             boxCustom="relative sm:bottom-0"
-            title="Oleje posmażalnicze (UCO)"
-            description="Oferujemy kompleksowe rozwiązania związane z dostawą olejów
-              roślinnych oraz odbiorem i magazynowaniem olejów posmażalniczych."
+            title={t("hero_title")}
+            description={t("hero_description")}
             col1="rgba(12,37,90,0.2)"
             col2="rgba(5,31,58,0.7)"
           />
@@ -74,11 +72,11 @@ function Oils() {
                 <img
                   className=" h-3/4 drop-shadow-redcert"
                   src={redcert}
-                  alt=""
+                  alt={t("redcert_button_alt")}
                 />
               </div>
               <div className="makeBigger  shadow-homeCard transition-transform text-white underline font-semibold font-exo relative z-10 text-lg sm:text-2xl border-4 border-secondary-dark/25 border-r-0 bg-[#0F2950] py-5 sm:py-6  rounded-l-full h-full  px-12">
-                Certyfikat
+                {t("redcert_button")}
               </div>
             </div>
           </a>
@@ -92,21 +90,34 @@ function Oils() {
         customClassInner="w-3/4 xl:w-3/4"
       >
         <div className="flex flex-wrap gap-24 self-start">
-          <GlowingTitle>Oferujemy</GlowingTitle>
+          <GlowingTitle>{t("section_title_1")}</GlowingTitle>
           <div className="flex flex-col gap-16 justify-between max-w-2xl self-start">
             <div className="flex justify-between flex-col gap-16 sm:flex-row">
-              <TextBox text="Handel" icon={iconHandshake} />
-              <TextBox text="Odbiór" icon={iconTrade} />
+              <TextBox
+                text={t("text_box_1")}
+                icon={iconHandshake}
+                iconAlt={t("text_box_alt_1")}
+              />
+              <TextBox
+                text={t("text_box_2")}
+                icon={iconTrade}
+                iconAlt={t("text_box_alt_2")}
+              />
             </div>
             <TextBox
-              text="Magazynowanie olejów posmażalniczych"
+              text={t("text_box_3")}
               icon={iconWarehouse}
+              iconAlt={t("text_box_alt_3")}
             />
           </div>
         </div>
       </Section>
 
-      <img className="backgroundOils" src={oilsBackground} alt="" />
+      <img
+        className="backgroundOils"
+        src={oilsBackground}
+        alt={t("section_2_background_alt")}
+      />
       {/* 🛢️🛢️🛢️ */}
       <Section customClass="pb-36 pt-36" customClassInner="w-3/4 xl:w-3/4">
         <div className="custom-shape-divider-top-1722892339">
@@ -126,20 +137,17 @@ function Oils() {
         <div className=" relative self-center flex flex-col gap-24">
           <div className="flex flex-wrap gap-24 self-start">
             <GlowingTitle customClassH2="backdrop-blur-md bg-black/5 drop-shadow-glowingTextSubtle">
-              Nasza oferta obejmuje
+              {t("section_title_2")}
             </GlowingTitle>
             <ul className="flex flex-col gap-16">
               <TextBoxLi borderCol="#f7ffff" bgCol="rgba(0, 0, 0, 0.5)">
-                Oleje roślinne pochodzące z lokali gastronomicznych lub
-                przedsiębiorstw zajmujących się produkcją żywności.
+                {t("text_box_li_1")}
               </TextBoxLi>
               <TextBoxLi borderCol="#f2f9ff" bgCol="rgba(0, 0, 0, 0.4)">
-                Tłuszcze zwierzęce KAT.1, KAT.2 oraz KAT.3 - pochodzące z
-                zakładów przetwórstwa mięsnego.
+                {t("text_box_li_2")}
               </TextBoxLi>
               <TextBoxLi borderCol="#f3f7fe" bgCol="rgba(0, 0, 0, 0.3)">
-                Kwasy tłuszczowe i inne produkty wykorzystywane do
-                biokomponentów.
+                {t("text_box_li_3")}
               </TextBoxLi>
             </ul>
           </div>
@@ -167,22 +175,13 @@ function Oils() {
         customClassInner="w-3/4 xl:w-3/4"
       >
         <div className="flex flex-col self-start gap-24 w-full">
-          <GlowingTitle>Posiadamy również</GlowingTitle>
+          <GlowingTitle>{t("section_title_3")}</GlowingTitle>
 
           <ul className="flex flex-col gap-16">
-            <TextBoxLi borderCol="#caecff">
-              Oleje bazowe SN 85, SN 100, SN 150, SN 500, BS 150.
-            </TextBoxLi>
-            <TextBoxLi borderCol="#cde4ff">
-              MOCZNIK typu A (wykorzystywany np do produkcji AdBlue).
-            </TextBoxLi>
-            <TextBoxLi borderCol="#c1cefe">
-              Katalizatory do produkcji biodiesla: metanol, wodorotlenek potasu
-              i wodorotlenek sodu.
-            </TextBoxLi>
-            <TextBoxLi borderCol="#cde4ff">
-              Pośredniczymy w dostawach etanolu.
-            </TextBoxLi>
+            <TextBoxLi borderCol="#caecff">{t("text_box_li_4")}</TextBoxLi>
+            <TextBoxLi borderCol="#cde4ff">{t("text_box_li_5")}</TextBoxLi>
+            <TextBoxLi borderCol="#c1cefe">{t("text_box_li_6")}</TextBoxLi>
+            <TextBoxLi borderCol="#cde4ff">{t("text_box_li_7")}</TextBoxLi>
           </ul>
         </div>
       </Section>
@@ -221,31 +220,35 @@ function Oils() {
 
         <div className="flex flex-col self-start gap-24 w-full">
           <GlowingTitle customClassH2="backdrop-blur-md bg-indigo-950/15 border-indigo-950/15 drop-shadow-glowingTextSubtle">
-            Świadczymy usługi
+            {t("section_title_4")}
           </GlowingTitle>
 
           <AdvancedBox
-            title="Badania wytrzymałościowe i eksploatacyjne"
+            title={t("advanced_box_1_title")}
             icon={iconResearch}
-            description="Dokładnie sprawdzamy właściwości materiałów i elementów konstrukcyjnych maszyn i urządzeń, aby upewnić się, że są one w stanie wytrzymać obciążenia i pracować bezawaryjnie."
+            iconAlt={t("advanced_box_alt_1")}
+            description={t("advanced_box_1_description")}
           />
 
           <AdvancedBox
-            title="Badania i ocena parametrów użytkowych"
+            title={t("advanced_box_2_title")}
             icon={iconMicroscope}
-            description="Analizujemy oleje, paliwa i smary, aby upewnić się, że spełniają one wymagania i zapewniają optymalną pracę maszyn."
+            iconAlt={t("advanced_box_alt_2")}
+            description={t("advanced_box_2_description")}
           />
 
           <AdvancedBox
-            title="Opinie i ekspertyzy"
+            title={t("advanced_box_3_title")}
             icon={iconSuggestion}
-            description="Wydajemy rzetelne opinie i ekspertyzy na temat badanych próbek i stosowanych procesów technologicznych."
+            iconAlt={t("advanced_box_alt_3")}
+            description={t("advanced_box_3_description")}
           />
 
           <AdvancedBox
-            title="Przeglądy i weryfikacje"
+            title={t("advanced_box_4_title")}
             icon={iconExpertise}
-            description="Dokonujemy przeglądów i weryfikacji instalacji technologicznych, aby zidentyfikować potencjalne problemy i zapewnić ich bezpieczną i wydajną pracę."
+            iconAlt={t("advanced_box_alt_4")}
+            description={t("advanced_box_4_description")}
           />
         </div>
 

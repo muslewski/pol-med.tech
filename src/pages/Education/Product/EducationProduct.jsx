@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import stationsData from "../stations.json";
+import stationsData from "../stationImages.json";
 import ContactButton from "../../../components/Navbar/ContactButton";
 import Section from "../../../components/Section";
 import iconCart from "../../../Assets/cart.png";
 import GoodButton from "../../../components/GoodButton";
 import StationObject from "../StationObject";
 import GlowingTitle from "../../../components/GlowingTitle";
+import { useTranslation } from "react-i18next";
 
 function EducationProduct({ setZoomIn, mainPhoto, setMainPhoto }) {
+  const { t: tStation } = useTranslation("EducationStations");
   const { id } = useParams();
 
   const stationsLength = stationsData.stations.length;
@@ -87,9 +89,11 @@ function EducationProduct({ setZoomIn, mainPhoto, setMainPhoto }) {
           <div className="flex flex-col gap-12 max-w-2xl px-6 sm:px-0">
             <div className="flex flex-col gap-6">
               <h1 className="text-2xl sm:text-3xl 2xl:text-4xl font-exo font-bold">
-                {station.title}
+                {tStation(`stations.${id}.title`)}
               </h1>
-              <p className="text-lg sm:text-xl">{station.description}</p>
+              <p className="text-lg sm:text-xl">
+                {tStation(`stations.${id}.description`)}
+              </p>
             </div>
 
             <GoodButton
@@ -103,8 +107,18 @@ function EducationProduct({ setZoomIn, mainPhoto, setMainPhoto }) {
 
         <div className="flex flex-wrap w-full justify-start gap-24">
           <GlowingTitle> Zobacz również </GlowingTitle>
-          <StationObject image={prevStation.images[0]} {...prevStation} />
-          <StationObject image={nextStation.images[0]} {...nextStation} />
+          <StationObject
+            image={prevStation.images[0]}
+            id={prevStation.id}
+            title={tStation(`stations.${prevStation.id}.title`)}
+            description={tStation(`stations.${prevStation.id}.description`)}
+          />
+          <StationObject
+            image={nextStation.images[0]}
+            id={nextStation.id}
+            title={tStation(`stations.${nextStation.id}.title`)}
+            description={tStation(`stations.${nextStation.id}.description`)}
+          />
         </div>
       </Section>
     </>

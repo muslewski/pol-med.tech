@@ -30,43 +30,38 @@ import VideoObject from "./VideoObject";
 import GoodButton from "../../components/GoodButton";
 import { Link } from "react-router-dom";
 import StationObject from "./StationObject";
-import stationsData from "./stations.json";
+import stationsData from "./stationImages.json";
+import { useTranslation } from "react-i18next";
 
 function Education() {
+  const { t } = useTranslation("Education");
+  const { t: tStation } = useTranslation("EducationStations");
+
   const [video, setVideo] = useState({
     id: 0,
     videoSrc:
       "https://www.youtube.com/embed/oOiXQDaDouw?si=2cIdPL_K6nHYGzsT&enablejsapi=1",
-    title: "Panel Symulacji Usterek",
-    description:
-      "To zaawansowany system umożliwiający generowanie typowych usterek sterowania silnikiem spalinowym dzięki któremu uczniowie nabywają praktyczne umiejętności implementacji procedur diagnostycznych do wykrywania i lokalizacji usterek z wykorzystaniem specjalistycznych urządzeń diagnostycznych.",
+    title: t("video_object_title_1"),
+    description: t("video_object_description_1"),
   });
 
   return (
     <>
       <header>
-        <Background
-          image={background}
-          alt="Background Image of Oil Containers"
-        />
+        <Background image={background} alt={t("hero_background_alt")} />
         <BackgroundBottom
           image={rectangleBottom}
           mobileImage={rectangleBottomMobile}
         />
         <BackgroundTop image={rectangleTop} />
-        <ForegroundItem
-          image={foreground}
-          alt="Foreground Image of Car Station with Mechanics"
-        />
+        <ForegroundItem image={foreground} alt={t("hero_foreground_alt")} />
         <BgBottomVector image={bottomVector} />
 
         <Hero customClass="gap-28">
           <HeroCard
             boxCustom="relative sm:bottom-0"
-            title="Stanowiska dydaktyczno-laboratoryjne"
-            description="To zintegrowane moduły dydaktyczne, które umożliwiają naukę o
-            różnych aspektach technologii samochodowych w praktyczny i
-            angażujący sposób."
+            title={t("hero_title")}
+            description={t("hero_description")}
             col1="rgba(26,21,76,0.2)"
             col2="rgba(12,37,90,0.7)"
           />
@@ -80,37 +75,37 @@ function Education() {
       <Section customClass="bg-gradient-to-b from-[#040E30] to-[#10295b]">
         {/* 📜📜📜 */}
         <div className="flex flex-wrap gap-24">
-          <GlowingTitle>Oferujemy</GlowingTitle>
+          <GlowingTitle>{t("section_title_1")}</GlowingTitle>
 
           <FancyInfo
             image={iconRepairingCar}
-            alt="Image of a man exploring car enginge"
-            title="Stanowiska edukacyjne"
-            description="Interaktywne stanowiska edukacyjne przeznaczone do nauki budowy, diagnostyki i obsługi pojazdów hybrydowych i elektrycznych."
+            alt={t("fancy_info_alt_1")}
+            title={t("fancy_info_title_1")}
+            description={t("fancy_info_description_1")}
             col1="#0493B2"
             col2="rgba(87, 252, 255, 0.01)"
           />
           <FancyInfo
             image={iconDiagnosticCar}
-            alt="Image of a diagnostic tool for car"
-            title="Stanowiska badawcze"
-            description="Nowoczesne stanowiska badawcze wyposażone w najnowsze technologie, umożliwiające prowadzenie badań i testów różnych układów i podzespołów pojazdów."
+            alt={t("fancy_info_alt_2")}
+            title={t("fancy_info_title_2")}
+            description={t("fancy_info_description_2")}
             col1="#0473B2"
             col2="rgba(87, 164, 255, 0.01)"
           />
           <FancyInfo
             image={iconEnginePart}
-            alt="Image of car engine part"
-            title="Urządzenia i narzędzia kontrolno-pomiarowe"
-            description="Szeroki wybór wysoce precyzyjnych urządzeń i narzędzi do diagnostyki i serwisu pojazdów."
+            alt={t("fancy_info_alt_3")}
+            title={t("fancy_info_title_3")}
+            description={t("fancy_info_description_3")}
             col1="#3542b7"
             col2="rgba(87, 94, 255, 0.01)"
           />
           <FancyInfo
             image={iconLesson}
-            alt="Image of mechanic lesson"
-            title="Kursy i szkolenia"
-            description="Kompleksowe kursy i szkolenia z zakresu diagnostyki pokładowej i obsługi pojazdów hybrydowych i elektrycznych, z uprawnieniami do 1kV."
+            alt={t("fancy_info_alt_4")}
+            title={t("fancy_info_title_4")}
+            description={t("fancy_info_description_4")}
             col1="#4e2abb"
             col2="rgba(161, 87, 255, 0.01)"
           />
@@ -149,9 +144,10 @@ function Education() {
             <VideoObject
               id={0}
               icon={iconError}
+              iconAlt={t("video_object_alt_1")}
               videoSrc="https://www.youtube.com/embed/oOiXQDaDouw?si=2cIdPL_K6nHYGzsT&enablejsapi=1"
-              title="Panel Symulacji Usterek"
-              description="To zaawansowany system umożliwiający generowanie typowych usterek sterowania silnikiem spalinowym dzięki któremu uczniowie nabywają praktyczne umiejętności implementacji procedur diagnostycznych do wykrywania i lokalizacji usterek z wykorzystaniem specjalistycznych urządzeń diagnostycznych."
+              title={t("video_object_title_1")}
+              description={t("video_object_description_1")}
               setVideo={setVideo}
               currentVideoId={video.id}
             />
@@ -159,9 +155,10 @@ function Education() {
             <VideoObject
               id={1}
               icon={iconDiagnostic}
+              iconAlt={t("video_object_alt_2")}
               videoSrc="https://www.youtube.com/embed/-lltFnhZlT0?si=QcgWmBxbtpyDVSbu&enablejsapi=1"
-              title="Procedury diagnostyki silnika"
-              description="Stanowisko dydaktyczne umożliwiające realizację procedur diagnostycznych oceny stanu technicznego silnika spalinowego z wykorzystaniem specjalistycznego oprzyrządowania oraz pozwalającego na szybką realizację lokalizacji i weryfikacji usterek."
+              title={t("video_object_title_2")}
+              description={t("video_object_description_2")}
               setVideo={setVideo}
               currentVideoId={video.id}
             />
@@ -169,9 +166,10 @@ function Education() {
             <VideoObject
               id={2}
               icon={iconOscilloscope}
+              iconAlt={t("video_object_alt_3")}
               videoSrc="https://www.youtube.com/embed/edlhrt-Ep-E?si=8gJdUgfBUNcTAOiA&enablejsapi=1"
-              title="Badania oscyloskopowe"
-              description="Stanowisko umożliwia wykorzystanie możliwości uniwersalnego oscyloskopu do weryfikacji parametrów pracy silnika spalinowego. Stanowi to podstawę realizowanych działań w zakresie identyfikacji stanu technicznego silnika spalinowego."
+              title={t("video_object_title_3")}
+              description={t("video_object_description_3")}
               setVideo={setVideo}
               currentVideoId={video.id}
             />
@@ -188,23 +186,23 @@ function Education() {
               <img
                 className="border-[6px] border-primary-dark/50 rounded-3xl shadow-navigation drop-shadow-none transition-all duration-500 ease-in-out"
                 src={platformaImage}
-                alt=""
+                alt={t("special_product_alt")}
               />
             </Link>
             <span className="font-exo font-medium text-xl bg-gradient-to-r from-[#37E7FF] to-[#7A87FF]   text-transparent bg-clip-text">
-              Nowość na rynku
+              {t("special_product_new")}
             </span>
           </div>
 
           <div className="w-fit flex gap-12 flex-col">
             <FancyInfo
               className="5xl:max-w-full"
-              alt="Image of an interactive education platform"
-              title="Interaktywna platforma edukacyjna"
-              description="Nasze nowoczesne stanowisko dydaktyczne do mechatroniki samochodowej pozwala uczniom na naukę programowania i tworzenia map pracy silnika. Dzięki Uniwersalnemu Komputerowi Sterującemu, mogą eksperymentować z ustawieniami silnika i analizować dane z czujników, zdobywając praktyczne umiejętności potrzebne w zawodzie elektromechanika lub mechatronika samochodowego. Nowość na rynku!"
+              title={t("special_product_title")}
+              description={t("special_product_description")}
               col1="#37E7FF"
               col2="#7a87ff2b"
               buttonIcon={iconPrototype}
+              buttonIconAlt={t("special_product_button_alt")}
               link="/Edukacja_i_badania/interaktywna_platforma_edukacyjna"
             />
           </div>
@@ -212,24 +210,20 @@ function Education() {
 
         {/* 🚙🚙🚙 */}
         <div className="w-full flex flex-wrap  gap-24">
-          <GlowingTitle>
-            Stanowiska{" "}
-            <span className="hidden lg:inline">demonstracyjno-pomiarowe</span>
-          </GlowingTitle>
+          <GlowingTitle>{t("section_title_2")}</GlowingTitle>
 
-          {stationsData.stations.map((station) => (
+          {stationsData.stations.map((station, index) => (
             <StationObject
               key={station.id}
+              id={station.id}
               image={station.images[0]}
-              {...station}
+              title={tStation(`stations.${index}.title`)}
+              description={tStation(`stations.${index}.description`)}
             />
           ))}
         </div>
 
-        <h3>
-          Oferowane przez nas produkty dostosowujemy do indywidualnych potrzeb i
-          wymagań Zamawiających.
-        </h3>
+        <h3>{t("section_last_info")}</h3>
       </Section>
     </>
   );

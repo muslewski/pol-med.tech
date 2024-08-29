@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import GoodButton from "../../components/GoodButton";
 import iconRightArrow from "../../Assets/rightArrow.png";
 
-function StationObject({ title, description, image, id }) {
+function StationObject({ title = "", description = "", image, id }) {
   if (description.length > 200)
     description = description.substring(0, 200) + "...";
 

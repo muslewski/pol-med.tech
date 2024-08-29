@@ -1,5 +1,5 @@
 import React from "react";
-import stationsData from "../stations.json";
+import stationsData from "../stationImages.json";
 import Section from "../../../components/Section";
 import GoodButton from "../../../components/GoodButton";
 import iconCart from "../../../Assets/cart.png";
@@ -13,8 +13,12 @@ import SpecialProductLi from "./SpecialProductLi";
 import iconComputer from "../assets/iconComputer.png";
 import iconMechanic from "../assets/iconMechanic.png";
 import iconSettings from "../assets/iconSettings.png";
+import { useTranslation } from "react-i18next";
 
 function SpecialProduct({ setZoomIn, mainPhoto, setMainPhoto }) {
+  const { t } = useTranslation("EducationSpecial");
+  const { t: tStation } = useTranslation("EducationStations");
+
   const nextStation = stationsData.stations[0];
   const prevStation = stationsData.stations[1];
 
@@ -99,8 +103,18 @@ function SpecialProduct({ setZoomIn, mainPhoto, setMainPhoto }) {
 
       <div className="flex flex-wrap w-full justify-start gap-24">
         <GlowingTitle> Zobacz również </GlowingTitle>
-        <StationObject image={prevStation.images[0]} {...prevStation} />
-        <StationObject image={nextStation.images[0]} {...nextStation} />
+        <StationObject
+          image={prevStation.images[0]}
+          id={prevStation.id}
+          title={tStation(`stations.${prevStation.id}.title`)}
+          description={tStation(`stations.${prevStation.id}.description`)}
+        />
+        <StationObject
+          image={nextStation.images[0]}
+          id={nextStation.id}
+          title={tStation(`stations.${nextStation.id}.title`)}
+          description={tStation(`stations.${nextStation.id}.description`)}
+        />
       </div>
     </Section>
   );
