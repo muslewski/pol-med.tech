@@ -98,7 +98,7 @@ function Tools() {
               <img
                 className="block sm:hidden rounded-t-2xl  h-72 object-cover"
                 src={images[selectedImage]}
-                alt=""
+                alt={t("section_2_background_alt")}
               />
               <ul className="gap-4 p-2 sm:p-0 sm:gap-8 flex flex-wrap justify-stretch">
                 {tools.map((tool, index) => (

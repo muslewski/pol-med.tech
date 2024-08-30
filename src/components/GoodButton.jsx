@@ -1,8 +1,10 @@
 import React from "react";
 import buttonPattern from "../Assets/buttonPattern.svg";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function GoodButton({ className, link, icon, iconAlt = "", customText = "" }) {
+  const { t } = useTranslation("Others");
   return (
     <Link
       to={link}
@@ -14,7 +16,7 @@ function GoodButton({ className, link, icon, iconAlt = "", customText = "" }) {
         alt=""
       />
       <div className="text-center tracking-wide relative z-10 text-base sm:text-lg border-[3px] backdrop-blur-lg font-semibold border-primary-dark py-3 sm:py-4 px-6 rounded-full w-fit flex items-center gap-4 sm:gap-6">
-        {customText.length < 1 ? "Przejdź dalej" : customText}
+        {customText.length < 1 ? t("good_button_default_text") : customText}
         {icon && <img className="h-9" src={icon} alt={iconAlt} />}
       </div>
     </Link>

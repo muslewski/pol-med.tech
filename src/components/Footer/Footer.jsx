@@ -61,7 +61,7 @@ function Footer({ bgColor, setBgColor }) {
       />
       <img
         src={toTopArrow}
-        alt=""
+        alt={t("alt_arrow_up")}
         className="absolute bottom-[97%] md:bottom-[110%] lg:bottom-[120%] 2xl:bottom-[130%] w-12 sm:w-16 right-[12%] drop-shadow-navigationAccent hover:scale-105 transition-all ease-in-out duration-500 cursor-pointer"
         onClick={() => {
           goToTop();
@@ -88,6 +88,7 @@ function Footer({ bgColor, setBgColor }) {
           p2={<p>86-031 Osielsko</p>}
           p3={<p>{t("poland")} 🇵🇱</p>}
           icon={arrow}
+          iconAlt={t("alt_icon_1")}
         />
         <FooterElement
           title={t("contact")}
@@ -108,6 +109,7 @@ function Footer({ bgColor, setBgColor }) {
             </p>
           }
           icon={phone}
+          iconAlt={t("alt_icon_2")}
         />
         <FooterElement
           title={t("quick_links")}
@@ -127,6 +129,7 @@ function Footer({ bgColor, setBgColor }) {
             </p>
           }
           icon={link}
+          iconAlt={t("alt_icon_3")}
         />
       </div>
     </footer>

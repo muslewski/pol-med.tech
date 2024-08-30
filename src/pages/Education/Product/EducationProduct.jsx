@@ -10,6 +10,7 @@ import GlowingTitle from "../../../components/GlowingTitle";
 import { useTranslation } from "react-i18next";
 
 function EducationProduct({ setZoomIn, mainPhoto, setMainPhoto }) {
+  const { t } = useTranslation("Others");
   const { t: tStation } = useTranslation("EducationStations");
   const { id } = useParams();
 
@@ -56,7 +57,7 @@ function EducationProduct({ setZoomIn, mainPhoto, setMainPhoto }) {
             <img
               className="mainPhoto rounded-lg cursor-zoom-in  hover:scale-105 transition-transform max-h-[26rem]"
               src={mainPhoto}
-              alt=""
+              alt={t("education_product_main_image_alt")}
               onClick={() => setZoomIn((prev) => !prev)}
             />
           </div>
@@ -70,7 +71,9 @@ function EducationProduct({ setZoomIn, mainPhoto, setMainPhoto }) {
                     draggable="false"
                     src={image}
                     key={index}
-                    alt=""
+                    alt={`${index + 1}. ${t(
+                      "education_product_side_image_alt"
+                    )}`}
                     onClick={() => {
                       setMainPhoto(image);
                       setSidePhotos([

@@ -1,12 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import kontaktSvg from "./assets/Kontakt.svg";
+import { useTranslation } from "react-i18next";
 
 function ContactButton({
   customText = "",
   customBackground = "bg-[rgba(0,16,48,0.25)]",
   className,
 }) {
+  const { t } = useTranslation("Others");
+
   let insideClass = `border-[3px] text-lg border-primary-dark py-3 xl:py-4 px-5 xl:px-7 rounded-full z-20 backdrop-blur-sm shadow-contactInner hover:scale-105 duration-500 transition-transform ease-in-out ${customBackground}`;
 
   return (
@@ -20,7 +23,7 @@ function ContactButton({
         alt=""
       />
       <div className={insideClass}>
-        {customText.length < 1 ? "Skontaktuj się" : customText}
+        {customText.length < 1 ? t("contact_button_default_text") : customText}
       </div>
     </Link>
   );

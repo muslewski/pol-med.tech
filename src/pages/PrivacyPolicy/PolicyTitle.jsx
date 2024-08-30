@@ -1,6 +1,6 @@
 import React from "react";
 
-function PolicyTitle({ children, icon }) {
+function PolicyTitle({ children, icon, iconAlt = "" }) {
   return (
     <div>
       <h2
@@ -9,7 +9,7 @@ function PolicyTitle({ children, icon }) {
             flex-col-reverse  sm:flex-row items-center gap-4`}
       >
         {children}
-        <img className="h-16" src={icon} alt="" />
+        <img className="h-16" src={icon} alt={iconAlt} />
       </h2>
     </div>
   );

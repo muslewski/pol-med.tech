@@ -129,6 +129,7 @@ function Home() {
           <SectionCard
             image={educationCardImg}
             buttonIcon={carServiceIcon}
+            buttonIconAlt={t("card_alt_1")}
             title={t("card_1_title")}
             description={t("card_1_description")}
             gradient="#113C63"
@@ -138,6 +139,7 @@ function Home() {
           <SectionCard
             image={oilsCardImg}
             buttonIcon={oilTankIcon}
+            buttonIconAlt={t("card_alt_2")}
             title={t("card_2_title")}
             description={t("card_2_description")}
             gradient="#2C3C66"
@@ -147,6 +149,7 @@ function Home() {
           <SectionCard
             image={toolsCardImg}
             buttonIcon={toolsIcon}
+            buttonIconAlt={t("card_alt_3")}
             title={t("card_3_title")}
             description={t("card_3_description")}
             gradient="#115A55"

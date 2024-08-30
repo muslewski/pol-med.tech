@@ -127,7 +127,7 @@ function Navbar() {
           callback();
           scrollTimeoutRef.current = setTimeout(() => {
             scrollTimeoutRef.current = null;
-          }, 3000); // 5 seconds delay
+          }, 0); // 5 seconds delay
         }
       };
 
@@ -220,7 +220,11 @@ function Navbar() {
                 className="flex items-center gap-3 py-3 2lg:py-0"
                 onClick={goToTop}
               >
-                <img src={carServiceIcon} className="h-7 2lg:hidden" alt="" />
+                <img
+                  src={carServiceIcon}
+                  className="h-7 2lg:hidden"
+                  alt={t("alt_icon_1")}
+                />
                 {t("education_and_research")}
               </Link>
             </NavElement>
@@ -230,7 +234,11 @@ function Navbar() {
                 className="flex items-center gap-3 py-3 2lg:py-0"
                 onClick={goToTop}
               >
-                <img src={oilTankIcon} className="h-7 2lg:hidden" alt="" />
+                <img
+                  src={oilTankIcon}
+                  className="h-7 2lg:hidden"
+                  alt={t("alt_icon_2")}
+                />
                 {t("oils_uco")}
               </Link>
             </NavElement>
@@ -240,7 +248,11 @@ function Navbar() {
                 className="flex items-center gap-3 py-3 2lg:py-0"
                 onClick={goToTop}
               >
-                <img src={toolsIcon} className="h-7 2lg:hidden" alt="" />
+                <img
+                  src={toolsIcon}
+                  className="h-7 2lg:hidden"
+                  alt={t("alt_icon_3")}
+                />
                 {t("tools")}
               </Link>
             </NavElement>
@@ -250,7 +262,11 @@ function Navbar() {
                 className="flex items-center gap-3 py-3 2lg:py-0"
                 onClick={goToTop}
               >
-                <img src={helloIcon} className="h-7 2lg:hidden" alt="" />
+                <img
+                  src={helloIcon}
+                  className="h-7 2lg:hidden"
+                  alt={t("alt_icon_4")}
+                />
                 {t("about_us")}
               </Link>
             </NavElement>
@@ -260,7 +276,11 @@ function Navbar() {
                 className="flex items-center gap-3 py-3 2lg:py-0"
                 onClick={goToTop}
               >
-                <img src={contactIcon} className="h-7 2lg:hidden" alt="" />
+                <img
+                  src={contactIcon}
+                  className="h-7 2lg:hidden"
+                  alt={t("alt_icon_5")}
+                />
                 {t("contact_form")}
               </Link>
             </NavElement>
@@ -275,7 +295,7 @@ function Navbar() {
                 <img
                   className="h-6"
                   src={languageIcons[language.code]}
-                  alt=""
+                  alt={`${t("alt_icon_6")} ${language.name}`}
                 />
                 <span className="2lg:hidden 5xl:flex">{language.name}</span>
                 <img
@@ -283,7 +303,7 @@ function Navbar() {
                     languageMenuVisible ? "rotate-180" : ""
                   }`}
                   src={smallArrow}
-                  alt=""
+                  alt={t("alt_icon_7")}
                 />
               </button>
             </NavElement>
@@ -310,7 +330,11 @@ function Navbar() {
                   onClick={() => changeLanguage(lng)}
                   className="min-w-fit max-w-fit text-left hover:scale-105  hover:font-bold transition-all py-2 2lg:py-0 ease-in-out duration-500 hover:drop-shadow-homeCard flex items-center gap-3 magicButtonUnderline"
                 >
-                  <img className="h-6" src={languageIcons[lng.code]} alt="" />
+                  <img
+                    className="h-6"
+                    src={languageIcons[lng.code]}
+                    alt={`${t("alt_icon_6")} ${lng.name}`}
+                  />
                   <p className="">{lng.name}</p>
                 </button>
               ))}

@@ -1,0 +1,44 @@
+{
+  "hero_title": "Polityka Prywatności",
+  "hero_description": "Twoja prywatność jest dla nas priorytetem! W naszej Polityce Prywatności znajdziesz szczegóły dotyczące tego, jak zbieramy, przetwarzamy i chronimy Twoje dane osobowe.",
+  "hero_background_alt": "Zdjęcie przedstawiające półkę z metalowymi elementami",
+
+  "section_1_title": "1. Informacje o Administratorze Danych Osobowych",
+  "section_1_icon_alt": "Ikona człowieka z kołem zębatym",
+  "section_1_description_p": "Niniejsza Polityka Prywatności określa zasady przetwarzania i ochrony danych osobowych przekazywanych przez użytkowników w związku z korzystaniem z serwisu internetowego <a href='https://pol-med.tech' target='_blank'>https://pol-med.tech</a>. Administratorem danych osobowych jest:",
+  "section_1_description_company": "Firma:",
+  "section_1_description_address": "Adres:",
+  "section_1_description_NIP": "NIP:",
+  "section_1_description_REGON": "REGON:",
+  "section_1_description_KRS": "KRS:",
+  "section_1_description_BDO": "BDO:",
+  "section_1_description_email": "Adres e-mail:",
+  "section_1_description_phone": "Telefon:",
+  "section_1_description_capital": "Kapitał zakładowy - 50.000 PLN (wpłacony w całości).",
+
+  "section_2_title": "2. Dane Osobowe",
+  "section_2_icon_alt": "Ikona kartki papieru z ludzkim profilem",
+  "section_2_description_p_1": "Zgromadzenie i przetwarzanie danych osobowych użytkowników jest prowadzone zgodnie z obowiązującymi przepisami prawa, w szczególności z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych (RODO).",
+  "section_2_description_p_2": "Nie zbieramy żadnych danych osobowych przekazywanych na stronie internetowej <a href='https://pol-med.tech' target='_blank'>https://pol-med.tech</a> bez wyraźnej zgody użytkownika.",
+  "section_2_description_p_3": "Nasza strona jest wyposażona w certyfikat SSL, co oznacza, że wszystkie przekazywane informacje są szyfrowane i chronione przed dostępem osób nieupoważnionych.",
+
+  "section_3_title": "3. Cel i Zakres Przetwarzania Danych Osobowych",
+  "section_3_icon_alt": "Ikona celownika ze strzałą",
+  "section_3_description_p_1": "Jeśli użytkownik dobrowolnie poda nam swoje dane osobowe (na przykład w formularzu kontaktowym lub w celu subskrypcji newslettera), będziemy przetwarzać te dane wyłącznie w celu realizacji określonego celu, o którym zostanie poinformowany w chwili ich zbierania. Dostarczone nam dane osobowe nie będą przekazywane osobom trzecim ani wykorzystywane w celach marketingowych bez wyraźnej zgody użytkownika.",
+
+  "section_4_title": "4. Analiza Danych i Statystyki",
+  "section_4_icon_alt": "Ikona wykresu rosnącego",
+  "section_4_description_p_1": "Nasza strona może korzystać z narzędzi do analizy ruchu, takich jak Google Analytics, w celu zbierania anonimowych informacji na temat ruchu na stronie. Te dane są wykorzystywane wyłącznie w celach statystycznych i doskonalenia jakości naszego serwisu. Nie pozwalają one na identyfikację konkretnych użytkowników.",
+
+  "section_5_title": "5. Utrzymanie Strony",
+  "section_5_icon_alt": "Ikona komputera serwerowego z chmurą",
+  "section_5_description_p_1": "Strona <a href=\"https://pol-med.tech\" target=\"_blank\">https://pol-med.tech</a> jest utrzymywana przy użyciu infrastruktury GitHub Pages, co zapewnia wysoki poziom bezpieczeństwa i ochrony danych. GitHub oferuje zaawansowane monitorowanie oraz system kontroli wersji, który ułatwia śledzenie zmian i zapobiega ewentualnym incydentom związanym z bezpieczeństwem. Dodatkowo, kod źródłowy strony jest jawny i dostępny pod adresem: <a href=\"https://github.com/muslewski/pol-med.tech\" target=\"_blank\">https://github.com/muslewski/pol-med.tech</a>. Publiczny dostęp do kodu umożliwia przejrzystość oraz wspiera ciągłe doskonalenie strony.",
+
+  "section_6_title": "6. Prawa Użytkowników",
+  "section_6_icon_alt": "Ikona ręki wskazującej na ludzi",
+  "section_6_description_p_1": "Zgodnie z RODO, użytkownicy mają prawo dostępu do swoich danych osobowych, ich poprawiania, usuwania lub ograniczania przetwarzania, a także prawo do przenoszenia danych oraz wniesienia sprzeciwu wobec przetwarzania danych osobowych. Wszelkie pytania i prośby dotyczące danych osobowych prosimy kierować na adres e-mail: <a href=\"mailto:biuro@pol-med.tech\">biuro@pol-med.tech</a>.",
+
+  "section_7_title": "7. Zmiany w Polityce Prywatności",
+  "section_7_icon_alt": "Ikona zmieniających się miejscami strzałek",
+  "section_7_description_p_1": "Zastrzegamy sobie prawo do zmiany Polityki Prywatności w celu dostosowania jej do zmieniających się potrzeb i przepisów prawnych. Aktualna wersja Polityki Prywatności zawsze będzie dostępna na stronie: <a href=\"https://pol-med.tech/polityka_prywatnosci\" target=\"_blank\">https://pol-med.tech/polityka_prywatnosci</a>"
+}

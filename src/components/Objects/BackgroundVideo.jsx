@@ -1,6 +1,9 @@
 import React, { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 
 function BackgroundVideo({ fallbackImage, video }) {
+  const { t } = useTranslation("Others");
+
   const videoRef = useRef(null);
 
   useEffect(() => {
@@ -40,9 +43,9 @@ function BackgroundVideo({ fallbackImage, video }) {
       <img
         src={fallbackImage}
         className="background brightness-75"
-        alt="Fallback Image"
+        alt={t("background_video_fallback_alt")}
       />
-      Your browser does not support the video tag.
+      {t("background_video_fallback_text")}
     </video>
   );
 }

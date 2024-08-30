@@ -2,8 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import GoodButton from "../../components/GoodButton";
 import iconRightArrow from "../../Assets/rightArrow.png";
+import { useTranslation } from "react-i18next";
 
 function StationObject({ title = "", description = "", image, id }) {
+  const { t } = useTranslation("Others");
   if (description.length > 200)
     description = description.substring(0, 200) + "...";
 
@@ -17,7 +19,7 @@ function StationObject({ title = "", description = "", image, id }) {
           <img
             className="rounded-3xl  max-h-64 sm:max-h-none  drop-shadow-none transition-all duration-500 ease-in-out"
             src={image}
-            alt=""
+            alt={`${t("station_object_image_alt")} ${title}`}
           />
         </Link>
       </div>
@@ -38,6 +40,7 @@ function StationObject({ title = "", description = "", image, id }) {
           link={`/Edukacja_i_badania/` + id}
           className="scale-90 hover:scale-95 -ml-3"
           icon={iconRightArrow}
+          iconAlt={t("station_object_good_button_icon_alt")}
         />
       </div>
     </div>

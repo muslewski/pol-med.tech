@@ -5,6 +5,7 @@ import { Suspense, lazy, useEffect, useState } from "react";
 
 import { goToTopRough } from "./utils/goToTop";
 import { ErrorBoundary } from "react-error-boundary";
+import { useTranslation } from "react-i18next";
 
 // Lazy load the components using React.lazy
 const Home = lazy(() => import("./pages/Home/Home"));
@@ -23,8 +24,9 @@ const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy/PrivacyPolicy"));
 const Copyright = lazy(() => import("./pages/Copyright/Copyright"));
 
 function App() {
-  // Scroll to top on every route change
+  const { t: tOthers } = useTranslation("Others");
 
+  // Scroll to top on every route change
   const { pathname } = useLocation();
   useEffect(() => {
     goToTopRough();
@@ -47,6 +49,7 @@ function App() {
           <img
             className="cursor-zoom-out max-h-[95%] max-w-[93%] rounded shadow-[0_65px_100px_-15px_rgba(0,0,0,0.9)]"
             src={mainPhoto}
+            alt={tOthers("education_product_main_image_alt")}
           />
         </div>
       )}

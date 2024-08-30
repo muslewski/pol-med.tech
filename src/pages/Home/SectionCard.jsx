@@ -1,16 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import GoodButton from "../../components/GoodButton";
+import { useTranslation } from "react-i18next";
 
 function SectionCard({
   image,
   buttonIcon,
+  buttonIconAlt = "",
   title,
   description,
   gradient,
   shadow,
   linkHref,
 }) {
+  const { t } = useTranslation("Others");
   return (
     <div
       className="flex flex-col max-w-lg 3xl:max-w-[30rem]  gap-12 py-12 px-8 rounded-[4rem] transition-all duration-500 ease-in-out relative hover:shadow-homeCard [&_.mainImage]:hover:bottom-4 [&_.mainImage]:hover:right-2"
@@ -26,7 +29,7 @@ function SectionCard({
           className="mainImage object-cover rounded-3xl transition-all duration-500 ease-in-out relative bottom-0 right-0"
           style={{ filter: `drop-shadow(0 6px 6px ${shadow})` }}
           src={image}
-          alt={title}
+          alt={`${t("section_card_illustration_alt")} ${title}`}
         />
       </Link>
       <div className="flex flex-wrap gap-3 sm:gap-6 w-fit">
@@ -37,7 +40,7 @@ function SectionCard({
           {description}
         </p>
       </div>
-      <GoodButton link={linkHref} icon={buttonIcon} />
+      <GoodButton link={linkHref} icon={buttonIcon} iconAlt={buttonIconAlt} />
     </div>
   );
 }
