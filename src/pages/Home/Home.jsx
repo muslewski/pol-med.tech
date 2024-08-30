@@ -20,7 +20,7 @@ import circle1 from "./assets/circle1.svg";
 import circle2 from "./assets/circle2.svg";
 import circle3 from "./assets/circle3.svg";
 
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import ContactButton from "../../components/Navbar/ContactButton";
 import GlowingTitle from "../../components/GlowingTitle";
@@ -30,6 +30,7 @@ import BackgroundTop from "../../components/Objects/BackgroundTop";
 import BackgroundVideo from "../../components/Objects/BackgroundVideo";
 import Hero from "../../components/Hero";
 import { useTranslation } from "react-i18next";
+import useTitle from "../../components/useTitle";
 
 function Home() {
   const { t } = useTranslation("Home");

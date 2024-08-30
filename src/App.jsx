@@ -25,12 +25,50 @@ const Copyright = lazy(() => import("./pages/Copyright/Copyright"));
 
 function App() {
   const { t: tOthers } = useTranslation("Others");
+  const { t: tPageTitles } = useTranslation("PageTitles");
 
   // Scroll to top on every route change
   const { pathname } = useLocation();
   useEffect(() => {
     goToTopRough();
   }, [pathname]);
+
+  // Set the title of the page
+  useEffect(() => {
+    let title;
+    switch (pathname) {
+      case "/":
+        title = tPageTitles("home_page_title");
+        break;
+      case "/Edukacja_i_badania":
+        title = tPageTitles("education_page_title");
+        break;
+      case "/Edukacja_i_badania/interaktywna_platforma_edukacyjna":
+        title = tPageTitles("education_special_page_title");
+        break;
+      case "/Oleje_UCO":
+        title = tPageTitles("oils_page_title");
+        break;
+      case "/Narzedzia":
+        title = tPageTitles("tools_page_title");
+        break;
+      case "/O_nas":
+        title = tPageTitles("about_page_title");
+        break;
+      case "/Kontakt":
+        title = tPageTitles("contact_page_title");
+        break;
+      case "/Polityka_prywatnosci":
+        title = tPageTitles("privacy_policy_page_title");
+        break;
+      case "/Prawa_autorskie":
+        title = tPageTitles("copyright_page_title");
+        break;
+      default:
+        title = tPageTitles("default_page_title");
+    }
+    document.title = title;
+  }, [pathname, tPageTitles]);
 
   // State for zooming in the image
   const [zoomIn, setZoomIn] = useState(false);

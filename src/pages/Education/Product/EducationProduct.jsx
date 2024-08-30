@@ -10,9 +10,12 @@ import GlowingTitle from "../../../components/GlowingTitle";
 import { useTranslation } from "react-i18next";
 
 function EducationProduct({ setZoomIn, mainPhoto, setMainPhoto }) {
-  const { t } = useTranslation("Others");
-  const { t: tStation } = useTranslation("EducationStations");
+  const { t, ready: tOthersReady } = useTranslation("Others");
+  const { t: tStation, ready: tReady } = useTranslation("EducationStations");
+  const { t: tPageTitles, ready: tTitlesReady } = useTranslation("PageTitles");
   const { id } = useParams();
+
+  const [title, setTitle] = useState("Pol-Med");
 
   const stationsLength = stationsData.stations.length;
 
@@ -26,6 +29,21 @@ function EducationProduct({ setZoomIn, mainPhoto, setMainPhoto }) {
     ];
 
   const [station, setStation] = useState(stationsData.stations[id]);
+
+  useEffect(() => {
+    if (tOthersReady && tReady && tTitlesReady) {
+      if (station) {
+        setTitle(tStation(`stations.${id}.title`) + " | " + "Pol-Med");
+      } else {
+        setTitle(tPageTitles("education_not_found_page_title"));
+      }
+    }
+  }, [id, station, tStation, tPageTitles, tOthersReady, tReady, tTitlesReady]);
+
+  useEffect(() => {
+    document.title = title;
+  }, [title]);
+
   if (!station) {
     return (
       <Section
@@ -83,12 +101,14 @@ function EducationProduct({ setZoomIn, mainPhoto, setMainPhoto }) {
           {sidePhotos.length > 0 && (
             <div className="flex flex-wrap justify-center h-fit w-fit min-w-40 gap-12 px-6 sm:px-0">
               {sidePhotos.map((image, index) => (
-                <div className="relative z-10 [&>div]:hover:top-1 [&>div]:hover:-left-1">
+                <div
+                  className="relative z-10 [&>div]:hover:top-1 [&>div]:hover:-left-1"
+                  key={index}
+                >
                   <img
                     className="h-28 sm:h-40 w-28 sm:w-40 object-cover cursor-pointer rounded-lg"
                     draggable="false"
                     src={image}
-                    key={index}
                     alt={`${index + 1}. ${t(
                       "education_product_side_image_alt"
                     )}`}
