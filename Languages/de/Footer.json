@@ -1,13 +1,13 @@
 {
-    "uco_oils": "UCO -Öle",
-    "poland": "Polen",
-    "contact": "Kontakt",
-    "quick_links": "Linien",
-    "contact_form": "Kontaktformular",
-    "privacy_policy": "Datenschutzrichtlinie",
-    "copyright": "Copyright",
-    "alt_icon_1": "Pfeilsymbol",
-    "alt_icon_2": "Telefonsymbol",
-    "alt_icon_3": "Link -Symbol",
-    "alt_arrow_up": "Auf Pfeil"
+  "uco_oils": "UCO-Öle",
+  "poland": "Polen",
+  "contact": "Kontakt",
+  "quick_links": "Links",
+  "contact_form": "Kontaktformular",
+  "privacy_policy": "Datenschutzerklärung",
+  "copyright": "Urheberrecht",
+  "alt_icon_1": "Pfeil-Symbol",
+  "alt_icon_2": "Telefon-Symbol",
+  "alt_icon_3": "Link-Symbol",
+  "alt_arrow_up": "Pfeil nach oben"
 }

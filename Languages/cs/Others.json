@@ -1,11 +1,15 @@
 {
-    "background_video_fallback_text": "Váš prohlížeč nepodporuje video značku.",
-    "background_video_fallback_alt": "Obrázek na pozadí zobrazující továrnu",
-    "station_object_image_alt": "Zobrazení produktu",
-    "station_object_good_button_icon_alt": "Ikona šipky",
-    "education_product_main_image_alt": "Hlavní fotografie představující vzdělávací stanici",
-    "education_product_side_image_alt": "Boční fotografie představující vzdělávací stanici",
-    "section_card_illustration_alt": "Ilustrace sekce zobrazující",
-    "contact_button_default_text": "Kontaktujte se",
-    "good_button_default_text": "Pokračujte"
+  "background_video_fallback_text": "Váš prohlížeč nepodporuje tag video.",
+  "background_video_fallback_alt": "Pozadí zobrazující továrnu",
+  "station_object_image_alt": "Obrázek produktu zobrazuje",
+  "station_object_good_button_icon_alt": "Ikona šipky dál",
+  "station_object_good_button_text": "Více informací",
+  "education_product_main_image_alt": "Hlavní obrázek zobrazující vzdělávací stanici",
+  "education_product_side_image_alt": "Boční obrázek zobrazující vzdělávací stanici",
+  "education_product_button": "Požádat o produkt",
+  "education_product_button_alt": "Ikona košíku",
+  "education_product_not_found": "Omlouváme se, produkt nebyl nalezen, podívejte se na další:",
+  "section_card_illustration_alt": "Ilustrace sekce zobrazující",
+  "contact_button_default_text": "Kontaktujte nás",
+  "good_button_default_text": "Pokračovat"
 }

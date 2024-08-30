@@ -1,11 +1,15 @@
 {
-    "background_video_fallback_text": "Váš prehliadač nepodporuje značku videa.",
-    "background_video_fallback_alt": "Obrázok na pozadí zobrazujúci továreň",
-    "station_object_image_alt": "Fotografie produktu zobrazenie",
-    "station_object_good_button_icon_alt": "Ikona šípky zapnutá",
-    "education_product_main_image_alt": "Hlavné fotografie prezentujúce vzdelávaciu stanicu",
-    "education_product_side_image_alt": "Vedľajšie fotografie prezentované vzdelávaciu stanicu",
-    "section_card_illustration_alt": "Ilustrácia oddielu zobrazujúcej",
-    "contact_button_default_text": "Kontaktujte seba",
-    "good_button_default_text": "Pokračovať"
+  "background_video_fallback_text": "Váš prehliadač nepodporuje tag video.",
+  "background_video_fallback_alt": "Pozadie zobrazujúce továreň",
+  "station_object_image_alt": "Obrázok produktu zobrazuje",
+  "station_object_good_button_icon_alt": "Ikona šípky ďalej",
+  "station_object_good_button_text": "Viac informácií",
+  "education_product_main_image_alt": "Hlavný obrázok zobrazujúci vzdelávaciu stanicu",
+  "education_product_side_image_alt": "Bočný obrázok zobrazujúci vzdelávaciu stanicu",
+  "education_product_button": "Opýtajte sa na produkt",
+  "education_product_button_alt": "Ikona nákupného košíka",
+  "education_product_not_found": "Bohužiaľ, produkt nebol nájdený, pozrite si ďalšie:",
+  "section_card_illustration_alt": "Ilustrácia sekcie zobrazujúca",
+  "contact_button_default_text": "Kontaktujte nás",
+  "good_button_default_text": "Pokračovať"
 }

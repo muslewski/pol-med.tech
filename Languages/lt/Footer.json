@@ -1,13 +1,13 @@
 {
-    "uco_oils": "UCO aliejai",
-    "poland": "Lenkija",
-    "contact": "Susisiekite",
-    "quick_links": "Linijos",
-    "contact_form": "Kontaktinė forma",
-    "privacy_policy": "Privatumo politika",
-    "copyright": "Autorių teisės",
-    "alt_icon_1": "Rodyklės piktograma",
-    "alt_icon_2": "Telefono piktograma",
-    "alt_icon_3": "Nuorodos piktograma",
-    "alt_arrow_up": "Aukštyn rodyklė"
+  "uco_oils": "UCO Alyvos",
+  "poland": "Lenkija",
+  "contact": "Kontaktai",
+  "quick_links": "Nuorodos",
+  "contact_form": "Kontaktinė forma",
+  "privacy_policy": "Privatumo politika",
+  "copyright": "Autorių teisės",
+  "alt_icon_1": "Rodyklės piktograma",
+  "alt_icon_2": "Telefono piktograma",
+  "alt_icon_3": "Nuorodos piktograma",
+  "alt_arrow_up": "Rodyklė į viršų"
 }

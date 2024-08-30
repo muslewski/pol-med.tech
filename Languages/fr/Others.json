@@ -1,11 +1,15 @@
 {
-    "background_video_fallback_text": "Votre navigateur ne prend pas en charge une balise vidéo.",
-    "background_video_fallback_alt": "Image d'arrière-plan montrant l'usine",
-    "station_object_image_alt": "Photo de produit montrant",
-    "station_object_good_button_icon_alt": "L'icône de la flèche sur",
-    "education_product_main_image_alt": "Photos principales présentant la station éducative",
-    "education_product_side_image_alt": "Photos latérales présentant une station éducative",
-    "section_card_illustration_alt": "Illustration de la section représentant",
-    "contact_button_default_text": "Contactez-vous",
-    "good_button_default_text": "Continue"
+  "background_video_fallback_text": "Votre navigateur ne supporte pas la balise vidéo.",
+  "background_video_fallback_alt": "Image de fond représentant une usine",
+  "station_object_image_alt": "Image du produit montrant",
+  "station_object_good_button_icon_alt": "Icône de la flèche suivante",
+  "station_object_good_button_text": "Plus d'informations",
+  "education_product_main_image_alt": "Image principale montrant la station éducative",
+  "education_product_side_image_alt": "Image latérale montrant la station éducative",
+  "education_product_button": "Demander le produit",
+  "education_product_button_alt": "Icône du panier",
+  "education_product_not_found": "Malheureusement, le produit n'a pas été trouvé, voyez d'autres :",
+  "section_card_illustration_alt": "Illustration de la section montrant",
+  "contact_button_default_text": "Contactez-nous",
+  "good_button_default_text": "Continuer"
 }

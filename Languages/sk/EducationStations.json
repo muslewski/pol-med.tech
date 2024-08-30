@@ -1,44 +1,44 @@
 {
-    "stations": {
-        "0": {
-            "title": "Testovacia súprava na čerpadlo a vstrekovače čerpadla",
-            "description": "Je to komplexný nástroj na diagnostiku a opravu vstrekovacích systémov v dieselových motoroch.Umožňuje dôkladne skontrolovať prevádzkové parametre čerpadiel a vstrekovačov čerpadla, čo vám umožňuje identifikovať a odstraňovať poruchy."
-        },
-        "1": {
-            "title": "Testovací stojan na turbodúchadlo",
-            "description": "Toto je pokročilé zariadenie, ktoré umožňuje komplexné hodnotenie a opravu turbodúchadiel.Umožňuje presné merania prevádzkových parametrov, ako je rýchlosť rotácie, horný tlak, tesnosť a výkon.Vďaka tomu je možné identifikovať aj menšie chyby a obnoviť turbodúchadlo na plnú kondíciu."
-        },
-        "2": {
-            "title": "Ovládanie pneumatického brzdenia",
-            "description": "Ovládanie pneumatického brzdenia je kľúčovým prvkom, ktorý zaisťuje bezpečnú a pohodlnú jazdu.Tento systém využíva stlačený vzduch na riadenie ovládacích prvkov brzdy, čo zaisťuje hladké a efektívne brzdenie."
-        },
-        "3": {
-            "title": "Nastavená na demonštráciu hydraulického riadenia brzdového systému",
-            "description": "Táto sada umožňuje vizualizáciu a pochopenie prvkov kľúčového brzdového systému, ako je brzdové čerpadlo, brzdové valce, brzdové vedenia a brzdové doštičky."
-        },
-        "4": {
-            "title": "Súprava simulácie teploty PCT",
-            "description": "Pokročilý nástroj, ktorý umožňuje presnú simuláciu rôznych teplotných profilov v širokom rozmedzí.Je to ideálne riešenie na testovanie a validáciu systémov regulácie teploty v rôznych odvetviach."
-        },
-        "5": {
-            "title": "Osvetlenie motorového vozidla",
-            "description": "Sada žiaroviek a svetlometov, ktoré umožňujú viditeľnosť vozidla na ceste v podmienkach zlej viditeľnosti a informujú ostatných používateľov cestnej premávky o jeho prítomnosti a manévroch."
-        },
-        "6": {
-            "title": "Nastavená na demonštráciu systému riadenia hydraulického zavesenia",
-            "description": "Táto sada umožňuje vizualizáciu a pochopenie prvkov kľúčového zavesenia, ako je hydraulické čerpadlo, hydraulické valce, hydraulické káble a tlmiče nárazov."
-        },
-        "7": {
-            "title": "Súprava na testovanie injektorov",
-            "description": "Potrebný nástroj pre každého mechanika, ktorý sa zaoberá diagnostikou a opravou motorov plynu a nafty.Táto sada vám umožňuje presne skontrolovať prevádzkové parametre vstrekovačov, ako je výkon, postrekovanie paliva, tesnosť a čas otvárania/uzávierky."
-        },
-        "8": {
-            "title": "Pneumatická demonštračná súprava kontroly zavesenia",
-            "description": "Táto sada umožňuje vizualizáciu a porozumenie kľúčovým prvkom systému suspenzie, ako je vzduchový kompresor, pneumatické valce, pneumatické káble a vlnenie vzduchu."
-        },
-        "9": {
-            "title": "Vyučovací motor",
-            "description": "Motor má overiť prevádzkové parametre a naučiť sa výstavbu a implementáciu základných základných učebných osnov v oblasti konštrukcie a diagnostiky spaľovania motora."
-        }
+  "stations": {
+    "0": {
+      "title": "Sada na testovanie vstrekovačov a trysiek vstrekovačov",
+      "description": "Je to komplexný nástroj na diagnostiku a opravu systémov vstrekovania paliva v dieselových motoroch. Umožňuje presné testovanie parametrov vstrekovačov a trysiek vstrekovačov, čo umožňuje identifikáciu a odstránenie porúch."
+    },
+    "1": {
+      "title": "Stanica na testovanie turbodúchadiel",
+      "description": "Je to pokročilé zariadenie, ktoré umožňuje komplexné hodnotenie a opravu turbodúchadiel. Umožňuje presné meranie výkonových parametrov, ako je otáčková rýchlosť, tlak preplňovania, tesnenie a účinnosť. To umožňuje identifikáciu aj drobných porúch a obnovenie úplnej funkčnosti turbodúchadla."
+    },
+    "2": {
+      "title": "Riadenie pneumatického brzdového systému",
+      "description": "Riadenie pneumatického brzdového systému je kľúčovým prvkom zabezpečujúcim bezpečnú a pohodlnú jazdu. Tento systém používa stlačený vzduch na riadenie brzdových aktorov, čo zabezpečuje hladké a efektívne brzdenie."
+    },
+    "3": {
+      "title": "Sada na demonštráciu riadenia hydraulického brzdového systému",
+      "description": "Táto sada umožňuje vizualizáciu a pochopenie kľúčových prvkov brzdového systému, ako sú brzdové čerpadlo, brzdové aktory, brzdové hadice a brzdové doštičky."
+    },
+    "4": {
+      "title": "Sada na simuláciu teploty PCT",
+      "description": "Pokročilý nástroj, ktorý umožňuje presnú simuláciu rôznych teplotných profilov v širokom rozmedzí. Je to ideálne riešenie na testovanie a overovanie systémov riadenia teploty v rôznych priemyselných odvetviach."
+    },
+    "5": {
+      "title": "Svetelný systém vozidla",
+      "description": "Sada lámp a reflektorov, ktorá zabezpečuje viditeľnosť vozidla na ceste v podmienkach nízkej viditeľnosti a informuje ostatných účastníkov cestnej premávky o jeho prítomnosti a manévroch."
+    },
+    "6": {
+      "title": "Sada na demonštráciu riadenia hydraulického zavesenia",
+      "description": "Táto sada umožňuje vizualizáciu a pochopenie kľúčových prvkov zavesenia, ako sú hydraulické čerpadlo, hydraulické aktory, hydraulické hadice a tlmiče."
+    },
+    "7": {
+      "title": "Sada na testovanie vstrekovačov",
+      "description": "Nezbytný nástroj pre každého mechanika, ktorý sa zaoberá diagnostikou a opravou benzínových a dieselových motorov. Táto sada umožňuje presné testovanie parametrov vstrekovačov, ako sú účinnosť, rozstrek paliva, tesnenie a čas otvorenia/zatvorenia."
+    },
+    "8": {
+      "title": "Sada na demonštráciu riadenia pneumatického zavesenia",
+      "description": "Táto sada umožňuje vizualizáciu a pochopenie kľúčových prvkov zavesenia, ako sú vzduchový kompresor, pneumatické aktory, pneumatické hadice a vzduchové pružiny."
+    },
+    "9": {
+      "title": "Vzdelávací motor",
+      "description": "Motor na overovanie prevádzkových parametrov a na učenie konštrukcie a implementácie základných obsahov učebného plánu v oblasti konštrukcie a diagnostiky motorov."
     }
+  }
 }

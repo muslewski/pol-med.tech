@@ -1,11 +1,15 @@
 {
-    "background_video_fallback_text": "Uw browser ondersteunt geen videotag.",
-    "background_video_fallback_alt": "Achtergrondafbeelding die de fabriek toont",
-    "station_object_image_alt": "Productfoto weergeven",
-    "station_object_good_button_icon_alt": "Het pijlpictogram op",
-    "education_product_main_image_alt": "Hoofdfoto's die het educatieve station presenteren",
-    "education_product_side_image_alt": "Zijfoto's die een educatief station presenteren",
-    "section_card_illustration_alt": "Illustratie van de afbeelding van de sectie",
-    "contact_button_default_text": "Neem contact op met uzelf",
-    "good_button_default_text": "Doorgaan"
+  "background_video_fallback_text": "Uw browser ondersteunt de video-tag niet.",
+  "background_video_fallback_alt": "Achtergrondafbeelding van een fabriek",
+  "station_object_image_alt": "Productafbeelding toont",
+  "station_object_good_button_icon_alt": "Volgende pijl icoon",
+  "station_object_good_button_text": "Meer informatie",
+  "education_product_main_image_alt": "Hoofdfoto van het educatieve station",
+  "education_product_side_image_alt": "Zijkant afbeelding van het educatieve station",
+  "education_product_button": "Vraag naar het product",
+  "education_product_button_alt": "Winkelwagentje icoon",
+  "education_product_not_found": "Helaas, het product werd niet gevonden, zie andere:",
+  "section_card_illustration_alt": "Sectie illustratie toont",
+  "contact_button_default_text": "Neem contact met ons op",
+  "good_button_default_text": "Doorgaan"
 }

@@ -1,11 +1,15 @@
 {
-    "background_video_fallback_text": "Ваш браузер не підтримує тег відео.",
-    "background_video_fallback_alt": "Фонове зображення, що показує фабрику",
-    "station_object_image_alt": "Фотопродукт, що показує",
-    "station_object_good_button_icon_alt": "Значок стрілки",
-    "education_product_main_image_alt": "Основні фотографії, що представляють навчальну станцію",
-    "education_product_side_image_alt": "Бічні фотографії, що представляють навчальну станцію",
-    "section_card_illustration_alt": "Ілюстрація розділу, що зображує",
-    "contact_button_default_text": "Зверніться до себе",
-    "good_button_default_text": "Продовжувати"
+  "background_video_fallback_text": "Ваш браузер не підтримує тег відео.",
+  "background_video_fallback_alt": "Фонове зображення, що зображує фабрику",
+  "station_object_image_alt": "Зображення продукту",
+  "station_object_good_button_icon_alt": "Іконка стрілки вправо",
+  "station_object_good_button_text": "Більше інформації",
+  "education_product_main_image_alt": "Головне зображення освітньої станції",
+  "education_product_side_image_alt": "Бічне зображення освітньої станції",
+  "education_product_button": "Запитати про продукт",
+  "education_product_button_alt": "Іконка кошика",
+  "education_product_not_found": "На жаль, продукт не знайдено, перегляньте інші:",
+  "section_card_illustration_alt": "Ілюстрація розділу, що показує",
+  "contact_button_default_text": "Зв'яжіться з нами",
+  "good_button_default_text": "Продовжити"
 }

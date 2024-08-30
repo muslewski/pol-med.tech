@@ -1,13 +1,13 @@
 {
-    "uco_oils": "UCO -oliën",
-    "poland": "Polen",
-    "contact": "Contact",
-    "quick_links": "Lijnen",
-    "contact_form": "Contactformulier",
-    "privacy_policy": "Privacybeleid",
-    "copyright": "Copyright",
-    "alt_icon_1": "Pijlpictogram",
-    "alt_icon_2": "Telefoonpictogram",
-    "alt_icon_3": "Link -pictogram",
-    "alt_arrow_up": "Pijl omhoog"
+  "uco_oils": "UCO Oliën",
+  "poland": "Polen",
+  "contact": "Contact",
+  "quick_links": "Links",
+  "contact_form": "Contactformulier",
+  "privacy_policy": "Privacybeleid",
+  "copyright": "Copyright",
+  "alt_icon_1": "Pijl Icoon",
+  "alt_icon_2": "Telefoon Icoon",
+  "alt_icon_3": "Link Icoon",
+  "alt_arrow_up": "Pijl Omhoog"
 }

@@ -1,13 +1,13 @@
 {
-    "uco_oils": "Aceites de UCO",
-    "poland": "Polonia",
-    "contact": "Contacto",
-    "quick_links": "Pauta",
-    "contact_form": "Formulario de contacto",
-    "privacy_policy": "Política de privacidad",
-    "copyright": "Derechos de autor",
-    "alt_icon_1": "Icono de flecha",
-    "alt_icon_2": "Ícono del teléfono",
-    "alt_icon_3": "Icono de enlace",
-    "alt_arrow_up": "Arrow Arrow"
+  "uco_oils": "Aceites UCO",
+  "poland": "Polonia",
+  "contact": "Contacto",
+  "quick_links": "Enlaces",
+  "contact_form": "Formulario de Contacto",
+  "privacy_policy": "Política de Privacidad",
+  "copyright": "Derechos de Autor",
+  "alt_icon_1": "Ícono de Flecha",
+  "alt_icon_2": "Ícono de Teléfono",
+  "alt_icon_3": "Ícono de Enlace",
+  "alt_arrow_up": "Flecha Arriba"
 }

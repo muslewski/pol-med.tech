@@ -1,11 +1,15 @@
 {
-    "background_video_fallback_text": "Jūsų naršyklė nepalaiko vaizdo žymos.",
-    "background_video_fallback_alt": "Fono vaizdas, rodantis gamyklą",
-    "station_object_image_alt": "Produkto nuotrauka rodoma",
-    "station_object_good_button_icon_alt": "Rodyklės piktograma",
-    "education_product_main_image_alt": "Pagrindinės nuotraukos, kuriose pristatoma švietimo stotis",
-    "education_product_side_image_alt": "Šoninės nuotraukos, kuriose pateikiama edukacinė stotis",
-    "section_card_illustration_alt": "Skyriaus, vaizduojančio",
-    "contact_button_default_text": "Susisiekite su savimi",
-    "good_button_default_text": "Eik"
+  "background_video_fallback_text": "Jūsų naršyklė nepalaiko vaizdo įrašo žymos.",
+  "background_video_fallback_alt": "Fono vaizdas, vaizduojantis gamyklą",
+  "station_object_image_alt": "Produkto vaizdas rodo",
+  "station_object_good_button_icon_alt": "Kitas rodyklės piktograma",
+  "station_object_good_button_text": "Daugiau informacijos",
+  "education_product_main_image_alt": "Pagrindinis vaizdas rodo edukacinę stotį",
+  "education_product_side_image_alt": "Šoninis vaizdas rodo edukacinę stotį",
+  "education_product_button": "Paklauskite apie produktą",
+  "education_product_button_alt": "Krepšelio piktograma",
+  "education_product_not_found": "Deja, produktas nebuvo rastas, peržiūrėkite kitus:",
+  "section_card_illustration_alt": "Skyriaus iliustracija rodo",
+  "contact_button_default_text": "Susisiekite su mumis",
+  "good_button_default_text": "Tęsti"
 }

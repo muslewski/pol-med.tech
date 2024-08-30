@@ -1,11 +1,15 @@
 {
-    "background_video_fallback_text": "Your browser does not support a video tag.",
-    "background_video_fallback_alt": "Background image showing the factory",
-    "station_object_image_alt": "Product photo showing",
-    "station_object_good_button_icon_alt": "The arrow icon on",
-    "education_product_main_image_alt": "Main photos presenting the educational station",
-    "education_product_side_image_alt": "Side photos presenting an educational station",
-    "section_card_illustration_alt": "Illustration of the Section depicting",
-    "contact_button_default_text": "Contact yourself",
-    "good_button_default_text": "Go on"
+  "background_video_fallback_text": "Your browser does not support the video tag.",
+  "background_video_fallback_alt": "Background image depicting a factory",
+  "station_object_image_alt": "Product image showing",
+  "station_object_good_button_icon_alt": "Next arrow icon",
+  "station_object_good_button_text": "More information",
+  "education_product_main_image_alt": "Main image showing the educational station",
+  "education_product_side_image_alt": "Side image showing the educational station",
+  "education_product_button": "Ask for the product",
+  "education_product_button_alt": "Cart icon",
+  "education_product_not_found": "Unfortunately, the product was not found, see others:",
+  "section_card_illustration_alt": "Section illustration showing",
+  "contact_button_default_text": "Contact us",
+  "good_button_default_text": "Continue"
 }

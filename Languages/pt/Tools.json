@@ -1,51 +1,54 @@
 {
-    "hero_title": "Ferramentas industriais",
-    "hero_description": "Descubra nossa oferta de ferramentas que tornarão seus empreendimentos industriais ainda mais eficazes e eficientes!",
-    "hero_background_alt": "Foto mostrando ferramentas industriais",
-    "section_title_1": "Nós oferecemos",
-    "section_description_1": "Fornecimento abrangente de empresas no campo de vários tipos de ferramentas industriais, equipamentos especializados e produtos OHS.",
-    "section_title_2": "Nossa gama de ferramentas industriais",
-    "section_2_background_alt": "Exemplos de fotos reimpressivas de fotos oferecidas",
-    "tools_list": {
-        "0": {
-            "title": "Ferramentas manuais: martelos, chaves de fenda, serras, alicates, etc."
-        },
-        "1": {
-            "title": "Ferramentas elétricas: exercícios, trituradores, chaves de fenda, etc."
-        },
-        "2": {
-            "title": "Ferramentas pneumáticas: martelos pneumáticos, chaves pneumáticas, etc."
-        },
-        "3": {
-            "title": "Ferramentas hidráulicas: elevadores hidráulicos, prensas hidráulicas, etc."
-        },
-        "4": {
-            "title": "Ferramentas de medição: pinça, micrômetros, linhas, etc."
-        },
-        "5": {
-            "title": "Ferramentas de soldagem: máquinas de soldagem, queimadores, eletrodos, etc."
-        },
-        "6": {
-            "title": "Ferramentas de corte: facas de tokar, cortadores, exercícios, etc."
-        },
-        "7": {
-            "title": "Ferramentas abrasivas: escudos, pincéis, pedra de whetstone etc."
-        },
-        "8": {
-            "title": "Obras industriais: manipuladores, automação, linhas de produção, etc."
-        },
-        "9": {
-            "title": "Impressoras 3D: impressoras estereolitográficas, impressoras FDM, impressoras SLS, filamentos, etc."
-        }
+  "hero_title": "Ferramentas Industriais",
+  "hero_description": "Descubra nossa gama de ferramentas que tornarão suas empreitadas industriais ainda mais eficientes e eficazes!",
+  "hero_background_alt": "Foto representando ferramentas industriais",
+
+  "section_title_1": "Oferecemos",
+  "section_description_1": "Suprimento completo de várias ferramentas industriais, equipamentos especializados e produtos de segurança para empresas.",
+
+  "section_title_2": "Nossa Gama de Ferramentas Industriais",
+  "section_2_background_alt": "Foto de amostra representando as ferramentas oferecidas",
+  "tools_list": {
+    "0": {
+      "title": "Ferramentas Manuais: martelos, chaves de fenda, serras, alicates, etc."
     },
-    "section_title_3": "Nós fornecemos",
-    "section_description_3": "Serviços na seleção de ferramentas apropriadas, dependendo de:",
-    "simple_li_1": "tipo de trabalho realizado,",
-    "simple_li_2": "o material que você trabalha,",
-    "simple_li_3": "Precisão e precisão necessárias,",
-    "simple_li_4": "fundos disponíveis.",
-    "simple_li_alt_1": "Ícone de folhas de papel",
-    "simple_li_alt_2": "Ícone de material",
-    "simple_li_alt_3": "Um ícone de visão",
-    "simple_li_alt_4": "Ícone de dinheiro"
+    "1": {
+      "title": "Ferramentas Elétricas: furadeiras, esmeris, chaves de fenda, etc."
+    },
+    "2": {
+      "title": "Ferramentas Pneumáticas: martelos pneumáticos, chaves pneumáticas, etc."
+    },
+    "3": {
+      "title": "Ferramentas Hidráulicas: elevadores hidráulicos, prensas hidráulicas, etc."
+    },
+    "4": {
+      "title": "Ferramentas de Medição: paquímetros, micrômetros, réguas, etc."
+    },
+    "5": {
+      "title": "Ferramentas de Soldagem: soldadores, tochas, eletrodos, etc."
+    },
+    "6": {
+      "title": "Ferramentas de Corte: ferramentas para torno, fresadoras, brocas, etc."
+    },
+    "7": {
+      "title": "Ferramentas Abrasivas: discos, escovas, pedras de afiar, etc."
+    },
+    "8": {
+      "title": "Robôs Industriais: manipuladores, automação, linhas de produção, etc."
+    },
+    "9": {
+      "title": "Impressoras 3D: impressoras estereolitográficas, impressoras FDM, impressoras SLS, filamentos, etc."
+    }
+  },
+
+  "section_title_3": "Fornecemos",
+  "section_description_3": "Serviços para selecionar as ferramentas certas com base em:",
+  "simple_li_1": "o tipo de trabalho realizado,",
+  "simple_li_2": "o material sendo processado,",
+  "simple_li_3": "a precisão e exatidão necessárias,",
+  "simple_li_4": "os recursos financeiros disponíveis.",
+  "simple_li_alt_1": "Ícone de um pedaço de papel",
+  "simple_li_alt_2": "Ícone de material",
+  "simple_li_alt_3": "Ícone de alvo",
+  "simple_li_alt_4": "Ícone de dinheiro"
 }

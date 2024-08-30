@@ -1,44 +1,44 @@
 {
-    "stations": {
-        "0": {
-            "title": "Kit de test de pompe et injecteurs de pompe",
-            "description": "Il s'agit d'un outil complet pour le diagnostic et la réparation des systèmes d'injection dans les moteurs diesel.Il vous permet de vérifier soigneusement les paramètres de fonctionnement des pompes et des injecteurs de pompe, ce qui vous permet d'identifier et de supprimer les défauts."
-        },
-        "1": {
-            "title": "Stand de test de turbocompresseur",
-            "description": "Il s'agit d'un dispositif avancé qui permet une évaluation et une réparation complètes des turbocompresseurs.Il permet des mesures précises des paramètres de fonctionnement, tels que la vitesse de rotation, la pression supérieure-up, l'étanchéité et les performances.Grâce à cela, il est possible d'identifier des défauts encore mineurs et de restaurer le turbocompresseur en pleine forme."
-        },
-        "2": {
-            "title": "Contrôle d'un système de freinage pneumatique",
-            "description": "Le contrôle d'un système de freinage pneumatique est un élément clé qui garantit une conduite sûre et confortable.Ce système utilise de l'air comprimé pour contrôler les actionneurs de frein, ce qui assure un freinage fluide et efficace."
-        },
-        "3": {
-            "title": "Prévu pour la démonstration du contrôle hydraulique du système de freinage",
-            "description": "Cet ensemble permet la visualisation et la compréhension des éléments clés du système de freinage, tels qu'une pompe de frein, des cylindres de frein, des conduites de frein et des plaquettes de frein."
-        },
-        "4": {
-            "title": "Kit de simulation de température PCT",
-            "description": "Un outil avancé qui permet une simulation précise de divers profils de température dans une large plage.Il s'agit d'une solution idéale pour les tests et la validation des systèmes de contrôle de la température dans diverses industries."
-        },
-        "5": {
-            "title": "Éclairage de véhicule à moteur",
-            "description": "Un ensemble de lampes et de phares qui permettent la visibilité du véhicule sur la route dans des conditions de mauvaise visibilité et informer d'autres usagers de la route sur sa présence et ses manœuvres."
-        },
-        "6": {
-            "title": "Définir le système de contrôle de la suspension hydraulique",
-            "description": "Cet ensemble permet la visualisation et la compréhension des éléments clés du système de suspension, tels qu'une pompe hydraulique, des cylindres hydrauliques, des câbles hydrauliques et des amortisseurs."
-        },
-        "7": {
-            "title": "Kit de test d'injecteur",
-            "description": "Un outil nécessaire pour chaque mécanicien qui traite des diagnostics et de la réparation des moteurs à gaz et diesel.Cet ensemble vous permet de vérifier avec précision les paramètres de fonctionnement des injecteurs, tels que les performances, la pulvérisation de carburant, l'étanchéité et l'heure d'ouverture / de fermeture."
-        },
-        "8": {
-            "title": "Ensemble de démonstration de contrôle de la suspension pneumatique",
-            "description": "Cet ensemble permet la visualisation et la compréhension des éléments clés du système de suspension, tels que le compresseur d'air, les cylindres pneumatiques, les câbles pneumatiques et les soufflettes d'air."
-        },
-        "9": {
-            "title": "Moteur d'enseignement",
-            "description": "Le moteur vise à vérifier les paramètres de fonctionnement et à apprendre la construction et la mise en œuvre du programme de base de base dans le domaine de la construction et du diagnostic du moteur de combustion."
-        }
+  "stations": {
+    "0": {
+      "title": "Kit de test des injecteurs et des buses d'injecteurs",
+      "description": "C'est un outil complet pour diagnostiquer et réparer les systèmes d'injection de carburant des moteurs Diesel. Il permet un test précis des paramètres des injecteurs et des buses d'injecteurs, facilitant l'identification et l'élimination des défauts."
+    },
+    "1": {
+      "title": "Station de test de turbocompresseur",
+      "description": "Il s'agit d'un dispositif avancé permettant une évaluation complète et une réparation des turbocompresseurs. Il permet une mesure précise des paramètres de performance tels que la vitesse de rotation, la pression de suralimentation, l'étanchéité et l'efficacité. Cela permet d'identifier même les défauts mineurs et de restaurer le turbocompresseur à pleine fonctionnalité."
+    },
+    "2": {
+      "title": "Contrôle du système de freinage pneumatique",
+      "description": "Le contrôle du système de freinage pneumatique est un élément clé garantissant une conduite sûre et confortable. Ce système utilise de l'air comprimé pour contrôler les actionneurs de frein, assurant un freinage fluide et efficace."
+    },
+    "3": {
+      "title": "Kit de démonstration du contrôle du système de freinage hydraulique",
+      "description": "Ce kit permet de visualiser et de comprendre les éléments clés du système de freinage, tels que la pompe de frein, les actionneurs de frein, les conduites de frein et les plaquettes de frein."
+    },
+    "4": {
+      "title": "Kit de simulation de température PCT",
+      "description": "Un outil avancé qui permet de simuler avec précision divers profils de température sur une large gamme. C'est une solution idéale pour tester et valider les systèmes de contrôle de température dans diverses industries."
+    },
+    "5": {
+      "title": "Système d'éclairage du véhicule",
+      "description": "Un ensemble de lampes et de réflecteurs qui assurent la visibilité du véhicule sur la route dans des conditions de faible visibilité et informent les autres usagers de la route de sa présence et de ses manœuvres."
+    },
+    "6": {
+      "title": "Kit de démonstration du système de contrôle de suspension hydraulique",
+      "description": "Ce kit permet de visualiser et de comprendre les éléments clés du système de suspension, tels que la pompe hydraulique, les actionneurs hydrauliques, les conduites hydrauliques et les amortisseurs."
+    },
+    "7": {
+      "title": "Kit de test des injecteurs",
+      "description": "Un outil essentiel pour tout mécanicien impliqué dans le diagnostic et la réparation des moteurs à essence et Diesel. Ce kit permet de tester avec précision les paramètres des injecteurs tels que l'efficacité, la pulvérisation de carburant, l'étanchéité et le temps d'ouverture/fermeture."
+    },
+    "8": {
+      "title": "Kit de démonstration du système de contrôle de suspension pneumatique",
+      "description": "Ce kit permet de visualiser et de comprendre les éléments clés du système de suspension, tels que le compresseur d'air, les actionneurs pneumatiques, les conduites pneumatiques et les ressorts pneumatiques."
+    },
+    "9": {
+      "title": "Moteur éducatif",
+      "description": "Un moteur pour vérifier les paramètres de fonctionnement et pour apprendre la construction et la mise en œuvre des contenus de base du programme dans le domaine de la construction et du diagnostic des moteurs."
     }
+  }
 }

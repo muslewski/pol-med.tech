@@ -1,44 +1,44 @@
 {
-    "stations": {
-        "0": {
-            "title": "Kit de teste de bomba e injetores de bomba",
-            "description": "É uma ferramenta abrangente para diagnóstico e reparo de sistemas de injeção em motores a diesel.Ele permite que você verifique completamente os parâmetros operacionais das bombas e injetores de bombas, o que permite identificar e remover falhas."
-        },
-        "1": {
-            "title": "Suporte de teste do turbocompressor",
-            "description": "Este é um dispositivo avançado que permite avaliação e reparo abrangentes de turbocompressores.Ele permite medições precisas dos parâmetros operacionais, como velocidade de rotação, pressão superior -up, aperto e desempenho.Graças a isso, é possível identificar mesmo pequenos defeitos e restaurar o turbocompressor à aptidão total."
-        },
-        "2": {
-            "title": "Controle de um sistema de frenagem pneumático",
-            "description": "Controlar um sistema de frenagem pneumático é um elemento -chave que garante dirigir seguro e confortável.Este sistema usa ar comprimido para controlar os atuadores do freio, o que garante frenagem suave e eficaz."
-        },
-        "3": {
-            "title": "Definido para demonstração de controle hidráulico do sistema de frenagem",
-            "description": "Esse conjunto permite a visualização e a compreensão dos principais elementos do sistema de freio, como uma bomba de freio, cilindros de freio, linhas de freio e pastilhas de freio."
-        },
-        "4": {
-            "title": "Kit de simulação de temperatura PCT",
-            "description": "Uma ferramenta avançada que permite uma simulação precisa de vários perfis de temperatura em uma ampla faixa.É uma solução ideal para testar e validação de sistemas de controle de temperatura em várias indústrias."
-        },
-        "5": {
-            "title": "Iluminação de veículos a motor",
-            "description": "Um conjunto de lâmpadas e faróis que permitem a visibilidade do veículo na estrada em condições de baixa visibilidade e informa outros usuários da estrada sobre sua presença e manobras."
-        },
-        "6": {
-            "title": "Definido para demonstração do sistema de controle de suspensão hidráulica",
-            "description": "Esse conjunto permite a visualização e a compreensão dos principais elementos do sistema de suspensão, como uma bomba hidráulica, cilindros hidráulicos, cabos hidráulicos e amortecedores."
-        },
-        "7": {
-            "title": "Kit de teste de injetor",
-            "description": "Uma ferramenta necessária para todos os mecânicos que lidam com diagnósticos e reparo de motores a gás e diesel.Esse conjunto permite verificar com precisão os parâmetros operacionais dos injetores, como desempenho, pulverização de combustível, aperto e tempo de abertura/fechamento."
-        },
-        "8": {
-            "title": "Conjunto de demonstração de controle de suspensão pneumática",
-            "description": "Esse conjunto permite a visualização e a compreensão dos elementos -chave do sistema de suspensão, como compressor de ar, cilindros pneumáticos, cabos pneumáticos e fole."
-        },
-        "9": {
-            "title": "Engine de ensino",
-            "description": "O motor deve verificar os parâmetros operacionais e aprender a construção e implementação do currículo básico do núcleo no campo da construção e diagnóstico do motor de combustão."
-        }
+  "stations": {
+    "0": {
+      "title": "Kit de Teste de Injetores e Bicos Injetores",
+      "description": "Esta é uma ferramenta abrangente para diagnosticar e reparar sistemas de injeção de combustível de motores Diesel. Permite testes precisos dos parâmetros dos injetores e bicos injetores, possibilitando a identificação e eliminação de falhas."
+    },
+    "1": {
+      "title": "Estação de Teste de Turbocompressores",
+      "description": "Este é um dispositivo avançado que possibilita a avaliação e reparo completos de turbocompressores. Permite a medição precisa de parâmetros de desempenho, como velocidade de rotação, pressão de impulso, vedação e eficiência. Isso possibilita a identificação de falhas mesmo pequenas e a restauração do turbocompressor à funcionalidade completa."
+    },
+    "2": {
+      "title": "Controle de Sistema de Freios Pneumáticos",
+      "description": "O controle do sistema de freios pneumáticos é um elemento chave para garantir uma condução segura e confortável. Este sistema usa ar comprimido para controlar os atuadores dos freios, garantindo uma frenagem suave e eficiente."
+    },
+    "3": {
+      "title": "Kit de Demonstração de Controle de Sistema de Freios Hidráulicos",
+      "description": "Este kit permite a visualização e compreensão dos principais elementos do sistema de freios, como a bomba de freio, atuadores de freio, linhas de freio e pastilhas de freio."
+    },
+    "4": {
+      "title": "Kit de Simulação de Temperatura PCT",
+      "description": "Uma ferramenta avançada que permite a simulação precisa de vários perfis de temperatura em uma ampla gama. É uma solução ideal para testar e validar sistemas de controle de temperatura em várias indústrias."
+    },
+    "5": {
+      "title": "Sistema de Iluminação de Veículos",
+      "description": "Um conjunto de lâmpadas e refletores que proporcionam visibilidade do veículo na estrada em condições de baixa visibilidade e informam outros usuários da estrada sobre sua presença e manobras."
+    },
+    "6": {
+      "title": "Kit de Demonstração de Sistema de Controle de Suspensão Hidráulica",
+      "description": "Este kit permite a visualização e compreensão dos principais elementos do sistema de suspensão, como a bomba hidráulica, atuadores hidráulicos, linhas hidráulicas e amortecedores."
+    },
+    "7": {
+      "title": "Kit de Teste de Injetores",
+      "description": "Uma ferramenta essencial para qualquer mecânico envolvido no diagnóstico e reparo de motores a gasolina e diesel. Este kit permite a medição precisa dos parâmetros dos injetores, como eficiência, pulverização de combustível, vedação e tempo de abertura/fechamento."
+    },
+    "8": {
+      "title": "Kit de Demonstração de Sistema de Controle de Suspensão Pneumática",
+      "description": "Este kit permite a visualização e compreensão dos principais elementos do sistema de suspensão, como o compressor de ar, atuadores pneumáticos, linhas pneumáticas e molas a ar."
+    },
+    "9": {
+      "title": "Motor Educacional",
+      "description": "Um motor para verificar parâmetros de operação e para aprender sobre a construção e a implementação de conteúdos básicos do currículo na área de construção e diagnóstico de motores."
     }
+  }
 }

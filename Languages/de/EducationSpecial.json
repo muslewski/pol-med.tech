@@ -1,14 +1,14 @@
 {
-    "title": "Interaktive Bildungsplattform",
-    "description_1": "Die didaktische Position zum CAR Mechatronics Laboratory bietet eine interaktive Bildungsplattform, mit der die Schüler lernen können, wie Motorkarten erstellt werden.Das Hauptelement der Position ist ein universeller Steuercomputer, der die Steuerung des Motors mit Funkenzündung und elektronischer Kraftstoffeinspritzung ermöglicht.",
-    "description_2": "Die Schüler haben die Möglichkeit, mit verschiedenen Einstellungen und Konfigurationen zu experimentieren und Motorkarten zu erstellen.Durch die Analyse der Eingangsdaten von Sensoren wie Position, Temperatur oder Vakuum und angemessener Programmierung des Controllers können sie Motorkarten erstellen, wodurch der Betrieb an verschiedene Betriebsbedingungen angepasst wird.Die didaktische Position zum CAR Mechatronics Laboratory bietet eine interaktive Bildungsplattform, mit der die Schüler lernen können, wie Motorkarten erstellt werden.Das Hauptelement der Position ist ein universeller Steuercomputer, der die Steuerung des Motors mit Funkenzündung und elektronischer Kraftstoffeinspritzung ermöglicht.",
-    "description_3": "Das Erstellen von Motorkartenkarten ist nicht nur die Programmierfähigkeiten, sondern auch ein tieferes Verständnis der Motormechanismen und der Auswirkungen verschiedener Parameter auf die Effizienz und Leistung.Dank der praktischen Übungen in einer didaktischen Position erwerben die Schüler die erforderlichen Kenntnisse und Fähigkeiten im Bereich der Diagnose, Reparatur und Optimierung des Motorbetriebs, wodurch sie den Beruf der Elektromechanik oder des Automechatroniks praktizieren.",
-    "description_1_alt": "Symbol, das einen Computersteuerungscomputer darstellt",
-    "description_2_alt": "Ein Ikone, das den französischen Schlüssel darstellt, der von einem Zahnradrad umgeben ist",
-    "description_3_alt": "Ikone, das einen Mechaniker darstellt, der zu arbeiten ist",
-    "good_button_text": "Fragen Sie nach dem Produkt",
-    "good_button_alt": "Korbsymbol",
-    "see_also": "Siehe auch",
-    "alt_1": "Das erste Hauptfoto, das die interaktive Bildungsplattform in der Praxis zeigt",
-    "alt_2": "Das zweite Hauptfoto, das die Plattform auf dem Brett zeigt"
+  "title": "Interaktive Bildungsplattform",
+  "description_1": "Die Bildungsarbeitsstation für Fahrzeugmechatronik bietet eine interaktive Bildungsplattform, die es den Schülern ermöglicht, Motorenkartierung zu lernen. Das Hauptelement der Arbeitsstation ist der Universal Control Computer, der die Steuerung des Motorbetriebs mit Zündkerzenzündung und elektronischer Kraftstoffeinspritzung ermöglicht.",
+  "description_2": "Die Schüler haben die Möglichkeit, mit verschiedenen Einstellungen und Konfigurationen zu experimentieren sowie Motorenkartierungen zu erstellen. Durch die Analyse von Eingabedaten von Sensoren wie Position, Temperatur oder Ansaugdruck und die richtige Programmierung des Steuergeräts können sie Motorenkarten erstellen und den Betrieb an verschiedene Betriebsbedingungen anpassen.",
+  "description_3": "Das Erstellen von Motorenkarten ist nicht nur eine Programmierfertigkeit, sondern auch ein tieferes Verständnis der Betriebsmechanismen des Motors und des Einflusses verschiedener Parameter auf seine Effizienz und Leistung. Durch praktische Übungen an der Bildungsarbeitsstation erwerben die Schüler notwendiges Wissen und Fähigkeiten in Diagnostik, Reparatur und Optimierung des Motorbetriebs, um sich auf den Beruf des Fahrzeugmechatronikers oder Mechatronikers vorzubereiten.",
+  "description_1_alt": "Symbol, das einen Computersteuercomputer darstellt",
+  "description_2_alt": "Ein Symbol, das den französischen Schlüssel umgeben von einem Zahnrad zeigt",
+  "description_3_alt": "Symbol, das einen Mechaniker zeigt, der bereit zur Arbeit ist",
+  "good_button_text": "Details anfragen",
+  "good_button_alt": "Warenkorb-Symbol",
+  "see_also": "Das könnte Ihnen auch gefallen",
+  "alt_1": "Das erste Hauptfoto zeigt die interaktive Bildungsplattform in der Praxis",
+  "alt_2": "Das zweite Hauptfoto zeigt die Plattform auf der Platine"
 }
