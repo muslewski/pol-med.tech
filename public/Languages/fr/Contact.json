@@ -1,0 +1,23 @@
+{
+    "hero_title": "Nous vous invitons à coopérer",
+    "hero_description": "Nous sommes heureux de vous aider.",
+    "hero_background_alt": "Photo représentant un homme écrivant sur le clavier",
+    "section_title_1": "Formulaire de contact",
+    "input_placeholder_1": "Message",
+    "input_placeholder_2": "Nom",
+    "input_placeholder_3": "E-mail",
+    "input_placeholder_4": "Numéro de téléphone",
+    "section_title_2": "Coordonnées",
+    "list_info_title_1": "Adresses e-mail:",
+    "list_info_title_2": "Numéros de téléphone:",
+    "list_info_2_li_1": "Principal:",
+    "list_info_2_li_2": "Principal 2:",
+    "list_info_2_li_3": "Huiles UCO:",
+    "list_info_2_li_3_alt": "Icône de l'application WhatsApp",
+    "input_error_1": "Écrivez un message afin que nous puissions commencer une coopération fructueuse.",
+    "input_error_2": "Veuillez vous donner comment nous pouvons vous appeler.",
+    "input_error_3": "Veuillez saisir votre adresse e-mail afin que nous puissions nous contacter.",
+    "input_error_4": "Hmmm, cette adresse e-mail semble étrange.Peut-être réessayer avec '@'?",
+    "input_error_5": "Veuillez vérifier l'exactitude de l'adresse e-mail.",
+    "input_error_6": "Vous pouvez fournir votre numéro de téléphone, mais ce n'est pas requis."
+}

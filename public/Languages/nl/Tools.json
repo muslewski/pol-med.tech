@@ -1,0 +1,51 @@
+{
+    "hero_title": "Industriële tools",
+    "hero_description": "Ontdek ons ​​aanbod van tools die uw industriële ondernemingen nog effectiever en efficiënter maken!",
+    "hero_background_alt": "Foto met industriële tools",
+    "section_title_1": "Wij bieden aan",
+    "section_description_1": "Uitgebreide levering van ondernemingen op het gebied van verschillende soorten industriële gereedschappen, gespecialiseerde apparatuur en OHS -producten.",
+    "section_title_2": "Ons assortiment industriële hulpmiddelen",
+    "section_2_background_alt": "Voorbeelden van herdrukfoto's boden tools aangeboden",
+    "tools_list": {
+        "0": {
+            "title": "Handgereedschap: hamers, schroevendraaiers, zagen, tang, etc."
+        },
+        "1": {
+            "title": "Elektrisch gereedschap: boren, slijpmachines, schroevendraaiers, enz."
+        },
+        "2": {
+            "title": "Pneumatische hulpmiddelen: pneumatische hamers, pneumatische toetsen, enz."
+        },
+        "3": {
+            "title": "Hydraulisch gereedschap: hydraulische liften, hydraulische persen, etc."
+        },
+        "4": {
+            "title": "Meethulpmiddelen: remklauw, micrometers, lijnen, etc."
+        },
+        "5": {
+            "title": "Lasgereedschap: lasmachines, branders, elektroden, enz."
+        },
+        "6": {
+            "title": "Snijdgereedschap: Tokar -messen, snijders, oefeningen, etc."
+        },
+        "7": {
+            "title": "Schurende gereedschap: schilden, borstels, whetstone etc."
+        },
+        "8": {
+            "title": "Industriële werken: manipulators, automatisering, productielijnen, etc."
+        },
+        "9": {
+            "title": "3D -printers: stereolitografische printers, FDM -printers, SLS -printers, filamenten, enz."
+        }
+    },
+    "section_title_3": "Wij bieden",
+    "section_description_3": "Services bij de selectie van geschikte tools, afhankelijk van:",
+    "simple_li_1": "soort uitgevoerd werk,",
+    "simple_li_2": "het materiaal dat je uitwerkt,",
+    "simple_li_3": "Vereiste precisie en nauwkeurigheid,",
+    "simple_li_4": "Fondsen beschikbaar.",
+    "simple_li_alt_1": "Pictogram met vellen papier",
+    "simple_li_alt_2": "Materiaalpictogram",
+    "simple_li_alt_3": "Een zichtpictogram",
+    "simple_li_alt_4": "Pictogram van geld"
+}

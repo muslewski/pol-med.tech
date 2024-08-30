@@ -6,5 +6,12 @@
     "tools": "Werkzeuge",
     "about_us": "Über uns",
     "contact_form": "Kontaktformular",
-    "alt_menu_button": "Menüschaltfläche"
+    "alt_menu_button": "Menüschaltfläche",
+    "alt_icon_1": "Autoaufzugsymbol",
+    "alt_icon_2": "Öltanksymbol",
+    "alt_icon_3": "Werkzeugkastensymbol",
+    "alt_icon_4": "Ikone der Firmenvertreter",
+    "alt_icon_5": "Kontaktformularsymbol",
+    "alt_icon_6": "Eine Ikone der offiziellen Sprache",
+    "alt_icon_7": "Ein kleines Pfeilsymbol, das das Menü aktiviert"
 }

@@ -6,5 +6,12 @@
     "tools": "Outils",
     "about_us": "À propos de nous",
     "contact_form": "Formulaire de contact",
-    "alt_menu_button": "Bouton de menu"
+    "alt_menu_button": "Bouton de menu",
+    "alt_icon_1": "Icône de portance de voiture",
+    "alt_icon_2": "Icône du réservoir d'huile",
+    "alt_icon_3": "Icône de la boîte à outils",
+    "alt_icon_4": "Icône des représentants de l'entreprise",
+    "alt_icon_5": "Icône du formulaire de contact",
+    "alt_icon_6": "Une icône de la langue officielle",
+    "alt_icon_7": "Une petite icône de flèche activant le menu"
 }

@@ -1,0 +1,51 @@
+{
+    "hero_title": "Outils industriels",
+    "hero_description": "Découvrez notre offre d'outils qui rendront vos entreprises industrielles encore plus efficaces et efficientes!",
+    "hero_background_alt": "Photo montrant des outils industriels",
+    "section_title_1": "Nous offrons",
+    "section_description_1": "Suppression complète des entreprises dans le domaine de divers types d'outils industriels, d'équipements spécialisés et de produits OS.",
+    "section_title_2": "Notre gamme d'outils industriels",
+    "section_2_background_alt": "Exemples de photos d'outils proposés",
+    "tools_list": {
+        "0": {
+            "title": "Outils à main: Hammers, tournevis, scies, pinces, etc."
+        },
+        "1": {
+            "title": "Outils électriques: exercices, broyeurs, tournevis, etc."
+        },
+        "2": {
+            "title": "Outils pneumatiques: marteaux pneumatiques, clés pneumatiques, etc."
+        },
+        "3": {
+            "title": "Outils hydrauliques: ascenseurs hydrauliques, presses hydrauliques, etc."
+        },
+        "4": {
+            "title": "Outils de mesure: l'étrier, les micromètres, les lignes, etc."
+        },
+        "5": {
+            "title": "Outils de soudage: machines de soudage, brûleurs, électrodes, etc."
+        },
+        "6": {
+            "title": "Outils de coupe: couteaux de tokar, coupeurs, exercices, etc."
+        },
+        "7": {
+            "title": "Outils abrasifs: boucliers, pinceaux, pierre d'assistance, etc."
+        },
+        "8": {
+            "title": "Travaux industriels: manipulateurs, automatisation, lignes de production, etc."
+        },
+        "9": {
+            "title": "Imprimantes 3D: imprimantes stéréolitographiques, imprimantes FDM, imprimantes SLS, filaments, etc."
+        }
+    },
+    "section_title_3": "Nous fournissons",
+    "section_description_3": "Services dans la sélection d'outils appropriés selon:",
+    "simple_li_1": "type de travail effectué,",
+    "simple_li_2": "le matériel que vous travaillez,",
+    "simple_li_3": "nécessite la précision et la précision,",
+    "simple_li_4": "Fonds disponibles.",
+    "simple_li_alt_1": "Icône de feuilles de papier",
+    "simple_li_alt_2": "Icône de matériau",
+    "simple_li_alt_3": "Une icône de la vue",
+    "simple_li_alt_4": "Icône de l'argent"
+}

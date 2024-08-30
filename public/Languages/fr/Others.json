@@ -1,0 +1,11 @@
+{
+    "background_video_fallback_text": "Votre navigateur ne prend pas en charge une balise vidéo.",
+    "background_video_fallback_alt": "Image d'arrière-plan montrant l'usine",
+    "station_object_image_alt": "Photo de produit montrant",
+    "station_object_good_button_icon_alt": "L'icône de la flèche sur",
+    "education_product_main_image_alt": "Photos principales présentant la station éducative",
+    "education_product_side_image_alt": "Photos latérales présentant une station éducative",
+    "section_card_illustration_alt": "Illustration de la section représentant",
+    "contact_button_default_text": "Contactez-vous",
+    "good_button_default_text": "Continue"
+}

@@ -1,0 +1,11 @@
+{
+    "background_video_fallback_text": "Seu navegador não suporta uma tag de vídeo.",
+    "background_video_fallback_alt": "Imagem de fundo mostrando a fábrica",
+    "station_object_image_alt": "Foto de produto mostrando",
+    "station_object_good_button_icon_alt": "O ícone de seta em",
+    "education_product_main_image_alt": "Principais fotos que apresentam a estação educacional",
+    "education_product_side_image_alt": "Fotos laterais apresentando uma estação educacional",
+    "section_card_illustration_alt": "Ilustração da seção representando",
+    "contact_button_default_text": "Entre em contato com si mesmo",
+    "good_button_default_text": "Prossiga"
+}

@@ -52,7 +52,7 @@ function SpecialProduct({ setZoomIn, mainPhoto, setMainPhoto }) {
         <div className="flex flex-col gap-24 px-6 sm:px-0">
           <div className="flex flex-col gap-6">
             <h1 className="text-2xl sm:text-3xl 2xl:text-4xl font-exo font-bold">
-              Interaktywna platforma edukacyjna
+              {t("title")}
             </h1>
             <hr className="h-1.5 w-full sm:w-3/4 rounded-full bg-gradient-to-r from-cyan-500 via-blue-500 to-indigo-500/25 border-none" />
 
@@ -61,49 +61,26 @@ function SpecialProduct({ setZoomIn, mainPhoto, setMainPhoto }) {
                 icon={iconComputer}
                 iconAlt={t("description_1_alt")}
               >
-                Stanowisko dydaktyczne do pracowni mechatroniki samochodowej
-                zapewnia interaktywną platformę edukacyjną, umożliwiającą
-                uczniom naukę tworzenia mapy pracy silnika. Głównym elementem
-                stanowiska jest Uniwersalny Komputer Sterujący, który umożliwia
-                kontrolę pracy silnika z zapłonem iskrowym oraz elektronicznym
-                wtryskiem paliwa.
+                {t("description_1")}
               </SpecialProductLi>
               <SpecialProductLi
                 icon={iconSettings}
                 iconAlt={t("description_2_alt")}
               >
-                Uczniowie mają możliwość eksperymentowania z różnymi
-                ustawieniami i konfiguracjami, a także tworzenia map pracy
-                silnika. Poprzez analizę danych wejściowych z czujników, takich
-                jak położenie, temperatura czy podciśnienie, oraz odpowiednie
-                programowanie sterownika, mogą kreować mapy pracy silnika,
-                dostosowując jego działanie do różnych warunków
-                eksploatacyjnych. Stanowisko dydaktyczne do pracowni
-                mechatroniki samochodowej zapewnia interaktywną platformę
-                edukacyjną, umożliwiającą uczniom naukę tworzenia mapy pracy
-                silnika. Głównym elementem stanowiska jest Uniwersalny Komputer
-                Sterujący, który umożliwia kontrolę pracy silnika z zapłonem
-                iskrowym oraz elektronicznym wtryskiem paliwa.
+                {t("description_2")}
               </SpecialProductLi>
               <SpecialProductLi
                 icon={iconMechanic}
                 iconAlt={t("description_3_alt")}
               >
-                Tworzenie map pracy silnika to nie tylko umiejętność
-                programowania, ale również głębsze zrozumienie mechanizmów
-                działania silnika oraz wpływu różnych parametrów na jego
-                efektywność i osiągi. Dzięki praktycznym ćwiczeniom na
-                stanowisku dydaktycznym, uczniowie zdobywają niezbędną wiedzę i
-                umiejętności w zakresie diagnostyki, naprawy oraz optymalizacji
-                pracy silnika, co przygotowuje ich do wykonywania zawodu
-                elektromechanika lub mechatronika samochodowego.
+                {t("description_3")}
               </SpecialProductLi>
             </ul>
           </div>
 
           <GoodButton
             link="/Kontakt"
-            customText="Zapytaj o produkt"
+            customText={t("good_button_text")}
             icon={iconCart}
             iconAlt={t("good_button_alt")}
             className="-ml-1"
@@ -112,7 +89,7 @@ function SpecialProduct({ setZoomIn, mainPhoto, setMainPhoto }) {
       </div>
 
       <div className="flex flex-wrap w-full justify-start gap-24">
-        <GlowingTitle> Zobacz również </GlowingTitle>
+        <GlowingTitle> {t("see_also")} </GlowingTitle>
         <StationObject
           image={prevStation.images[0]}
           id={prevStation.id}

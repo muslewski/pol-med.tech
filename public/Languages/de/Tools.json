@@ -1,0 +1,51 @@
+{
+    "hero_title": "Industriewerkzeuge",
+    "hero_description": "Entdecken Sie unser Angebot von Werkzeugen, mit denen Ihre industriellen Unternehmungen noch effektiver und effizienter werden!",
+    "hero_background_alt": "Foto mit industriellen Werkzeugen",
+    "section_title_1": "Wir bieten an",
+    "section_description_1": "Umfassende Versorgung an Unternehmen im Bereich verschiedener Arten von Industriewerkzeugen, spezialisierten Geräten und OHS -Produkten.",
+    "section_title_2": "Unser Angebot an Industriewerkzeugen",
+    "section_2_background_alt": "Beispiele für Nachdruckfotos angebotene Werkzeuge",
+    "tools_list": {
+        "0": {
+            "title": "Handwerkzeuge: Hämmer, Schraubendreher, Sägen, Zangen usw."
+        },
+        "1": {
+            "title": "Elektrische Werkzeuge: Bohrer, Mahlen, Schraubendreher usw."
+        },
+        "2": {
+            "title": "Pneumatische Werkzeuge: Pneumatische Hämmer, pneumatische Schlüssel usw."
+        },
+        "3": {
+            "title": "Hydraulische Werkzeuge: Hydraulische Aufzüge, hydraulische Pressen usw."
+        },
+        "4": {
+            "title": "Messwerkzeuge: Bremssattel, Mikrometer, Linien usw."
+        },
+        "5": {
+            "title": "Schweißwerkzeuge: Schweißmaschinen, Brenner, Elektroden usw."
+        },
+        "6": {
+            "title": "Schneidwerkzeuge: Tokarmesser, Steiger, Bohrer usw."
+        },
+        "7": {
+            "title": "Schleifwerkzeuge: Schilde, Pinsel, Whetstone usw."
+        },
+        "8": {
+            "title": "Industriewerke: Manipulatoren, Automatisierung, Produktionslinien usw."
+        },
+        "9": {
+            "title": "3D -Drucker: Stereolitographische Drucker, FDM -Drucker, SLS -Drucker, Filamente usw."
+        }
+    },
+    "section_title_3": "Wir bieten",
+    "section_description_3": "Dienste in der Auswahl geeigneter Tools je nach:",
+    "simple_li_1": "Art der durchgeführten Arbeit,",
+    "simple_li_2": "das Material, das Sie trainieren,",
+    "simple_li_3": "Erforderliche Präzision und Genauigkeit,",
+    "simple_li_4": "Mittel verfügbar.",
+    "simple_li_alt_1": "Ikone von Papierblättern",
+    "simple_li_alt_2": "Materialikone",
+    "simple_li_alt_3": "Eine Sicht -Ikone",
+    "simple_li_alt_4": "Ikone des Geldes"
+}

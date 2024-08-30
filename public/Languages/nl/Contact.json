@@ -1,0 +1,23 @@
+{
+    "hero_title": "Wij nodigen u uit om mee te werken",
+    "hero_description": "We helpen u graag.",
+    "hero_background_alt": "Foto van een man die op het toetsenbord schrijft",
+    "section_title_1": "Contactformulier",
+    "input_placeholder_1": "Bericht",
+    "input_placeholder_2": "Naam",
+    "input_placeholder_3": "E-mail",
+    "input_placeholder_4": "Telefoonnummer",
+    "section_title_2": "Contactgegevens",
+    "list_info_title_1": "E -mailadressen:",
+    "list_info_title_2": "Telefoonnummers:",
+    "list_info_2_li_1": "Voornaamst:",
+    "list_info_2_li_2": "Hoofd 2:",
+    "list_info_2_li_3": "UCO -oliën:",
+    "list_info_2_li_3_alt": "Whatsapp -applicatie -pictogram",
+    "input_error_1": "Schrijf een bericht zodat we een vruchtbare samenwerking kunnen beginnen.",
+    "input_error_2": "Geef je alsjeblieft hoe we je kunnen bellen.",
+    "input_error_3": "Voer uw e-mailadres in zodat we contact met ons kunnen opnemen.",
+    "input_error_4": "Hmmm, dit e -mailadres ziet er vreemd uit.Misschien opnieuw proberen met '@'?",
+    "input_error_5": "Controleer de juistheid van het e-mailadres.",
+    "input_error_6": "U kunt uw telefoonnummer opgeven, maar dit is niet vereist."
+}

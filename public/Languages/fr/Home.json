@@ -10,5 +10,8 @@
     "card_1_description": "Systèmes didactiques pratiques et engageants dans le domaine des technologies automobiles.",
     "card_2_description": "Réception, commerce et stockage des huiles frites (UCO) - Un service complet pour l'approvisionnement et le ramassage des huiles pour l'industrie et la gastronomie.",
     "card_3_description": "Suppression complète des entreprises avec différents types d'outils industriels.",
-    "alt_scroll_down": "La flèche indiquant vers le bas"
+    "alt_scroll_down": "La flèche indiquant vers le bas",
+    "card_alt_1": "Icône de portance de voiture",
+    "card_alt_2": "Icône du réservoir d'huile",
+    "card_alt_3": "Icône de la boîte à outils"
 }

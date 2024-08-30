@@ -1,0 +1,44 @@
+{
+    "stations": {
+        "0": {
+            "title": "Pomptestset en pompinjectoren",
+            "description": "Het is een uitgebreid hulpmiddel voor diagnostiek en reparatie van injectiesystemen in dieselmotoren.Hiermee kunt u de bedieningsparameters van pompen en pompinjectoren grondig controleren, waarmee u fouten kunt identificeren en verwijderen."
+        },
+        "1": {
+            "title": "Turbocompressor -teststandaard",
+            "description": "Dit is een geavanceerd apparaat dat uitgebreide beoordeling en reparatie van turbo -schaders mogelijk maakt.Het zorgt voor precieze metingen van bedrijfsparameters, zoals rotatiesnelheid, bovenste druk, strakheid en prestaties.Dankzij dit is het mogelijk om zelfs kleine defecten te identificeren en de turbolader te herstellen tot volledige fitness."
+        },
+        "2": {
+            "title": "Controle van een pneumatisch remsysteem",
+            "description": "Het besturen van een pneumatisch remsysteem is een belangrijk element dat zorgt voor veilig en comfortabel rijden.Dit systeem maakt gebruik van gecomprimeerde lucht om de remactuatoren te regelen, die zorgen voor soepel en effectief remmen."
+        },
+        "3": {
+            "title": "Ingesteld voor de demonstratie van hydraulische controle van het remsysteem",
+            "description": "Deze set maakt visualisatie en begrip van belangrijke remsysteemelementen mogelijk, zoals een rempomp, remcilinders, remleidingen en remblokken."
+        },
+        "4": {
+            "title": "PCT Temperatuur Simulation Kit",
+            "description": "Een geavanceerd hulpmiddel dat nauwkeurige simulatie van verschillende temperatuurprofielen in een breed bereik mogelijk maakt.Het is een ideale oplossing voor het testen en valideren van temperatuurbesturingssystemen in verschillende industrieën."
+        },
+        "5": {
+            "title": "Verlichting van motorvoertuigen",
+            "description": "Een set lampen en koplampen die de zichtbaarheid van het voertuig op de weg mogelijk maken in omstandigheden van slecht zicht en andere weggebruikers informeren over de aanwezigheid en manoeuvres ervan."
+        },
+        "6": {
+            "title": "Ingesteld voor demonstratie van het hydraulische ophangingscontrolesysteem",
+            "description": "Deze set maakt visualisatie en begrip van belangrijke ophangingssysteem -elementen mogelijk, zoals een hydraulische pomp, hydraulische cilinders, hydraulische kabels en schokdempers."
+        },
+        "7": {
+            "title": "Injector Testing Kit",
+            "description": "Een noodzakelijk hulpmiddel voor elke monteur die zich bezighoudt met diagnostiek en reparatie van gas- en dieselmotoren.Met deze set kunt u precies de bedieningsparameters van injectoren controleren, zoals prestaties, spuitbrandstof, strakheid en opening/sluitingstijd."
+        },
+        "8": {
+            "title": "Pneumatische ophangingscontrole -demonstratieset",
+            "description": "Deze set maakt visualisatie en begrip van de belangrijkste elementen van het suspensiesysteem mogelijk, zoals luchtcompressor, pneumatische cilinders, pneumatische kabels en luchtbladen."
+        },
+        "9": {
+            "title": "Onderwijsmotor",
+            "description": "De motor is om de bedrijfsparameters te verifiëren en om de constructie en implementatie van het basiskerncurriculum te leren op het gebied van verbrandingsmotorconstructie en diagnostiek."
+        }
+    }
+}

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import background from "./assets/backgroundEducation.png";
 import foreground from "./assets/foreground.png";
@@ -34,7 +34,7 @@ import stationsData from "./stationImages.json";
 import { useTranslation } from "react-i18next";
 
 function Education() {
-  const { t } = useTranslation("Education");
+  const { t, i18n } = useTranslation("Education");
   const { t: tStation } = useTranslation("EducationStations");
 
   const [video, setVideo] = useState({
@@ -44,6 +44,15 @@ function Education() {
     title: t("video_object_title_1"),
     description: t("video_object_description_1"),
   });
+
+  // This effect will be triggered when the language changes
+  useEffect(() => {
+    setVideo((prevVideo) => ({
+      ...prevVideo,
+      title: t(`video_object_title_${prevVideo.id + 1}`),
+      description: t(`video_object_description_${prevVideo.id + 1}`),
+    }));
+  }, [i18n.language, t]);
 
   return (
     <>

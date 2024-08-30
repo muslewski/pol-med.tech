@@ -6,5 +6,12 @@
     "tools": "Herramientas",
     "about_us": "Sobre nosotros",
     "contact_form": "Formulario de contacto",
-    "alt_menu_button": "Botón de menú"
+    "alt_menu_button": "Botón de menú",
+    "alt_icon_1": "Icono de elevación de coche",
+    "alt_icon_2": "Ícono del tanque de aceite",
+    "alt_icon_3": "Icono de caja de herramientas",
+    "alt_icon_4": "Ícono de representantes de la empresa",
+    "alt_icon_5": "Icono de formulario de contacto",
+    "alt_icon_6": "Un icono del idioma oficial",
+    "alt_icon_7": "Un pequeño icono de flecha que activa el menú"
 }

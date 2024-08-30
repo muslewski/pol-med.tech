@@ -1,0 +1,44 @@
+{
+    "stations": {
+        "0": {
+            "title": "Kit di test della pompa e iniettori della pompa",
+            "description": "È uno strumento completo per la diagnostica e la riparazione dei sistemi di iniezione nei motori diesel.Ti consente di controllare accuratamente i parametri operativi di pompe e iniettori della pompa, che consente di identificare e rimuovere i guasti."
+        },
+        "1": {
+            "title": "Stand di test turbocompressori",
+            "description": "Questo è un dispositivo avanzato che consente una valutazione completa e riparazione dei turbocompressori.Consente misurazioni precise dei parametri operativi, come velocità di rotazione, pressione dall'alto, tenuta e prestazioni.Grazie a ciò, è possibile identificare anche difetti minori e ripristinare il turbocompressore alla piena forma fisica."
+        },
+        "2": {
+            "title": "Controllo di un sistema di frenatura pneumatica",
+            "description": "Il controllo di un sistema di frenatura pneumatico è un elemento chiave che garantisce una guida sicura e confortevole.Questo sistema utilizza aria compressa per controllare gli attuatori dei freni, il che garantisce una frenata regolare ed efficace."
+        },
+        "3": {
+            "title": "Impostato per dimostrazione del controllo idraulico del sistema di frenatura",
+            "description": "Questo set consente la visualizzazione e la comprensione degli elementi del sistema dei freni chiave, come una pompa del freno, cilindri del freno, linee dei freni e cuscinetti dei freni."
+        },
+        "4": {
+            "title": "Kit di simulazione della temperatura PCT",
+            "description": "Uno strumento avanzato che consente una simulazione precisa di vari profili di temperatura in una vasta gamma.È una soluzione ideale per i test e la convalida dei sistemi di controllo della temperatura in vari settori."
+        },
+        "5": {
+            "title": "Illuminazione per veicoli a motore",
+            "description": "Una serie di lampade e fari che consentono la visibilità del veicolo sulla strada in condizioni di scarsa visibilità e informano altri utenti della strada sulla sua presenza e manovre."
+        },
+        "6": {
+            "title": "Impostato per dimostrazione del sistema di controllo delle sospensioni idrauliche",
+            "description": "Questo set consente la visualizzazione e la comprensione degli elementi del sistema di sospensione chiave, come una pompa idraulica, cilindri idraulici, cavi idraulici e ammortizzatori."
+        },
+        "7": {
+            "title": "Kit di test dell'iniettore",
+            "description": "Uno strumento necessario per ogni meccanico che si occupa della diagnostica e della riparazione di motori a gas e diesel.Questo set consente di controllare con precisione i parametri operativi degli iniettori, come prestazioni, spruzzatura del carburante, tenuta e tempo di apertura/chiusura."
+        },
+        "8": {
+            "title": "Set di dimostrazione del controllo della sospensione pneumatica",
+            "description": "Questo set consente la visualizzazione e la comprensione degli elementi chiave del sistema di sospensione, come compressore d'aria, cilindri pneumatici, cavi pneumatici e soffietti d'aria."
+        },
+        "9": {
+            "title": "Motore di insegnamento",
+            "description": "Il motore è quello di verificare i parametri operativi e apprendere la costruzione e l'implementazione del curriculum di base nel campo della costruzione e della diagnostica del motore a combustione."
+        }
+    }
+}

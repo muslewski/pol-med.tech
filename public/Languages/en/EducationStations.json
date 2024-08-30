@@ -1,0 +1,44 @@
+{
+    "stations": {
+        "0": {
+            "title": "Pump testing kit and pump injectors",
+            "description": "It is a comprehensive tool for diagnostics and repair of injection systems in diesel engines.It allows you to thoroughly check the operating parameters of pumps and pump injectors, which allows you to identify and remove faults."
+        },
+        "1": {
+            "title": "Turbocharger testing stand",
+            "description": "This is an advanced device that allows comprehensive assessment and repair of turbochargers.It allows for precise measurements of operating parameters, such as rotational speed, top -up pressure, tightness and performance.Thanks to this, it is possible to identify even minor defects and restore the turbocharger to full fitness."
+        },
+        "2": {
+            "title": "Control of a pneumatic braking system",
+            "description": "Controlling a pneumatic braking system is a key element that ensures safe and comfortable driving.This system uses compressed air to control the brake actuators, which ensures smooth and effective braking."
+        },
+        "3": {
+            "title": "Set for demonstration of hydraulic control of the braking system",
+            "description": "This set allows visualization and understanding of key brake system elements, such as a brake pump, brake cylinders, brake lines and brake pads."
+        },
+        "4": {
+            "title": "PCT temperature simulation kit",
+            "description": "An advanced tool that allows precise simulation of various temperature profiles in a wide range.It is an ideal solution for testing and validation of temperature control systems in various industries."
+        },
+        "5": {
+            "title": "Motor vehicle lighting",
+            "description": "A set of lamps and headlights that enable the visibility of the vehicle on the road in conditions of poor visibility and inform other road users about its presence and maneuvers."
+        },
+        "6": {
+            "title": "Set for demonstration of the hydraulic suspension control system",
+            "description": "This set allows visualization and understanding of key suspension system elements, such as a hydraulic pump, hydraulic cylinders, hydraulic cables and shock absorbers."
+        },
+        "7": {
+            "title": "Injector testing kit",
+            "description": "An necessary tool for every mechanic that deals with diagnostics and repair of gas and diesel engines.This set allows you to precisely check the operating parameters of injectors, such as performance, spraying fuel, tightness and opening/closing time."
+        },
+        "8": {
+            "title": "Pneumatic suspension control demonstration set",
+            "description": "This set allows visualization and understanding of the key elements of the suspension system, such as air compressor, pneumatic cylinders, pneumatic cables and air bellows."
+        },
+        "9": {
+            "title": "Teaching engine",
+            "description": "The engine is to verify operating parameters and to learn the construction and implementation of basic core curriculum in the field of combustion engine construction and diagnostics."
+        }
+    }
+}

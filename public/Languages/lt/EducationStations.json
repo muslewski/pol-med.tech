@@ -1,0 +1,44 @@
+{
+    "stations": {
+        "0": {
+            "title": "Siurblių bandymo rinkinys ir siurblio purkštukai",
+            "description": "Tai yra išsamus diagnostikos sistemų diagnostikos ir remonto įrankis dyzeliniuose varikliuose.Tai leidžia kruopščiai patikrinti siurblių ir siurblių injektorių veikimo parametrus, kurie leidžia nustatyti ir pašalinti gedimus."
+        },
+        "1": {
+            "title": "Turbokompresoriaus bandymo stovas",
+            "description": "Tai yra patobulintas įrenginys, leidžiantis išsamiai įvertinti ir taisyti turbokompresorių.Tai leidžia tiksliai išmatuoti veikimo parametrus, tokius kaip sukimosi greitis, viršaus slėgis, sandarumas ir našumas.Dėl to galima nustatyti net nedidelius defektus ir atkurti turbokompresorių iki visiško kūno rengybos."
+        },
+        "2": {
+            "title": "Pneumatinės stabdžių sistemos valdymas",
+            "description": "Pneumatinės stabdžių sistemos valdymas yra pagrindinis elementas, užtikrinantis saugų ir patogų vairavimą.Ši sistema stabdžių pavaroms valdyti naudoja suslėgtą orą, o tai užtikrina sklandų ir efektyvų stabdymą."
+        },
+        "3": {
+            "title": "Nustatykite, kad būtų galima parodyti stabdžių sistemos hidraulinę valdymą",
+            "description": "Šis rinkinys leidžia vizualizuoti ir suprasti pagrindinius stabdžių sistemos elementus, tokius kaip stabdžių siurblys, stabdžių cilindrai, stabdžių linijos ir stabdžių pagalvėlės."
+        },
+        "4": {
+            "title": "PCT temperatūros modeliavimo rinkinys",
+            "description": "Išplėstinis įrankis, leidžiantis tiksliai modeliuoti įvairius temperatūros profilius plačiame diapazone.Tai yra idealus sprendimas testavimui ir temperatūros kontrolės sistemų patikrinimui įvairiose pramonės šakose."
+        },
+        "5": {
+            "title": "Motorinių transporto priemonių apšvietimas",
+            "description": "Lempų ir priekinių žibintų rinkinys, leidžiantis transporto priemonės matomumą kelyje esant prastam matomumui ir informuoti kitus kelio vartotojus apie jos buvimą ir manevrus."
+        },
+        "6": {
+            "title": "Nustatytas hidraulinės pakabos valdymo sistemos demonstravimui",
+            "description": "Šis rinkinys leidžia vizualizuoti ir suprasti pagrindinius pakabos sistemos elementus, tokius kaip hidraulinis siurblys, hidrauliniai cilindrai, hidrauliniai kabeliai ir amortizatoriai."
+        },
+        "7": {
+            "title": "Injektorių bandymo rinkinys",
+            "description": "Būtina priemonė kiekvienam mechanikui, kuriame nagrinėjama diagnostika ir dujų ir dyzelinių variklių remontas.Šis rinkinys leidžia tiksliai patikrinti purkštukų veikimo parametrus, tokius kaip našumas, degalų purškimas, sandarumas ir atidarymo/uždarymo laikas."
+        },
+        "8": {
+            "title": "Pneumatinė pakabos valdymo demonstravimo rinkinys",
+            "description": "Šis rinkinys leidžia vizualizuoti ir suprasti pagrindinius pakabos sistemos elementus, tokius kaip oro kompresorius, pneumatiniai cilindrai, pneumatiniai kabeliai ir oro dumplės."
+        },
+        "9": {
+            "title": "Mokymo variklis",
+            "description": "Variklis siekia patikrinti eksploatavimo parametrus ir išmokti pagrindinės pagrindinės mokymo programos konstravimą ir įgyvendinimą degimo variklio konstrukcijos ir diagnostikos srityje."
+        }
+    }
+}
