@@ -1,0 +1,11 @@
+{
+  "background_video_fallback_text": "Twoja przeglądarka nie obsługuje tagu video.",
+  "background_video_fallback_alt": "Obraz tła przedstawiający fabrykę",
+  "station_object_image_alt": "Zdjęcie produktu przedstawiające",
+  "station_object_good_button_icon_alt": "Ikona strzałki dalej",
+  "education_product_main_image_alt": "Główne zdjęcię przedstawiające stację edukacyjną",
+  "education_product_side_image_alt": "Poboczne zdjęcię przedstawiające stację edukacyjną",
+  "section_card_illustration_alt": "Ilustracja sekcji przedstawiająca",
+  "contact_button_default_text": "Skontaktuj się",
+  "good_button_default_text": "Przejdź dalej"
+}

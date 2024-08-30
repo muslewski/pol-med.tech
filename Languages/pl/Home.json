@@ -10,5 +10,8 @@
   "card_1_description": "Praktyczne i angażujące systemy dydaktyczne z zakresu technologii samochodowych.",
   "card_2_description": "Odbiór, handel i magazynowanie olejów posmażalniczych (UCO) - kompleksowa usługa dostaw i odbiorów olejów dla przemysłu i gastronomii.",
   "card_3_description": "Kompleksowe zaopatrzenie przedsiębiorstw w różne rodzaje narzędzi przemysłowych.",
-  "alt_scroll_down": "Strzałka wskazująca w dół"
+  "alt_scroll_down": "Strzałka wskazująca w dół",
+  "card_alt_1": "Ikona podnośnika samochodowego",
+  "card_alt_2": "Ikona zbiornika z olejem",
+  "card_alt_3": "Ikona skrzynki na narzędzia"
 }

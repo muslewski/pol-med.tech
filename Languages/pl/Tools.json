@@ -1,0 +1,54 @@
+{
+  "hero_title": "Narzędzia przemysłowe",
+  "hero_description": "Odkryj naszą ofertę narzędzi, które sprawią, że Twoje przedsięwzięcia przemysłowe staną się jeszcze bardziej efektywne i wydajne!",
+  "hero_background_alt": "Zdjęcie przedstawiające narzędzia przemysłowe",
+
+  "section_title_1": "Oferujemy",
+  "section_description_1": "Kompleksowe zaopatrzenie przedsiębiorstw w zakresie różnych rodzajów narzędzi przemysłowych, specjalistycznego wyposażenia oraz produktów BHP.",
+
+  "section_title_2": "Nasz asortyment narzędzi przemysłowych",
+  "section_2_background_alt": "Przykładowe zdjęcie reprentujące oferowane narzędzia",
+  "tools_list": {
+    "0": {
+      "title": "Narzędzia ręczne: młotki, śrubokręty, piły, szczypce itp."
+    },
+    "1": {
+      "title": "Narzędzia elektryczne: wiertarki, szlifierki, wkrętarki itp."
+    },
+    "2": {
+      "title": "Narzędzia pneumatyczne: młoty pneumatyczne, klucze pneumatyczne itp."
+    },
+    "3": {
+      "title": "Narzędzia hydrauliczne: podnośniki hydrauliczne, prasy hydrauliczne itp."
+    },
+    "4": {
+      "title": "Narzędzia pomiarowe: suwmiarki, mikrometry, liniały itp."
+    },
+    "5": {
+      "title": "Narzędzia spawalnicze: spawarki, palniki, elektrody itp."
+    },
+    "6": {
+      "title": "Narzędzia do obróbki skrawaniem: noże tokarskie, frezy, wiertła itp."
+    },
+    "7": {
+      "title": "Narzędzia ścierne: tarcze, szczotki, osełki itp."
+    },
+    "8": {
+      "title": "Roboty przemysłowe: manipulatory, automatyka, linie produkcyjne itp."
+    },
+    "9": {
+      "title": "Drukarki 3D: drukarki stereolitograficzne, drukarki FDM, drukarki SLS, filamenty itp."
+    }
+  },
+
+  "section_title_3": "Świadczymy",
+  "section_description_3": "Usługi w zakresie doboru odpowiednich narzędzi w zależości od:",
+  "simple_li_1": "rodzaju wykonywanej pracy,",
+  "simple_li_2": "materiału, którego się obrabia,",
+  "simple_li_3": "wymaganej precyzji i dokładności,",
+  "simple_li_4": "dostępnych środków finansowych.",
+  "simple_li_alt_1": "Ikona kartki papieru",
+  "simple_li_alt_2": "Ikona materiału",
+  "simple_li_alt_3": "Ikona celownika",
+  "simple_li_alt_4": "Ikona pieniędzy"
+}

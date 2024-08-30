@@ -1,9 +1,12 @@
 {
   "hero_title": "Stanowiska dydaktyczno-laboratoryjne",
   "hero_description": "To zintegrowane moduły dydaktyczne, które umożliwiają naukę o różnych aspektach technologii samochodowych w praktyczny i angażujący sposób.",
+  "hero_background_alt": "Zdjęcie przedstawiające ścianę z technologicznym wzorem",
+  "hero_foreground_alt": "Zdjęcie przedstawiające mechaników pracujących przy samochodzie",
+
   "section_title_1": "Oferujemy",
   "fancy_info_title_1": "Stanowiska edukacyjne",
-  "fancy_ifno_title_2": "Stanowiska badawcze",
+  "fancy_info_title_2": "Stanowiska badawcze",
   "fancy_info_title_3": "Urządzenia i narzędzia kontrolno-pomiarowe",
   "fancy_info_title_4": "Kursy i szkolenia",
   "fancy_info_description_1": "Interaktywne stanowiska edukacyjne przeznaczone do nauki budowy, diagnostyki i obsługi pojazdów hybrydowych i elektrycznych.",
@@ -14,6 +17,7 @@
   "fancy_info_alt_2": "Lupa badająca samochód",
   "fancy_info_alt_3": "Część slinika samochodowego",
   "fancy_info_alt_4": "Szkolenie z budowy pojazdów",
+
   "iframe_title": "Odtwarzacz wideo YouTube",
   "video_object_title_1": "Panel Symulacji Usterek",
   "video_object_title_2": "Procedury diagnostyki silnika",
@@ -23,5 +27,14 @@
   "video_object_description_3": "Stanowisko umożliwia wykorzystanie możliwości uniwersalnego oscyloskopu do weryfikacji parametrów pracy silnika spalinowego. Stanowi to podstawę realizowanych działań w zakresie identyfikacji stanu technicznego silnika spalinowego.",
   "video_object_alt_1": "Ikona wyświetlająca symulację usterek",
   "video_object_alt_2": "Ikona wyświetlająca procedury diagnostyki silnika",
-  "video_object_alt_3": "Ikona wyświetlająca oscyloskop"
+  "video_object_alt_3": "Ikona wyświetlająca oscyloskop",
+
+  "special_product_title": "Interaktywna platforma edukacyjna",
+  "special_product_description": "Nasze nowoczesne stanowisko dydaktyczne do mechatroniki samochodowej pozwala uczniom na naukę programowania i tworzenia map pracy silnika. Dzięki Uniwersalnemu Komputerowi Sterującemu, mogą eksperymentować z ustawieniami silnika i analizować dane z czujników, zdobywając praktyczne umiejętności potrzebne w zawodzie elektromechanika lub mechatronika samochodowego. Nowość na rynku!",
+  "special_product_new": "Nowość na rynku",
+  "special_product_alt": "Zdjęcie platformy edukacyjnej",
+  "special_product_button_alt": "Ikona platformy edukacyjnej",
+
+  "section_title_2": "Stanowiska demonstracyjno-pomiarowe",
+  "section_last_info": "Oferowane przez nas produkty dostosowujemy do indywidualnych potrzeb i wymagań Zamawiających."
 }
