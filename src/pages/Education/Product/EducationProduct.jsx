@@ -28,9 +28,27 @@ function EducationProduct({ setZoomIn, mainPhoto, setMainPhoto }) {
   const [station, setStation] = useState(stationsData.stations[id]);
   if (!station) {
     return (
-      <div className="bg-red-200 min-h-screen">
-        Niestety nie znaleziono produktu, zobacz inne:
-      </div>
+      <Section
+        customClass="pt-52 bg-gradient-to-br from-[#030b26] to-[#082752]"
+        customClassInner="gap-52"
+      >
+        <div className="flex flex-wrap w-full justify-start gap-24">
+          <GlowingTitle>{t("education_product_not_found")}</GlowingTitle>
+
+          <StationObject
+            image={stationsData.stations[0].images[0]}
+            id={stationsData.stations[0].id}
+            title={tStation(`stations.${0}.title`)}
+            description={tStation(`stations.${0}.description`)}
+          />
+          <StationObject
+            image={stationsData.stations[1].images[0]}
+            id={stationsData.stations[1].id}
+            title={tStation(`stations.${1}.title`)}
+            description={tStation(`stations.${1}.description`)}
+          />
+        </div>
+      </Section>
     );
   }
 
@@ -101,8 +119,9 @@ function EducationProduct({ setZoomIn, mainPhoto, setMainPhoto }) {
 
             <GoodButton
               link="/Kontakt"
-              customText="Zapytaj o produkt"
+              customText={t("education_product_button")}
               icon={iconCart}
+              iconAlt={t("education_product_button_alt")}
               className="-ml-1"
             />
           </div>

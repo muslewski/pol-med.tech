@@ -1,51 +1,54 @@
 {
-    "hero_title": "Priemyselné nástroje",
-    "hero_description": "Objavte našu ponuku nástrojov, vďaka ktorým budú vaše priemyselné podniky ešte efektívnejšie a efektívnejšie!",
-    "hero_background_alt": "Fotografie zobrazujúce priemyselné nástroje",
-    "section_title_1": "Ponúkame",
-    "section_description_1": "Komplexná dodávka podnikov v oblasti rôznych typov priemyselných nástrojov, špecializovaných zariadení a produktov OHS.",
-    "section_title_2": "Náš sortiment priemyselných nástrojov",
-    "section_2_background_alt": "Príklady opakovania fotografií ponúkaných nástrojov",
-    "tools_list": {
-        "0": {
-            "title": "Ručné náradie: kladivá, skrutkovače, píly, kliešte atď."
-        },
-        "1": {
-            "title": "Elektrické náradie: vŕtačky, brúsky, skrutkovače atď."
-        },
-        "2": {
-            "title": "Pneumatické nástroje: pneumatické kladivá, pneumatické kľúče atď."
-        },
-        "3": {
-            "title": "Hydraulické nástroje: hydraulické výťahy, hydraulické lisy atď."
-        },
-        "4": {
-            "title": "Nástroje na meranie: strmeň, mikrometre, linky atď."
-        },
-        "5": {
-            "title": "Nástroje na zváranie: Zváracie stroje, horáky, elektródy atď."
-        },
-        "6": {
-            "title": "Nástroje na rezanie: tokarové nože, rezačky, vŕtačky atď."
-        },
-        "7": {
-            "title": "Abrazívne nástroje: štíty, kefy, whetstone atď."
-        },
-        "8": {
-            "title": "Priemyselné diela: Manipulátori, automatizácia, výrobné linky atď."
-        },
-        "9": {
-            "title": "3D tlačiarne: Stereolitografické tlačiarne, tlačiarne FDM, SLS tlačiarne, vlákna atď."
-        }
+  "hero_title": "Priemyselné Nástroje",
+  "hero_description": "Objavte našu škálu nástrojov, ktoré urobia vaše priemyselné aktivity ešte efektívnejšie a účinnejšie!",
+  "hero_background_alt": "Fotografia zobrazujúca priemyselné nástroje",
+
+  "section_title_1": "Ponúkame",
+  "section_description_1": "Komplexná ponuka rôznych priemyselných nástrojov, špecializovaného vybavenia a bezpečnostných produktov pre podniky.",
+
+  "section_title_2": "Naša Škála Priemyselných Nástrojov",
+  "section_2_background_alt": "Ukážková fotografia zobrazujúca ponúkané nástroje",
+  "tools_list": {
+    "0": {
+      "title": "Ručné Nástroje: kladivá, skrutkovače, píly, kliešte, atď."
     },
-    "section_title_3": "Poskytujeme",
-    "section_description_3": "Služby pri výbere príslušných nástrojov v závislosti od:",
-    "simple_li_1": "druh vykonanej práce,",
-    "simple_li_2": "materiál, ktorý cvičíte,",
-    "simple_li_3": "požadovaná presnosť a presnosť,",
-    "simple_li_4": "Dostupné prostriedky.",
-    "simple_li_alt_1": "Ikona listov papiera",
-    "simple_li_alt_2": "Ikona materiálu",
-    "simple_li_alt_3": "Ikona zraku",
-    "simple_li_alt_4": "Ikona peňazí"
+    "1": {
+      "title": "Elektrické Nástroje: vŕtačky, brúsky, skrutkovače, atď."
+    },
+    "2": {
+      "title": "Pneumatické Nástroje: pneumatické kladivá, pneumatické kľúče, atď."
+    },
+    "3": {
+      "title": "Hydraulické Nástroje: hydraulické zdviháky, hydraulické lisy, atď."
+    },
+    "4": {
+      "title": "Meracie Nástroje: posuvné meradlá, mikrometry, pravítka, atď."
+    },
+    "5": {
+      "title": "Zváracie Nástroje: zváračky, horáky, elektrody, atď."
+    },
+    "6": {
+      "title": "Rezacie Nástroje: sústružnícke nástroje, frézy, vŕtačky, atď."
+    },
+    "7": {
+      "title": "Brúsiace Nástroje: kotúče, kefy, brúsne kamene, atď."
+    },
+    "8": {
+      "title": "Priemyselné Roboty: manipulátory, automatizácia, výrobné linky, atď."
+    },
+    "9": {
+      "title": "3D Tlačiarne: stereolitografické tlačiarne, FDM tlačiarne, SLS tlačiarne, filamenty, atď."
+    }
+  },
+
+  "section_title_3": "Poskytujeme",
+  "section_description_3": "Služby na výber správnych nástrojov na základe:",
+  "simple_li_1": "druhu vykonávanej práce,",
+  "simple_li_2": "materiálu, ktorý sa spracováva,",
+  "simple_li_3": "požadovanej presnosti a presnosti,",
+  "simple_li_4": "dostupných finančných prostriedkov.",
+  "simple_li_alt_1": "Ikona kusu papiera",
+  "simple_li_alt_2": "Ikona materiálu",
+  "simple_li_alt_3": "Ikona terča",
+  "simple_li_alt_4": "Ikona peňazí"
 }

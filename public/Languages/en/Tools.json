@@ -1,51 +1,54 @@
 {
-    "hero_title": "Industrial tools",
-    "hero_description": "Discover our offer of tools that will make your industrial ventures even more effective and efficient!",
-    "hero_background_alt": "Photo showing industrial tools",
-    "section_title_1": "We offer",
-    "section_description_1": "Comprehensive supply of enterprises in the field of various types of industrial tools, specialized equipment and OHS products.",
-    "section_title_2": "Our range of industrial tools",
-    "section_2_background_alt": "Examples of reprinting photos offered tools",
-    "tools_list": {
-        "0": {
-            "title": "Hand tools: hammers, screwdrivers, saws, pliers, etc."
-        },
-        "1": {
-            "title": "Electric tools: drills, grinders, screwdrivers, etc."
-        },
-        "2": {
-            "title": "Pneumatic tools: pneumatic hammers, pneumatic keys, etc."
-        },
-        "3": {
-            "title": "Hydraulic tools: hydraulic lifts, hydraulic presses, etc."
-        },
-        "4": {
-            "title": "Measuring tools: caliper, micrometers, lines, etc."
-        },
-        "5": {
-            "title": "Welding tools: welding machines, burners, electrodes, etc."
-        },
-        "6": {
-            "title": "Cutting tools: Tokar knives, cutters, drills, etc."
-        },
-        "7": {
-            "title": "Abrasive tools: shields, brushes, whetstone etc."
-        },
-        "8": {
-            "title": "Industrial works: manipulators, automation, production lines, etc."
-        },
-        "9": {
-            "title": "3D printers: stereolitographic printers, FDM printers, SLS printers, filaments, etc."
-        }
+  "hero_title": "Industrial Tools",
+  "hero_description": "Discover our range of tools that will make your industrial ventures even more efficient and effective!",
+  "hero_background_alt": "Photo depicting industrial tools",
+
+  "section_title_1": "We Offer",
+  "section_description_1": "Comprehensive supply of various industrial tools, specialized equipment, and safety products for businesses.",
+
+  "section_title_2": "Our Range of Industrial Tools",
+  "section_2_background_alt": "Sample photo representing the offered tools",
+  "tools_list": {
+    "0": {
+      "title": "Hand Tools: hammers, screwdrivers, saws, pliers, etc."
     },
-    "section_title_3": "We provide",
-    "section_description_3": "Services in the selection of appropriate tools depending on:",
-    "simple_li_1": "type of work performed,",
-    "simple_li_2": "the material that you work out,",
-    "simple_li_3": "required precision and accuracy,",
-    "simple_li_4": "funds available.",
-    "simple_li_alt_1": "Icon of sheets of paper",
-    "simple_li_alt_2": "Material icon",
-    "simple_li_alt_3": "A sight icon",
-    "simple_li_alt_4": "Icon of money"
+    "1": {
+      "title": "Electric Tools: drills, grinders, screwdrivers, etc."
+    },
+    "2": {
+      "title": "Pneumatic Tools: pneumatic hammers, pneumatic wrenches, etc."
+    },
+    "3": {
+      "title": "Hydraulic Tools: hydraulic lifts, hydraulic presses, etc."
+    },
+    "4": {
+      "title": "Measuring Tools: calipers, micrometers, rulers, etc."
+    },
+    "5": {
+      "title": "Welding Tools: welders, torches, electrodes, etc."
+    },
+    "6": {
+      "title": "Cutting Tools: lathe tools, mills, drills, etc."
+    },
+    "7": {
+      "title": "Abrasive Tools: discs, brushes, sharpening stones, etc."
+    },
+    "8": {
+      "title": "Industrial Robots: manipulators, automation, production lines, etc."
+    },
+    "9": {
+      "title": "3D Printers: stereolithographic printers, FDM printers, SLS printers, filaments, etc."
+    }
+  },
+
+  "section_title_3": "We Provide",
+  "section_description_3": "Services for selecting the right tools based on:",
+  "simple_li_1": "the type of work being performed,",
+  "simple_li_2": "the material being processed,",
+  "simple_li_3": "the required precision and accuracy,",
+  "simple_li_4": "available financial resources.",
+  "simple_li_alt_1": "Icon of a piece of paper",
+  "simple_li_alt_2": "Icon of material",
+  "simple_li_alt_3": "Icon of a target",
+  "simple_li_alt_4": "Icon of money"
 }

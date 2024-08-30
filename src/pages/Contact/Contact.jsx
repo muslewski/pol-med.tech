@@ -78,27 +78,27 @@ function Contact() {
     if (message.length < 1) {
       // If there is no message
       messageRef.current.focus();
-      setMessageError(t("input_error_1"));
+      setMessageError("input_error_1");
     } else if (name.length < 1) {
       // If there is no name
-      setNameError(t("input_error_2"));
+      setNameError("input_error_2");
       nameRef.current.focus();
     } else if (email.length < 1) {
       // If there is no email
-      setEmailError(t("input_error_3"));
+      setEmailError("input_error_3");
       emailRef.current.focus();
     } else if (!email.includes("@")) {
       // If email don't have @
       emailRef.current.focus();
-      setEmailError(t("input_error_4"));
+      setEmailError("input_error_4");
     } else if (!EmailValidator.validate(email)) {
       // If email is valid
       emailRef.current.focus();
-      setEmailError(t("input_error_5"));
+      setEmailError("input_error_5");
     } else if (phone.length < 1 && !phoneErrorDisplayed) {
       // If there is no phone
       phoneRef.current.focus();
-      setPhoneError(t("input_error_6"));
+      setPhoneError("input_error_6");
       setTimeout(() => {
         setPhoneErrorDisplayed(true); // Set phoneErrorDisplayed to true after displaying the error
       }, 1000);

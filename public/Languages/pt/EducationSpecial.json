@@ -1,14 +1,14 @@
 {
-    "title": "Plataforma educacional interativa",
-    "description_1": "A posição didática para o Laboratório de Mecatrônicos de Carros fornece uma plataforma educacional interativa, permitindo que os alunos aprendam a criar mapas de motor.O elemento principal da posição é um computador de controle universal, que permite o controle do motor com ignição por faísca e injeção eletrônica de combustível.",
-    "description_2": "Os alunos têm a oportunidade de experimentar várias configurações e configurações, além de criar mapas de motor.Ao analisar os dados de entrada de sensores como posição, temperatura ou vácuo e programação apropriada do controlador, eles podem criar mapas do motor, adaptando sua operação a várias condições operacionais.A posição didática para o Laboratório de Mecatrônicos de Carros fornece uma plataforma educacional interativa, permitindo que os alunos aprendam a criar mapas de motor.O elemento principal da posição é um computador de controle universal, que permite o controle do motor com ignição por faísca e injeção eletrônica de combustível.",
-    "description_3": "Criar mapas de mapas de motor não é apenas habilidades de programação, mas também um entendimento mais profundo dos mecanismos do motor e o impacto de vários parâmetros em sua eficiência e desempenho.Graças a exercícios práticos em uma posição didática, os alunos adquirem o conhecimento e as habilidades necessárias no campo de diagnóstico, reparo e otimização da operação do motor, que os prepara para praticar a profissão de eletromecânica ou mecatrônica de carros.",
-    "description_1_alt": "Ícone representando um computador de controle de computador",
-    "description_2_alt": "Um ícone que descreve a chave francesa cercada por uma roda de engrenagem",
-    "description_3_alt": "Ícone representando um mecânico pronto para trabalhar",
-    "good_button_text": "Peça o produto",
-    "good_button_alt": "Ícone da cesta",
-    "see_also": "Veja também",
-    "alt_1": "A primeira foto principal mostrando a plataforma educacional interativa na prática",
-    "alt_2": "A segunda foto principal mostrando a plataforma no quadro"
+  "title": "Plataforma educacional interativa",
+  "description_1": "A estação de trabalho educacional para mecatrônica automotiva fornece uma plataforma educacional interativa que permite aos alunos aprender sobre mapeamento de motores. O principal elemento da estação de trabalho é o Computador de Controle Universal, que permite controlar o funcionamento do motor com ignição por centelha e injeção eletrônica de combustível.",
+  "description_2": "Os alunos têm a oportunidade de experimentar com várias configurações e ajustes, além de criar mapeamentos de motores. Analisando dados de entrada de sensores, como posição, temperatura ou pressão do coletor, e programando o controlador adequadamente, eles podem criar mapas de motores, ajustando seu funcionamento a diferentes condições operacionais.",
+  "description_3": "Criar mapas de motores não é apenas uma habilidade de programação, mas também um entendimento mais profundo dos mecanismos de operação do motor e a influência de vários parâmetros em sua eficiência e desempenho. Através de exercícios práticos na estação de trabalho educacional, os alunos adquirem conhecimentos e habilidades necessários em diagnóstico, reparo e otimização do funcionamento do motor, preparando-os para a profissão de eletromecânico automotivo ou mecatrônico.",
+  "description_1_alt": "Ícone representando um computador de controle",
+  "description_2_alt": "Um ícone representando uma chave francesa cercada por uma roda dentada",
+  "description_3_alt": "Ícone representando um mecânico pronto para trabalhar",
+  "good_button_text": "Peça mais detalhes",
+  "good_button_alt": "Ícone de cesta",
+  "see_also": "Você também pode gostar",
+  "alt_1": "A primeira foto principal mostrando a plataforma educacional interativa em prática",
+  "alt_2": "A segunda foto principal mostrando a plataforma no quadro"
 }

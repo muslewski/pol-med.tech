@@ -1,14 +1,14 @@
 {
-    "title": "Plateforme éducative interactive",
-    "description_1": "La position didactique du laboratoire de mécatronique de Car fournit une plate-forme éducative interactive, permettant aux étudiants d'apprendre à créer des cartes de moteur.L'élément principal de la position est un ordinateur de contrôle universel, qui permet le contrôle du moteur avec l'allumage Spark et l'injection de carburant électronique.",
-    "description_2": "Les étudiants ont la possibilité d'expérimenter divers paramètres et configurations, ainsi que la création de cartes de moteur.En analysant les données d'entrée de capteurs tels que la position, la température ou le vide, et la programmation appropriée du contrôleur, ils peuvent créer des cartes de moteur, en adaptant son fonctionnement à diverses conditions de fonctionnement.La position didactique du laboratoire de mécatronique de Car fournit une plate-forme éducative interactive, permettant aux étudiants d'apprendre à créer des cartes de moteur.L'élément principal de la position est un ordinateur de contrôle universel, qui permet le contrôle du moteur avec l'allumage Spark et l'injection de carburant électronique.",
-    "description_3": "La création de cartes de cartes moteurs n'est pas seulement des compétences en programmation, mais aussi une compréhension plus approfondie des mécanismes du moteur et de l'impact de divers paramètres sur son efficacité et ses performances.Grâce à des exercices pratiques dans une position didactique, les étudiants acquièrent les connaissances et les compétences nécessaires dans le domaine du diagnostic, de la réparation et de l'optimisation du fonctionnement du moteur, qui les prépare à pratiquer la profession d'électromécanique ou de mécatronique automobile.",
-    "description_1_alt": "Icône illustrant un ordinateur d'ordinateur",
-    "description_2_alt": "Une icône représentant la clé française entourée d'une roue de vitesses",
-    "description_3_alt": "Icône représentant un mécanicien prêt à travailler",
-    "good_button_text": "Demandez le produit",
-    "good_button_alt": "Icône du panier",
-    "see_also": "Voir aussi",
-    "alt_1": "La première photo principale montrant la plate-forme éducative interactive dans la pratique",
-    "alt_2": "La deuxième photo principale montrant la plate-forme sur la planche"
+  "title": "Plateforme éducative interactive",
+  "description_1": "La station de travail éducative pour la mécatronique automobile offre une plateforme éducative interactive permettant aux étudiants d'apprendre la cartographie des moteurs. L'élément principal de la station de travail est l'Ordinateur de Contrôle Universel, qui permet de contrôler le fonctionnement du moteur avec l'allumage par étincelle et l'injection électronique de carburant.",
+  "description_2": "Les étudiants ont l'opportunité d'expérimenter avec divers paramètres et configurations, ainsi que de créer des cartographies moteur. En analysant les données d'entrée des capteurs tels que la position, la température ou la pression du collecteur, et en programmant correctement le contrôleur, ils peuvent créer des cartes moteur, ajustant son fonctionnement à différentes conditions de fonctionnement.",
+  "description_3": "Créer des cartographies moteur est non seulement une compétence en programmation mais aussi une compréhension approfondie des mécanismes de fonctionnement du moteur et de l'influence de divers paramètres sur son efficacité et ses performances. À travers des exercices pratiques sur la station de travail éducative, les étudiants acquièrent les connaissances et compétences nécessaires en diagnostic, réparation et optimisation du fonctionnement du moteur, les préparant à la profession de technicien électromécanicien ou mécatronicien.",
+  "description_1_alt": "Icône représentant un ordinateur de contrôle",
+  "description_2_alt": "Icône représentant la clé française entourée d'un rouage",
+  "description_3_alt": "Icône représentant un mécanicien prêt à travailler",
+  "good_button_text": "Demander des détails",
+  "good_button_alt": "Icône de panier",
+  "see_also": "Vous pourriez aussi aimer",
+  "alt_1": "La première photo principale montrant la plateforme éducative interactive en pratique",
+  "alt_2": "La deuxième photo principale montrant la plateforme sur le tableau"
 }

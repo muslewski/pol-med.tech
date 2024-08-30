@@ -1,51 +1,54 @@
 {
-    "hero_title": "Industriële tools",
-    "hero_description": "Ontdek ons ​​aanbod van tools die uw industriële ondernemingen nog effectiever en efficiënter maken!",
-    "hero_background_alt": "Foto met industriële tools",
-    "section_title_1": "Wij bieden aan",
-    "section_description_1": "Uitgebreide levering van ondernemingen op het gebied van verschillende soorten industriële gereedschappen, gespecialiseerde apparatuur en OHS -producten.",
-    "section_title_2": "Ons assortiment industriële hulpmiddelen",
-    "section_2_background_alt": "Voorbeelden van herdrukfoto's boden tools aangeboden",
-    "tools_list": {
-        "0": {
-            "title": "Handgereedschap: hamers, schroevendraaiers, zagen, tang, etc."
-        },
-        "1": {
-            "title": "Elektrisch gereedschap: boren, slijpmachines, schroevendraaiers, enz."
-        },
-        "2": {
-            "title": "Pneumatische hulpmiddelen: pneumatische hamers, pneumatische toetsen, enz."
-        },
-        "3": {
-            "title": "Hydraulisch gereedschap: hydraulische liften, hydraulische persen, etc."
-        },
-        "4": {
-            "title": "Meethulpmiddelen: remklauw, micrometers, lijnen, etc."
-        },
-        "5": {
-            "title": "Lasgereedschap: lasmachines, branders, elektroden, enz."
-        },
-        "6": {
-            "title": "Snijdgereedschap: Tokar -messen, snijders, oefeningen, etc."
-        },
-        "7": {
-            "title": "Schurende gereedschap: schilden, borstels, whetstone etc."
-        },
-        "8": {
-            "title": "Industriële werken: manipulators, automatisering, productielijnen, etc."
-        },
-        "9": {
-            "title": "3D -printers: stereolitografische printers, FDM -printers, SLS -printers, filamenten, enz."
-        }
+  "hero_title": "Industriële Gereedschappen",
+  "hero_description": "Ontdek ons assortiment gereedschappen dat uw industriële activiteiten nog efficiënter en effectiever zal maken!",
+  "hero_background_alt": "Foto van industriële gereedschappen",
+
+  "section_title_1": "Wij Bieden Aan",
+  "section_description_1": "Uitgebreide levering van verschillende industriële gereedschappen, gespecialiseerd apparatuur en veiligheidsproducten voor bedrijven.",
+
+  "section_title_2": "Ons Assortiment Industriële Gereedschappen",
+  "section_2_background_alt": "Voorbeeldfoto van de aangeboden gereedschappen",
+  "tools_list": {
+    "0": {
+      "title": "Handgereedschappen: hamers, schroevendraaiers, zagen, tangen, enz."
     },
-    "section_title_3": "Wij bieden",
-    "section_description_3": "Services bij de selectie van geschikte tools, afhankelijk van:",
-    "simple_li_1": "soort uitgevoerd werk,",
-    "simple_li_2": "het materiaal dat je uitwerkt,",
-    "simple_li_3": "Vereiste precisie en nauwkeurigheid,",
-    "simple_li_4": "Fondsen beschikbaar.",
-    "simple_li_alt_1": "Pictogram met vellen papier",
-    "simple_li_alt_2": "Materiaalpictogram",
-    "simple_li_alt_3": "Een zichtpictogram",
-    "simple_li_alt_4": "Pictogram van geld"
+    "1": {
+      "title": "Elektrische Gereedschappen: boormachines, slijpmachines, schroevendraaiers, enz."
+    },
+    "2": {
+      "title": "Pneumatische Gereedschappen: pneumatische hamers, pneumatische moersleutels, enz."
+    },
+    "3": {
+      "title": "Hydraulische Gereedschappen: hydraulische liften, hydraulische persen, enz."
+    },
+    "4": {
+      "title": "Meetgereedschappen: schuifmaten, micrometers, linialen, enz."
+    },
+    "5": {
+      "title": "Lassers Gereedschappen: lassers, branders, elektroden, enz."
+    },
+    "6": {
+      "title": "Snijgereedschappen: draaigereedschappen, frezen, boren, enz."
+    },
+    "7": {
+      "title": "Abrasieve Gereedschappen: schijven, borstels, slijpstenen, enz."
+    },
+    "8": {
+      "title": "Industriële Robots: manipulators, automatisering, productielijnen, enz."
+    },
+    "9": {
+      "title": "3D Printers: stereolithografische printers, FDM-printers, SLS-printers, filamenten, enz."
+    }
+  },
+
+  "section_title_3": "Wij Bieden Aan",
+  "section_description_3": "Diensten voor het selecteren van de juiste gereedschappen op basis van:",
+  "simple_li_1": "het type werk dat wordt uitgevoerd,",
+  "simple_li_2": "het te bewerken materiaal,",
+  "simple_li_3": "de vereiste precisie en nauwkeurigheid,",
+  "simple_li_4": "de beschikbare financiële middelen.",
+  "simple_li_alt_1": "Pictogram van een stuk papier",
+  "simple_li_alt_2": "Pictogram van materiaal",
+  "simple_li_alt_3": "Pictogram van een doelwit",
+  "simple_li_alt_4": "Pictogram van geld"
 }

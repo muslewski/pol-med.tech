@@ -1,13 +1,13 @@
 {
-    "uco_oils": "UCO oleje",
-    "poland": "Polsko",
-    "contact": "Kontakt",
-    "quick_links": "Řádky",
-    "contact_form": "Kontaktní formulář",
-    "privacy_policy": "Zásady ochrany osobních údajů",
-    "copyright": "Copyright",
-    "alt_icon_1": "Ikona šipky",
-    "alt_icon_2": "Ikona telefonu",
-    "alt_icon_3": "Ikona odkazu",
-    "alt_arrow_up": "Up Arrow"
+  "uco_oils": "UCO Oleje",
+  "poland": "Polsko",
+  "contact": "Kontakt",
+  "quick_links": "Odkazy",
+  "contact_form": "Kontaktní formulář",
+  "privacy_policy": "Zásady ochrany osobních údajů",
+  "copyright": "Autorská práva",
+  "alt_icon_1": "Ikona šipky",
+  "alt_icon_2": "Ikona telefonu",
+  "alt_icon_3": "Ikona odkazu",
+  "alt_arrow_up": "Šipka nahoru"
 }

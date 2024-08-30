@@ -1,4 +1,5 @@
 import React, { forwardRef, useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Input = forwardRef(
   (
@@ -12,6 +13,7 @@ const Input = forwardRef(
     },
     ref
   ) => {
+    const { t } = useTranslation("Contact");
     const [value, setValue] = useState("");
 
     useEffect(() => {
@@ -52,7 +54,7 @@ const Input = forwardRef(
 
         {errorText && (
           <span className="text-blue-300 animate-shake font-exo">
-            {errorText}
+            {t(errorText)}
           </span>
         )}
       </div>

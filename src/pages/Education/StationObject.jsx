@@ -39,6 +39,7 @@ function StationObject({ title = "", description = "", image, id }) {
         <GoodButton
           link={`/Edukacja_i_badania/` + id}
           className="scale-90 hover:scale-95 -ml-3"
+          customText={t("station_object_good_button_text")}
           icon={iconRightArrow}
           iconAlt={t("station_object_good_button_icon_alt")}
         />

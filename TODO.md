@@ -42,3 +42,5 @@
 - [ ] Localization of Links based on choosen language
 
 - [ ] Add Google Analytics and Cookies Information
+
+- [ ] Add 404 Page

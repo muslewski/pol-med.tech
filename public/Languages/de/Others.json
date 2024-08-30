@@ -1,11 +1,15 @@
 {
-    "background_video_fallback_text": "Ihr Browser unterstützt kein Video -Tag.",
-    "background_video_fallback_alt": "Hintergrundbild zeigt die Fabrik",
-    "station_object_image_alt": "Produktfoto zeigt",
-    "station_object_good_button_icon_alt": "Das Pfeilsymbol auf",
-    "education_product_main_image_alt": "Hauptfotos, die die Bildungsstation präsentieren",
-    "education_product_side_image_alt": "Seitenfotos mit einer Bildungsstation präsentieren",
-    "section_card_illustration_alt": "Illustration des Abschnitts abgebildet",
-    "contact_button_default_text": "Kontaktieren Sie sich",
-    "good_button_default_text": "Weitermachen"
+  "background_video_fallback_text": "Ihr Browser unterstützt das Video-Tag nicht.",
+  "background_video_fallback_alt": "Hintergrundbild, das eine Fabrik zeigt",
+  "station_object_image_alt": "Produktbild, das zeigt",
+  "station_object_good_button_icon_alt": "Nächster Pfeil-Symbol",
+  "station_object_good_button_text": "Weitere Informationen",
+  "education_product_main_image_alt": "Hauptbild, das die Bildungsstation zeigt",
+  "education_product_side_image_alt": "Seitenbild, das die Bildungsstation zeigt",
+  "education_product_button": "Fragen Sie nach dem Produkt",
+  "education_product_button_alt": "Warenkorb-Symbol",
+  "education_product_not_found": "Leider wurde das Produkt nicht gefunden, sehen Sie sich andere an:",
+  "section_card_illustration_alt": "Abschnittsillustration, die zeigt",
+  "contact_button_default_text": "Kontaktieren Sie uns",
+  "good_button_default_text": "Fortfahren"
 }

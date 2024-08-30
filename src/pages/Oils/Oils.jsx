@@ -134,7 +134,7 @@ function Oils() {
           </svg>
         </div>
 
-        <div className=" relative self-center flex flex-col gap-24">
+        <div className=" relative self-start flex flex-col gap-24">
           <div className="flex flex-wrap gap-24 self-start">
             <GlowingTitle customClassH2="backdrop-blur-md bg-black/5 drop-shadow-glowingTextSubtle">
               {t("section_title_2")}

@@ -1,51 +1,54 @@
 {
-    "hero_title": "Strumenti industriali",
-    "hero_description": "Scopri la nostra offerta di strumenti che renderà le tue iniziative industriali ancora più efficaci ed efficienti!",
-    "hero_background_alt": "Foto che mostra strumenti industriali",
-    "section_title_1": "Offriamo",
-    "section_description_1": "Fornitura completa di imprese nel campo di vari tipi di strumenti industriali, attrezzature specializzate e prodotti OHS.",
-    "section_title_2": "La nostra gamma di strumenti industriali",
-    "section_2_background_alt": "Esempi di foto di ristampa offerte strumenti",
-    "tools_list": {
-        "0": {
-            "title": "Strumenti manuali: martelli, cacciaviti, seghe, pinze, ecc."
-        },
-        "1": {
-            "title": "Strumenti elettrici: trapani, smerigliatrici, cacciaviti, ecc."
-        },
-        "2": {
-            "title": "Strumenti pneumatici: martelli pneumatici, chiavi pneumatiche, ecc."
-        },
-        "3": {
-            "title": "Strumenti idraulici: sollevamenti idraulici, presse idrauliche, ecc."
-        },
-        "4": {
-            "title": "Strumenti di misurazione: pinza, micrometri, linee, ecc."
-        },
-        "5": {
-            "title": "Strumenti di saldatura: saldatura, bruciatori, elettrodi, ecc."
-        },
-        "6": {
-            "title": "Strumenti di taglio: coltelli da tokar, taglierine, trapani, ecc."
-        },
-        "7": {
-            "title": "Strumenti abrasivi: scudi, pennelli, pietra per la pietra ecc."
-        },
-        "8": {
-            "title": "Opere industriali: manipolatori, automazione, linee di produzione, ecc."
-        },
-        "9": {
-            "title": "Stampanti 3D: stampanti stereolitografiche, stampanti FDM, stampanti SLS, filamenti, ecc."
-        }
+  "hero_title": "Strumenti Industriali",
+  "hero_description": "Scopri la nostra gamma di strumenti che renderanno le tue imprese industriali ancora più efficienti ed efficaci!",
+  "hero_background_alt": "Foto che rappresenta strumenti industriali",
+
+  "section_title_1": "Offriamo",
+  "section_description_1": "Fornitura completa di vari strumenti industriali, attrezzature specializzate e prodotti per la sicurezza per le aziende.",
+
+  "section_title_2": "La Nostra Gamma di Strumenti Industriali",
+  "section_2_background_alt": "Foto esemplificativa degli strumenti offerti",
+  "tools_list": {
+    "0": {
+      "title": "Strumenti Manuali: martelli, cacciaviti, seghe, pinze, ecc."
     },
-    "section_title_3": "Forniamo",
-    "section_description_3": "Servizi nella selezione di strumenti appropriati a seconda di:",
-    "simple_li_1": "Tipo di lavoro eseguito,",
-    "simple_li_2": "il materiale che ti alleni,",
-    "simple_li_3": "Precisione e precisione richieste,",
-    "simple_li_4": "fondi disponibili.",
-    "simple_li_alt_1": "Icona di fogli di carta",
-    "simple_li_alt_2": "Icona del materiale",
-    "simple_li_alt_3": "Un'icona della vista",
-    "simple_li_alt_4": "Icona di denaro"
+    "1": {
+      "title": "Strumenti Elettrici: trapani, smerigliatrici, cacciaviti, ecc."
+    },
+    "2": {
+      "title": "Strumenti Pneumatici: martelli pneumatici, chiavi pneumatiche, ecc."
+    },
+    "3": {
+      "title": "Strumenti Idraulici: sollevatori idraulici, presse idrauliche, ecc."
+    },
+    "4": {
+      "title": "Strumenti di Misura: calibri, micrometri, righelli, ecc."
+    },
+    "5": {
+      "title": "Strumenti per Saldatura: saldatori, cannelli, elettrodi, ecc."
+    },
+    "6": {
+      "title": "Strumenti da Taglio: utensili da tornio, fresatrici, trapani, ecc."
+    },
+    "7": {
+      "title": "Strumenti Abrasivi: dischi, spazzole, pietre per affilare, ecc."
+    },
+    "8": {
+      "title": "Robot Industriali: manipolatori, automazione, linee di produzione, ecc."
+    },
+    "9": {
+      "title": "Stampanti 3D: stampanti stereolitografiche, stampanti FDM, stampanti SLS, filamenti, ecc."
+    }
+  },
+
+  "section_title_3": "Offriamo",
+  "section_description_3": "Servizi per la selezione degli strumenti giusti basati su:",
+  "simple_li_1": "il tipo di lavoro da eseguire,",
+  "simple_li_2": "il materiale da lavorare,",
+  "simple_li_3": "la precisione e l'accuratezza richieste,",
+  "simple_li_4": "le risorse finanziarie disponibili.",
+  "simple_li_alt_1": "Icona di un foglio di carta",
+  "simple_li_alt_2": "Icona di materiale",
+  "simple_li_alt_3": "Icona di un bersaglio",
+  "simple_li_alt_4": "Icona di denaro"
 }
