@@ -1,0 +1,44 @@
+{
+    "stations": {
+        "0": {
+            "title": "Kitvy testování čerpadla a vstřikovače čerpadla",
+            "description": "Jedná se o komplexní nástroj pro diagnostiku a opravu injekčních systémů v dieselových motorech.Umožňuje důkladně zkontrolovat provozní parametry čerpadel a vstřikovačů čerpadla, což vám umožní identifikovat a odstranit poruchy."
+        },
+        "1": {
+            "title": "Stojan na testování turbodmychadla",
+            "description": "Jedná se o pokročilé zařízení, které umožňuje komplexní hodnocení a opravu turbodmychadel.Umožňuje přesná měření provozních parametrů, jako je rychlost otáčení, tlak nahoře, těsnost a výkon.Díky tomu je možné identifikovat i drobné vady a obnovit turbodmychadlo na plnou kondici."
+        },
+        "2": {
+            "title": "Řízení pneumatického brzdění",
+            "description": "Řízení pneumatického brzdového systému je klíčovým prvkem, který zajišťuje bezpečné a pohodlné jízdy.Tento systém používá stlačený vzduch k ovládání brzdových ovladačů, což zajišťuje hladké a efektivní brzdění."
+        },
+        "3": {
+            "title": "Nastavení pro demonstraci hydraulického řízení systému brzdění",
+            "description": "Tato sada umožňuje vizualizaci a porozumění klíčovým prvkům brzdového systému, jako je brzdové čerpadlo, brzdové válce, brzdové vedení a brzdové destičky."
+        },
+        "4": {
+            "title": "Kit simulace teploty PCT",
+            "description": "Pokročilý nástroj, který umožňuje přesnou simulaci různých teplotních profilů v širokém rozsahu.Je to ideální řešení pro testování a validaci systémů kontroly teploty v různých průmyslových odvětvích."
+        },
+        "5": {
+            "title": "Osvětlení motorového vozidla",
+            "description": "Sada lamp a světlometů, které umožňují viditelnost vozidla na silnici v podmínkách špatné viditelnosti a informují ostatní silniční uživatele o jeho přítomnosti a manévrech."
+        },
+        "6": {
+            "title": "Nastaví se pro demonstraci systému kontroly hydraulického zavěšení",
+            "description": "Tato sada umožňuje vizualizaci a pochopení klíčových prvků systému zavěšení, jako je hydraulické čerpadlo, hydraulické válce, hydraulické kabely a tlumiče nárazů."
+        },
+        "7": {
+            "title": "Kit testování injektoru",
+            "description": "Nezbytný nástroj pro každý mechanik, který se zabývá diagnostikou a opravou plynových a dieselových motorů.Tato sada umožňuje přesně zkontrolovat provozní parametry injektorů, jako je výkon, postřik paliva, těsnost a otevírání/uzavření."
+        },
+        "8": {
+            "title": "Pneumatická demonstrace kontroly suspenze",
+            "description": "Tato sada umožňuje vizualizaci a porozumění klíčovým prvkům systému suspenze, jako je vzduchový kompresor, pneumatické válce, pneumatické kabely a vzduchové měchy."
+        },
+        "9": {
+            "title": "Výuka",
+            "description": "Motor má ověřit provozní parametry a naučit se konstrukci a implementaci základních učebních osnov v oblasti konstrukce a diagnózy motoru s vnitřním spalováním."
+        }
+    }
+}

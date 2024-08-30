@@ -10,5 +10,8 @@
     "card_1_description": "Practical and engaging educational systems in the field of automotive technology.",
     "card_2_description": "Collection, trade, and storage of used cooking oil (UCO) - a comprehensive service of oil supply and pickup for industry and gastronomy.",
     "card_3_description": "Comprehensive supply of various types of industrial tools to businesses.",
-    "alt_scroll_down": "Arrow pointing down"
+    "alt_scroll_down": "Arrow pointing down",
+    "card_alt_1": "Car lift icon",
+    "card_alt_2": "Oil tank icon",
+    "card_alt_3": "Tool box icon"
 }

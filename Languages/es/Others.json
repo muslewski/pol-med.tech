@@ -1,0 +1,11 @@
+{
+    "background_video_fallback_text": "Su navegador no admite una etiqueta de video.",
+    "background_video_fallback_alt": "Imagen de fondo que muestra la fábrica",
+    "station_object_image_alt": "Foto de producto que muestra",
+    "station_object_good_button_icon_alt": "El icono de flecha en",
+    "education_product_main_image_alt": "Fotos principales que presentan la estación educativa",
+    "education_product_side_image_alt": "Fotos laterales que presentan una estación educativa",
+    "section_card_illustration_alt": "Ilustración de la sección que representa",
+    "contact_button_default_text": "Contácteate",
+    "good_button_default_text": "Seguir"
+}

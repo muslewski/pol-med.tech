@@ -6,5 +6,12 @@
     "tools": "Tools",
     "about_us": "About us",
     "contact_form": "Contact form",
-    "alt_menu_button": "Menu button"
+    "alt_menu_button": "Menu button",
+    "alt_icon_1": "Car lift icon",
+    "alt_icon_2": "Oil tank icon",
+    "alt_icon_3": "Tool box icon",
+    "alt_icon_4": "Icon of company representatives",
+    "alt_icon_5": "Contact form icon",
+    "alt_icon_6": "An icon of official language",
+    "alt_icon_7": "A small arrow icon activating the menu"
 }

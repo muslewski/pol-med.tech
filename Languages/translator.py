@@ -24,27 +24,54 @@ def create_directory_if_not_exists(directory):
     if not os.path.exists(directory):
         os.makedirs(directory)
 
-def update_language_file(pl_data, lang_data):
+def translate_value(value, lang):
+    """Tłumaczy wartość jeśli jest tekstem."""
+    if isinstance(value, str):
+        translation = translator.translate(value, src='pl', dest=lang).text
+        print(f"Tłumaczenie '{value}' na '{lang}': '{translation}'")  # Print the translation process
+        return translation
+    return value
+
+def update_language_file(pl_data, lang_data, lang):
     """Aktualizuje plik językowy, dodaje brakujące klucze i poprawia niezgodności."""
     updated = False
     corrected_data = {}
 
-    for key in pl_data.keys():
+    for key, pl_value in pl_data.items():
         if key in lang_data:
-            # Zachowaj istniejące tłumaczenie, jeśli klucz jest obecny
-            corrected_data[key] = lang_data[key]
+            lang_value = lang_data[key]
+            if isinstance(pl_value, dict) and isinstance(lang_value, dict):
+                corrected_data[key], _updated = update_language_file(pl_value, lang_value, lang)
+                updated = updated or _updated
+            elif isinstance(pl_value, list) and isinstance(lang_value, list):
+                corrected_data[key] = [
+                    update_language_file(item, lang_value[idx], lang)[0] if isinstance(item, dict) else translate_value(item, lang)
+                    for idx, item in enumerate(pl_value)
+                ]
+                updated = updated or corrected_data[key] != lang_value
+            else:
+                corrected_data[key] = lang_value
         else:
-            # Dodaj brakujący klucz do corrected_data z pustą wartością
-            corrected_data[key] = ''
+            if isinstance(pl_value, dict):
+                print(f"Przetwarzanie zagnieżdżonego słownika dla klucza '{key}'")
+                corrected_data[key], _ = update_language_file(pl_value, {}, lang)
+            elif isinstance(pl_value, list):
+                print(f"Przetwarzanie listy dla klucza '{key}'")
+                corrected_data[key] = [translate_value(item, lang) for item in pl_value]
+            else:
+                print(f"Tłumaczenie wartości dla klucza '{key}'")
+                corrected_data[key] = translate_value(pl_value, lang)
             updated = True
 
     # Usuń nieprawidłowe klucze z lang_data, które nie istnieją w pl_data
-    for key in lang_data.keys():
-        if key not in pl_data:
-            print(f"Warning: Key '{key}' in language file does not exist in source file.")
-            updated = True
+    if isinstance(lang_data, dict):
+        for key in lang_data.keys():
+            if key not in pl_data:
+                print(f"Warning: Klucz '{key}' w pliku językowym nie istnieje w pliku źródłowym.")
+                updated = True
 
     return corrected_data, updated
+
 
 # Zbieranie plików JSON z katalogu "pl"
 pl_files = []
@@ -60,11 +87,13 @@ for root, dirs, files in os.walk(translation_dir):
 print("Files to process:", pl_files)
 
 for pl_file in pl_files:
+    print(f"Przetwarzanie pliku: {pl_file}")
     pl_path = os.path.join(translation_dir, pl_file)
     pl_data = load_json(pl_path)
 
     # Przetwarzaj pliki dla innych języków
     for lang in languages:
+        print(f"Tłumaczenie na język: {lang}")
         lang_file = pl_file.replace('pl/', f'{lang}/')
         lang_path = os.path.join(translation_dir, lang_file)
 
@@ -81,18 +110,9 @@ for pl_file in pl_files:
             save_json(lang_path, lang_data)
 
         # Aktualizuj plik językowy, dodaj brakujące klucze i popraw niezgodności
-        corrected_data, updated = update_language_file(pl_data, lang_data)
+        corrected_data, updated = update_language_file(pl_data, lang_data, lang)
 
         if updated:
+            print(f"Zapis zaktualizowanego pliku dla języka: {lang}")
             # Zapisz zaktualizowane tłumaczenia
-            save_json(lang_path, corrected_data)
-
-            # Dodaj tłumaczenie tylko dla nowo dodanych kluczy
-            for key in corrected_data.keys():
-                if corrected_data[key] == '':
-                    # Tłumaczenie tekstu
-                    translation = translator.translate(pl_data[key], src='pl', dest=lang).text
-                    corrected_data[key] = translation
-
-            # Zapisz ostateczne tłumaczenia
             save_json(lang_path, corrected_data)

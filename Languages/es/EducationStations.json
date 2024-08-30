@@ -1,0 +1,44 @@
+{
+    "stations": {
+        "0": {
+            "title": "Kit de prueba de bomba e inyectores de bomba",
+            "description": "Es una herramienta integral para el diagnóstico y la reparación de sistemas de inyección en motores diesel.Le permite verificar a fondo los parámetros operativos de las bombas y los inyectores de la bomba, lo que le permite identificar y eliminar fallas."
+        },
+        "1": {
+            "title": "Soporte de prueba de turbocompresor",
+            "description": "Este es un dispositivo avanzado que permite una evaluación y reparación integrales de turbocompresores.Permite mediciones precisas de parámetros operativos, como la velocidad de rotación, la presión superior, la tensión y el rendimiento.Gracias a esto, es posible identificar incluso defectos menores y restaurar el turbocompresor a plena aptitud."
+        },
+        "2": {
+            "title": "Control de un sistema de frenado neumático",
+            "description": "Controlar un sistema de frenado neumático es un elemento clave que garantiza una conducción segura y cómoda.Este sistema utiliza aire comprimido para controlar los actuadores de frenos, lo que garantiza un frenado suave y efectivo."
+        },
+        "3": {
+            "title": "Establecer para la demostración del control hidráulico del sistema de frenado",
+            "description": "Este conjunto permite la visualización y comprensión de los elementos clave del sistema de frenos, como una bomba de freno, cilindros de freno, líneas de freno y pastillas de freno."
+        },
+        "4": {
+            "title": "Kit de simulación de temperatura PCT",
+            "description": "Una herramienta avanzada que permite una simulación precisa de varios perfiles de temperatura en un amplio rango.Es una solución ideal para la prueba y la validación de los sistemas de control de temperatura en diversas industrias."
+        },
+        "5": {
+            "title": "Iluminación de vehículos de motor",
+            "description": "Un conjunto de lámparas y faros que permiten la visibilidad del vehículo en la carretera en condiciones de mala visibilidad e informan a otros usuarios de la carretera sobre su presencia y maniobras."
+        },
+        "6": {
+            "title": "Establecer para la demostración del sistema de control de suspensión hidráulica",
+            "description": "Este conjunto permite la visualización y comprensión de los elementos del sistema de suspensión clave, como una bomba hidráulica, cilindros hidráulicos, cables hidráulicos y amortiguadores."
+        },
+        "7": {
+            "title": "Kit de prueba de inyectores",
+            "description": "Una herramienta necesaria para cada mecánico que se ocupa del diagnóstico y la reparación de los motores de gas y diesel.Este conjunto le permite verificar con precisión los parámetros operativos de los inyectores, como el rendimiento, la pulverización de combustible, la tensión y el tiempo de apertura/cierre."
+        },
+        "8": {
+            "title": "Conjunto de demostración de control de suspensión neumática",
+            "description": "Este conjunto permite la visualización y comprensión de los elementos clave del sistema de suspensión, como el compresor de aire, los cilindros neumáticos, los cables neumáticos y los fuelles de aire."
+        },
+        "9": {
+            "title": "Motor de enseñanza",
+            "description": "El motor es verificar los parámetros operativos y aprender la construcción e implementación del plan de estudios básico de núcleo en el campo de la construcción y diagnósticos del motor de combustión."
+        }
+    }
+}

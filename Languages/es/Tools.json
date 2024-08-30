@@ -1,0 +1,51 @@
+{
+    "hero_title": "Herramientas industriales",
+    "hero_description": "¡Descubra nuestra oferta de herramientas que harán que sus empresas industriales sean aún más efectivas y eficientes!",
+    "hero_background_alt": "Foto mostrando herramientas industriales",
+    "section_title_1": "Ofrecemos",
+    "section_description_1": "Suministro integral de empresas en el campo de varios tipos de herramientas industriales, equipos especializados y productos OHS.",
+    "section_title_2": "Nuestra gama de herramientas industriales",
+    "section_2_background_alt": "Ejemplos de fotos de reimpresión ofrecidas herramientas",
+    "tools_list": {
+        "0": {
+            "title": "Herramientas manuales: martillos, destornilladores, sierras, alicates, etc."
+        },
+        "1": {
+            "title": "Herramientas eléctricas: taladrones, molinos, destornilladores, etc."
+        },
+        "2": {
+            "title": "Herramientas neumáticas: martillos neumáticos, teclas neumáticas, etc."
+        },
+        "3": {
+            "title": "Herramientas hidráulicas: elevadores hidráulicos, prensas hidráulicas, etc."
+        },
+        "4": {
+            "title": "Herramientas de medición: pinza, micrómetros, líneas, etc."
+        },
+        "5": {
+            "title": "Herramientas de soldadura: máquinas de soldadura, quemadores, electrodos, etc."
+        },
+        "6": {
+            "title": "Herramientas de corte: cuchillos de tokar, cortadores, ejercicios, etc."
+        },
+        "7": {
+            "title": "Herramientas abrasivas: escudos, cepillos, piedras de agua, etc."
+        },
+        "8": {
+            "title": "Obras industriales: manipuladores, automatización, líneas de producción, etc."
+        },
+        "9": {
+            "title": "Impresoras 3D: impresoras estereolitográficas, impresoras FDM, impresoras SLS, filamentos, etc."
+        }
+    },
+    "section_title_3": "Proporcionamos",
+    "section_description_3": "Servicios en la selección de herramientas apropiadas dependiendo de:",
+    "simple_li_1": "tipo de trabajo realizado,",
+    "simple_li_2": "el material que crea,",
+    "simple_li_3": "Precisión y precisión requeridas,",
+    "simple_li_4": "Fondos disponibles.",
+    "simple_li_alt_1": "Ícono de hojas de papel",
+    "simple_li_alt_2": "Icono de material",
+    "simple_li_alt_3": "Un ícono de la vista",
+    "simple_li_alt_4": "Icono de dinero"
+}

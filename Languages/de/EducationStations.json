@@ -1,0 +1,44 @@
+{
+    "stations": {
+        "0": {
+            "title": "Pumpentestset und Pumpeninjektoren",
+            "description": "Es ist ein umfassendes Instrument zur Diagnose und Reparatur von Injektionssystemen in Dieselmotoren.Sie können die Betriebsparameter von Pumpen und Pumpeninjektoren gründlich überprüfen, mit denen Sie Fehler identifizieren und entfernen können."
+        },
+        "1": {
+            "title": "Turbolader -Testständer",
+            "description": "Dies ist ein fortschrittliches Gerät, das eine umfassende Bewertung und Reparatur von Turboladern ermöglicht.Es ermöglicht präzise Messungen von Betriebsparametern wie Drehzahl, Druckdruck, Enge und Leistung.Dank dessen ist es möglich, selbst kleinere Mängel zu identifizieren und den Turbolader auf volle Fitness wiederherzustellen."
+        },
+        "2": {
+            "title": "Kontrolle eines pneumatischen Bremssystems",
+            "description": "Die Kontrolle eines pneumatischen Bremssystems ist ein Schlüsselelement, das sicheres und komfortables Fahren gewährleistet.Dieses System verwendet komprimierte Luft, um die Bremsaktuatoren zu steuern, was eine reibungslose und effektive Bremsung gewährleistet."
+        },
+        "3": {
+            "title": "Eingestellt zur Demonstration der hydraulischen Kontrolle des Bremssystems",
+            "description": "Dieser Satz ermöglicht die Visualisierung und das Verständnis von wichtigsten Bremssystemelementen wie Bremspumpe, Bremszylindern, Bremsleitungen und Bremsbelag."
+        },
+        "4": {
+            "title": "PCT -Temperatursimulations -Kit",
+            "description": "Ein fortschrittliches Tool, das eine präzise Simulation verschiedener Temperaturprofile in einem weiten Bereich ermöglicht.Es ist eine ideale Lösung für das Testen und Validieren von Temperaturkontrollsystemen in verschiedenen Branchen."
+        },
+        "5": {
+            "title": "Kraftfahrzeugbeleuchtung",
+            "description": "Eine Reihe von Lampen und Scheinwerfern, die die Sichtbarkeit des Fahrzeugs auf der Straße unter Bedingungen der schlechten Sichtbarkeit ermöglichen und andere Straßenbenutzer über seine Anwesenheit und Manöver informieren."
+        },
+        "6": {
+            "title": "Eingestellt zur Demonstration des Hydraulik -Suspensionskontrollsystems",
+            "description": "Dieser Satz ermöglicht die Visualisierung und das Verständnis von Elementen des Schlüsselsuspensionssystems wie einer Hydraulikpumpe, hydraulischen Zylinder, hydraulischen Kabeln und Stoßdämpfer."
+        },
+        "7": {
+            "title": "Injektortestkit",
+            "description": "Ein notwendiges Werkzeug für jeden Mechaniker, der sich mit der Diagnose und Reparatur von Gas- und Dieselmotoren befasst.Mit diesem Satz können Sie die Betriebsparameter von Injektoren genau überprüfen, z. B. Leistung, Brennstoff, Dichtheit und Öffnungs-/Schließzeit."
+        },
+        "8": {
+            "title": "Demonstrationsset für pneumatische Suspensionskontrolle",
+            "description": "Dieser Satz ermöglicht die Visualisierung und das Verständnis der Schlüsselelemente des Aufhängungssystems, wie z. B. Luftkompressor, pneumatische Zylinder, pneumatische Kabel und Luftballen."
+        },
+        "9": {
+            "title": "Unterrichtsmotor",
+            "description": "Der Motor soll die Betriebsparameter überprüfen und die Konstruktion und Implementierung des grundlegenden Kernlehrplans im Bereich der Konstruktion und Diagnose von Verbrennungsmotoren erlernen."
+        }
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "hero_title": "Pramoninės priemonės",
+    "hero_description": "Atraskite mūsų pasiūlymą dėl įrankių, kurie jūsų pramonės įmones padarys dar efektyvesnius ir efektyvesnius!",
+    "hero_background_alt": "Nuotrauka, rodanti pramoninius įrankius",
+    "section_title_1": "Mes siūlome",
+    "section_description_1": "Išsamus įmonių tiekimas įvairių rūšių pramoninių įrankių, specializuotos įrangos ir OHS produktų srityje.",
+    "section_title_2": "Mūsų pramoninių įrankių asortimentas",
+    "section_2_background_alt": "Siūlomų įrankių perspausdinimo pavyzdžiai",
+    "tools_list": {
+        "0": {
+            "title": "Rankiniai įrankiai: plaktukai, atsuktuvai, pjūklai, replės ir kt."
+        },
+        "1": {
+            "title": "Elektriniai įrankiai: grąžtai, šlifuokliai, atsuktuvai ir kt."
+        },
+        "2": {
+            "title": "Pneumatiniai įrankiai: pneumatiniai plaktukai, pneumatiniai raktai ir kt."
+        },
+        "3": {
+            "title": "Hidrauliniai įrankiai: hidrauliniai keltuvai, hidrauliniai presai ir kt."
+        },
+        "4": {
+            "title": "Matavimo įrankiai: apkabos, mikrometrai, linijos ir kt."
+        },
+        "5": {
+            "title": "Suvirinimo įrankiai: suvirinimo mašinos, degikliai, elektrodai ir kt."
+        },
+        "6": {
+            "title": "Pjovimo įrankiai: „Tokar“ peiliai, pjaustytuvai, grąžtai ir kt."
+        },
+        "7": {
+            "title": "Abrazyviniai įrankiai: skydai, šepetėliai, kankinimas ir kt."
+        },
+        "8": {
+            "title": "Pramoniniai darbai: manipuliatoriai, automatizavimas, gamybos linijos ir kt."
+        },
+        "9": {
+            "title": "3D spausdintuvai: stereolitografiniai spausdintuvai, FDM spausdintuvai, SLS spausdintuvai, gijos ir kt."
+        }
+    },
+    "section_title_3": "Mes teikiame",
+    "section_description_3": "Paslaugos renkantis tinkamas priemones, atsižvelgiant į:",
+    "simple_li_1": "Atlikto darbo tipas,",
+    "simple_li_2": "Medžiaga, kurią dirbate,",
+    "simple_li_3": "reikalingas tikslumas ir tikslumas,",
+    "simple_li_4": "Galimos lėšos.",
+    "simple_li_alt_1": "Popieriaus lapų piktograma",
+    "simple_li_alt_2": "Medžiagos piktograma",
+    "simple_li_alt_3": "Regėjimo piktograma",
+    "simple_li_alt_4": "Pinigų piktograma"
+}
