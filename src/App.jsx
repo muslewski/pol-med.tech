@@ -26,6 +26,7 @@ const Copyright = lazy(() => import("./pages/Copyright/Copyright"));
 function App() {
   const { t: tOthers } = useTranslation("Others");
   const { t: tPageTitles } = useTranslation("PageTitles");
+  const { t: tPageDescriptions } = useTranslation("PageDescriptions");
 
   // Scroll to top on every route change
   const { pathname } = useLocation();
@@ -35,39 +36,52 @@ function App() {
 
   // Set the title of the page
   useEffect(() => {
-    let title;
+    let title, description;
     switch (pathname) {
       case "/":
         title = tPageTitles("home_page_title");
+        description = tPageDescriptions("home_page_description");
         break;
       case "/Edukacja_i_badania":
         title = tPageTitles("education_page_title");
+        description = tPageDescriptions("education_page_description");
         break;
       case "/Edukacja_i_badania/interaktywna_platforma_edukacyjna":
         title = tPageTitles("education_special_page_title");
+        description = tPageDescriptions("education_special_page_description");
         break;
       case "/Oleje_UCO":
         title = tPageTitles("oils_page_title");
+        description = tPageDescriptions("oils_page_description");
         break;
       case "/Narzedzia":
         title = tPageTitles("tools_page_title");
+        description = tPageDescriptions("tools_page_description");
         break;
       case "/O_nas":
         title = tPageTitles("about_page_title");
+        description = tPageDescriptions("about_page_description");
         break;
       case "/Kontakt":
         title = tPageTitles("contact_page_title");
+        description = tPageDescriptions("contact_page_description");
         break;
       case "/Polityka_prywatnosci":
         title = tPageTitles("privacy_policy_page_title");
+        description = tPageDescriptions("privacy_policy_page_description");
         break;
       case "/Prawa_autorskie":
         title = tPageTitles("copyright_page_title");
+        description = tPageDescriptions("copyright_page_description");
         break;
       default:
         title = tPageTitles("default_page_title");
+        description = tPageDescriptions("home_page_description");
     }
     document.title = title;
+    document
+      .querySelector('meta[name="description"]')
+      .setAttribute("content", description);
   }, [pathname, tPageTitles]);
 
   // State for zooming in the image

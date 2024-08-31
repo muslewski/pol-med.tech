@@ -13,10 +13,11 @@ function EducationProduct({ setZoomIn, mainPhoto, setMainPhoto }) {
   const { t, ready: tOthersReady } = useTranslation("Others");
   const { t: tStation, ready: tReady } = useTranslation("EducationStations");
   const { t: tPageTitles, ready: tTitlesReady } = useTranslation("PageTitles");
+  const { t: tPageDescriptions } = useTranslation("PageDescriptions");
   const { id } = useParams();
 
   const [title, setTitle] = useState("Pol-Med");
-
+  const [description, setDescription] = useState("");
   const stationsLength = stationsData.stations.length;
 
   const nextStation =
@@ -34,15 +35,22 @@ function EducationProduct({ setZoomIn, mainPhoto, setMainPhoto }) {
     if (tOthersReady && tReady && tTitlesReady) {
       if (station) {
         setTitle(tStation(`stations.${id}.title`) + " | " + "Pol-Med");
+        setDescription(tStation(`stations.${id}.description`));
       } else {
         setTitle(tPageTitles("education_not_found_page_title"));
+        setDescription(
+          tPageDescriptions("education_not_found_page_description")
+        );
       }
     }
   }, [id, station, tStation, tPageTitles, tOthersReady, tReady, tTitlesReady]);
 
   useEffect(() => {
     document.title = title;
-  }, [title]);
+    document
+      .querySelector('meta[name="description"]')
+      .setAttribute("content", description);
+  }, [title, description]);
 
   if (!station) {
     return (
