@@ -3,14 +3,25 @@ import { Link } from "react-router-dom";
 import GoodButton from "../../components/GoodButton";
 import iconRightArrow from "../../Assets/rightArrow.png";
 import { useTranslation } from "react-i18next";
+import { useInView } from "react-intersection-observer";
 
 function StationObject({ title = "", description = "", image, id }) {
   const { t } = useTranslation("Others");
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+  });
+
   if (description.length > 200)
     description = description.substring(0, 200) + "...";
 
   return (
-    <div className="flex flex-col lg:flex-row items-center gap-12 sm:gap-16 max-w-full 5xl:max-w-[45%] bg-gradient-to-br from-[rgba(209,226,255,0.08)] px-6 py-9 rounded-3xl">
+    <div
+      ref={ref}
+      className={`flex flex-col lg:flex-row items-center gap-12 sm:gap-16 max-w-full 5xl:max-w-[45%] bg-gradient-to-br
+         from-[rgba(209,226,255,0.08)] px-6 py-9 rounded-3xl animate-ease-in-out animate-delay-150 ${
+           inView ? "" : ""
+         }`}
+    >
       <div className="flex flex-col-reverse sm:flex-col max-w-xs gap-4 items-center">
         <Link
           to={`/Edukacja_i_badania/` + id}

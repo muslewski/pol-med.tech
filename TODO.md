@@ -3,7 +3,7 @@
 - [x] Loading Screen Untill whole page load correctly
 
 - [x] Add favicon
-- [ ] Don't forget about animation!
+- [x] Don't forget about animation!
 
 - [ ] Add sitemap.txt so that indexing will work corecctly and update robots.txt
 
@@ -18,11 +18,6 @@
   - German
   - Ukrainian
   - Spanish
-
-- [ ] Themes Support
-
-  - Light
-  - Dark
 
 - [ ] Final Files
 

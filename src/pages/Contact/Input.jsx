@@ -1,5 +1,6 @@
 import React, { forwardRef, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useInView } from "react-intersection-observer";
 
 const Input = forwardRef(
   (
@@ -13,6 +14,9 @@ const Input = forwardRef(
     },
     ref
   ) => {
+    const { ref: refView, inView } = useInView({
+      triggerOnce: true,
+    });
     const { t } = useTranslation("Contact");
     const [value, setValue] = useState("");
 
@@ -29,7 +33,12 @@ const Input = forwardRef(
       "p-5 rounded-3xl bg-white/95  backdrop-brightness-175 backdrop-blur-2xl text-slate-950 placeholder-indigo-950 shadow-glowingInput transition-all focus:outline-offset-4 outline-white";
 
     return (
-      <div className="flex flex-col gap-4">
+      <div
+        className={`flex flex-col gap-4 animate-ease-in-out animate-delay-150 ${
+          inView ? "animate-fade opacity-0" : "opacity-0"
+        }`}
+        ref={refView}
+      >
         {textarea ? (
           <textarea
             ref={ref}
