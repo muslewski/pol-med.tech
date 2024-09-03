@@ -2,4 +2,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://hackypotter.com/sitemap.txt
+Sitemap: https://pol-med.tech/sitemap.txt
