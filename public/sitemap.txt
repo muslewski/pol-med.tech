@@ -1,4 +1,117 @@
-https://spa-github-pages.rafgraph.dev/
-https://spa-github-pages.rafgraph.dev/?/example
-https://spa-github-pages.rafgraph.dev/?/example/two-deep&field1=foo~and~field2=bar#boom!
-https://spa-github-pages.rafgraph.dev/?/sitemap-link-generator
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Strona główna -->
+  <url>
+    <loc>https://pol-med.tech/</loc>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Edukacja i badania -->
+  <url>
+    <loc>https://pol-med.tech/?/Edukacja_i_badania</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Interaktywna platforma edukacyjna -->
+  <url>
+    <loc>https://pol-med.tech/?/Edukacja_i_badania/interaktywna_platforma_edukacyjna</loc>
+    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Produkty edukacyjne (ID 0-9) -->
+  <url>
+    <loc>https://pol-med.tech/?/Edukacja_i_badania/0</loc>
+    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pol-med.tech/?/Edukacja_i_badania/1</loc>
+    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pol-med.tech/?/Edukacja_i_badania/2</loc>
+    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pol-med.tech/?/Edukacja_i_badania/3</loc>
+    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pol-med.tech/?/Edukacja_i_badania/4</loc>
+    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pol-med.tech/?/Edukacja_i_badania/5</loc>
+    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pol-med.tech/?/Edukacja_i_badania/6</loc>
+    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pol-med.tech/?/Edukacja_i_badania/7</loc>
+    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pol-med.tech/?/Edukacja_i_badania/8</loc>
+    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pol-med.tech/?/Edukacja_i_badania/9</loc>
+    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Oleje UCO -->
+  <url>
+    <loc>https://pol-med.tech/?/Oleje_UCO</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Narzędzia -->
+  <url>
+    <loc>https://pol-med.tech/?/Narzedzia</loc>
+    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- O nas -->
+  <url>
+    <loc>https://pol-med.tech/?/O_nas</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Kontakt -->
+  <url>
+    <loc>https://pol-med.tech/?/Kontakt</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Polityka prywatności -->
+  <url>
+    <loc>https://pol-med.tech/?/Polityka_prywatnosci</loc>
+    <priority>0.5</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+  <!-- Prawa autorskie -->
+  <url>
+    <loc>https://pol-med.tech/?/Prawa_autorskie</loc>
+    <priority>0.5</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+</urlset>

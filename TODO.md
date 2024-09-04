@@ -34,4 +34,4 @@
 
 - [ ] Add Google Analytics and Cookies Information
 
-- [ ] Add 404 Page
+- [ ] Add 404 Page and add translation

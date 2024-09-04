@@ -22,6 +22,7 @@ const About = lazy(() => import("./pages/About/About"));
 const Contact = lazy(() => import("./pages/Contact/Contact"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy/PrivacyPolicy"));
 const Copyright = lazy(() => import("./pages/Copyright/Copyright"));
+const NotFound = lazy(() => import("./pages/NotFound/NotFound"));
 
 function App() {
   const { t: tOthers } = useTranslation("Others");
@@ -155,6 +156,7 @@ function App() {
               <Route path="/Kontakt" element={<Contact />} />
               <Route path="/Polityka_prywatnosci" element={<PrivacyPolicy />} />
               <Route path="/Prawa_autorskie" element={<Copyright />} />
+              <Route path="*" element={<NotFound />} /> {/* Handle 404 */}
             </Routes>
             <Footer bgColor={bgColor} setBgColor={setBgColor} />
           </Suspense>
