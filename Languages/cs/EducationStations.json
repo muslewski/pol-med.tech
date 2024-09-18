@@ -17,12 +17,12 @@
       "description": "Tato sada umožňuje vizualizaci a pochopení klíčových prvků brzdového systému, jako je brzdové čerpadlo, brzdové aktuátory, brzdové potrubí a brzdové destičky."
     },
     "4": {
-      "title": "Sada pro simulaci teploty PCT",
-      "description": "Pokročilý nástroj, který umožňuje přesnou simulaci různých teplotních profilů v širokém rozsahu. Je to ideální řešení pro testování a ověřování teplotních regulačních systémů v různých odvětvích."
+      "title": "Sada pro testování teplotních senzorů",
+      "description": "Stojan umožňuje testování a ověřování teplotních senzorů používaných v spalovacích motorech."
     },
     "5": {
-      "title": "Systém osvětlení vozidla",
-      "description": "Sada lamp a reflektorů, která poskytuje viditelnost vozidla na silnici za špatných viditelnostních podmínek a informuje ostatní účastníky silničního provozu o jeho přítomnosti a manévrech."
+      "title": "Demonstrace stojanu pro testování osvětlení",
+      "description": "Sada lamp a reflektorů, která umožňuje naučit se postup ověřování a nastavování osvětlení."
     },
     "6": {
       "title": "Demonstrátor řízení hydraulického odpružení",
@@ -37,7 +37,7 @@
       "description": "Tato sada umožňuje vizualizaci a pochopení klíčových prvků odpružení, jako je kompresor vzduchu, pneumatikové aktuátory, pneumatikové potrubí a vzduchové pružiny."
     },
     "9": {
-      "title": "Vzdělávací motor",
+      "title": "Model motoru",
       "description": "Motor pro ověřování provozních parametrů a pro výuku konstrukce a implementace základních obsahů učebního plánu v oblasti konstrukce motorů a diagnostiky."
     }
   }
