@@ -17,12 +17,12 @@
       "description": "Šis rinkinys leidžia vizualizuoti ir suprasti pagrindines stabdžių sistemos dalis, tokias kaip stabdžių siurblys, stabdžių aktyvatoriai, stabdžių vamzdžiai ir stabdžių trinkelės."
     },
     "4": {
-      "title": "PCT Temperatūros Simuliavimo Rinkinys",
-      "description": "Pažangus įrankis, leidžiantis tiksliai simuliuoti įvairius temperatūros profilius per platų spektrą. Tai idealus sprendimas temperatūros kontrolės sistemų testavimui ir patvirtinimui įvairiose pramonės šakose."
+      "title": "Temperatūros Jutiklio Testavimo Rinkinys",
+      "description": "Stovas leidžia testuoti ir patvirtinti temperatūros jutiklius, naudojamus vidaus degimo varikliuose."
     },
     "5": {
-      "title": "Transporto Priemonės Apšvietimo Sistema",
-      "description": "Lempučių ir reflektorių rinkinys, užtikrinantis transporto priemonės matomumą kelyje prastomis matomumo sąlygomis ir informuojantis kitus eismo dalyvius apie jos buvimą ir manevrus."
+      "title": "Apšvietimo Testavimo Demonstracinė Stendas",
+      "description": "Lempų ir reflektorių rinkinys, leidžiantis išmokti apšvietimo sistemos patikrinimo ir reguliavimo procedūrą."
     },
     "6": {
       "title": "Hidraulinės Pakabos Valdymo Sistemos Demonstravimo Rinkinys",
@@ -37,7 +37,7 @@
       "description": "Šis rinkinys leidžia vizualizuoti ir suprasti pagrindines pakabos sistemos dalis, tokias kaip oro kompresorius, pneumatiniai aktyvatoriai, pneumatiniai vamzdžiai ir oro spyruoklės."
     },
     "9": {
-      "title": "Švietimo Variklis",
+      "title": "Variklio modelis",
       "description": "Variklis, skirtas veikimo parametrų patikrinimui ir pagrindinių mokymo programos turinio elementų, susijusių su variklio konstrukcija ir diagnostika, mokymu."
     }
   }

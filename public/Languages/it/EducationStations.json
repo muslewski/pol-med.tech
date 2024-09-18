@@ -17,12 +17,12 @@
       "description": "Questo kit consente di visualizzare e comprendere gli elementi chiave del sistema frenante, come la pompa dei freni, gli attuatori dei freni, le tubazioni dei freni e le pastiglie dei freni."
     },
     "4": {
-      "title": "Kit di Simulazione della Temperatura PCT",
-      "description": "Uno strumento avanzato che consente una simulazione precisa di vari profili di temperatura su un ampio intervallo. È una soluzione ideale per testare e convalidare i sistemi di controllo della temperatura in vari settori industriali."
+      "title": "Kit di Test per Sensori di Temperatura",
+      "description": "Il supporto consente di testare e convalidare i sensori di temperatura utilizzati nei motori a combustione."
     },
     "5": {
-      "title": "Sistema di Illuminazione del Veicolo",
-      "description": "Un insieme di lampade e riflettori che forniscono visibilità al veicolo sulla strada in condizioni di scarsa visibilità e informano gli altri utenti della strada della sua presenza e delle sue manovre."
+      "title": "Banco di Dimostrazione per Test di Illuminazione",
+      "description": "Un insieme di lampade e riflettori che consente di apprendere la procedura per verificare e regolare il sistema di illuminazione."
     },
     "6": {
       "title": "Kit di Dimostrazione del Sistema di Controllo della Sospensione Idraulica",
@@ -37,7 +37,7 @@
       "description": "Questo kit consente di visualizzare e comprendere gli elementi chiave del sistema di sospensione, come il compressore d'aria, gli attuatori pneumatici, le tubazioni pneumatiche e le molle d'aria."
     },
     "9": {
-      "title": "Motore Didattico",
+      "title": "Modello del motore",
       "description": "Un motore per verificare i parametri operativi e per apprendere la costruzione e l'implementazione dei contenuti didattici di base nel campo della costruzione e diagnostica dei motori."
     }
   }

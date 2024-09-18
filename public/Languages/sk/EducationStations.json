@@ -17,12 +17,12 @@
       "description": "Táto sada umožňuje vizualizáciu a pochopenie kľúčových prvkov brzdového systému, ako sú brzdové čerpadlo, brzdové aktory, brzdové hadice a brzdové doštičky."
     },
     "4": {
-      "title": "Sada na simuláciu teploty PCT",
-      "description": "Pokročilý nástroj, ktorý umožňuje presnú simuláciu rôznych teplotných profilov v širokom rozmedzí. Je to ideálne riešenie na testovanie a overovanie systémov riadenia teploty v rôznych priemyselných odvetviach."
+      "title": "Súprava na testovanie teplotných senzorov",
+      "description": "Stojan umožňuje testovanie a overovanie teplotných senzorov používaných v spaľovacích motoroch."
     },
     "5": {
-      "title": "Svetelný systém vozidla",
-      "description": "Sada lámp a reflektorov, ktorá zabezpečuje viditeľnosť vozidla na ceste v podmienkach nízkej viditeľnosti a informuje ostatných účastníkov cestnej premávky o jeho prítomnosti a manévroch."
+      "title": "Demonštračný stánok na testovanie osvetlenia",
+      "description": "Sada lámp a reflektorov, ktorá umožňuje učenie sa postupu na overenie a nastavenie osvetľovacieho systému."
     },
     "6": {
       "title": "Sada na demonštráciu riadenia hydraulického zavesenia",
@@ -37,7 +37,7 @@
       "description": "Táto sada umožňuje vizualizáciu a pochopenie kľúčových prvkov zavesenia, ako sú vzduchový kompresor, pneumatické aktory, pneumatické hadice a vzduchové pružiny."
     },
     "9": {
-      "title": "Vzdelávací motor",
+      "title": "Model motora",
       "description": "Motor na overovanie prevádzkových parametrov a na učenie konštrukcie a implementácie základných obsahov učebného plánu v oblasti konštrukcie a diagnostiky motorov."
     }
   }

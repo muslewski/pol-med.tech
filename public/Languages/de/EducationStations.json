@@ -17,12 +17,12 @@
       "description": "Dieses Kit ermöglicht die Visualisierung und das Verständnis der wesentlichen Elemente des Bremssystems, wie die Bremsenpumpe, Bremsaktuatoren, Bremsleitungen und Bremsbeläge."
     },
     "4": {
-      "title": "PCT-Temperatursimulationskit",
-      "description": "Ein fortschrittliches Werkzeug, das eine präzise Simulation verschiedener Temperaturprofile über einen breiten Bereich ermöglicht. Es ist eine ideale Lösung für die Prüfung und Validierung von Temperaturregelungssystemen in verschiedenen Branchen."
+      "title": "Temperatursensor-Testkit",
+      "description": "Der Ständer ermöglicht die Prüfung und Validierung von Temperatursensoren, die in Verbrennungsmotoren verwendet werden."
     },
     "5": {
-      "title": "Fahrzeugbeleuchtungssystem",
-      "description": "Ein Set von Lampen und Reflektoren, das die Sichtbarkeit des Fahrzeugs auf der Straße bei schlechten Sichtverhältnissen gewährleistet und andere Verkehrsteilnehmer über seine Anwesenheit und Manöver informiert."
+      "title": "Demonstrationsstand für Beleuchtungstests",
+      "description": "Ein Set aus Lampen und Reflektoren, das es ermöglicht, das Verfahren zur Überprüfung und Anpassung des Beleuchtungssystems zu lernen."
     },
     "6": {
       "title": "Demonstrationskit für hydraulische Federungskontrolle",
@@ -37,7 +37,7 @@
       "description": "Dieses Kit ermöglicht die Visualisierung und das Verständnis der wesentlichen Elemente des Federungssystems, wie den Luftkompressor, pneumatische Aktuatoren, Pneumatikleitungen und Luftfedern."
     },
     "9": {
-      "title": "Bildungsmotor",
+      "title": "Motormodell",
       "description": "Ein Motor zur Überprüfung der Betriebsparameter und zum Erlernen der Konstruktion und Umsetzung grundlegender Lehrinhalte im Bereich Motorenbau und Diagnose."
     }
   }

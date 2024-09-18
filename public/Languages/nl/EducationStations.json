@@ -17,12 +17,12 @@
       "description": "Deze kit maakt visualisatie en begrip van de belangrijkste elementen van het remsysteem mogelijk, zoals de rempomp, remactuators, remleidingen en remblokken."
     },
     "4": {
-      "title": "PCT Temperatuur Simulatiekit",
-      "description": "Een geavanceerd hulpmiddel dat precieze simulatie van verschillende temperatuurprofielen over een breed scala mogelijk maakt. Het is een ideale oplossing voor het testen en valideren van temperatuurregelsystemen in verschillende industrieën."
+      "title": "Temperatuursensor Testkit",
+      "description": "De standaard maakt het testen en valideren van temperatuursensoren die in verbrandingsmotoren worden gebruikt mogelijk."
     },
     "5": {
-      "title": "Voertuig Verlichtingssysteem",
-      "description": "Een set lampen en reflectoren die de zichtbaarheid van het voertuig op de weg in omstandigheden met beperkte zichtbaarheid verbeteren en andere weggebruikers informeren over de aanwezigheid en de bewegingen van het voertuig."
+      "title": "Demonstratie-stand voor Verlichtingstests",
+      "description": "Een set lampen en reflectoren die het mogelijk maakt om de procedure voor het verifiëren en afstemmen van het verlichtingssysteem te leren."
     },
     "6": {
       "title": "Hydraulische Veringsysteem Controle Demonstratiekit",
@@ -37,7 +37,7 @@
       "description": "Deze kit maakt visualisatie en begrip van de belangrijkste elementen van het veringsysteem mogelijk, zoals de luchtcompressor, pneumatische actuators, pneumatische leidingen en luchtveren."
     },
     "9": {
-      "title": "Onderwijs Motor",
+      "title": "Motormodel",
       "description": "Een motor voor het verifiëren van operationele parameters en voor het leren van de constructie en implementatie van basisinhoud op het gebied van motorkonstruktie en diagnostiek."
     }
   }

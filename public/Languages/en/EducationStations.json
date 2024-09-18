@@ -17,12 +17,12 @@
       "description": "This kit allows for visualization and understanding of key elements of the brake system, such as the brake pump, brake actuators, brake lines, and brake pads."
     },
     "4": {
-      "title": "PCT Temperature Simulation Kit",
-      "description": "An advanced tool that enables precise simulation of various temperature profiles across a wide range. It is an ideal solution for testing and validating temperature control systems in various industries."
+      "title": "Temperature Sensor Testing Kit",
+      "description": "The stand enables testing and validation of temperature sensors used in combustion engines."
     },
     "5": {
-      "title": "Vehicle Lighting System",
-      "description": "A set of lamps and reflectors that provide visibility of the vehicle on the road in low visibility conditions and inform other road users of its presence and maneuvers."
+      "title": "Demonstration Stand for Lighting Testing",
+      "description": "A set of lamps and reflectors that allows learning the procedure for verifying and adjusting the lighting system."
     },
     "6": {
       "title": "Hydraulic Suspension Control System Demonstration Kit",
@@ -37,7 +37,7 @@
       "description": "This kit allows for visualization and understanding of key elements of the suspension system, such as the air compressor, pneumatic actuators, pneumatic lines, and air springs."
     },
     "9": {
-      "title": "Educational Engine",
+      "title": "Engine model",
       "description": "An engine for verifying operating parameters and for learning the construction and implementation of basic curriculum content in the field of engine construction and diagnostics."
     }
   }

@@ -17,12 +17,12 @@
       "description": "Zestaw ten umożliwia wizualizację i zrozumienie kluczowych elementów układu hamulcowego, takich jak pompa hamulcowa, siłowniki hamulcowe, przewody hamulcowe i klocki hamulcowe."
     },
     "4": {
-      "title": "Zestaw do Symulacji Temperatury PCT",
-      "description": "Zaawansowane narzędzie, które umożliwia precyzyjną symulację różnych profili temperatury w szerokim zakresie. Jest to idealne rozwiązanie do testowania i walidacji systemów kontroli temperatury w różnych gałęziach przemysłu."
+      "title": "Zestaw do Badań Czujników Temperatury",
+      "description": "Stanowisko umożliwia przeprowadzenie testowania i walidacji czujników temperatury stosowanych w silnikach spalinowych."
     },
     "5": {
-      "title": "Oświetlenie Pojazdu Samochodowego",
-      "description": "Zespół lamp i reflektorów, które umożliwiają widoczność pojazdu na drodze w warunkach słabej widoczności oraz informują innych użytkowników drogi o jego obecności i manewrach."
+      "title": "Stanowisko Demonstracyjne do Badania Oświetlenia",
+      "description": "Zestaw lamp i reflekterów, które umożliwiają naukę procedury weryfikacji i regulacji układu oświetlenia."
     },
     "6": {
       "title": "Zestaw do Demonstracji Hydraulicznego Systemu Sterowania Zawieszeniem",
@@ -37,7 +37,7 @@
       "description": "Zestaw ten umożliwia wizualizację i zrozumienie kluczowych elementów układu zawieszenia, takich jak sprężarka powietrza, siłowniki pneumatyczne, przewody pneumatyczne i miechy powietrzne."
     },
     "9": {
-      "title": "Silnik dydaktyczny",
+      "title": "Model Silnika",
       "description": "Silnik do weryfikacji parametrów pracy oraz do nauki budowy i realizacji podstawowych treści programowych w zakresie budowy i diagnostyki silnika spalinowego."
     }
   }

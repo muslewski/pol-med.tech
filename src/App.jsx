@@ -6,6 +6,7 @@ import { Suspense, lazy, useEffect, useState } from "react";
 import { goToTopRough } from "./utils/goToTop";
 import { ErrorBoundary } from "react-error-boundary";
 import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 // Lazy load the components using React.lazy
 const Home = lazy(() => import("./pages/Home/Home"));
@@ -28,6 +29,9 @@ function App() {
   const { t: tOthers } = useTranslation("Others");
   const { t: tPageTitles } = useTranslation("PageTitles");
   const { t: tPageDescriptions } = useTranslation("PageDescriptions");
+  const { t: tPageLinks } = useTranslation("PageLinks");
+
+  const language = i18next.language;
 
   // Scroll to top on every route change
   const { pathname } = useLocation();
@@ -39,11 +43,11 @@ function App() {
   useEffect(() => {
     let title, description;
     switch (pathname) {
-      case "/":
+      case `/`:
         title = tPageTitles("home_page_title");
         description = tPageDescriptions("home_page_description");
         break;
-      case "/Edukacja_i_badania":
+      case `/Edukacja_i_badania`:
         title = tPageTitles("education_page_title");
         description = tPageDescriptions("education_page_description");
         break;
@@ -128,7 +132,7 @@ function App() {
             }
           >
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path={`/`} element={<Home />} />
               <Route path="/Edukacja_i_badania" element={<Education />} />
               <Route
                 path="/Edukacja_i_badania/interaktywna_platforma_edukacyjna"
