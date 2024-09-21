@@ -152,7 +152,8 @@ function About() {
             </li>
             <li>EU-REDcert-553-54240001</li>
             <li>
-              <b>{t("info_li_7")}</b> ?????
+              <b>{t("info_li_7")}</b> BANK PEKAO SA, 75 1950 0001 2006 2440 5239
+              0002
             </li>
             <li>{t("info_li_8")}</li>
           </ul>
