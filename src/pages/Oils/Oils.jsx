@@ -12,12 +12,6 @@ import iconHandshake from "./assets/iconHandshake.svg";
 import iconTrade from "./assets/iconTrade.svg";
 import iconWarehouse from "./assets/iconWarehouse.svg";
 import oilsBackground from "./assets/oilsBackground.jpg";
-// import oils2Background from "./assets/oils2Background.jpg";
-import oilsBackground3 from "./assets/oils3Background.jpg";
-import iconExpertise from "./assets/iconExpertise.png";
-import iconMicroscope from "./assets/iconMicroscope.png";
-import iconResearch from "./assets/iconResearch.png";
-import iconSuggestion from "./assets/iconSuggestion.png";
 
 import HeroCard from "../../components/HeroCard";
 import ContactButton from "../../components/Navbar/ContactButton";
@@ -30,7 +24,6 @@ import BgBottomVector from "../../components/Objects/BgBottomVector";
 import Hero from "../../components/Hero";
 import TextBox from "./TextBox";
 import TextBoxLi from "./TextBoxLi";
-import AdvancedBox from "./AdvancedBox";
 import { useTranslation } from "react-i18next";
 
 function Oils() {
@@ -171,7 +164,7 @@ function Oils() {
       {/* ➕➕➕ */}
       {/* bg-gradient-to-b from-[#051527] to-[#193655] */}
       <Section
-        customClass="w-full pt-32 pb-32 bg-gradient-to-b from-[#051527] to-[#193655]"
+        customClass="w-full pt-32 pb-64 bg-gradient-to-b from-[#051527] to-[#193655]"
         customClassInner="w-3/4 xl:w-3/4"
       >
         <div className="flex flex-col self-start gap-24 w-full">
@@ -187,95 +180,6 @@ function Oils() {
       </Section>
 
       {/* <img className="backgroundOils2" src={oils2Background} alt="" /> */}
-
-      {/* ➕➕➕ */}
-      <Section
-        customClass="pt-48 bg-no-repeat bg-cover"
-        style={{ backgroundImage: `url(${oilsBackground3})` }}
-        customClassInner="w-3/4 xl:w-3/4"
-      >
-        <div className="custom-shape-divider-top-1722954430">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
-              opacity=".25"
-              className="shape-fill"
-            ></path>
-            <path
-              d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
-              opacity=".5"
-              className="shape-fill"
-            ></path>
-            <path
-              d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
-              className="shape-fill"
-            ></path>
-          </svg>
-        </div>
-
-        <div className="flex flex-col self-start gap-24 w-full">
-          <GlowingTitle customClassH2="backdrop-blur-md bg-indigo-950/15 border-indigo-950/15 drop-shadow-glowingTextSubtle">
-            {t("section_title_4")}
-          </GlowingTitle>
-
-          <AdvancedBox
-            title={t("advanced_box_1_title")}
-            icon={iconResearch}
-            iconAlt={t("advanced_box_alt_1")}
-            description={t("advanced_box_1_description")}
-          />
-
-          <AdvancedBox
-            title={t("advanced_box_2_title")}
-            icon={iconMicroscope}
-            iconAlt={t("advanced_box_alt_2")}
-            description={t("advanced_box_2_description")}
-          />
-
-          <AdvancedBox
-            title={t("advanced_box_3_title")}
-            icon={iconSuggestion}
-            iconAlt={t("advanced_box_alt_3")}
-            description={t("advanced_box_3_description")}
-          />
-
-          <AdvancedBox
-            title={t("advanced_box_4_title")}
-            icon={iconExpertise}
-            iconAlt={t("advanced_box_alt_4")}
-            description={t("advanced_box_4_description")}
-          />
-        </div>
-
-        {/* <div className="custom-shape-divider-bottom-1722954477">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
-              opacity=".25"
-              className="shape-fill"
-            ></path>
-            <path
-              d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
-              opacity=".5"
-              className="shape-fill"
-            ></path>
-            <path
-              d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
-              className="shape-fill"
-            ></path>
-          </svg>
-        </div> */}
-      </Section>
     </>
   );
 }
