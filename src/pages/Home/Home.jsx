@@ -32,8 +32,12 @@ import Hero from "../../components/Hero";
 import { useTranslation } from "react-i18next";
 import useTitle from "../../components/useTitle";
 
+import godlo from "./assets/godlo.png";
+import redcert from "./assets/redcert.png";
+
 function Home() {
   const { t } = useTranslation("Home");
+  const { t: tOils } = useTranslation("Oils");
   const offerRef = useRef(null);
 
   const executeScrollOffer = () =>
@@ -95,7 +99,48 @@ function Home() {
               {t("section_title_1")}
             </h2>
           </div>
+
           <ContactButton className="flex sm:hidden self-end relative right-16" />
+
+          {/* Decyzja */}
+          <a
+            href="/decyzja.pdf"
+            target="_blank"
+            className="[&_.makeBigger]:hover:scale-105 self-end hidden sm:block"
+          >
+            <div className=" static sm:absolute right-0 -bottom-24 lg:-bottom-20 w-fit z-20 animate-fade-left animate-delay-300">
+              <div className="bg-white absolute right-[80%] top-0 h-full w-36 sm:w-48 flex items-center border-4 animate-delay-450 animate-fade-left rounded-l-full px-6">
+                <img
+                  className="h-4/5 drop-shadow-redcert"
+                  src={godlo}
+                  alt={tOils("starosta_button")}
+                />
+              </div>
+              <div className="makeBigger shadow-homeCard transition-transform text-white font-semibold font-exo relative z-10 text-lg lg:text-2xl border-4 border-secondary-dark/25 border-r-0 bg-[#1a144e] py-5 sm:py-6 rounded-l-full h-full px-12">
+                {tOils("starosta_button")}
+              </div>
+            </div>
+          </a>
+
+          {/* Certyfikat */}
+          <a
+            href="/certyfikat.pdf"
+            target="_blank"
+            className="[&_.makeBigger]:hover:scale-105 self-end hidden sm:block"
+          >
+            <div className="relative sm:absolute left-0 bottom-0 lg:-bottom-20 w-fit z-20 animate-fade-right">
+              <div className="bg-white absolute left-[85%] top-0 h-full w-40 sm:w-48 flex items-center justify-end border-4 animate-delay-150 animate-fade-right  rounded-r-full   px-6">
+                <img
+                  className=" h-3/4 drop-shadow-redcert"
+                  src={redcert}
+                  alt={tOils("redcert_button_alt")}
+                />
+              </div>
+              <div className="makeBigger shadow-homeCard transition-transform text-white font-semibold font-exo relative z-10 text-lg lg:text-2xl border-4 border-secondary-dark/25 border-r-0 bg-[#1a144e] py-5 sm:py-6  rounded-r-full h-full  px-12">
+                {tOils("redcert_button")}
+              </div>
+            </div>
+          </a>
         </Hero>
       </header>
 

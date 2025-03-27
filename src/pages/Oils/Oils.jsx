@@ -60,15 +60,15 @@ function Oils() {
             className="[&_.makeBigger]:hover:scale-105 self-end"
           >
             <div className="static sm:absolute right-0 bottom-10 w-fit z-20 animate-fade-left animate-delay-300">
-              <div className="bg-white absolute right-[80%] top-0 h-full w-36 sm:w-42 flex items-center border-4 animate-delay-450 animate-fade-left rounded-l-full px-6">
+              <div className="bg-white absolute right-[80%] top-0 h-full w-36 sm:w-48 flex items-center border-4 animate-delay-450 animate-fade-left rounded-l-full px-6">
                 <img
-                  className="h-3/4 drop-shadow-redcert"
+                  className="h-4/5 drop-shadow-redcert"
                   src={godlo}
-                  alt="Decyzja"
+                  alt={t("starosta_button")}
                 />
               </div>
-              <div className="makeBigger shadow-homeCard transition-transform text-white underline font-semibold font-exo relative z-10 text-lg sm:text-2xl border-4 border-secondary-dark/25 border-r-0 bg-[#0F2950] py-5 sm:py-6 rounded-l-full h-full px-12">
-                Decyzja
+              <div className="makeBigger shadow-homeCard transition-transform text-white font-semibold font-exo relative z-10 text-lg sm:text-2xl border-4 border-secondary-dark/25 border-r-0 bg-[#0F2950] py-5 sm:py-6 rounded-l-full h-full px-12">
+                {t("starosta_button")}
               </div>
             </div>
           </a>
@@ -87,7 +87,7 @@ function Oils() {
                   alt={t("redcert_button_alt")}
                 />
               </div>
-              <div className="makeBigger  shadow-homeCard transition-transform text-white underline font-semibold font-exo relative z-10 text-lg sm:text-2xl border-4 border-secondary-dark/25 border-r-0 bg-[#0F2950] py-5 sm:py-6  rounded-l-full h-full  px-12">
+              <div className="makeBigger  shadow-homeCard transition-transform text-white font-semibold font-exo relative z-10 text-lg sm:text-2xl border-4 border-secondary-dark/25 border-r-0 bg-[#0F2950] py-5 sm:py-6  rounded-l-full h-full  px-12">
                 {t("redcert_button")}
               </div>
             </div>

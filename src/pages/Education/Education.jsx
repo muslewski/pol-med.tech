@@ -248,7 +248,7 @@ function Education() {
         style={{ backgroundImage: `url(${oilsBackground3})` }}
         customClassInner="w-3/4 xl:w-3/4"
       >
-        <div
+        {/* <div
           className="custom-shape-divider-top-1722954430 absolute"
           style={{ zIndex: 100 }}
         >
@@ -273,7 +273,7 @@ function Education() {
               className="shape-fill"
             ></path>
           </svg>
-        </div>
+        </div> */}
 
         <div className="flex flex-col self-start gap-24 w-full">
           <GlowingTitle customClassH2="backdrop-blur-md bg-indigo-950/15 border-indigo-950/15 drop-shadow-glowingTextSubtle">
