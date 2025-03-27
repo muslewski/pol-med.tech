@@ -58,10 +58,12 @@
   display: block;
   width: calc(100% + 1.3px);
   height: 73px;
+  z-index: 50;
 }
 
 .custom-shape-divider-top-1722954430 .shape-fill {
   fill: #0f295b;
+  z-index: 50;
 }
 
 .custom-shape-divider-bottom-1722954477 {

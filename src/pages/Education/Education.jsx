@@ -88,7 +88,7 @@ function Education() {
           />
         </Hero>
       </header>
-      <Section customClass="bg-gradient-to-b from-[#040E30] to-[#10295b] pb-48">
+      <Section customClass="bg-gradient-to-b from-[#040E30] to-[#10295b] pb-48 border-b-8 border-white/75">
         {/* 📜📜📜 */}
         <div className="flex flex-wrap gap-24">
           <GlowingTitle>{t("section_title_1")}</GlowingTitle>
@@ -248,7 +248,10 @@ function Education() {
         style={{ backgroundImage: `url(${oilsBackground3})` }}
         customClassInner="w-3/4 xl:w-3/4"
       >
-        <div className="custom-shape-divider-top-1722954430 z-50">
+        <div
+          className="custom-shape-divider-top-1722954430 absolute"
+          style={{ zIndex: 100 }}
+        >
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
