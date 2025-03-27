@@ -12,6 +12,7 @@ import iconHandshake from "./assets/iconHandshake.svg";
 import iconTrade from "./assets/iconTrade.svg";
 import iconWarehouse from "./assets/iconWarehouse.svg";
 import oilsBackground from "./assets/oilsBackground.jpg";
+import godlo from "./assets/godlo.png";
 
 import HeroCard from "../../components/HeroCard";
 import ContactButton from "../../components/Navbar/ContactButton";
@@ -52,9 +53,27 @@ function Oils() {
           />
           <ContactButton className="flex sm:hidden self-end relative right-16" />
 
-          {/* Tutaj zamień link gdy będzie docelowy  */}
-          {/* Tutaj zamień link gdy będzie docelowy  */}
-          {/* Tutaj zamień link gdy będzie docelowy  */}
+          {/* Decyzja */}
+          <a
+            href="/decyzja.pdf"
+            target="_blank"
+            className="[&_.makeBigger]:hover:scale-105 self-end"
+          >
+            <div className="static sm:absolute right-0 bottom-10 w-fit z-20 animate-fade-left animate-delay-300">
+              <div className="bg-white absolute right-[80%] top-0 h-full w-36 sm:w-42 flex items-center border-4 animate-delay-450 animate-fade-left rounded-l-full px-6">
+                <img
+                  className="h-3/4 drop-shadow-redcert"
+                  src={godlo}
+                  alt="Decyzja"
+                />
+              </div>
+              <div className="makeBigger shadow-homeCard transition-transform text-white underline font-semibold font-exo relative z-10 text-lg sm:text-2xl border-4 border-secondary-dark/25 border-r-0 bg-[#0F2950] py-5 sm:py-6 rounded-l-full h-full px-12">
+                Decyzja
+              </div>
+            </div>
+          </a>
+
+          {/* Certyfikat */}
           <a
             href="/certyfikat.pdf"
             target="_blank"
