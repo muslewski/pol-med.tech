@@ -106,9 +106,9 @@ function Home() {
           <a
             href="/decyzja.pdf"
             target="_blank"
-            className="[&_.makeBigger]:hover:scale-105 self-end hidden sm:block"
+            className="[&_.makeBigger]:hover:scale-105 self-end"
           >
-            <div className=" static sm:absolute right-0 -bottom-24 lg:-bottom-20 w-fit z-20 animate-fade-left animate-delay-300">
+            <div className="static sm:absolute right-0 bottom-10 w-fit z-20 animate-fade-left animate-delay-300">
               <div className="bg-white absolute right-[80%] top-0 h-full w-36 sm:w-48 flex items-center border-4 animate-delay-450 animate-fade-left rounded-l-full px-6">
                 <img
                   className="h-4/5 drop-shadow-redcert"
@@ -116,7 +116,7 @@ function Home() {
                   alt={tOils("starosta_button")}
                 />
               </div>
-              <div className="makeBigger shadow-homeCard transition-transform text-white font-semibold font-exo relative z-10 text-lg lg:text-2xl border-4 border-secondary-dark/25 border-r-0 bg-[#1a144e] py-5 sm:py-6 rounded-l-full h-full px-12">
+              <div className="makeBigger shadow-homeCard transition-transform text-white font-semibold font-exo relative z-10 text-lg sm:text-2xl border-4 border-secondary-dark/25 border-r-0 bg-[#0F2950] py-5 sm:py-6 rounded-l-full h-full px-12">
                 {tOils("starosta_button")}
               </div>
             </div>
@@ -126,17 +126,17 @@ function Home() {
           <a
             href="/certyfikat.pdf"
             target="_blank"
-            className="[&_.makeBigger]:hover:scale-105 self-end hidden sm:block"
+            className="[&_.makeBigger]:hover:scale-105 self-end"
           >
-            <div className="relative sm:absolute left-0 bottom-0 lg:-bottom-20 w-fit z-20 animate-fade-right">
-              <div className="bg-white absolute left-[85%] top-0 h-full w-40 sm:w-48 flex items-center justify-end border-4 animate-delay-150 animate-fade-right  rounded-r-full   px-6">
+            <div className="relative sm:absolute right-0 w-fit z-20 animate-fade-left">
+              <div className="bg-white absolute right-[80%] top-0 h-full w-40 sm:w-48 flex items-center  border-4 animate-delay-150 animate-fade-left  rounded-l-full   px-6">
                 <img
                   className=" h-3/4 drop-shadow-redcert"
                   src={redcert}
                   alt={tOils("redcert_button_alt")}
                 />
               </div>
-              <div className="makeBigger shadow-homeCard transition-transform text-white font-semibold font-exo relative z-10 text-lg lg:text-2xl border-4 border-secondary-dark/25 border-r-0 bg-[#1a144e] py-5 sm:py-6  rounded-r-full h-full  px-12">
+              <div className="makeBigger  shadow-homeCard transition-transform text-white font-semibold font-exo relative z-10 text-lg sm:text-2xl border-4 border-secondary-dark/25 border-r-0 bg-[#0F2950] py-5 sm:py-6  rounded-l-full h-full  px-12">
                 {tOils("redcert_button")}
               </div>
             </div>
