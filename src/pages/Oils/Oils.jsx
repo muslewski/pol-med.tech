@@ -13,6 +13,7 @@ import iconTrade from "./assets/iconTrade.svg";
 import iconWarehouse from "./assets/iconWarehouse.svg";
 import oilsBackground from "./assets/oilsBackground.jpg";
 import godlo from "./assets/godlo.png";
+import bdo from "./assets/bdo.png";
 
 import HeroCard from "../../components/HeroCard";
 import ContactButton from "../../components/Navbar/ContactButton";
@@ -59,15 +60,15 @@ function Oils() {
             target="_blank"
             className="[&_.makeBigger]:hover:scale-105 self-end"
           >
-            <div className="static sm:absolute right-0 bottom-10 w-fit z-20 animate-fade-left animate-delay-300">
-              <div className="bg-white absolute right-[80%] top-0 h-full w-36 sm:w-48 flex items-center border-4 animate-delay-450 animate-fade-left rounded-l-full px-6">
+            <div className="static sm:absolute right-0 bottom-32 w-fit z-20 animate-fade-left animate-delay-300">
+              <div className="bg-white absolute right-[80%] top-0 h-full w-36 sm:w-40 flex items-center border-4 animate-delay-450 animate-fade-left rounded-l-full px-6">
                 <img
                   className="h-4/5 drop-shadow-redcert"
                   src={godlo}
                   alt={t("starosta_button")}
                 />
               </div>
-              <div className="makeBigger shadow-homeCard transition-transform text-white font-semibold font-exo relative z-10 text-lg sm:text-2xl border-4 border-secondary-dark/25 border-r-0 bg-[#0F2950] py-5 sm:py-6 rounded-l-full h-full px-12">
+              <div className="makeBigger shadow-homeCard transition-transform text-white font-semibold font-exo relative z-10 text-sm sm:text-lg border-4 border-secondary-dark/25 border-r-0 bg-[#0F2950] py-4 rounded-l-full h-full px-12">
                 {t("starosta_button")}
               </div>
             </div>
@@ -79,16 +80,36 @@ function Oils() {
             target="_blank"
             className="[&_.makeBigger]:hover:scale-105 self-end"
           >
-            <div className="relative sm:absolute right-0 w-fit z-20 animate-fade-left">
-              <div className="bg-white absolute right-[80%] top-0 h-full w-40 sm:w-48 flex items-center  border-4 animate-delay-150 animate-fade-left  rounded-l-full   px-6">
+            <div className="static sm:absolute right-0 w-fit z-20 bottom-6 animate-fade-left">
+              <div className="bg-white absolute right-[80%] top-0 h-full w-40 sm:w-40 flex items-center  border-4 animate-delay-150 animate-fade-left  rounded-l-full   px-6">
                 <img
                   className=" h-3/4 drop-shadow-redcert"
                   src={redcert}
                   alt={t("redcert_button_alt")}
                 />
               </div>
-              <div className="makeBigger  shadow-homeCard transition-transform text-white font-semibold font-exo relative z-10 text-lg sm:text-2xl border-4 border-secondary-dark/25 border-r-0 bg-[#0F2950] py-5 sm:py-6  rounded-l-full h-full  px-12">
+              <div className="makeBigger  shadow-homeCard transition-transform text-white font-semibold font-exo relative z-10 text-sm sm:text-lg border-4 border-secondary-dark/25 border-r-0 bg-[#0F2950] py-4  rounded-l-full h-full  px-12">
                 {t("redcert_button")}
+              </div>
+            </div>
+          </a>
+
+          {/* BDO */}
+          <a
+            href="/bdo.pdf"
+            target="_blank"
+            className="[&_.makeBigger]:hover:scale-105 self-end"
+          >
+            <div className="static sm:absolute right-0 w-fit -bottom-20 z-20 animate-fade-left">
+              <div className="bg-white absolute right-[70%]  h-full w-40 sm:w-44 flex items-center  border-4 animate-delay-150 animate-fade-left  rounded-l-full   px-6">
+                <img
+                  className=" h-3/4 drop-shadow-redcert"
+                  src={bdo}
+                  alt="BDO"
+                />
+              </div>
+              <div className="makeBigger  shadow-homeCard transition-transform text-white font-semibold font-exo relative z-10 text-sm sm:text-lg border-4 border-secondary-dark/25 border-r-0 bg-[#0F2950] py-4  rounded-l-full h-full  px-12">
+                BDO
               </div>
             </div>
           </a>

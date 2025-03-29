@@ -34,6 +34,7 @@ import useTitle from "../../components/useTitle";
 
 import godlo from "./assets/godlo.png";
 import redcert from "./assets/redcert.png";
+import bdo from "./assets/bdo.png";
 
 function Home() {
   const { t } = useTranslation("Home");
@@ -58,7 +59,7 @@ function Home() {
 
         <Hero>
           <HeroCard
-            boxCustom="items-center"
+            boxCustom="items-center "
             titleCustom=" text-center"
             title={t("hero_title")}
             col1="rgba(26,21,76,0.2)"
@@ -106,17 +107,17 @@ function Home() {
           <a
             href="/decyzja.pdf"
             target="_blank"
-            className="[&_.makeBigger]:hover:scale-105 self-end"
+            className="[&_.makeBigger]:hover:scale-105 self-end hidden sm:block"
           >
-            <div className="static sm:absolute right-0 bottom-10 w-fit z-20 animate-fade-left animate-delay-300">
-              <div className="bg-white absolute right-[80%] top-0 h-full w-36 sm:w-48 flex items-center border-4 animate-delay-450 animate-fade-left rounded-l-full px-6">
+            <div className="static sm:absolute right-0 bottom-32 w-fit z-20 animate-fade-left animate-delay-300">
+              <div className="bg-white absolute right-[80%] top-0 h-full w-36 sm:w-40 flex items-center border-4 animate-delay-450 animate-fade-left rounded-l-full px-6">
                 <img
                   className="h-4/5 drop-shadow-redcert"
                   src={godlo}
                   alt={tOils("starosta_button")}
                 />
               </div>
-              <div className="makeBigger shadow-homeCard transition-transform text-white font-semibold font-exo relative z-10 text-lg sm:text-2xl border-4 border-secondary-dark/25 border-r-0 bg-[#0F2950] py-5 sm:py-6 rounded-l-full h-full px-12">
+              <div className="makeBigger shadow-homeCard transition-transform text-white font-semibold font-exo relative z-10 text-sm sm:text-lg border-4 border-secondary-dark/25 border-r-0 bg-[#2d2769] py-4 rounded-l-full h-full px-12">
                 {tOils("starosta_button")}
               </div>
             </div>
@@ -126,18 +127,38 @@ function Home() {
           <a
             href="/certyfikat.pdf"
             target="_blank"
-            className="[&_.makeBigger]:hover:scale-105 self-end"
+            className="[&_.makeBigger]:hover:scale-105 self-end hidden sm:block"
           >
-            <div className="relative sm:absolute right-0 w-fit z-20 animate-fade-left">
-              <div className="bg-white absolute right-[80%] top-0 h-full w-40 sm:w-48 flex items-center  border-4 animate-delay-150 animate-fade-left  rounded-l-full   px-6">
+            <div className="relative sm:absolute bottom-6 right-0 w-fit z-20 animate-fade-left">
+              <div className="bg-white absolute right-[80%] top-0 h-full w-40 sm:w-40 flex items-center  border-4 animate-delay-150 animate-fade-left  rounded-l-full   px-6">
                 <img
                   className=" h-3/4 drop-shadow-redcert"
                   src={redcert}
                   alt={tOils("redcert_button_alt")}
                 />
               </div>
-              <div className="makeBigger  shadow-homeCard transition-transform text-white font-semibold font-exo relative z-10 text-lg sm:text-2xl border-4 border-secondary-dark/25 border-r-0 bg-[#0F2950] py-5 sm:py-6  rounded-l-full h-full  px-12">
+              <div className="makeBigger  shadow-homeCard transition-transform text-white font-semibold font-exo relative z-10 text-sm sm:text-lg border-4 border-secondary-dark/25 border-r-0 bg-[#2d2769] py-4  rounded-l-full h-full  px-12">
                 {tOils("redcert_button")}
+              </div>
+            </div>
+          </a>
+
+          {/* BDO */}
+          <a
+            href="/bdo.pdf"
+            target="_blank"
+            className="[&_.makeBigger]:hover:scale-105 self-end z-50 hidden sm:block"
+          >
+            <div className=" static sm:absolute right-0 w-fit -bottom-20 z-20 animate-fade-left">
+              <div className="bg-white absolute right-[70%]  h-full w-40 sm:w-44 flex items-center  border-4 animate-delay-150 animate-fade-left  rounded-l-full   px-6">
+                <img
+                  className=" h-3/4 drop-shadow-redcert"
+                  src={bdo}
+                  alt="BDO"
+                />
+              </div>
+              <div className="makeBigger  shadow-homeCard transition-transform text-white font-semibold font-exo relative z-10 text-sm sm:text-lg border-4 border-secondary-dark/25 border-r-0 bg-[#2d2769] py-4  rounded-l-full h-full  px-12">
+                BDO
               </div>
             </div>
           </a>
