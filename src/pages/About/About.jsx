@@ -148,6 +148,9 @@ function About() {
               <b>{t("info_li_4")}</b> 0000166787
             </li>
             <li>
+              <b>EORI</b> PL967116734100000
+            </li>
+            <li>
               <b>{t("info_li_5")}</b> 000638650
             </li>
             <li>EU-REDcert-553-54240001</li>
