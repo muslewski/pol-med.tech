@@ -138,7 +138,7 @@ function Home() {
                 />
               </div>
               <div className="makeBigger  shadow-homeCard transition-transform text-white font-semibold font-exo relative z-10 text-sm sm:text-lg border-4 border-secondary-dark/25 border-r-0 bg-[#2d2769] py-4  rounded-l-full h-full  px-12">
-                {tOils("redcert_button")}
+                {tOils("redcert_button")} / UDB
               </div>
             </div>
           </a>
